@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es-es">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.23" />
+  
+  <meta name="description" content="Servicios Avanzados del CERT">
+
+  
+  
+  
+    
+  
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.0/css/academicons.min.css" integrity="sha512-GGGNUPDhnG8LEAEDsjqYIQns+Gu8RBs4j5XGlxl7UfRaZBhCCm5jenJkeJL8uPuOXGqgl8/H1gjlWQDRjd3cUQ==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather%7CRoboto+Mono">
+  <link rel="stylesheet" href="/css/hugo-academic.css">
+  
+  <link rel="stylesheet" href="/css/custom.css">
+  
+
+  
+
+  <link rel="alternate" href="http://www.alejandrolopezparra.es/index.xml" type="application/rss+xml" title="Alejandro López Parra">
+  <link rel="feed" href="http://www.alejandrolopezparra.es/index.xml" type="application/rss+xml" title="Alejandro López Parra">
+
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
+
+  <link rel="canonical" href="http://www.alejandrolopezparra.es/post/amazon_s3/">
+
+  
+
+  <title>Alojar websites estáticos en Amazon Simple Storage Service (S3) | Alejandro López Parra</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Barra de navegación</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Alejandro López Parra</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#posts">
+            
+            <span>Posts</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#about">
+            
+            <span>Bio</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+<div class="article-header">
+  <img src="/img/posts/Amazon-S3.png" class="article-banner" itemprop="image">
+  
+</div>
+
+
+
+  <div class="article-container">
+    <h1 itemprop="name">Alojar websites estáticos en Amazon Simple Storage Service (S3)</h1>
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="2017-02-11 12:00:00 &#43;0000 UTC" itemprop="datePublished">
+      2017-02-11, Saturday
+    </time>
+  </span>
+
+  
+
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/amazon">amazon</a
+    >, 
+    
+    <a href="/tags/web">web</a
+    >
+    
+  </span>
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2famazon_s3%2f"
+         target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Alojar%20websites%20est%c3%a1ticos%20en%20Amazon%20Simple%20Storage%20Service%20%28S3%29&amp;url=http%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2famazon_s3%2f"
+         target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2famazon_s3%2f&amp;title=Alojar%20websites%20est%c3%a1ticos%20en%20Amazon%20Simple%20Storage%20Service%20%28S3%29"
+         target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2famazon_s3%2f&amp;title=Alojar%20websites%20est%c3%a1ticos%20en%20Amazon%20Simple%20Storage%20Service%20%28S3%29"
+         target="_blank">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Alojar%20websites%20est%c3%a1ticos%20en%20Amazon%20Simple%20Storage%20Service%20%28S3%29&amp;body=http%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2famazon_s3%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<p>Como continuación al <a href="/post/hugo/">primer post</a> en el que hablaba de <a href="https://gohugo.io" target="_blank">Hugo</a>, el framework usado para la creación de esta web, me gustaría seguir comentando otra de las tecnologías en las que se apoya. En esta ocasión es el turno del servicio <a href="http://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html" target="_blank">Amazon Simple Storage Service (S3)</a> que pertenece a la plataforma de servicios en la nube <a href="https://aws.amazon.com/es/what-is-aws/" target="_blank">Amazon Web Services (AWS)</a>.</p>
+
+<p><em>Amazon S3</em> es un servicio de pago para almacenamiento en la nube al estilo de <a href="https://www.dropbox.com" target="_blank">Dropbox</a>, <a href="https://drive.google.com" target="_blank">Google Drive</a> o <a href="https://onedrive.live.com/about/es-es/" target="_blank">Microsoft OneDrive</a>. Además de almacenar ficheros y directorios, <strong>permite alojar websites de contenido estático</strong>, es decir, webs que se basan en HyperText Markup Language (HTML), JavaScript (JS) y Cascading Style Sheets (CSS). El contenido no es generado dinámicamente en cada solicitud que se realiza al servidor y, por tanto, no son necesarios ni servidores de aplicaciones ni de bases de datos. Sólo se requiere un servidor web que sirva el contenido según se le vaya solicitando. Afortunadamente, gracias a tecnologías que se ejecutan en el lado del cliente como JS y CSS, se puede conseguir cierto dinamismo en cómo se muestra el contenido aunque éste sea servido de forma estática.</p>
+
+<p>A continuación se describen los 2 pasos que hay que realizar para poder publicar una web estática: (1) alojar el website y (2) asociar un dominio.</p>
+
+<h2 id="1-alojar-un-website-estático-en-amazon-s3">1. Alojar un website estático en Amazon S3</h2>
+
+<p>La capacidad de alojamiento de webs estáticas de <em>Amazon S3</em> está explicada en detalle <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html" target="_blank">aquí</a> pero, en resumen, nos permite lo siguiente:</p>
+
+<ul>
+<li>Crear un contenedor o depósito denominado <a href="http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingBucket.html" target="_blank">Bucket</a> que está físicamente en una <a href="http://docs.aws.amazon.com/general/latest/gr/rande.html#s3_website_region_endpoints" target="_blank">región</a> o CPD de Amazon. <em>Los Buckets tienen que tener un nombre único en una región y ese nombre debe coincidir con el dominio DNS que pretandamos registrar posteriormente</em>.</li>
+<li>Almacenar los ficheros HTML y demás recursos webs asociados en dicho Bucket.</li>
+<li>Publicar el Bucket a través de un <a href="http://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteEndpoints.html" target="_blank">Endpoint</a>. Un Endpoint apunta a un Bucket concreto que se encuentra en una región en particular. En mi caso es <a href="http://www.alejandrolopezparra.es.s3-website-eu-west-1.amazonaws.com" target="_blank">www.alejandrolopezparra.es.s3-website-eu-west-1.amazonaws.com</a></li>
+<li>Configurar cuál es la página <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/IndexDocumentSupport.html" target="_blank">index</a> (página que se cargará por defecto) y la que se muestra en caso de <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/CustomErrorDocSupport.html" target="_blank">error</a>.</li>
+<li>Activar los <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/ServerLogs.html" target="_blank">ficheros de logs</a> para registrar los accesos que se produzcan al servidor. Más información sobre esto en el post dedicado a los <a href="/post/amazon_s3_logs/">logs de Amazon S3</a>.</li>
+</ul>
+
+<p>También contamos con un <a href="https://console.aws.amazon.com/quickstart-website/new" target="_blank">asistente o guía rápida</a> que nos facilita el proceso de alojamiento de un nuevo website.</p>
+
+<h2 id="2-asociar-un-dominio-propio">2. Asociar un dominio propio</h2>
+
+<p>Una vez tenemos nuestro website alojado en un Bucket y lo hemos publicado en un Endpoint, es el momento de asociarle un nombre de un dominio propio, por ejemplo <a href="http://www.alejandrolopezparra.es" target="_blank">www.alejandrolopezparra.es</a>.</p>
+
+<p>Para lograrlo es necesario <strong>registrar el dominio</strong> en un registrador de dominios y <strong>crear un nombre en ese dominio</strong> a través de un servicio DNS que apunte al Endpoint definido anteriormente mediante lo que se conoce como alias. De esta forma, cuando un navegador web intente resolver dicho nombre, recibirá como respuesta el endpoint donde tenemos alojado nuestro website. Lo habitual es crear un alias para el subdominio <em>www</em> aunque en algunos proveedores DNS también es posible crear un alias para el dominio raíz. Es muy importante tener en cuenta que <em>cada alias tiene que apuntar a un Endpoint concreto y el nombre del alias debe coincidir con el nombre del Endpoint</em>.</p>
+
+<p>Existen multitud de registradores de dominios y muchos de ellos también proporcionan servicios DNS. Amazon ofrece estos servicios a través de <a href="https://aws.amazon.com/es/route53/" target="_blank">Amazon Route 53</a> y dispone de una <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html#root-domain-walkthrough-switch-to-route53-as-dnsprovider" target="_blank">guía</a> en la que explican cómo llevarlo a cabo. Otro prestador muy conocido de este tipo de servicios es <a href="http://dyn.com" target="_blank">Dyn</a>. En mi caso, uso <a href="https://es.godaddy.com" target="_blank">GoDaddy</a> para ambas cosas aunque tiene la pega de no permitir alias del dominio raíz por lo que sólo se pueden usar en los subdominios.</p>
+
+<h2 id="conclusión">Conclusión</h2>
+
+<p><em>Amazon S3</em> permite el alojamiento de websites estáticos de forma fácil y con precios económicos, especialmente el primer año que es <a href="https://aws.amazon.com/es/free/" target="_blank">gratuito</a>. A partir de ahí, el modelo de negocio se basa en pago por uso de almacenamiento y trasferencia de datos (tanto de subida como de descarga). Para webs personales o con poco tráfico es idóneo porque la factura es muy baja si no hay muchas visitas. Incluso te permite definir alertas cuando el sistema prevee que se pueden superar ciertos umbrales.</p>
+
+<p>Existen otras alternativas que merecerían la pena explorar para valorar la que mejor se adapta a las necesidades de cada uno:</p>
+
+<ul>
+<li><a href="https://cloud.google.com/storage/" target="_blank">Google Cloud Storage</a> con su <a href="https://cloud.google.com/storage/docs/hosting-static-website" target="_blank">guía</a>. De pago.</li>
+<li><a href="https://pages.github.com" target="_blank">Github Pages</a> que dispone de un <a href="https://gohugo.io/tutorials/github-pages-blog/" target="_blank">tutorial</a> para <a href="https://gohugo.io" target="_blank">Hugo</a>. Gratuito.</li>
+<li><a href="https://bitbucket.org/" target="_blank">BitBucket</a> que también tiene un <a href="https://gohugo.io/tutorials/hosting-on-bitbucket/" target="_blank">tutorial</a> para <a href="https://gohugo.io" target="_blank">Hugo</a>. Gratuito.</li>
+<li><a href="https://about.gitlab.com/" target="_blank">GitLab</a> que también ofrece un <a href="https://gohugo.io/tutorials/hosting-on-gitlab/" target="_blank">tutorial</a> para <a href="https://gohugo.io" target="_blank">Hugo</a>. Gratuito.</li>
+</ul>
+
+    </div>
+  </div>
+
+</article>
+
+<div class="container">
+  <nav>
+  <ul class="pager">
+    
+    <li class="previous"><a href="http://www.alejandrolopezparra.es/post/hugo/"><span
+      aria-hidden="true">&larr;</span> Crear websites estáticos con Hugo</a></li>
+    
+
+    
+    <li class="next"><a href="http://www.alejandrolopezparra.es/post/amazon_s3_logs/">Logs de acceso a websites en Amazon S3 <span
+      aria-hidden="true">&rarr;</span></a></li>
+    
+  </ul>
+</nav>
+
+</div>
+
+<div class="article-container">
+  
+
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2017 Alejandro López Parra &middot; 
+
+      Powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic
+      theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.2/imagesloaded.pkgd.min.js" integrity="sha512-iHzEu7GbSc705hE2skyH6/AlTpOfBmkx7nUqTLGzPYR+C1tRaItbRlJ7hT/D3YQ9SV0fqLKzp4XY9wKulTBGTw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js" integrity="sha512-Z5heTz36xTemt1TbtbfXtTq5lMfYnOkXM2/eWcTTiLU01+Sw4ku1i7vScDc8fWhrP2abz9GQzgKH5NGBLoYlAw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/ScrollToPlugin.min.js" integrity="sha512-CDeU7pRtkPX6XJtF/gcFWlEwyaX7mcAp5sO3VIu/ylsdR74wEw4wmBpD5yYTrmMAiAboi9thyBUr1vXRPA7t0Q==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+
+    
+    
+
+  </body>
+</html>
+

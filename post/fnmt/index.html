@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es-es">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.23" />
+  
+  <meta name="description" content="Servicios Avanzados del CERT">
+
+  
+  
+  
+    
+  
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.0/css/academicons.min.css" integrity="sha512-GGGNUPDhnG8LEAEDsjqYIQns+Gu8RBs4j5XGlxl7UfRaZBhCCm5jenJkeJL8uPuOXGqgl8/H1gjlWQDRjd3cUQ==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather%7CRoboto+Mono">
+  <link rel="stylesheet" href="/css/hugo-academic.css">
+  
+  <link rel="stylesheet" href="/css/custom.css">
+  
+
+  
+
+  <link rel="alternate" href="http://www.alejandrolopezparra.es/index.xml" type="application/rss+xml" title="Alejandro López Parra">
+  <link rel="feed" href="http://www.alejandrolopezparra.es/index.xml" type="application/rss+xml" title="Alejandro López Parra">
+
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
+
+  <link rel="canonical" href="http://www.alejandrolopezparra.es/post/fnmt/">
+
+  
+
+  <title>Certificados digitales de la FNMT-RCM | Alejandro López Parra</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Barra de navegación</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Alejandro López Parra</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#posts">
+            
+            <span>Posts</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#about">
+            
+            <span>Bio</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+<div class="article-header">
+  <img src="/img/posts/FNMT.png" class="article-banner" itemprop="image">
+  
+</div>
+
+
+
+  <div class="article-container">
+    <h1 itemprop="name">Certificados digitales de la FNMT-RCM</h1>
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="2017-05-13 12:00:00 &#43;0100 &#43;0100" itemprop="datePublished">
+      2017-05-13, Saturday
+    </time>
+  </span>
+
+  
+
+  
+  
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2ffnmt%2f"
+         target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Certificados%20digitales%20de%20la%20FNMT-RCM&amp;url=http%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2ffnmt%2f"
+         target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2ffnmt%2f&amp;title=Certificados%20digitales%20de%20la%20FNMT-RCM"
+         target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2ffnmt%2f&amp;title=Certificados%20digitales%20de%20la%20FNMT-RCM"
+         target="_blank">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Certificados%20digitales%20de%20la%20FNMT-RCM&amp;body=http%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2ffnmt%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<p>Como continuación al <a href="/post/dnie/">artículo dedicado al <em>DNIe</em></a> y los certificados digitales que contiene, se tratarán los certificados digitales emitidos por la Entidad Pública de Certificación <a href="http://www.cert.fnmt.es/" target="_blank"><em>CERES</em> (<em>CERtificación ESpañola</em>)</a> dependiente de la <a href="http://www.fnmt.es/" target="_blank">Fábrica Nacional de Moneda y Timbre - Real Casa de la Moneda (<em>FNMT-RCM</em>)</a>.</p>
+
+<p>De la misma forma que ocurría con el <em>DNIe</em>, permiten acreditar la identidad de los intervinientes en las comunicaciones electrónicas y asegurar su procedencia e integridad. Por ende, también posibilitan la realización de <strong>gestiones de forma segura a través de Internet</strong> tanto con la Administración Pública como con las entidades privadas que los admitan.</p>
+
+<p>En este artículo se describirán sus principales características, los servicios online donde se pueden usar y cómo obtenerlo, especialmente usando el navegador <a href="https://www.mozilla.org/es-ES/firefox/products/" target="_blank"><em>Firefox</em></a> de <em>Mozilla</em>.</p>
+
+<h2 id="1-certificados-digitales-de-la-fnmt-rcm">1. Certificados digitales de la <em>FNMT-RCM</em></h2>
+
+<p>Según se explica en la <a href="http://www.cert.fnmt.es/certificados" target="_blank">web de Prestador de Servicios de Certificación</a> de la <em>FNMT-RCM</em>, ésta emite diferentes tipos de certificados digitales o electrónicos en función del destinatario de los mismos: persona física, representante, Administración Pública y de componente.</p>
+
+<h3 id="1-1-certificado-de-persona-física">1.1. Certificado de Persona Física</h3>
+
+<p>Los <a href="https://www.sede.fnmt.gob.es/certificados/persona-fisica" target="_blank">certificados de Persona Física, Ciudadano o Usuario</a> se emiten sin coste a cualquier ciudadano español o extranjero que esté en posesión de su DNI o NIE previa verificación de su identidad. Este certificado le permite identificarse de forma telemática, firmar y cifrar documentos electrónicos para realizar gestiones en <a href="https://www.cert.fnmt.es/certificados/donde-usar-certificado" target="_blank">multitud de servicios online</a>. Éstos son algunos ejemplos:</p>
+
+<ul>
+<li>Presentación y liquidación de impuestos.</li>
+<li>Presentación de recursos y reclamaciones.</li>
+<li>Cumplimentación de los datos del censo de población y viviendas.</li>
+<li>Consulta e inscripción en el padrón municipal.</li>
+<li>Consulta de multas de circulación.</li>
+</ul>
+
+<p>Sería equivalente al <em>DNIe</em> pero se diferencian en algunos aspectos:</p>
+
+<ul>
+<li>Es un <strong>único certificado</strong> válido para la autenticación, cifrado y firma electrónica, al contrario de lo que ocurre en el <em>DNIe</em> que contiene 2 certificados distintos (<em>AUTENTICACIÓN</em> y <em>FIRMA</em>).</li>
+<li>Tiene una <strong>vigencia de 48 meses</strong> en lugar de los 30 meses que tienen los certificados digitales incluidos dentro del <em>DNIe</em>.</li>
+<li>Se puede realizar su <strong>obtención telemáticamente</strong>, sin tener que acudir a ninguna oficina, si se usa el <em>DNIe</em> o no han pasado más de 5 años desde la última vez que se acreditó la identidad.</li>
+<li>Es un <strong>archivo descargable</strong> y no tiene soporte físico.</li>
+<li>Se puede usar desde un navegador web, smartphone o tablet <em>Android</em> <strong>sin necesidad de lector</strong> de smart cards (tarjetas inteligentes).</li>
+<li>Permite que se use desde un cliente de correo para firmar y cifrar mensajes que enviemos o descifrar los mensajes que recibamos de forma confidencial.</li>
+<li>Requiere de medidas de seguridad adicionales para protegerse de un uso indebido. Entre otras sería recomendable:
+
+<ul>
+<li>Configurar el navegador y el correo electrónico para que solicite una contraseña cuando se quiera hacer uso del certificado.</li>
+<li>Realizar una copia de seguridad del certificado digital por si se corrompe o se borra.</li>
+</ul></li>
+</ul>
+
+<h3 id="1-2-certificado-de-representante">1.2. Certificado de Representante</h3>
+
+<p>Los <a href="https://www.sede.fnmt.gob.es/certificados/certificado-de-representante" target="_blank">certificados de Representante</a> se expiden <a href="https://www.sede.fnmt.gob.es/certificados/certificado-de-representante/lista-de-precios" target="_blank">con coste</a> a personas físicas en calidad de representantes legales de <a href="https://www.sede.fnmt.gob.es/certificados/certificado-de-representante/persona-juridica" target="_blank">personas jurídicas</a>, <a href="https://www.sede.fnmt.gob.es/certificados/certificado-de-representante/administrador-unico-solidario" target="_blank">administradores únicos o solidarios</a> y <a href="https://www.sede.fnmt.gob.es/certificados/certificado-de-representante/entidad-sin-personalidad-juridica" target="_blank">entidades sin personalidad jurídica</a>.</p>
+
+<h3 id="1-3-administración-pública">1.3. Administración Pública</h3>
+
+<p>Los tipos de <a href="https://www.sede.fnmt.gob.es/certificados/administracion-publica" target="_blank">certificados de Administración Pública</a> que se expiden a Administraciones Públicas son los siguientes:</p>
+
+<ul>
+<li>Certificado de firma electrónica del personal al servicio de la Administración Pública (Certificado de empleado público).</li>
+<li>Certificado de Sede electrónica en el ámbito de la Administración.</li>
+<li>Certificado de Sello electrónico en el ámbito de la Administración.</li>
+</ul>
+
+<h3 id="1-4-certificados-de-componente">1.4. Certificados de Componente</h3>
+
+<p>Los <a href="https://www.sede.fnmt.gob.es/certificados/certificado-componentes" target="_blank">certificados de Componente</a> se expiden <a href="https://www.cert.fnmt.es/documents/10446703/10511896/Precios_Certificados_Ac_Componentes.pdf" target="_blank">con coste</a> para la identificación de servidores o aplicaciones informáticas:</p>
+
+<ul>
+<li>Certificado de <a href="https://www.cert.fnmt.es/catalogo-de-servicios/certificados-electronicos/certificado-servidor" target="_blank">servidor web seguro <em>SSL/TLS</em></a> (estándar, SAN multidominio, wildcard).</li>
+<li>Certificado para <a href="https://www.cert.fnmt.es/catalogo-de-servicios/certificados-electronicos/certificado-para-firma-de-codigo" target="_blank">firma de código</a>.</li>
+<li>Certificado de <a href="https://www.cert.fnmt.es/catalogo-de-servicios/certificados-electronicos/sello-entidad" target="_blank">sello de entidad</a>.</li>
+<li>Certificado de <a href="https://www.sede.fnmt.gob.es/certificados/administracion-publica" target="_blank">sede y sello para la Administración Pública</a>.</li>
+</ul>
+
+<h2 id="2-obtener-un-certificado-de-persona-física">2. Obtener un certificado de Persona Física</h2>
+
+<p>Para poder disponer de un certificado gratuito de persona física de la <em>FNMT-RCM</em>, también llamado de ciudadano o de usuario, es necesario realizar los siguientes  <a href="https://www.sede.fnmt.gob.es/certificados/persona-fisica" target="_blank">pasos explicados</a> en su web oficial: solicitud, acreditación de identidad y descarga.</p>
+
+<h3 id="2-1-solicitud-o-renovación-del-certificado">2.1. Solicitud o renovación del certificado</h3>
+
+<p>Antes de realizar la petición propiamente dicha, es necesario tener en cuenta una serie de <a href="https://www.sede.fnmt.gob.es/certificados/persona-fisica/obtener-certificado-software/consideraciones-previas" target="_blank">consideraciones previas</a> que se encuentran detallados en la web de la sede electrónica de la <em>FNMT-RCM</em>:</p>
+
+<ul>
+<li>Los sistemas soportados son éstos:
+
+<ul>
+<li>El navegador <a href="https://www.mozilla.org/es-ES/firefox/products/" target="_blank"><em>Firefox</em></a> en un equipo con <em>Windows</em>, <em>GNU/Linux</em>, <em>macOS</em>, etc.</li>
+<li>El navegador <a href="https://support.microsoft.com/es-es/help/17621/internet-explorer-downloads" target="_blank"><em>Internet Explorer</em></a> en un equipo con <em>Windows</em>.</li>
+<li>La aplicación <a href="https://play.google.com/store/apps/details?id=es.fnmt.android.certtool" target="_blank">Obtención certificado FNMT</a> de la <em>FNMT-RCM</em> en un smartphone o tablet con <em>Android</em>.</li>
+</ul></li>
+<li>Realizar todo el proceso con el mismo navegador/aplicación y usuario del sistema.</li>
+<li>No formatear ni actualizar el sistema ni el navegador/aplicación hasta que se complete el proceso.</li>
+</ul>
+
+<p>Con esto en mente, es el momento de seguir las <a href="https://www.sede.fnmt.gob.es/preguntas-frecuentes/certificado-de-persona-fisica/-/asset_publisher/eIal9z2VE0Kb/content/1680-configuracion-necesaria-para-mozilla-firefox?inheritRedirect=false&amp;redirect=https%3A%2F%2Fwww.sede.fnmt.gob.es%3A9440%2Fpreguntas-frecuentes%2Fcertificado-de-persona-fisica%3Fp_p_id%3D101_INSTANCE_eIal9z2VE0Kb%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_p_col_id%3Dcolumn-2%26p_p_col_count%3D1" target="_blank">instrucciones de configuración para <em>Firefox</em></a>, <a href="https://www.sede.fnmt.gob.es/preguntas-frecuentes/certificado-de-persona-fisica/-/asset_publisher/eIal9z2VE0Kb/content/1628-configuracion-para-obtener-o-renovar-el-certificado-con-windows?inheritRedirect=false&amp;redirect=https%3A%2F%2Fwww.sede.fnmt.gob.es%3A9440%2Fpreguntas-frecuentes%2Fcertificado-de-persona-fisica%3Fp_p_id%3D101_INSTANCE_eIal9z2VE0Kb%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_p_col_id%3Dcolumn-2%26p_p_col_count%3D1" target="_blank"><em>Internet Explorer</em></a> o <a href="https://www.sede.fnmt.gob.es/certificados/persona-fisica/obtener-certificado-con-android" target="_blank"><em>Android</em></a>, dependiendo del sistema utilizado.</p>
+
+<p>Una vez preparado el sistema, ya se podría realizar la <a href="https://www.sede.fnmt.gob.es/certificados/persona-fisica/obtener-certificado-con-dnie/solicitar-certificado" target="_blank">solicitud de un nuevo certificado con <em>DNIe</em></a> o la <a href="https://www.sede.fnmt.gob.es/certificados/persona-fisica/obtener-certificado-software/solicitar-certificado" target="_blank">solicitud sin <em>DNIE</em></a>.</p>
+
+<p>En el caso de la renovación de un certificado que aún no ha caducado, ésta se puede solicitar con hasta 60 días de antelación en la web de <a href="https://www.sede.fnmt.gob.es/certificados/persona-fisica/renovar/solicitar-renovacion" target="_blank">renovación</a>.</p>
+
+<h4 id="2-1-1-procedimiento-con-firefox">2.1.1. Procedimiento con <em>Firefox</em></h4>
+
+<p>En el caso de usar el navegador web <em>Firefox</em>, el proceso se resume en los siguientes pasos:</p>
+
+<ol>
+<li>Verificar que están activadas las <a href="https://support.mozilla.org/es/kb/configuracion-privacidad-historial-navegacion-funcion-no-quiero-ser-rastreado" target="_blank">cookies de terceros</a> en la configuración de <em>Firefox</em>.</li>
+<li>Instalar el plug-in <a href="https://addons.mozilla.org/es/firefox/addon/signtextjs-plus/" target="_blank"><em>signTextJS Plus</em></a> en <em>Firefox</em>.</li>
+<li>Importar<sup class="footnote-ref" id="fnref:unnecessary"><a rel="footnote" href="#fn:unnecessary">1</a></sup> en <em>Firefox</em> el <a href="https://www.sede.fnmt.gob.es/documents/10445900/10526749/AC_Raiz_FNMT-RCM_SHA256.cer" target="_blank">certificado de la Autoridad de Certificación raíz</a> de la <em>FNMT-RCM</em>, marcando los siguientes usos:
+
+<ul>
+<li>Identificar páginas web.</li>
+<li>Usuarios de correo electrónico.</li>
+<li>Desarrolladores de aplicaciones.</li>
+</ul></li>
+<li>Realizar la solicitud de un <a href="https://www.sede.fnmt.gob.es/certificados/persona-fisica/obtener-certificado-con-dnie/solicitar-certificado" target="_blank">nuevo certificado con <em>DNIe</em></a>, un <a href="https://www.sede.fnmt.gob.es/certificados/persona-fisica/obtener-certificado-software/solicitar-certificado" target="_blank">nuevo certificado sin <em>DNIe</em></a> o la <a href="https://www.sede.fnmt.gob.es/certificados/persona-fisica/renovar/solicitar-renovacion" target="_blank">renovación de un certificado</a> que caducará en menos de 60 días.
+
+<ol>
+<li>Cumplimentar el nombre, primer apellido y la dirección de correo electrónico, la cuál será usada para enviar al usuario un código de solicitud de 9 dígitos que posteriormente será necesario.</li>
+<li>Seleccionar la longitud de clave de 2048 bits (<em>Grado Alto</em> o <em>High Grade</em>).</li>
+<li>Aceptar las condiciones de expedición del certificado.</li>
+<li>Hacer clic en Enviar Petición.</li>
+</ol></li>
+<li>Elegir <strong><em>token local</em></strong> de <em>Firefox</em> como el dispositivo usado para generar y almacenar la nueva clave (pública y privada) del certificado.</li>
+</ol>
+
+<p>Si se ha usado el <em>DNIe</em> para realizar la solicitud de un nuevo certificado, será necesario firmarla con el certificado denominado <em>FIRMA</em> del <em>DNIe</em>. Esto permite acreditar la identidad del usuario sin necesidad de acudir a una oficina de registro.</p>
+
+<p>De la misma forma, si se está realizando una renovación, será necesario firmarla con el certificado que se pretende renovar para autenticar la operación.</p>
+
+<h3 id="2-2-acreditación-de-identidad">2.2. Acreditación de identidad</h3>
+
+<p>En el caso de que no se haya usado el <em>DNIe</em> en la solicitud del certificado digital, será necesario acudir a una de las <a href="http://mapaoficinascert.appspot.com/" target="_blank">oficinas de registro</a> para acreditar la identidad y continuar con la solicitud del certificado digital. Este paso tampoco será necesario si se está renovando el certificado y no han pasado más de 5 años desde la última vez que se acreditó la identidad.</p>
+
+<p>Para ello, deberá presentar el DNI o pasaporte y, si es ciudadano extranjero, el NIE, junto con el código de solicitud que el usuario ha debido recibir en su correo electrónico.</p>
+
+<h3 id="2-3-descarga-del-certificado">2.3. Descarga del certificado</h3>
+
+<p>Una vez acreditada la identidad, ya sea por haber usado el <em>DNIe</em> en la solicitud o por haber acudido a alguna oficina de registro, se puede usar el código recibido por correo electrónico, el primer apellido y el número de DNI para descargar el certificado digital de persona física desde la <a href="https://www.sede.fnmt.gob.es/certificados/persona-fisica/obtener-certificado-software/descargar-certificado" target="_blank">web de descarga sin <em>DNIe</em></a> o la <a href="https://www.sede.fnmt.gob.es/certificados/persona-fisica/obtener-certificado-con-dnie/descargar-certificado" target="_blank">web de descarga con <em>DNIe</em></a>.</p>
+
+<h2 id="3-verificación-de-certificados">3. Verificación de certificados</h2>
+
+<p>La web de la <em>FNMT-RCM</em> también dispone de un servicio de verificación del estado y la validez de los certificados digitales que poseamos.</p>
+
+<p>Para ello, se puede visitar la <a href="https://www.sede.fnmt.gob.es/certificados/persona-fisica/verificar-estado" target="_blank">web de verificación</a> desde un navegador donde tengamos instalados los certificados a comprobar.</p>
+
+<h2 id="4-conclusiones">4. Conclusiones</h2>
+
+<p>Los certificados digitales de la <em>FNMT-RCM</em> permiten realizar las mismas gestiones que los certificados que contiene el <em>DNIe</em> pero con un mayor alcance, ya que, además de para ciudadanos, también se emplean para Representantes legales, la Administración Pública y componentes como los servidores web <em>SSL/TLS</em>.</p>
+
+<p>Su principal ventaja es la facilidad de uso así como la compatibilidad con distintos equipos y sistemas operativos. Además, si se dispone de un <em>DNIe</em>, es especialmente cómoda la obtención de un certificado de persona física ya que la acreditación de la identidad se puede comprobar sin tener que acudir físicamente a una oficina de registro.</p>
+
+<p>Como contrapartida, requieren de la aplicación de ciertas medidas de seguridad ya que, per se, no son tan seguros como los del <em>DNIe</em>.</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:unnecessary">este paso no es necesario en las últimas versiones de Firefox porque ya viene instalada de serie
+ <a class="footnote-return" href="#fnref:unnecessary"><sup>^</sup></a></li>
+</ol>
+</div>
+
+    </div>
+  </div>
+
+</article>
+
+<div class="container">
+  <nav>
+  <ul class="pager">
+    
+    <li class="previous"><a href="http://www.alejandrolopezparra.es/post/dnie/"><span
+      aria-hidden="true">&larr;</span> DNI electrónico y certificados digitales</a></li>
+    
+
+    
+  </ul>
+</nav>
+
+</div>
+
+<div class="article-container">
+  
+
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2017 Alejandro López Parra &middot; 
+
+      Powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic
+      theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.2/imagesloaded.pkgd.min.js" integrity="sha512-iHzEu7GbSc705hE2skyH6/AlTpOfBmkx7nUqTLGzPYR+C1tRaItbRlJ7hT/D3YQ9SV0fqLKzp4XY9wKulTBGTw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js" integrity="sha512-Z5heTz36xTemt1TbtbfXtTq5lMfYnOkXM2/eWcTTiLU01+Sw4ku1i7vScDc8fWhrP2abz9GQzgKH5NGBLoYlAw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/ScrollToPlugin.min.js" integrity="sha512-CDeU7pRtkPX6XJtF/gcFWlEwyaX7mcAp5sO3VIu/ylsdR74wEw4wmBpD5yYTrmMAiAboi9thyBUr1vXRPA7t0Q==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+
+    
+    
+
+  </body>
+</html>
+

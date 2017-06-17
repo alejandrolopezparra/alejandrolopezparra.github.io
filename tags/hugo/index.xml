@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Alejandro López Parra</title>
+    <link>http://www.alejandrolopezparra.es/tags/hugo/</link>
+    <description>Recent content in Hugo on Alejandro López Parra</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <copyright>&amp;copy; 2017 Alejandro López Parra</copyright>
+    <lastBuildDate>Sat, 28 Jan 2017 15:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/hugo/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Crear websites estáticos con Hugo</title>
+      <link>http://www.alejandrolopezparra.es/post/hugo/</link>
+      <pubDate>Sat, 28 Jan 2017 15:00:00 +0000</pubDate>
+      
+      <guid>http://www.alejandrolopezparra.es/post/hugo/</guid>
+      <description>
+
+&lt;p&gt;Como no podía ser de otra manera, inauguro esta web con un primer post que va dedicado a la tecnología que he usado para crear este sitio.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://gohugo.io&#34; target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt; es un framework que permite crear websites a base de contenido estático (HTML, JavaScript, CSS, &amp;hellip;), es decir, no se sustenta en el uso de servidores de aplicaciones o bases de datos. Lo contrario de lo que ocurre con los sistemas de gestión de contenidos o CMS habituales los cuales suelen estar basados en contenido dinámico: WordPress, Drupal, Joomla!, Dokuwiki, etc. Por suspuesto, esto, tiene sus ventajas e inconvenientes.&lt;/p&gt;
+
+&lt;h2 id=&#34;1-ventajas&#34;&gt;1. Ventajas:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Simplicidad&lt;/strong&gt;: sólo se necesita un servidor web que sirva las páginas webs y el resto de contenido estático, no hay servidores de bases de datos ni de aplicaciones.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ahorro económico&lt;/strong&gt;: no se requiere un servidor muy potente ya que las peticiones que tiene que servir son más ligeras, no hay accesos a bases de datos ni procesamientos complejos en el lado del servidor.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Seguridad&lt;/strong&gt;: como no se tiene que realizar procesamiento de los datos de entrada ni consultas a otros servicios en backend, la posibilidad de explotar alguna vulnerabilidad en el lado del servidor se reduce drásticamente.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multiplataforma&lt;/strong&gt;: es posible usar casi cualquier sistema operativo (&lt;a href=&#34;https://es.wikipedia.org/wiki/Windows&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Windows&lt;/em&gt;&lt;/a&gt;, &lt;a href=&#34;https://es.wikipedia.org/wiki/GNU/Linux&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;GNU/Linux&lt;/em&gt;&lt;/a&gt;, &lt;a href=&#34;https://es.wikipedia.org/wiki/MacOS&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;macOS&lt;/em&gt;&lt;/a&gt;, &lt;a href=&#34;https://es.wikipedia.org/wiki/FreeBSD&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;FreeBSD&lt;/em&gt;&lt;/a&gt;, etc.) y arquitectura (&lt;a href=&#34;https://es.wikipedia.org/wiki/X86-64&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;x64&lt;/em&gt;&lt;/a&gt;, &lt;a href=&#34;https://es.wikipedia.org/wiki/X86&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;x86&lt;/em&gt;&lt;/a&gt;, &lt;a href=&#34;https://es.wikipedia.org/wiki/Arquitectura_ARM&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;ARM&lt;/em&gt;&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multihosting&lt;/strong&gt;: al estar basado en contenido estático, se puede usar cualquier hosting web o CDN (Amazon S3, GitHub Pages, Dropbox, Heroku, GoDaddy, DreamHost, Netlify, Surge, Aerobatic, Firebase Hosting, Google Cloud Storage, Amazon CloudFront, &amp;hellip;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Personalización&lt;/strong&gt;: soporta el uso de &lt;a href=&#34;http://themes.gohugo.io/&#34; target=&#34;_blank&#34;&gt;themes&lt;/a&gt; o temas que permiten personalizar el aspecto del site de forma fácil manteniendo el contenido.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;2-inconvenientes&#34;&gt;2. Inconvenientes:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Funcionalidad limitada&lt;/strong&gt;: aunque con JS se puede implementar mucha funcionalidad en el lado del cliente, no es posible resolverlo todo. Hay cosas que sólo se pueden realizar en el lado del servidor: gestión de usuarios, comentarios, cestas de la compra, formularios de contacto, etc.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Gestión de contenidos simple&lt;/strong&gt;: no está pensado para que haya varios autores ni permite una gestión de contenidos compleja.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Curva de aprendizaje&lt;/strong&gt;: está basado en el lenguaje de marcado &lt;a href=&#34;https://es.wikipedia.org/wiki/Markdown&#34; target=&#34;_blank&#34;&gt;Markdown&lt;/a&gt; para la creación de contenido. No obstante, existen interfaces de usuarios (UI) que facilitan la creación de contenido en este lenguaje.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;conclusión&#34;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;Hugo es idóneo para crear páginas personales, blogs, portfolios y webs de documentación especialmente cuando sólo hay un autor pero no para sites más complejos. Hay mucha &lt;a href=&#34;https://gohugo.io/overview/introduction/&#34; target=&#34;_blank&#34;&gt;documentación&lt;/a&gt; en la web oficial incluyendo una &lt;a href=&#34;https://gohugo.io/overview/quickstart/&#34; target=&#34;_blank&#34;&gt;guía para principiantes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;En mi caso, he optado por personalizar la apariencia de &lt;a href=&#34;https://gohugo.io&#34; target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt; con el tema &lt;a href=&#34;http://themes.gohugo.io/academic/&#34; target=&#34;_blank&#34;&gt;academic&lt;/a&gt; por su simplicidad y estilo minimalista. En el &lt;a href=&#34;http://www.alejandrolopezparra.es/post/amazon_s3/&#34;&gt;próximo post&lt;/a&gt; abordaré el alojamiento del website con &lt;a href=&#34;https://aws.amazon.com/es/s3/&#34; target=&#34;_blank&#34;&gt;Amazon S3&lt;/a&gt; por su facilidad de uso y precio reducido.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

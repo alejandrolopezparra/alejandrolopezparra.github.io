@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Awstats on Alejandro López Parra</title>
+    <link>http://www.alejandrolopezparra.es/tags/awstats/</link>
+    <description>Recent content in Awstats on Alejandro López Parra</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <copyright>&amp;copy; 2017 Alejandro López Parra</copyright>
+    <lastBuildDate>Sat, 25 Mar 2017 16:39:03 +0100</lastBuildDate>
+    <atom:link href="/tags/awstats/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Generar estadísticas de websites con AWStats</title>
+      <link>http://www.alejandrolopezparra.es/post/awstats/</link>
+      <pubDate>Sat, 25 Mar 2017 16:39:03 +0100</pubDate>
+      
+      <guid>http://www.alejandrolopezparra.es/post/awstats/</guid>
+      <description>
+
+&lt;p&gt;Después del &lt;a href=&#34;http://www.alejandrolopezparra.es/post/amazon_s3_logs/&#34;&gt;anterior post&lt;/a&gt;, dedicado al registro de accesos a un website alojado en &lt;a href=&#34;http://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html&#34; target=&#34;_blank&#34;&gt;Amazon S3&lt;/a&gt; gracias a la característica &lt;a href=&#34;https://docs.aws.amazon.com/AmazonS3/latest/dev/ServerLogs.html&#34; target=&#34;_blank&#34;&gt;access logging&lt;/a&gt;, continuamos con lo realmente importante: &lt;strong&gt;el análisis de logs&lt;/strong&gt;. Esto es fundamental para obtener estadísticas de nuestro website y conocer qué uso, tanto legítimo como inapropiado, se hace de él desde Internet. Para llevarlo a cabo, se tratará la instalación, configuración y uso de la herramienta de software libre &lt;a href=&#34;http://www.awstats.org&#34; target=&#34;_blank&#34;&gt;AWStats&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;AWStats&lt;/em&gt; es un analizador de logs que genera estadísticas y gráficas en &lt;em&gt;HTML&lt;/em&gt; sobre el uso de servidores web, ftp, streaming y de correo. Éstos son algunos ejemplos de las estadísticas que es capaz de obtener a partir de los logs:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Número de visitas, de visitantes únicos y de robots.&lt;/li&gt;
+&lt;li&gt;Horas y días de la semana de más uso.&lt;/li&gt;
+&lt;li&gt;Países, ciudades y direcciones IP desde los que se accede.&lt;/li&gt;
+&lt;li&gt;Navegadores y sistemas operativos usados por los clientes.&lt;/li&gt;
+&lt;li&gt;Ranking de páginas más visitadas.&lt;/li&gt;
+&lt;li&gt;Errores HTTP.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Está escrito en &lt;em&gt;Perl&lt;/em&gt; y, por tanto, disponible para múltiples sistemas operativos (&lt;a href=&#34;https://es.wikipedia.org/wiki/GNU/Linux&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;GNU/Linux&lt;/em&gt;&lt;/a&gt;, &lt;a href=&#34;https://es.wikipedia.org/wiki/MacOS&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;macOS&lt;/em&gt;&lt;/a&gt;, &lt;a href=&#34;https://es.wikipedia.org/wiki/Microsoft_Windows&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Windows&lt;/em&gt;&lt;/a&gt;, etc.).&lt;/p&gt;
+
+&lt;p&gt;Básicamente tiene 2 modos de funcionamiento:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Common Gateway Interface (CGI)&lt;/strong&gt;: para ser integrado con un servidor web como &lt;em&gt;Apache HTTP Server&lt;/em&gt; o &lt;em&gt;nginx&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Línea de comandos (CLI)&lt;/strong&gt;: para ser ejecutado desde un intérprete de comandos.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;En el caso que nos ocupa, se usará desde la &lt;em&gt;CLI&lt;/em&gt; y sólo para analizar logs de acceso al servidor web de &lt;em&gt;Amazon S3&lt;/em&gt;. A continuación se describen los pasos para hacerlo funcionar: (1) descargar bases de datos de geolocalización, (2) instalar &lt;em&gt;Perl&lt;/em&gt;, (3) instalar y configurar &lt;em&gt;AWStats&lt;/em&gt;, y (4) generar informes con &lt;em&gt;AWStats&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;1-descargar-bases-de-datos-de-geolocalización&#34;&gt;1. Descargar bases de datos de geolocalización&lt;/h2&gt;
+
+&lt;p&gt;El primer paso a realizar es descargar la base de datos de geolocalización que se usará para poder obtener el país, sistema autónomo (ASN), organización, región y/o ciudad de cada una de las direcciones IP desde las que visiten nuestro website. &lt;em&gt;AWStats&lt;/em&gt; soporta tres proveedores de bases de datos:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://software77.net/geo-ip/&#34; target=&#34;_blank&#34;&gt;GeoIPFree&lt;/a&gt;: es gratuita y libre pero sólo proporciona base de datos para el &lt;a href=&#34;http://software77.net/geo-ip/?DL=4&#34; target=&#34;_blank&#34;&gt;país&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dev.maxmind.com/geoip/legacy/geolite/&#34; target=&#34;_blank&#34;&gt;MaxMind GeoLite&lt;/a&gt;: es gratuita y proporciona bases de datos para el &lt;a href=&#34;http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz&#34; target=&#34;_blank&#34;&gt;país&lt;/a&gt;, &lt;a href=&#34;http://download.maxmind.com/download/geoip/database/asnum/GeoIPASNum.dat.gz&#34; target=&#34;_blank&#34;&gt;ASN&lt;/a&gt; y &lt;a href=&#34;http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz&#34; target=&#34;_blank&#34;&gt;ciudad&lt;/a&gt;. Se actualizan el primer martes de cada mes.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dev.maxmind.com/geoip/legacy/&#34; target=&#34;_blank&#34;&gt;MaxMind GeoIP&lt;/a&gt;: es comercial y proporciona bases de datos para el país, ASN, organización, región y ciudad. Se actualizan todas las semanas.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;En este caso, optaremos por las 3 bases de datos de &lt;em&gt;MaxMind GeoLite&lt;/em&gt; así que, una vez descargadas, será necesario descomprimirlas:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;gunzip -f GeoIP.dat.gz GeoIPASNum.dat.gz GeoLiteCity.dat.gz&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;2-instalar-perl&#34;&gt;2. Instalar Perl&lt;/h2&gt;
+
+&lt;p&gt;La mayoría de los sistemas operativos vienen con el intérprete de &lt;em&gt;Perl&lt;/em&gt; pre-instalado o disponen de un instalador que facilita la labor. Éste es el caso de &lt;em&gt;macOS&lt;/em&gt;, que ya cuenta con &lt;em&gt;Perl&lt;/em&gt; como parte de las utilidades que acompañan al sistema operativo así que no es necesario instalarlo.&lt;/p&gt;
+
+&lt;p&gt;Sin embargo, además del intérprete de &lt;em&gt;Perl&lt;/em&gt;, es necesario disponer del módulo &lt;a href=&#34;http://search.cpan.org/~maxmind/Geo-IP-1.50/lib/Geo/IP.pm&#34; target=&#34;_blank&#34;&gt;Geo::IP&lt;/a&gt; de &lt;em&gt;MaxMind&lt;/em&gt; para &lt;em&gt;Perl&lt;/em&gt; de forma que &lt;em&gt;AWStats&lt;/em&gt; pueda hacer uso de sus bases de datos de geolocalización. En macOS y otros sistemas operativos, es tan fácil como ejecutar el comando &lt;a href=&#34;https://metacpan.org/pod/distribution/CPAN/scripts/cpan&#34; target=&#34;_blank&#34;&gt;cpan&lt;/a&gt; que viene con &lt;em&gt;Perl&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;cpan Geo::IP&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Si no disponemos de permisos de root/administrador o &lt;strong&gt;por seguridad&lt;/strong&gt;, podemos ejecutarlo con un usuario sin privilegios pero, antes, hay que instalar &lt;a href=&#34;https://metacpan.org/pod/local::lib&#34; target=&#34;_blank&#34;&gt;local::lib&lt;/a&gt; (un módulo de &lt;em&gt;Perl&lt;/em&gt; que permite instalar módulos en directorios locales). Para llevarlo a cabo, lo más recomendable es usar la &lt;a href=&#34;https://metacpan.org/pod/local::lib#The-bootstrapping-technique&#34; target=&#34;_blank&#34;&gt;técnica bootstrapping&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;3-instalar-y-configurar-awstats&#34;&gt;3. Instalar y configurar AWStats&lt;/h2&gt;
+
+&lt;p&gt;Ahora sí, una vez cubiertos todos los requisito previos, llega el momento de descargar &lt;em&gt;AWStats&lt;/em&gt; desde su &lt;a href=&#34;http://www.awstats.org/#DOWNLOAD&#34; target=&#34;_blank&#34;&gt;web oficial&lt;/a&gt; y descomprimirlo para posteriormente configurarlo según las &lt;a href=&#34;http://www.awstats.org/docs/awstats_setup.html&#34; target=&#34;_blank&#34;&gt;instrucciones oficiales&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Básicamente la configuración consiste en crear un fichero &lt;em&gt;awstats.$myserver.conf&lt;/em&gt; con todas las opciones de configuración necesarias y donde &lt;em&gt;$myserver&lt;/em&gt; es el nombre del servidor que aparecerán en los logs. Existen 2 posibilidades para llevarlo a cabo:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;El uso del script &lt;em&gt;awstats_configure.pl&lt;/em&gt;, que crea el fichero de configuración a partir de las respuestas a las preguntas que interactivamente realiza al usuario. Esta primera alternativa &lt;strong&gt;no es recomendable&lt;/strong&gt; a no ser que los logs que se pretendan analizar sean generados por un servidor web &lt;em&gt;Apache HTTP Server&lt;/em&gt; que esté instalado en la misma máquina que &lt;em&gt;AWStats&lt;/em&gt;, ya que intenta modificar directamente la configuración de dicho servidor y reiniciarlo después.&lt;/li&gt;
+&lt;li&gt;A partir del fichero de configuración de ejemplo que viene &lt;em&gt;awstats.model.conf&lt;/em&gt;, copiándolo como &lt;em&gt;awstats.$myserver.conf&lt;/em&gt; y modificando las valores por defecto de las opciones.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Aunque las opciones están bien documentadas en el fichero de configuración de ejemplo y en la &lt;a href=&#34;http://www.awstats.org/docs/awstats_config.html&#34; target=&#34;_blank&#34;&gt;web oficial&lt;/a&gt;, las más importantes son las siguientes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;En el apartado &lt;em&gt;MAIN SETUP SECTION&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;LogFile=&amp;quot;access.log&amp;quot;
+LogFormat=&amp;quot;%other %virtualname %time1 %host %extra1 %other %extra2 %url %methodurl %code %extra3 %bytesd %other %extra4 %extra5 %refererquot %uaquot %other&amp;quot;
+SiteDomain=&amp;quot;www.alejandrolopezparra.es&amp;quot;
+HostAliases=&amp;quot;localhost 127.0.0.1&amp;quot;
+DirIcons=&amp;quot;icon&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;En el apartado &lt;em&gt;PLUGINS&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;LoadPlugin=&amp;quot;geoip GEOIP_STANDARD GeoIP.dat&amp;quot;
+LoadPlugin=&amp;quot;geoip_city_maxmind GEOIP_STANDARD GeoLiteCity.dat&amp;quot;
+LoadPlugin=&amp;quot;geoip_asn_maxmind GEOIP_STANDARD GeoIPASNum.dat+http://enc.com.au/itools/autnum.php?asn=&amp;quot;
+LoadPlugin=&amp;quot;timezone CET&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;4-generar-informes-con-awstats&#34;&gt;4. Generar informes con AWStats&lt;/h2&gt;
+
+&lt;p&gt;Una vez que hemos conseguido instalar y configurar todas las herramientas necesarias, es el momento de generar los informes con las estadísticas desde los logs de nuestro website.&lt;/p&gt;
+
+&lt;p&gt;El primer paso es construir la base de datos de estadísticas para comprobar si hay algún error, con el comando:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;awstats.pl -config=$myserver -update&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Cuando esto se haya completado correctamente, ya se podrá solicitar a &lt;em&gt;AWStats&lt;/em&gt; que genere todos los informes posibles con el comando:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;awstats_buildstaticpages.pl -config=$myserver -update -month=all -configdir=$configdir -awstatsprog=$awstatsprog&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;donde&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;$myserver&lt;/em&gt; es el nombre del servidor tal y como aparece en los logs.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;$configdir&lt;/em&gt; es el directorio donde esté el fichero de configuración &lt;em&gt;awstats.$myserver.conf&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;$awstatsprog&lt;/em&gt; es la ruta al comando &lt;em&gt;awstats.pl&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;El resultado final son una serie de documentos HTML que contienen los informes general y detallados de cada una de las estadísticas que recopila &lt;em&gt;AWStats&lt;/em&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;awstats.$myserver.html&lt;/li&gt;
+&lt;li&gt;awstats.$myserver.alldomains.html&lt;/li&gt;
+&lt;li&gt;awstats.$myserver.allhosts.html&lt;/li&gt;
+&lt;li&gt;awstats.$myserver.lasthosts.html&lt;/li&gt;
+&lt;li&gt;awstats.$myserver.unknownip.html&lt;/li&gt;
+&lt;li&gt;awstats.$myserver.alllogins.html&lt;/li&gt;
+&lt;li&gt;awstats.$myserver.lastlogins.html&lt;/li&gt;
+&lt;li&gt;awstats.$myserver.allrobots.html&lt;/li&gt;
+&lt;li&gt;awstats.$myserver.lastrobots.html&lt;/li&gt;
+&lt;li&gt;awstats.$myserver.urldetail.html&lt;/li&gt;
+&lt;li&gt;awstats.$myserver.urlentry.html&lt;/li&gt;
+&lt;li&gt;awstats.$myserver.urlexit.html&lt;/li&gt;
+&lt;li&gt;awstats.$myserver.browserdetail.html&lt;/li&gt;
+&lt;li&gt;awstats.$myserver.osdetail.html&lt;/li&gt;
+&lt;li&gt;awstats.$myserver.unknownbrowser.html&lt;/li&gt;
+&lt;li&gt;awstats.$myserver.unknownos.html&lt;/li&gt;
+&lt;li&gt;awstats.$myserver.refererse.html&lt;/li&gt;
+&lt;li&gt;awstats.$myserver.refererpages.html&lt;/li&gt;
+&lt;li&gt;awstats.$myserver.keyphrases.html&lt;/li&gt;
+&lt;li&gt;awstats.$myserver.keywords.html&lt;/li&gt;
+&lt;li&gt;awstats.$myserver.errors404.html&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;conclusión&#34;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;Aunque &lt;em&gt;AWStats&lt;/em&gt; dispone de buena &lt;a href=&#34;http://www.awstats.org/docs/index.html&#34; target=&#34;_blank&#34;&gt;documentación oficial&lt;/a&gt;, no es nada sencillo ni intuitivo usar la herramienta por primera vez debido a la cantidad de opciones que ofrece.&lt;/p&gt;
+
+&lt;p&gt;No obstante, una vez superada esa fase, los informes generados por esta herramienta facilitan mucho el análisis de los logs. &lt;a href=&#34;http://www.nltechno.com/awstats/awstats.pl?config=destailleur.fr&#34; target=&#34;_blank&#34;&gt;Aquí&lt;/a&gt; se puede encontrar una demonstración de las estadísticas que puede recopilar.&lt;/p&gt;
+
+&lt;p&gt;Por supuesto, &lt;em&gt;AWStats&lt;/em&gt; no es la única alternativa para generar informes y estadísticas de nuestros logs. De hecho, la propia web oficial recoge una &lt;a href=&#34;http://www.awstats.org/docs/awstats_compare.html&#34; target=&#34;_blank&#34;&gt;comparación&lt;/a&gt; entre algunas de las herramientas que existen.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

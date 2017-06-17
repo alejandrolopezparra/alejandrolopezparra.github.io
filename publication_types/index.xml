@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publication_types on Alejandro López Parra</title>
+    <link>http://www.alejandrolopezparra.es/publication_types/</link>
+    <description>Recent content in Publication_types on Alejandro López Parra</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <copyright>&amp;copy; 2017 Alejandro López Parra</copyright>
+    <atom:link href="/publication_types/" rel="self" type="application/rss+xml" />
+    
+  </channel>
+</rss>

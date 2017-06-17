@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="es-es">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.23" />
+  
+  <meta name="description" content="Servicios Avanzados del CERT">
+
+  
+  
+  
+    
+  
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.0/css/academicons.min.css" integrity="sha512-GGGNUPDhnG8LEAEDsjqYIQns+Gu8RBs4j5XGlxl7UfRaZBhCCm5jenJkeJL8uPuOXGqgl8/H1gjlWQDRjd3cUQ==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather%7CRoboto+Mono">
+  <link rel="stylesheet" href="/css/hugo-academic.css">
+  
+  <link rel="stylesheet" href="/css/custom.css">
+  
+
+  
+
+  <link rel="alternate" href="http://www.alejandrolopezparra.es/index.xml" type="application/rss+xml" title="Alejandro López Parra">
+  <link rel="feed" href="http://www.alejandrolopezparra.es/index.xml" type="application/rss+xml" title="Alejandro López Parra">
+
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
+
+  <link rel="canonical" href="http://www.alejandrolopezparra.es/post/dnie/">
+
+  
+
+  <title>DNI electrónico y certificados digitales | Alejandro López Parra</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Barra de navegación</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Alejandro López Parra</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#posts">
+            
+            <span>Posts</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#about">
+            
+            <span>Bio</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+<div class="article-header">
+  <img src="/img/posts/DNIe.png" class="article-banner" itemprop="image">
+  
+</div>
+
+
+
+  <div class="article-container">
+    <h1 itemprop="name">DNI electrónico y certificados digitales</h1>
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="2017-04-22 13:33:10 &#43;0100 &#43;0100" itemprop="datePublished">
+      2017-04-22, Saturday
+    </time>
+  </span>
+
+  
+
+  
+  
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2fdnie%2f"
+         target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=DNI%20electr%c3%b3nico%20y%20certificados%20digitales&amp;url=http%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2fdnie%2f"
+         target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2fdnie%2f&amp;title=DNI%20electr%c3%b3nico%20y%20certificados%20digitales"
+         target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2fdnie%2f&amp;title=DNI%20electr%c3%b3nico%20y%20certificados%20digitales"
+         target="_blank">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=DNI%20electr%c3%b3nico%20y%20certificados%20digitales&amp;body=http%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2fdnie%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<p>El <a href="https://www.dnielectronico.es" target="_blank">Documento Nacional de Identidad electrónico español (<em>DNIe</em>)</a> es emitido por la Dirección General de la Policía (<em>DGP</em>) y responde a la necesidad de otorgar identidad personal a los ciudadanos españoles para su uso en la <a href="https://es.wikipedia.org/wiki/Sociedad_de_la_informaci%C3%B3n" target="_blank">Sociedad de la Información</a>. Permite acreditar la identidad de los intervinientes en las comunicaciones electrónicas así como asegurar su procedencia e integridad. De este modo, es posible realizar <strong>gestiones de forma segura a través de Internet</strong> tanto con la Administración Pública como con las entidades privadas que lo adopten.</p>
+
+<p>En este artículo se describirán sus principales características y algunos servicios online donde se puede usar. También se indicarán los pasos para hacerlo funcionar correctamente en el sistema operativo <a href="https://es.wikipedia.org/wiki/MacOS" target="_blank"><em>macOS</em></a> de Apple.</p>
+
+<h2 id="1-características-del-dnie">1. Características del <em>DNIe</em></h2>
+
+<h3 id="1-1-fundamentos-básicos">1.1. Fundamentos básicos</h3>
+
+<p>El <em>DNIe</em> se basa en principios matemáticos de criptografía aplicados a los sistemas de información para que éstos se puedan usar de forma segura. <a href="https://es.wikipedia.org/wiki/Infraestructura_de_clave_p%C3%BAblica" target="_blank">Infraestructura de clave pública (PKI)</a>, <a href="https://es.wikipedia.org/wiki/Certificado_digital" target="_blank">certificados digitales</a> y <a href="https://es.wikipedia.org/wiki/Criptograf%C3%ADa_asim%C3%A9trica" target="_blank">criptografía de clave pública o asimétrica</a> son los principales. Éstos permiten garantizar características básicas de la seguridad de la información: <a href="https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#Autenticaci.C3.B3n_o_autentificaci.C3.B3n" target="_blank">Autenticación</a>, <a href="https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#Confidencialidad" target="_blank">Confidencialidad</a>, <a href="https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#Disponibilidad" target="_blank">Disponibilidad</a>, <a href="https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#Integridad" target="_blank">Integridad</a> y <a href="https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#No_repudio_o_irrefutabilidad" target="_blank">No repudio</a>.</p>
+
+<p>De forma resumida, podríamos <a href="https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_103" target="_blank">describir el <em>DNIe</em></a> como una <a href="https://es.wikipedia.org/wiki/Tarjeta_inteligente" target="_blank">tarjeta inteligente o smart card</a> que incorpora un chip criptográfico capaz de almacenar de forma segura la misma información que se encuentra impresa, las imágenes digitalizadas de la fotografía, firma manuscrita e impresiones dactilares. De la misma forma, contiene 2 certificados digitales denominados <em>AUTENTICACIÓN</em> y <em>FIRMA</em> con sus correspondientes claves privadas que están protegidas por una clave personal de acceso (<em>PIN</em>) alfanumérica. Es importante notar que, aunque el <em>DNIe</em> tiene una vigencia de 10 años desde el momento de su expedición, los certificados digitales almacenados internamente <strong>caducan a los 30 meses</strong> y, por tanto, <strong>deben ser renovados en una comisaría de policía</strong> para que sigan siendo válidos.</p>
+
+<p>El chip criptográfico posibilita las siguientes funciones cuando sus certificados digitales están en vigor y se conoce el <em>PIN</em>:</p>
+
+<ul>
+<li>Acreditar electrónicamente y de forma inequívoca la identidad de la persona. Es una <strong>Autenticación</strong> de doble factor, algo que se tiene (el certificado digital <em>AUTENTICACIÓN</em> que va dentro del <em>DNIe</em>) y algo que se conoce (el <em>PIN</em>).</li>
+<li>Firmar digitalmente documentos electrónicos, otorgándoles validez jurídica. Se usa el <em>PIN</em> y el certificado digital <em>FIRMA</em> para proporcionar <strong>Integridad</strong> y <strong>No repudio</strong>.</li>
+</ul>
+
+<p>Se pueden encontrar más detalles técnicos revisando las características <a href="https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_083" target="_blank">electrónicas</a> y <a href="https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_084" target="_blank">físicas</a> del <em>DNIe</em>.</p>
+
+<h3 id="1-3-versiones">1.3. Versiones</h3>
+
+<p>Existen 2 variantes distintas del <em>DNIe</em>.</p>
+
+<ul>
+<li><p>La <a href="https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_106" target="_blank">primera</a> apareció por primera vez en el año 2006 y dejó de expedirse en 2015.
+
+<figure >
+    
+        <img src="https://www.dnielectronico.es/img/dnie_descrip.jpg" />
+    
+    
+    <figcaption>
+        <h4>DNIe</h4>
+        
+    </figcaption>
+    
+</figure>
+</p></li>
+
+<li><p>Desde 2016 se empezó a emitir el denominado <a href="https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_103" target="_blank"><em>DNI 3.0</em></a>.
+
+<figure >
+    
+        <img src="https://www.dnielectronico.es/img/DNI_PERSPECTIVA_3.jpg" />
+    
+    
+    <figcaption>
+        <h4>DNI 3.0</h4>
+        
+    </figcaption>
+    
+</figure>
+</p></li>
+</ul>
+
+<p>Ambas versiones son válidas a día de hoy pero tienen <a href="https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_038" target="_blank">algunas diferencias</a>. La principales ventajas del <em>DNI 3.0</em> son las siguientes:</p>
+
+<ul>
+<li>Dispone de <strong>mejores medidas de seguridad físicas</strong> que dificultan aún más su falsificación.</li>
+<li>Permite el <strong>uso desde smartphones y tablets</strong> a través de la tecnología de comunicación inalámbrica de corto alcance y alta frecuencia <a href="https://es.wikipedia.org/wiki/Near_field_communication" target="_blank"><em>NFC</em></a>. Como medida de protección adicional, incorpora un número de autenticación de tarjeta (<em>Card Authentication Number</em> o <em>CAN</em>).</li>
+<li>Presenta una estructura de datos <strong>equivalente al pasaporte</strong> que posibilita usarlo como Documento de Viaje en los países que disponen de Pasos Rápidos de Frontera (<em>ABC Systems</em>).</li>
+</ul>
+
+<h3 id="1-2-requisitos">1.2. Requisitos</h3>
+
+<p>Para poder hacer uso del <em>DNIe</em> es necesario cumplir algunos requisitos físicos (<em>hardware</em>) y lógicos (<em>software</em>):</p>
+
+<ul>
+<li>Se debe tener alguno de los siguientes elementos <em>hardware</em>:
+
+<ul>
+<li><strong>Lector con contacto</strong>: un lector de tarjetas inteligentes que cumpla el estándar <em>ISO-7816 (1/2/3)</em> y sea compatible con <em>API PC/SC</em> (<em>Personal Computer/Smart Card</em>), <em>CSP</em> (<em>Cryptographic Service Provider</em> de <em>Microsoft</em>), <em>API PKCS#11</em>.</li>
+<li><strong>Lector sin contacto</strong>: un dispositivo <em>NFC</em> cumpla el estándar <em>ISO 14443</em>, tipo A o B. La mayoría de los <em>smartphones</em> y <em>tablets</em> lo son.</li>
+</ul></li>
+</ul>
+
+
+<figure >
+    
+        <img src="https://www.dnielectronico.es/img/LECTORES%20PARA%20DNI_FINAL.jpg" />
+    
+    
+    <figcaption>
+        <h4>Lectores DNIe</h4>
+        
+    </figcaption>
+    
+</figure>
+
+
+<ul>
+<li>Elementos software necesarios:
+
+<ul>
+<li>En el caso de usar <strong>lectores con contacto</strong>:
+
+<ul>
+<li>Sistema operativo (<em>Windows</em>, <em>GNU/Linux</em>, <em>macOS</em>).</li>
+<li>Navegador (<em>Internet Explorer</em>, <em>Chrome</em>, <em>Firefox</em>) con los <a href="https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_076" target="_blank">certificados raíz de la <em>DGP</em></a>.</li>
+<li>Controlador (driver) para el lector. Suele venir junto con el sistema operativo aunque algunos lectores necesitan uno específico creado por el fabricante.</li>
+<li>Controlador (driver) criptográfico específico para el <em>DNIe</em>: <a href="https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_1101" target="_blank"><em>Smart Card Mini-Driver</em></a> en <em>Windows</em> o <a href="https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_1110" target="_blank"><em>PKCS#11</em></a> en otros sistemas operativos como <em>GNU/Linux</em> o <em>macOS</em>.</li>
+</ul></li>
+<li>En el caso de usar <strong>lectores sin contacto</strong>:
+
+<ul>
+<li>Sistema operativo (<em>Android</em>, <em>iOS</em>).</li>
+<li>Aplicación compatible con <em>DNI 3.0</em>.</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h2 id="2-usos-del-dnie">2. Usos del <em>DNIe</em></h2>
+
+<p>Como se comentaba al principio del artículo, el <em>DNIe</em> posibilita realizar <strong>gestiones de forma segura a través de Internet</strong> tanto con la Administración Pública como con algunas entidades privadas que lo han adoptado.</p>
+
+<p>En la <a href="https://www.dnielectronico.es" target="_blank">web del dnielectronico</a> se recoge un listado exhaustivo de servicios disponibles de la <a href="https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_510" target="_blank">Administración General del Estado</a>, <a href="https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_520" target="_blank">Comunidades Autónomas</a>, <a href="https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_530" target="_blank">Administración Local</a>, <a href="https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_540" target="_blank">otros organismos públicos</a> y el <a href="https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_550" target="_blank">sector privado</a>.</p>
+
+<p>De todos ellos, algunos de los más importantes son los siguientes:</p>
+
+<ul>
+<li>Servicios electrónicos de la <a href="https://sede.administracion.gob.es/PAG_Sede/ServiciosElectronicos/ServiciosElectronicosAGE.html" target="_blank">Administración General Estado</a>.</li>
+<li>Sede electrónica de la <a href="https://sede.seg-social.gob.es/" target="_blank">Seguridad Social</a>.</li>
+<li>Sede electrónica de la <a href="https://www.agenciatributaria.gob.es/AEAT.sede/Inicio/Inicio.shtml" target="_blank">Agencia Tributaria</a>.</li>
+</ul>
+
+<h2 id="3-el-dnie-en-macos">3. El <em>DNIe</em> en <em>macOS</em></h2>
+
+<p>Además de disponer de un lector compatible, se necesitan completar algunos pasos para que el <em>DNIe</em> sea reconocido y funcione correctamente en <em>macOS</em>. Lo más recomendable es seguir las instrucciones que se describen en el <a href="https://www.dnielectronico.es/PDFs/manuales_instalacion_unix/Manual_de_Instalacion_de_MulticardPKCS11_DNIE_V1.pdf" target="_blank">manual de instalación</a> publicado por la <em>DGP</em>.</p>
+
+<h3 id="3-1-instalar-firefox">3.1. Instalar <em>Firefox</em></h3>
+
+<p>A día de hoy, el único navegador soportado por el <em>DNIe</em> en <em>macOS</em> es <em>Mozilla Firefox</em> por lo que tendremos que descargar la versión de Escritorio desde su <a href="https://www.mozilla.org/es-ES/firefox/desktop/" target="_blank">web oficial</a> e instalarlo.</p>
+
+<h3 id="3-2-driver-pcks-11">3.2. Driver <em>PCKS#11</em></h3>
+
+<p>A continuación debemos instalar el driver <em>PKCS#11</em> compatible con el <em>DNIe</em> que se puede descargar desde el <a href="https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_1113" target="_blank">área de descargas</a> de la web del dnielectronico.</p>
+
+<p>Una vez instalado el driver, se debe configurar <em>Firefox</em> para que pueda usar el <em>DNIe</em> con un lector:</p>
+
+<ul>
+<li>Ir a <em>Firefox &gt; Preferencias &gt; Avanzado &gt; Cifrado &gt; Dispositivos de seguridad</em>.</li>
+<li>Seleccionar <em>Cargar</em>.</li>
+<li>Asignar un nombre al módulo, por ejemplo, <em>DNIe</em>.</li>
+<li>Indicar la ruta hacia el driver, <code>/Library/Libpkcs11-dnie/lib/libpkcs11-dnie.so</code></li>
+<li>Hacer clic en <em>Aceptar</em>.</li>
+</ul>
+
+<h3 id="3-3-instalar-los-certificados-de-la-policía">3.3. Instalar los certificados de la policía</h3>
+
+<p>Para que <em>Firefox</em> no dé errores de verificación es necesario instalar los <a href="https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_077" target="_blank">certificados de las Autoridades de Certificación raíz</a> de la <em>DGP</em> y aprobar cada uno de ellos para los siguientes usos:</p>
+
+<ul>
+<li>Identificar páginas web.</li>
+<li>Usuarios de correo electrónico.</li>
+<li>Desarrolladores de aplicaciones.</li>
+</ul>
+
+<p>Aunque no es estrictamente necesario, sí que es recomendable repetir el paso anterior con los <a href="https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_078" target="_blank">certificados de las Autoridades de Certificación subordinadas</a> de la <em>DGP</em>.</p>
+
+<h3 id="3-4-verificar-que-funciona">3.4. Verificar que funciona</h3>
+
+<p>Una vez completados todos los pasos de instalación y preparación del sistema para el uso del <em>DNIe</em>, es el momento de comprobar que funciona correctamente. Para ello debemos utilizar un servicio denominado <em>Autoridad de Validación</em> y, según se indica en la <a href="https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_320" target="_blank">sección de validación</a> de la web del dnielectronico, hay 2 prestadores de servicio de validación para el <em>DNIe</em>:</p>
+
+<ul>
+<li><a href="https://www.sede.fnmt.gob.es/certificados/persona-fisica/verificar-estado" target="_blank">Fábrica Nacional de Moneda y Timbre - Real Casa de la Moneda (FNMT-RCM)</a>.</li>
+<li><a href="https://valide.redsara.es/valide/" target="_blank">@FIRMA</a>.</li>
+</ul>
+
+<p>Estos servicios nos permitirán, además, conocer el estado de los certificados que van dentro del <em>DNIe</em>:</p>
+
+<ul>
+<li><strong>Válido</strong>: el certificado digital no ha sido revocado ni ha expirado.</li>
+<li><strong>Revocado</strong>: el certificado digital ha sido invalidado por la <em>DGP</em>. Esto suele ocurrir al generar un nuevo <em>DNIe</em> o renovar sus certificados digitales.</li>
+<li><strong>Expirado</strong>: se ha superado la fecha en la que caduca el certificado digital y debería renovarse en una comisaría de policía.</li>
+</ul>
+
+<h2 id="4-conclusiones">4. Conclusiones</h2>
+
+<p>En los últimos años, a través de la <a href="http://www.agendadigital.gob.es" target="_blank">Agenda Digital para España</a>, el gobierno español está impulsando distintos planes en materia de Tecnologías de la Información y las Comunicaciones (TIC) y de Administración Electrónica para el cumplimiento de los objetivos de la Agenda Digital para Europa e incorpora objetivos específicos para el desarrollo de la economía y la sociedad digital en España.</p>
+
+<p>El <em>DNIe</em> forma parte de estos planes ya que es una herramienta que permite a los ciudadanos españoles su <strong>identificación digital o electrónica segura</strong> frente a la administración pública y las empresas privadas, posibilitando el acceso a los servicios de la <a href="https://es.wikipedia.org/wiki/Sociedad_de_la_informaci%C3%B3n" target="_blank">Sociedad de la Información</a>.</p>
+
+<p>Aunque su uso no es todo lo sencillo que debería especialmente en equipos que no disponen de <em>Windows</em>, una vez que se consigue que funcione correctamente, permite realizar multitud de gestiones electrónicas tanto con la Administración Pública como con el sector privado, sobre todo bancos y entidades financieras.</p>
+
+    </div>
+  </div>
+
+</article>
+
+<div class="container">
+  <nav>
+  <ul class="pager">
+    
+    <li class="previous"><a href="http://www.alejandrolopezparra.es/post/awstats/"><span
+      aria-hidden="true">&larr;</span> Generar estadísticas de websites con AWStats</a></li>
+    
+
+    
+    <li class="next"><a href="http://www.alejandrolopezparra.es/post/fnmt/">Certificados digitales de la FNMT-RCM <span
+      aria-hidden="true">&rarr;</span></a></li>
+    
+  </ul>
+</nav>
+
+</div>
+
+<div class="article-container">
+  
+
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2017 Alejandro López Parra &middot; 
+
+      Powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic
+      theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.2/imagesloaded.pkgd.min.js" integrity="sha512-iHzEu7GbSc705hE2skyH6/AlTpOfBmkx7nUqTLGzPYR+C1tRaItbRlJ7hT/D3YQ9SV0fqLKzp4XY9wKulTBGTw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js" integrity="sha512-Z5heTz36xTemt1TbtbfXtTq5lMfYnOkXM2/eWcTTiLU01+Sw4ku1i7vScDc8fWhrP2abz9GQzgKH5NGBLoYlAw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/ScrollToPlugin.min.js" integrity="sha512-CDeU7pRtkPX6XJtF/gcFWlEwyaX7mcAp5sO3VIu/ylsdR74wEw4wmBpD5yYTrmMAiAboi9thyBUr1vXRPA7t0Q==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+
+    
+    
+
+  </body>
+</html>
+

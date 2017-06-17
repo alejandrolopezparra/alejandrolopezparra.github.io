@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es-es">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.23" />
+  
+  <meta name="description" content="Servicios Avanzados del CERT">
+
+  
+  
+  
+    
+  
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.0/css/academicons.min.css" integrity="sha512-GGGNUPDhnG8LEAEDsjqYIQns+Gu8RBs4j5XGlxl7UfRaZBhCCm5jenJkeJL8uPuOXGqgl8/H1gjlWQDRjd3cUQ==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather%7CRoboto+Mono">
+  <link rel="stylesheet" href="/css/hugo-academic.css">
+  
+  <link rel="stylesheet" href="/css/custom.css">
+  
+
+  
+
+  <link rel="alternate" href="http://www.alejandrolopezparra.es/index.xml" type="application/rss+xml" title="Alejandro López Parra">
+  <link rel="feed" href="http://www.alejandrolopezparra.es/index.xml" type="application/rss+xml" title="Alejandro López Parra">
+
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
+
+  <link rel="canonical" href="http://www.alejandrolopezparra.es/post/awstats/">
+
+  
+
+  <title>Generar estadísticas de websites con AWStats | Alejandro López Parra</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Barra de navegación</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Alejandro López Parra</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#posts">
+            
+            <span>Posts</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#about">
+            
+            <span>Bio</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+<div class="article-header">
+  <img src="/img/posts/AWStats.png" class="article-banner" itemprop="image">
+  
+</div>
+
+
+
+  <div class="article-container">
+    <h1 itemprop="name">Generar estadísticas de websites con AWStats</h1>
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="2017-03-25 16:39:03 &#43;0100 CET" itemprop="datePublished">
+      2017-03-25, Saturday
+    </time>
+  </span>
+
+  
+
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/awstats">awstats</a
+    >, 
+    
+    <a href="/tags/amazon">amazon</a
+    >, 
+    
+    <a href="/tags/web">web</a
+    >
+    
+  </span>
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2fawstats%2f"
+         target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Generar%20estad%c3%adsticas%20de%20websites%20con%20AWStats&amp;url=http%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2fawstats%2f"
+         target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2fawstats%2f&amp;title=Generar%20estad%c3%adsticas%20de%20websites%20con%20AWStats"
+         target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2fawstats%2f&amp;title=Generar%20estad%c3%adsticas%20de%20websites%20con%20AWStats"
+         target="_blank">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Generar%20estad%c3%adsticas%20de%20websites%20con%20AWStats&amp;body=http%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2fawstats%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<p>Después del <a href="/post/amazon_s3_logs/">anterior post</a>, dedicado al registro de accesos a un website alojado en <a href="http://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html" target="_blank">Amazon S3</a> gracias a la característica <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/ServerLogs.html" target="_blank">access logging</a>, continuamos con lo realmente importante: <strong>el análisis de logs</strong>. Esto es fundamental para obtener estadísticas de nuestro website y conocer qué uso, tanto legítimo como inapropiado, se hace de él desde Internet. Para llevarlo a cabo, se tratará la instalación, configuración y uso de la herramienta de software libre <a href="http://www.awstats.org" target="_blank">AWStats</a>.</p>
+
+<p><em>AWStats</em> es un analizador de logs que genera estadísticas y gráficas en <em>HTML</em> sobre el uso de servidores web, ftp, streaming y de correo. Éstos son algunos ejemplos de las estadísticas que es capaz de obtener a partir de los logs:</p>
+
+<ul>
+<li>Número de visitas, de visitantes únicos y de robots.</li>
+<li>Horas y días de la semana de más uso.</li>
+<li>Países, ciudades y direcciones IP desde los que se accede.</li>
+<li>Navegadores y sistemas operativos usados por los clientes.</li>
+<li>Ranking de páginas más visitadas.</li>
+<li>Errores HTTP.</li>
+</ul>
+
+<p>Está escrito en <em>Perl</em> y, por tanto, disponible para múltiples sistemas operativos (<a href="https://es.wikipedia.org/wiki/GNU/Linux" target="_blank"><em>GNU/Linux</em></a>, <a href="https://es.wikipedia.org/wiki/MacOS" target="_blank"><em>macOS</em></a>, <a href="https://es.wikipedia.org/wiki/Microsoft_Windows" target="_blank"><em>Windows</em></a>, etc.).</p>
+
+<p>Básicamente tiene 2 modos de funcionamiento:</p>
+
+<ul>
+<li><strong>Common Gateway Interface (CGI)</strong>: para ser integrado con un servidor web como <em>Apache HTTP Server</em> o <em>nginx</em>.</li>
+<li><strong>Línea de comandos (CLI)</strong>: para ser ejecutado desde un intérprete de comandos.</li>
+</ul>
+
+<p>En el caso que nos ocupa, se usará desde la <em>CLI</em> y sólo para analizar logs de acceso al servidor web de <em>Amazon S3</em>. A continuación se describen los pasos para hacerlo funcionar: (1) descargar bases de datos de geolocalización, (2) instalar <em>Perl</em>, (3) instalar y configurar <em>AWStats</em>, y (4) generar informes con <em>AWStats</em>.</p>
+
+<h2 id="1-descargar-bases-de-datos-de-geolocalización">1. Descargar bases de datos de geolocalización</h2>
+
+<p>El primer paso a realizar es descargar la base de datos de geolocalización que se usará para poder obtener el país, sistema autónomo (ASN), organización, región y/o ciudad de cada una de las direcciones IP desde las que visiten nuestro website. <em>AWStats</em> soporta tres proveedores de bases de datos:</p>
+
+<ul>
+<li><a href="http://software77.net/geo-ip/" target="_blank">GeoIPFree</a>: es gratuita y libre pero sólo proporciona base de datos para el <a href="http://software77.net/geo-ip/?DL=4" target="_blank">país</a>.</li>
+<li><a href="http://dev.maxmind.com/geoip/legacy/geolite/" target="_blank">MaxMind GeoLite</a>: es gratuita y proporciona bases de datos para el <a href="http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz" target="_blank">país</a>, <a href="http://download.maxmind.com/download/geoip/database/asnum/GeoIPASNum.dat.gz" target="_blank">ASN</a> y <a href="http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz" target="_blank">ciudad</a>. Se actualizan el primer martes de cada mes.</li>
+<li><a href="http://dev.maxmind.com/geoip/legacy/" target="_blank">MaxMind GeoIP</a>: es comercial y proporciona bases de datos para el país, ASN, organización, región y ciudad. Se actualizan todas las semanas.</li>
+</ul>
+
+<p>En este caso, optaremos por las 3 bases de datos de <em>MaxMind GeoLite</em> así que, una vez descargadas, será necesario descomprimirlas:</p>
+
+<p><code>gunzip -f GeoIP.dat.gz GeoIPASNum.dat.gz GeoLiteCity.dat.gz</code></p>
+
+<h2 id="2-instalar-perl">2. Instalar Perl</h2>
+
+<p>La mayoría de los sistemas operativos vienen con el intérprete de <em>Perl</em> pre-instalado o disponen de un instalador que facilita la labor. Éste es el caso de <em>macOS</em>, que ya cuenta con <em>Perl</em> como parte de las utilidades que acompañan al sistema operativo así que no es necesario instalarlo.</p>
+
+<p>Sin embargo, además del intérprete de <em>Perl</em>, es necesario disponer del módulo <a href="http://search.cpan.org/~maxmind/Geo-IP-1.50/lib/Geo/IP.pm" target="_blank">Geo::IP</a> de <em>MaxMind</em> para <em>Perl</em> de forma que <em>AWStats</em> pueda hacer uso de sus bases de datos de geolocalización. En macOS y otros sistemas operativos, es tan fácil como ejecutar el comando <a href="https://metacpan.org/pod/distribution/CPAN/scripts/cpan" target="_blank">cpan</a> que viene con <em>Perl</em>.</p>
+
+<p><code>cpan Geo::IP</code></p>
+
+<p>Si no disponemos de permisos de root/administrador o <strong>por seguridad</strong>, podemos ejecutarlo con un usuario sin privilegios pero, antes, hay que instalar <a href="https://metacpan.org/pod/local::lib" target="_blank">local::lib</a> (un módulo de <em>Perl</em> que permite instalar módulos en directorios locales). Para llevarlo a cabo, lo más recomendable es usar la <a href="https://metacpan.org/pod/local::lib#The-bootstrapping-technique" target="_blank">técnica bootstrapping</a>.</p>
+
+<h2 id="3-instalar-y-configurar-awstats">3. Instalar y configurar AWStats</h2>
+
+<p>Ahora sí, una vez cubiertos todos los requisito previos, llega el momento de descargar <em>AWStats</em> desde su <a href="http://www.awstats.org/#DOWNLOAD" target="_blank">web oficial</a> y descomprimirlo para posteriormente configurarlo según las <a href="http://www.awstats.org/docs/awstats_setup.html" target="_blank">instrucciones oficiales</a>.</p>
+
+<p>Básicamente la configuración consiste en crear un fichero <em>awstats.$myserver.conf</em> con todas las opciones de configuración necesarias y donde <em>$myserver</em> es el nombre del servidor que aparecerán en los logs. Existen 2 posibilidades para llevarlo a cabo:</p>
+
+<ul>
+<li>El uso del script <em>awstats_configure.pl</em>, que crea el fichero de configuración a partir de las respuestas a las preguntas que interactivamente realiza al usuario. Esta primera alternativa <strong>no es recomendable</strong> a no ser que los logs que se pretendan analizar sean generados por un servidor web <em>Apache HTTP Server</em> que esté instalado en la misma máquina que <em>AWStats</em>, ya que intenta modificar directamente la configuración de dicho servidor y reiniciarlo después.</li>
+<li>A partir del fichero de configuración de ejemplo que viene <em>awstats.model.conf</em>, copiándolo como <em>awstats.$myserver.conf</em> y modificando las valores por defecto de las opciones.</li>
+</ul>
+
+<p>Aunque las opciones están bien documentadas en el fichero de configuración de ejemplo y en la <a href="http://www.awstats.org/docs/awstats_config.html" target="_blank">web oficial</a>, las más importantes son las siguientes:</p>
+
+<ul>
+<li><p>En el apartado <em>MAIN SETUP SECTION</em></p>
+
+<pre><code>LogFile=&quot;access.log&quot;
+LogFormat=&quot;%other %virtualname %time1 %host %extra1 %other %extra2 %url %methodurl %code %extra3 %bytesd %other %extra4 %extra5 %refererquot %uaquot %other&quot;
+SiteDomain=&quot;www.alejandrolopezparra.es&quot;
+HostAliases=&quot;localhost 127.0.0.1&quot;
+DirIcons=&quot;icon&quot;
+</code></pre></li>
+
+<li><p>En el apartado <em>PLUGINS</em></p>
+
+<pre><code>LoadPlugin=&quot;geoip GEOIP_STANDARD GeoIP.dat&quot;
+LoadPlugin=&quot;geoip_city_maxmind GEOIP_STANDARD GeoLiteCity.dat&quot;
+LoadPlugin=&quot;geoip_asn_maxmind GEOIP_STANDARD GeoIPASNum.dat+http://enc.com.au/itools/autnum.php?asn=&quot;
+LoadPlugin=&quot;timezone CET&quot;
+</code></pre></li>
+</ul>
+
+<h2 id="4-generar-informes-con-awstats">4. Generar informes con AWStats</h2>
+
+<p>Una vez que hemos conseguido instalar y configurar todas las herramientas necesarias, es el momento de generar los informes con las estadísticas desde los logs de nuestro website.</p>
+
+<p>El primer paso es construir la base de datos de estadísticas para comprobar si hay algún error, con el comando:</p>
+
+<p><code>awstats.pl -config=$myserver -update</code></p>
+
+<p>Cuando esto se haya completado correctamente, ya se podrá solicitar a <em>AWStats</em> que genere todos los informes posibles con el comando:</p>
+
+<p><code>awstats_buildstaticpages.pl -config=$myserver -update -month=all -configdir=$configdir -awstatsprog=$awstatsprog</code></p>
+
+<p>donde</p>
+
+<ul>
+<li><em>$myserver</em> es el nombre del servidor tal y como aparece en los logs.</li>
+<li><em>$configdir</em> es el directorio donde esté el fichero de configuración <em>awstats.$myserver.conf</em>.</li>
+<li><em>$awstatsprog</em> es la ruta al comando <em>awstats.pl</em>.</li>
+</ul>
+
+<p>El resultado final son una serie de documentos HTML que contienen los informes general y detallados de cada una de las estadísticas que recopila <em>AWStats</em>:</p>
+
+<ul>
+<li>awstats.$myserver.html</li>
+<li>awstats.$myserver.alldomains.html</li>
+<li>awstats.$myserver.allhosts.html</li>
+<li>awstats.$myserver.lasthosts.html</li>
+<li>awstats.$myserver.unknownip.html</li>
+<li>awstats.$myserver.alllogins.html</li>
+<li>awstats.$myserver.lastlogins.html</li>
+<li>awstats.$myserver.allrobots.html</li>
+<li>awstats.$myserver.lastrobots.html</li>
+<li>awstats.$myserver.urldetail.html</li>
+<li>awstats.$myserver.urlentry.html</li>
+<li>awstats.$myserver.urlexit.html</li>
+<li>awstats.$myserver.browserdetail.html</li>
+<li>awstats.$myserver.osdetail.html</li>
+<li>awstats.$myserver.unknownbrowser.html</li>
+<li>awstats.$myserver.unknownos.html</li>
+<li>awstats.$myserver.refererse.html</li>
+<li>awstats.$myserver.refererpages.html</li>
+<li>awstats.$myserver.keyphrases.html</li>
+<li>awstats.$myserver.keywords.html</li>
+<li>awstats.$myserver.errors404.html</li>
+</ul>
+
+<h2 id="conclusión">Conclusión</h2>
+
+<p>Aunque <em>AWStats</em> dispone de buena <a href="http://www.awstats.org/docs/index.html" target="_blank">documentación oficial</a>, no es nada sencillo ni intuitivo usar la herramienta por primera vez debido a la cantidad de opciones que ofrece.</p>
+
+<p>No obstante, una vez superada esa fase, los informes generados por esta herramienta facilitan mucho el análisis de los logs. <a href="http://www.nltechno.com/awstats/awstats.pl?config=destailleur.fr" target="_blank">Aquí</a> se puede encontrar una demonstración de las estadísticas que puede recopilar.</p>
+
+<p>Por supuesto, <em>AWStats</em> no es la única alternativa para generar informes y estadísticas de nuestros logs. De hecho, la propia web oficial recoge una <a href="http://www.awstats.org/docs/awstats_compare.html" target="_blank">comparación</a> entre algunas de las herramientas que existen.</p>
+
+    </div>
+  </div>
+
+</article>
+
+<div class="container">
+  <nav>
+  <ul class="pager">
+    
+    <li class="previous"><a href="http://www.alejandrolopezparra.es/post/amazon_s3_logs/"><span
+      aria-hidden="true">&larr;</span> Logs de acceso a websites en Amazon S3</a></li>
+    
+
+    
+    <li class="next"><a href="http://www.alejandrolopezparra.es/post/dnie/">DNI electrónico y certificados digitales <span
+      aria-hidden="true">&rarr;</span></a></li>
+    
+  </ul>
+</nav>
+
+</div>
+
+<div class="article-container">
+  
+
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2017 Alejandro López Parra &middot; 
+
+      Powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic
+      theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.2/imagesloaded.pkgd.min.js" integrity="sha512-iHzEu7GbSc705hE2skyH6/AlTpOfBmkx7nUqTLGzPYR+C1tRaItbRlJ7hT/D3YQ9SV0fqLKzp4XY9wKulTBGTw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js" integrity="sha512-Z5heTz36xTemt1TbtbfXtTq5lMfYnOkXM2/eWcTTiLU01+Sw4ku1i7vScDc8fWhrP2abz9GQzgKH5NGBLoYlAw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/ScrollToPlugin.min.js" integrity="sha512-CDeU7pRtkPX6XJtF/gcFWlEwyaX7mcAp5sO3VIu/ylsdR74wEw4wmBpD5yYTrmMAiAboi9thyBUr1vXRPA7t0Q==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+
+    
+    
+
+  </body>
+</html>
+
