@@ -7,8 +7,59 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
     <copyright>&amp;copy; 2017 Alejandro López Parra</copyright>
-    <lastBuildDate>Sat, 28 Jan 2017 15:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 11 Feb 2017 12:00:00 +0000</lastBuildDate>
     <atom:link href="/tags/hugo/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Alojar websites estáticos en Amazon Simple Storage Service (S3)</title>
+      <link>http://www.alejandrolopezparra.es/post/amazon_s3/</link>
+      <pubDate>Sat, 11 Feb 2017 12:00:00 +0000</pubDate>
+      
+      <guid>http://www.alejandrolopezparra.es/post/amazon_s3/</guid>
+      <description>
+
+&lt;p&gt;Como continuación al &lt;a href=&#34;http://www.alejandrolopezparra.es/post/hugo/&#34;&gt;primer post&lt;/a&gt; en el que hablaba de &lt;a href=&#34;https://gohugo.io&#34; target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt;, el framework usado para la creación de esta web, me gustaría seguir comentando otra de las tecnologías en las que se apoya. En esta ocasión es el turno del servicio &lt;a href=&#34;http://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html&#34; target=&#34;_blank&#34;&gt;Amazon Simple Storage Service (S3)&lt;/a&gt; que pertenece a la plataforma de servicios en la nube &lt;a href=&#34;https://aws.amazon.com/es/what-is-aws/&#34; target=&#34;_blank&#34;&gt;Amazon Web Services (AWS)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Amazon S3&lt;/em&gt; es un servicio de pago para almacenamiento en la nube al estilo de &lt;a href=&#34;https://www.dropbox.com&#34; target=&#34;_blank&#34;&gt;Dropbox&lt;/a&gt;, &lt;a href=&#34;https://drive.google.com&#34; target=&#34;_blank&#34;&gt;Google Drive&lt;/a&gt; o &lt;a href=&#34;https://onedrive.live.com/about/es-es/&#34; target=&#34;_blank&#34;&gt;Microsoft OneDrive&lt;/a&gt;. Además de almacenar ficheros y directorios, &lt;strong&gt;permite alojar websites de contenido estático&lt;/strong&gt;, es decir, webs que se basan en HyperText Markup Language (HTML), JavaScript (JS) y Cascading Style Sheets (CSS). El contenido no es generado dinámicamente en cada solicitud que se realiza al servidor y, por tanto, no son necesarios ni servidores de aplicaciones ni de bases de datos. Sólo se requiere un servidor web que sirva el contenido según se le vaya solicitando. Afortunadamente, gracias a tecnologías que se ejecutan en el lado del cliente como JS y CSS, se puede conseguir cierto dinamismo en cómo se muestra el contenido aunque éste sea servido de forma estática.&lt;/p&gt;
+
+&lt;p&gt;A continuación se describen los 2 pasos que hay que realizar para poder publicar una web estática: (1) alojar el website y (2) asociar un dominio.&lt;/p&gt;
+
+&lt;h2 id=&#34;1-alojar-un-website-estático-en-amazon-s3&#34;&gt;1. Alojar un website estático en Amazon S3&lt;/h2&gt;
+
+&lt;p&gt;La capacidad de alojamiento de webs estáticas de &lt;em&gt;Amazon S3&lt;/em&gt; está explicada en detalle &lt;a href=&#34;https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html&#34; target=&#34;_blank&#34;&gt;aquí&lt;/a&gt; pero, en resumen, nos permite lo siguiente:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Crear un contenedor o depósito denominado &lt;a href=&#34;http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingBucket.html&#34; target=&#34;_blank&#34;&gt;Bucket&lt;/a&gt; que está físicamente en una &lt;a href=&#34;http://docs.aws.amazon.com/general/latest/gr/rande.html#s3_website_region_endpoints&#34; target=&#34;_blank&#34;&gt;región&lt;/a&gt; o CPD de Amazon. &lt;em&gt;Los Buckets tienen que tener un nombre único en una región y ese nombre debe coincidir con el dominio DNS que pretandamos registrar posteriormente&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Almacenar los ficheros HTML y demás recursos webs asociados en dicho Bucket.&lt;/li&gt;
+&lt;li&gt;Publicar el Bucket a través de un &lt;a href=&#34;http://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteEndpoints.html&#34; target=&#34;_blank&#34;&gt;Endpoint&lt;/a&gt;. Un Endpoint apunta a un Bucket concreto que se encuentra en una región en particular. En mi caso es &lt;a href=&#34;http://www.alejandrolopezparra.es.s3-website-eu-west-1.amazonaws.com&#34; target=&#34;_blank&#34;&gt;www.alejandrolopezparra.es.s3-website-eu-west-1.amazonaws.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Configurar cuál es la página &lt;a href=&#34;https://docs.aws.amazon.com/AmazonS3/latest/dev/IndexDocumentSupport.html&#34; target=&#34;_blank&#34;&gt;index&lt;/a&gt; (página que se cargará por defecto) y la que se muestra en caso de &lt;a href=&#34;https://docs.aws.amazon.com/AmazonS3/latest/dev/CustomErrorDocSupport.html&#34; target=&#34;_blank&#34;&gt;error&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Activar los &lt;a href=&#34;https://docs.aws.amazon.com/AmazonS3/latest/dev/ServerLogs.html&#34; target=&#34;_blank&#34;&gt;ficheros de logs&lt;/a&gt; para registrar los accesos que se produzcan al servidor. Más información sobre esto en el post dedicado a los &lt;a href=&#34;http://www.alejandrolopezparra.es/post/amazon_s3_logs/&#34;&gt;logs de Amazon S3&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;También contamos con un &lt;a href=&#34;https://console.aws.amazon.com/quickstart-website/new&#34; target=&#34;_blank&#34;&gt;asistente o guía rápida&lt;/a&gt; que nos facilita el proceso de alojamiento de un nuevo website.&lt;/p&gt;
+
+&lt;h2 id=&#34;2-asociar-un-dominio-propio&#34;&gt;2. Asociar un dominio propio&lt;/h2&gt;
+
+&lt;p&gt;Una vez tenemos nuestro website alojado en un Bucket y lo hemos publicado en un Endpoint, es el momento de asociarle un nombre de un dominio propio, por ejemplo &lt;a href=&#34;http://www.alejandrolopezparra.es&#34; target=&#34;_blank&#34;&gt;www.alejandrolopezparra.es&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Para lograrlo es necesario &lt;strong&gt;registrar el dominio&lt;/strong&gt; en un registrador de dominios y &lt;strong&gt;crear un nombre en ese dominio&lt;/strong&gt; a través de un servicio DNS que apunte al Endpoint definido anteriormente mediante lo que se conoce como alias. De esta forma, cuando un navegador web intente resolver dicho nombre, recibirá como respuesta el endpoint donde tenemos alojado nuestro website. Lo habitual es crear un alias para el subdominio &lt;em&gt;www&lt;/em&gt; aunque en algunos proveedores DNS también es posible crear un alias para el dominio raíz. Es muy importante tener en cuenta que &lt;em&gt;cada alias tiene que apuntar a un Endpoint concreto y el nombre del alias debe coincidir con el nombre del Endpoint&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Existen multitud de registradores de dominios y muchos de ellos también proporcionan servicios DNS. Amazon ofrece estos servicios a través de &lt;a href=&#34;https://aws.amazon.com/es/route53/&#34; target=&#34;_blank&#34;&gt;Amazon Route 53&lt;/a&gt; y dispone de una &lt;a href=&#34;https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html#root-domain-walkthrough-switch-to-route53-as-dnsprovider&#34; target=&#34;_blank&#34;&gt;guía&lt;/a&gt; en la que explican cómo llevarlo a cabo. Otro prestador muy conocido de este tipo de servicios es &lt;a href=&#34;http://dyn.com&#34; target=&#34;_blank&#34;&gt;Dyn&lt;/a&gt;. En mi caso, uso &lt;a href=&#34;https://es.godaddy.com&#34; target=&#34;_blank&#34;&gt;GoDaddy&lt;/a&gt; para ambas cosas aunque tiene la pega de no permitir alias del dominio raíz por lo que sólo se pueden usar en los subdominios.&lt;/p&gt;
+
+&lt;h2 id=&#34;conclusión&#34;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Amazon S3&lt;/em&gt; permite el alojamiento de websites estáticos de forma fácil y con precios económicos, especialmente el primer año que es &lt;a href=&#34;https://aws.amazon.com/es/free/&#34; target=&#34;_blank&#34;&gt;gratuito&lt;/a&gt;. A partir de ahí, el modelo de negocio se basa en pago por uso de almacenamiento y trasferencia de datos (tanto de subida como de descarga). Para webs personales o con poco tráfico es idóneo porque la factura es muy baja si no hay muchas visitas. Incluso te permite definir alertas cuando el sistema prevee que se pueden superar ciertos umbrales.&lt;/p&gt;
+
+&lt;p&gt;Existen otras alternativas que merecerían la pena explorar para valorar la que mejor se adapta a las necesidades de cada uno:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cloud.google.com/storage/&#34; target=&#34;_blank&#34;&gt;Google Cloud Storage&lt;/a&gt; con su &lt;a href=&#34;https://cloud.google.com/storage/docs/hosting-static-website&#34; target=&#34;_blank&#34;&gt;guía&lt;/a&gt;. De pago.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pages.github.com&#34; target=&#34;_blank&#34;&gt;Github Pages&lt;/a&gt; que dispone de un &lt;a href=&#34;https://gohugo.io/tutorials/github-pages-blog/&#34; target=&#34;_blank&#34;&gt;tutorial para Hugo&lt;/a&gt;. Gratuito.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bitbucket.org/&#34; target=&#34;_blank&#34;&gt;BitBucket&lt;/a&gt; que también tiene un &lt;a href=&#34;https://gohugo.io/tutorials/hosting-on-bitbucket/&#34; target=&#34;_blank&#34;&gt;tutorial para Hugo&lt;/a&gt;. Gratuito.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://about.gitlab.com/&#34; target=&#34;_blank&#34;&gt;GitLab&lt;/a&gt; que también ofrece un &lt;a href=&#34;https://gohugo.io/tutorials/hosting-on-gitlab/&#34; target=&#34;_blank&#34;&gt;tutorial para Hugo&lt;/a&gt;. Gratuito.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Crear websites estáticos con Hugo</title>

@@ -418,7 +418,7 @@
 
 &lt;p&gt;La mayoría de los sistemas operativos vienen con el intérprete de &lt;em&gt;Perl&lt;/em&gt; pre-instalado o disponen de un instalador que facilita la labor. Éste es el caso de &lt;em&gt;macOS&lt;/em&gt;, que ya cuenta con &lt;em&gt;Perl&lt;/em&gt; como parte de las utilidades que acompañan al sistema operativo así que no es necesario instalarlo.&lt;/p&gt;
 
-&lt;p&gt;Sin embargo, además del intérprete de &lt;em&gt;Perl&lt;/em&gt;, es necesario disponer del módulo &lt;a href=&#34;http://search.cpan.org/~maxmind/Geo-IP-1.50/lib/Geo/IP.pm&#34; target=&#34;_blank&#34;&gt;Geo::IP&lt;/a&gt; de &lt;em&gt;MaxMind&lt;/em&gt; para &lt;em&gt;Perl&lt;/em&gt; de forma que &lt;em&gt;AWStats&lt;/em&gt; pueda hacer uso de sus bases de datos de geolocalización. En macOS y otros sistemas operativos, es tan fácil como ejecutar el comando &lt;a href=&#34;https://metacpan.org/pod/distribution/CPAN/scripts/cpan&#34; target=&#34;_blank&#34;&gt;cpan&lt;/a&gt; que viene con &lt;em&gt;Perl&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Sin embargo, además del intérprete de &lt;em&gt;Perl&lt;/em&gt;, es necesario disponer del módulo &lt;a href=&#34;http://search.cpan.org/~maxmind/Geo-IP-1.50/lib/Geo/IP.pm&#34; target=&#34;_blank&#34;&gt;Geo::IP&lt;/a&gt; de &lt;em&gt;MaxMind&lt;/em&gt; para &lt;em&gt;Perl&lt;/em&gt; de forma que &lt;em&gt;AWStats&lt;/em&gt; pueda hacer uso de sus bases de datos de geolocalización. En &lt;em&gt;macOS&lt;/em&gt; y otros sistemas operativos, es tan fácil como ejecutar el comando &lt;a href=&#34;https://metacpan.org/pod/distribution/CPAN/scripts/cpan&#34; target=&#34;_blank&#34;&gt;cpan&lt;/a&gt; que viene con &lt;em&gt;Perl&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;cpan Geo::IP&lt;/code&gt;&lt;/p&gt;
 
@@ -629,9 +629,9 @@ LoadPlugin=&amp;quot;timezone CET&amp;quot;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://cloud.google.com/storage/&#34; target=&#34;_blank&#34;&gt;Google Cloud Storage&lt;/a&gt; con su &lt;a href=&#34;https://cloud.google.com/storage/docs/hosting-static-website&#34; target=&#34;_blank&#34;&gt;guía&lt;/a&gt;. De pago.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://pages.github.com&#34; target=&#34;_blank&#34;&gt;Github Pages&lt;/a&gt; que dispone de un &lt;a href=&#34;https://gohugo.io/tutorials/github-pages-blog/&#34; target=&#34;_blank&#34;&gt;tutorial&lt;/a&gt; para &lt;a href=&#34;https://gohugo.io&#34; target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt;. Gratuito.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://bitbucket.org/&#34; target=&#34;_blank&#34;&gt;BitBucket&lt;/a&gt; que también tiene un &lt;a href=&#34;https://gohugo.io/tutorials/hosting-on-bitbucket/&#34; target=&#34;_blank&#34;&gt;tutorial&lt;/a&gt; para &lt;a href=&#34;https://gohugo.io&#34; target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt;. Gratuito.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://about.gitlab.com/&#34; target=&#34;_blank&#34;&gt;GitLab&lt;/a&gt; que también ofrece un &lt;a href=&#34;https://gohugo.io/tutorials/hosting-on-gitlab/&#34; target=&#34;_blank&#34;&gt;tutorial&lt;/a&gt; para &lt;a href=&#34;https://gohugo.io&#34; target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt;. Gratuito.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pages.github.com&#34; target=&#34;_blank&#34;&gt;Github Pages&lt;/a&gt; que dispone de un &lt;a href=&#34;https://gohugo.io/tutorials/github-pages-blog/&#34; target=&#34;_blank&#34;&gt;tutorial para Hugo&lt;/a&gt;. Gratuito.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bitbucket.org/&#34; target=&#34;_blank&#34;&gt;BitBucket&lt;/a&gt; que también tiene un &lt;a href=&#34;https://gohugo.io/tutorials/hosting-on-bitbucket/&#34; target=&#34;_blank&#34;&gt;tutorial para Hugo&lt;/a&gt;. Gratuito.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://about.gitlab.com/&#34; target=&#34;_blank&#34;&gt;GitLab&lt;/a&gt; que también ofrece un &lt;a href=&#34;https://gohugo.io/tutorials/hosting-on-gitlab/&#34; target=&#34;_blank&#34;&gt;tutorial para Hugo&lt;/a&gt;. Gratuito.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
