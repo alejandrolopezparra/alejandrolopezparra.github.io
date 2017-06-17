@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es-es">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.23" />
+  
+  <meta name="description" content="Servicios Avanzados del CERT">
+
+  
+  
+  
+    
+  
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.0/css/academicons.min.css" integrity="sha512-GGGNUPDhnG8LEAEDsjqYIQns+Gu8RBs4j5XGlxl7UfRaZBhCCm5jenJkeJL8uPuOXGqgl8/H1gjlWQDRjd3cUQ==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather%7CRoboto+Mono">
+  <link rel="stylesheet" href="/css/hugo-academic.css">
+  
+  <link rel="stylesheet" href="/css/custom.css">
+  
+
+  
+
+  <link rel="alternate" href="http://www.alejandrolopezparra.es/index.xml" type="application/rss+xml" title="Alejandro López Parra">
+  <link rel="feed" href="http://www.alejandrolopezparra.es/index.xml" type="application/rss+xml" title="Alejandro López Parra">
+
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
+
+  <link rel="canonical" href="http://www.alejandrolopezparra.es/post/github_pages/">
+
+  
+
+  <title>Alojar websites estáticos en GitHub Pages | Alejandro López Parra</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Barra de navegación</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Alejandro López Parra</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#posts">
+            
+            <span>Posts</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#about">
+            
+            <span>Bio</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+<div class="article-header">
+  <img src="/img/posts/GitHub-Pages.png" class="article-banner" itemprop="image">
+  
+</div>
+
+
+
+  <div class="article-container">
+    <h1 itemprop="name">Alojar websites estáticos en GitHub Pages</h1>
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="2017-05-27 12:00:00 &#43;0200 CEST" itemprop="datePublished">
+      2017-05-27, Saturday
+    </time>
+  </span>
+
+  
+
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/github">github</a
+    >, 
+    
+    <a href="/tags/amazon">amazon</a
+    >, 
+    
+    <a href="/tags/hugo">hugo</a
+    >, 
+    
+    <a href="/tags/web">web</a
+    >
+    
+  </span>
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2fgithub_pages%2f"
+         target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Alojar%20websites%20est%c3%a1ticos%20en%20GitHub%20Pages&amp;url=http%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2fgithub_pages%2f"
+         target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2fgithub_pages%2f&amp;title=Alojar%20websites%20est%c3%a1ticos%20en%20GitHub%20Pages"
+         target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2fgithub_pages%2f&amp;title=Alojar%20websites%20est%c3%a1ticos%20en%20GitHub%20Pages"
+         target="_blank">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Alojar%20websites%20est%c3%a1ticos%20en%20GitHub%20Pages&amp;body=http%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2fgithub_pages%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<p>Como alternativa a <a href="http://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html" target="_blank">Amazon Simple Storage Service (S3)</a> que <a href="/post/amazon_s3/">ya traté</a>, a continuación abordaré el servicio <a href="https://pages.github.com/" target="_blank">GitHub Pages</a> que pertenece a la plataforma <a href="https://github.com/" target="_blank">GitHub</a> de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones <a href="https://es.wikipedia.org/wiki/Git" target="_blank"><em>Git</em></a>.</p>
+
+<p><em>GitHub Pages</em> es un servicio gratuito que <strong>permite alojar websites de contenido estático</strong>, es decir, webs que se basan en <em>HyperText Markup Language</em> (<em>HTML</em>), <em>JavaScript</em> (<em>JS</em>) y <em>Cascading Style Sheets</em> (<em>CSS</em>). El contenido no es generado dinámicamente en cada solicitud que se realiza al servidor y, por tanto, no son necesarios ni servidores de aplicaciones ni de bases de datos. Sólo se requiere un servidor web que sirva el contenido según se le vaya solicitando. Afortunadamente, gracias a tecnologías que se ejecutan en el lado del cliente como JS y CSS, se puede conseguir cierto dinamismo en cómo se muestra el contenido aunque éste sea servido de forma estática.</p>
+
+<p>A continuación se describen sus características y los pasos que hay que realizar para poder publicar una web estática en <em>GitHub Pages</em> (alojar el website y asociar un dominio).</p>
+
+<h2 id="1-características-de-github-pages">1. Características de <em>GitHub Pages</em></h2>
+
+<p><em>GitHub Pages</em> dispone de varios <a href="https://help.github.com/articles/github-s-billing-plans/" target="_blank">tipos de cuentas o planes</a>:</p>
+
+<ul>
+<li><a href="https://github.com/pricing" target="_blank">Privada</a>: tiene un coste mensual que permite que los ficheros se alojen de forma privada entre otras ventajas.</li>
+<li>Gratuita: todos los ficheros alojados son públicos.</li>
+</ul>
+
+<p>Se contemplan <strong>3 tipos de páginas web</strong> que pueden ser alojadas en repositorios de <em>GitHub</em>:</p>
+
+<ul>
+<li>Personal.</li>
+<li>De organización.</li>
+<li>De proyectos.</li>
+</ul>
+
+<p>Se explican las diferencias entre estos tipos de páginas web en este <a href="https://help.github.com/articles/user-organization-and-project-pages/" target="_blank">artículo oficial</a>.</p>
+
+<p>Los <strong>límites de uso</strong> de <em>GitHub Pages</em> son los siguientes:</p>
+
+<ul>
+<li>Las páginas web no pueden ocupar más de 1 GygaByte.</li>
+<li>El ancho de banda que puede consumir está limitado a 100 GygaBytes al mes.</li>
+<li>El número de actualizaciones está limitado a 10 por hora.</li>
+</ul>
+
+<p>Dispone de <strong>estadísticas básicas</strong> de tráfico y red que nos permiten saber el uso que se está haciendo de la web. No obstante, no permite el registro de logs y, por tanto, no se pueden obtener estadísticas avanzadas como la información de los visitantes (direcciones IP, países, etc.) o las páginas más visitadas. La alternativa sería contar con un servicio de terceros como <a href="https://analytics.google.com" target="_blank"><em>Google Analytics</em></a>.</p>
+
+<p>Por otro lado, dispone de algunas <strong>opciones avanzadas</strong>:</p>
+
+<ul>
+<li>Crear <a href="https://help.github.com/articles/creating-a-custom-404-page-for-your-github-pages-site/" target="_blank">páginas de error personalizadas</a>.</li>
+<li>Tiene <a href="https://help.github.com/articles/mime-types-on-github-pages/" target="_blank">soporte para cientos de tipos MIME</a>.</li>
+<li>Usar <a href="https://help.github.com/articles/using-submodules-with-pages/" target="_blank">submódulos dentro de las páginas</a>.</li>
+</ul>
+
+<h2 id="2-alojar-un-website-estático-en-github-pages">2. Alojar un website estático en <em>GitHub Pages</em></h2>
+
+<p>La capacidad de alojamiento de webs estáticas de <em>GitHub Pages</em> está explicada de forma sencilla en <a href="https://pages.github.com/" target="_blank">este tutorial oficial</a>.</p>
+
+<p>El proceso para un website personal sería el siguiente:</p>
+
+<ol>
+<li><strong>Registrar o acceder</strong> a una <a href="https://github.com/login" target="_blank">cuenta de <em>GitHub</em></a>.</li>
+<li><strong>Crear un contenedor de ficheros</strong> denominado <em>Repository</em>. Para que pueda usarse para alojar un website, tiene que tener un nombre especial <em>nombre.github.io</em>, donde <em>nombre</em> debe coincidir con el nombre de usuario de la cuenta de <em>GitHub</em>, que servirá como <em>Endpoint</em>. En mi caso es <em>alejandrolopezparra.github.io</em>.</li>
+
+<li><p>Aunque <em>GitHub</em> permite <strong>crear y editar contenido</strong> directamente a través de la web de <em>GitHub</em>, lo más conveniente es usar alguna herramienta que facilite esta tarea, como <a href="https://gohugo.io/" target="_blank">Hugo</a> de la que <a href="/post/hugo/">ya hablamos</a>. Para ello, previamente sería necesario clonar el <em>Repository</em> recién creado en local con un <a href="https://git-scm.com/" target="_blank">cliente <em>Git</em></a>. Si se usa el cliente de línea de comandos, habría que ejecutar:</p>
+
+<p><code>git clone https://github.com/nombre/nombre.github.io</code></p></li>
+
+<li><p>Una vez tengamos generados los ficheros HTML y demás recursos webs asociados, es el momento de <strong>alojar el contenido estático</strong> en el <em>Repository</em> creado con un cliente <em>Git</em>. Si se usa el cliente de línea de comandos, habría que ejecutar los siguientes:</p>
+
+<p><code>git add --all</code></p>
+
+<p><code>git commit -m &quot;Initial commit&quot;</code></p>
+
+<p><code>git push -u origin master</code></p></li>
+</ol>
+
+<p>Sólo con esos tres pasos, ya tendríamos nuestra página web personal accesible a través de un <em>Endpoint</em> seguro <em>HTTPS</em>://nombre.github.io donde <em>nombre</em> se corresponde con el nombre de usuario de la cuenta de <em>GitHub</em>. En mi caso, es <a href="https://alejandrolopezparra.github.io" target="_blank">https://alejandrolopezparra.github.io</a>.</p>
+
+<p>Para el caso concreto de <em>Hugo</em>, contamos con un <a href="https://gohugo.io/tutorials/github-pages-blog/" target="_blank">tutorial</a> que trata el despliegue en <em>GitHub Pages</em> de páginas web basadas en <em>Hugo</em> tanto personales como de organizaciones y también de proyectos.</p>
+
+<h2 id="3-asociar-un-dominio-propio">3. Asociar un dominio propio</h2>
+
+<p>Una vez tenemos nuestro website alojado en un <em>Repository</em> y publicado en un <em>Endpoint</em> de <em>GitHub</em>, es el momento de que podamos asociarle un nombre de un dominio personalizado como, por ejemplo, <a href="http://www.alejandrolopezparra.es" target="_blank">www.alejandrolopezparra.es</a>. El único inconveniente de este paso es que perderemos la opción de usar <em>HTTPS</em> ya que <em>GitHub Pages</em> sólo puede usarlo con el domino <em>github.io</em><sup class="footnote-ref" id="fnref:Cloudflare"><a rel="footnote" href="#fn:Cloudflare">1</a></sup>.</p>
+
+<p>Para lograrlo es necesario lo siguiente:</p>
+
+<ol>
+<li><strong>Registrar el dominio</strong> en un registrador de dominios.</li>
+<li><strong>Crear un nombre en ese dominio</strong> a través de un servicio <em>DNS</em> que apunte al <em>Endpoint</em> definido anteriormente mediante lo que se conoce como alias o <a href="https://en.wikipedia.org/wiki/CNAME_record" target="_blank"><em>registro CNAME</em></a>.</li>
+<li><strong>Configurar el nombre de dominio</strong> en <em>GitHub Pages</em> en las propiedades del <em>Repository</em> tal y como se indica <a href="https://help.github.com/articles/adding-or-removing-a-custom-domain-for-your-github-pages-site/" target="_blank">aquí</a>.</li>
+</ol>
+
+<p>De esta forma, cuando un navegador web intente resolver dicho nombre, recibirá como respuesta el <em>Endpoint</em> donde tenemos alojado nuestro website. Lo habitual es <a href="https://help.github.com/articles/setting-up-a-www-subdomain/" target="_blank">crear un alias para el subdominio <em>www</em></a> aunque en algunos proveedores DNS también es posible <a href="https://help.github.com/articles/setting-up-an-apex-domain/" target="_blank">crear un alias para el dominio raíz</a>. Gracias a esto, se puede acceder tanto a <a href="http://www.alejandrolopezparra.es" target="_blank">www.alejandrolopezparra.es</a> como a <a href="http://alejandrolopezparra.es" target="_blank">alejandrolopezparra.es</a>, siendo habitualmente este último una redirección al primero.</p>
+
+<p>En el caso de <em>GitHub Pages</em>, si nuestro proveedor <em>DNS</em> no permite alias para el dominio raíz, tenemos la opción de conseguir el mismo efecto <a href="https://help.github.com/articles/setting-up-an-apex-domain/#configuring-a-records-with-your-dns-provider" target="_blank">a través de registros de tipo A</a>.</p>
+
+<p>Existen multitud de registradores de dominios y muchos de ellos también proporcionan servicios <em>DNS</em>. <em>Amazon</em> ofrece estos servicios a través de <a href="https://aws.amazon.com/es/route53/" target="_blank"><em>Amazon Route 53</em></a> y dispone de una <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html#root-domain-walkthrough-switch-to-route53-as-dnsprovider" target="_blank">guía</a> en la que explican cómo llevarlo a cabo. Otro prestador muy conocido de este tipo de servicios es <a href="http://dyn.com" target="_blank"><em>Dyn</em></a>. En mi caso, uso <a href="https://es.godaddy.com" target="_blank"><em>GoDaddy</em></a> para ambas cosas aunque tiene la pega de no permitir alias del dominio raíz.</p>
+
+<h2 id="4-conclusión">4. Conclusión</h2>
+
+<p><em>GitHubs Pages</em> permite el alojamiento de websites estáticos de forma fácil y gratuita. Para webs personales o con un tráfico moderado es idóneo ya que tiene unos límites de uso suficientemente elevados.</p>
+
+<p>Desde mi punto de vista, su mayor inconveniente es que no dispone de estadísticas avanzadas de uso ni permite registrar los logs de las visitas para obtenerlas sin la necesidad de un servicio de estadísticas externo.</p>
+
+<p>En cualquier caso, <em>Amazon S3</em> y <em>GitHub Pages</em> no son las únicas alternativas:</p>
+
+<ul>
+<li><a href="https://cloud.google.com/storage/" target="_blank">Google Cloud Storage</a> con su <a href="https://cloud.google.com/storage/docs/hosting-static-website" target="_blank">guía</a>. De pago.</li>
+<li><a href="https://bitbucket.org/" target="_blank">BitBucket</a> que también tiene un <a href="https://gohugo.io/tutorials/hosting-on-bitbucket/" target="_blank">tutorial para Hugo</a>. Gratuito.</li>
+<li><a href="https://about.gitlab.com/" target="_blank">GitLab</a> que también ofrece un <a href="https://gohugo.io/tutorials/hosting-on-gitlab/" target="_blank">tutorial para Hugo</a>. Gratuito.</li>
+</ul>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:Cloudflare">Habría una alternativa que es usar <a href="https://www.goyllo.com/github/pages/free-cloudflare-ssl-for-custom-domain/" target="_blank"><em>GitHub Pages</em> con <em>Cloudflare</em></a>.
+ <a class="footnote-return" href="#fnref:Cloudflare"><sup>^</sup></a></li>
+</ol>
+</div>
+
+    </div>
+  </div>
+
+</article>
+
+<div class="container">
+  <nav>
+  <ul class="pager">
+    
+    <li class="previous"><a href="http://www.alejandrolopezparra.es/post/fnmt/"><span
+      aria-hidden="true">&larr;</span> Certificados digitales de la FNMT-RCM</a></li>
+    
+
+    
+  </ul>
+</nav>
+
+</div>
+
+<div class="article-container">
+  
+
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2017 Alejandro López Parra &middot; 
+
+      Powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic
+      theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.2/imagesloaded.pkgd.min.js" integrity="sha512-iHzEu7GbSc705hE2skyH6/AlTpOfBmkx7nUqTLGzPYR+C1tRaItbRlJ7hT/D3YQ9SV0fqLKzp4XY9wKulTBGTw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js" integrity="sha512-Z5heTz36xTemt1TbtbfXtTq5lMfYnOkXM2/eWcTTiLU01+Sw4ku1i7vScDc8fWhrP2abz9GQzgKH5NGBLoYlAw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/ScrollToPlugin.min.js" integrity="sha512-CDeU7pRtkPX6XJtF/gcFWlEwyaX7mcAp5sO3VIu/ylsdR74wEw4wmBpD5yYTrmMAiAboi9thyBUr1vXRPA7t0Q==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+
+    
+    
+
+  </body>
+</html>
+
