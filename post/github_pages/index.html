@@ -16,6 +16,11 @@
     
   
   
+    
+    
+    <link rel="stylesheet" href="/css/highlight.min.css">
+    
+  
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.0/css/academicons.min.css" integrity="sha512-GGGNUPDhnG8LEAEDsjqYIQns+Gu8RBs4j5XGlxl7UfRaZBhCCm5jenJkeJL8uPuOXGqgl8/H1gjlWQDRjd3cUQ==" crossorigin="anonymous">
@@ -245,34 +250,35 @@
 
 <ol>
 <li><strong>Registrar o acceder</strong> a una <a href="https://github.com/login" target="_blank">cuenta de <em>GitHub</em></a>.</li>
-<li><strong>Crear un contenedor de ficheros</strong> denominado <em>Repository</em>. Para que pueda usarse para alojar un website, tiene que tener un nombre especial <em>nombre.github.io</em>, donde <em>nombre</em> debe coincidir con el nombre de usuario de la cuenta de <em>GitHub</em>, que servirá como <em>Endpoint</em>. En mi caso es <em>alejandrolopezparra.github.io</em>.</li>
-
-<li><p>Aunque <em>GitHub</em> permite <strong>crear y editar contenido</strong> directamente a través de la web de <em>GitHub</em>, lo más conveniente es usar alguna herramienta que facilite esta tarea, como <a href="https://gohugo.io/" target="_blank">Hugo</a> de la que <a href="/post/hugo/">ya hablamos</a>. Para ello, previamente sería necesario clonar el <em>Repository</em> recién creado en local con un <a href="https://git-scm.com/" target="_blank">cliente <em>Git</em></a>. Si se usa el cliente de línea de comandos, habría que ejecutar:</p>
-
-<p><code>git clone https://github.com/nombre/nombre.github.io</code></p></li>
-
-<li><p>Una vez tengamos generados los ficheros HTML y demás recursos webs asociados, es el momento de <strong>alojar el contenido estático</strong> en el <em>Repository</em> creado con un cliente <em>Git</em>. Si se usa el cliente de línea de comandos, habría que ejecutar los siguientes:</p>
-
-<p><code>git add --all</code></p>
-
-<p><code>git commit -m &quot;Initial commit&quot;</code></p>
-
-<p><code>git push -u origin master</code></p></li>
+<li><strong>Crear un contenedor de ficheros</strong> denominado <em>Repository</em>. Para que pueda usarse para alojar un website, tiene que tener un nombre especial <code>nombre.github.io</code>, donde <code>nombre</code> debe coincidir con el nombre de usuario de la cuenta de <em>GitHub</em>, que servirá como <em>Endpoint</em>. En mi caso es <code>alejandrolopezparra.github.io</code>.</li>
+<li>Aunque <em>GitHub</em> permite <strong>crear y editar contenido</strong> directamente a través de la web de <em>GitHub</em>, lo más conveniente es usar alguna herramienta que facilite esta tarea, como <a href="https://gohugo.io/" target="_blank">Hugo</a> de la que <a href="/post/hugo/">ya hablamos</a>. Para ello, previamente sería necesario clonar el <em>Repository</em> recién creado en local con un <a href="https://git-scm.com/" target="_blank">cliente <em>Git</em></a>. Si se usa el cliente de línea de comandos, habría que ejecutar:</li>
 </ol>
 
-<p>Sólo con esos tres pasos, ya tendríamos nuestra página web personal accesible a través de un <em>Endpoint</em> seguro <em>HTTPS</em>://nombre.github.io donde <em>nombre</em> se corresponde con el nombre de usuario de la cuenta de <em>GitHub</em>. En mi caso, es <a href="https://alejandrolopezparra.github.io" target="_blank">https://alejandrolopezparra.github.io</a>.</p>
+<pre><code class="language-bash"> $# git clone https://github.com/nombre/nombre.github.io
+</code></pre>
 
-<p>Para el caso concreto de <em>Hugo</em>, contamos con un <a href="https://gohugo.io/tutorials/github-pages-blog/" target="_blank">tutorial</a> que trata el despliegue en <em>GitHub Pages</em> de páginas web basadas en <em>Hugo</em> tanto personales como de organizaciones y también de proyectos.</p>
+<ol>
+<li>Una vez tengamos generados los ficheros HTML y demás recursos webs asociados, es el momento de <strong>alojar el contenido estático</strong> en el <em>Repository</em> creado con un cliente <em>Git</em>. Si se usa el cliente de línea de comandos, habría que ejecutar los siguientes:</li>
+</ol>
+
+<pre><code class="language-bash">$# git add --all
+$# git commit -m &quot;Initial commit&quot;
+$# git push -u origin master
+</code></pre>
+
+<p>Sólo con esos tres pasos, ya tendríamos nuestra página web personal accesible a través de un <em>Endpoint</em> seguro <code>HTTPS://nombre.github.io</code> donde <code>nombre</code> se corresponde con el nombre de usuario de la cuenta de <em>GitHub</em>. En mi caso, es <a href="https://alejandrolopezparra.github.io" target="_blank">https://alejandrolopezparra.github.io</a>.</p>
+
+<p>Para el caso concreto de <em>Hugo</em>, contamos con un <a href="https://gohugo.io/tutorials/github-pages-blog/" target="_blank">tutorial</a> que trata el despliegue en <em>GitHub Pages</em> de páginas web basadas en <em>Hugo</em> tanto personales como de organizaciones y también de proyectos. También disponemos de una <a href="https://georgecushen.com/create-your-website-with-hugo/" target="_blank">guía detallada sobre <em>Hugo</em> y <em>GitHub Pages</em></a> del creador del <a href="https://themes.gohugo.io/academic/" target="_blank">tema <em>Academic</em> para <em>Hugo</em></a>.</p>
 
 <h2 id="3-asociar-un-dominio-propio">3. Asociar un dominio propio</h2>
 
-<p>Una vez tenemos nuestro website alojado en un <em>Repository</em> y publicado en un <em>Endpoint</em> de <em>GitHub</em>, es el momento de que podamos asociarle un nombre de un dominio personalizado como, por ejemplo, <a href="http://www.alejandrolopezparra.es" target="_blank">www.alejandrolopezparra.es</a>. El único inconveniente de este paso es que perderemos la opción de usar <em>HTTPS</em> ya que <em>GitHub Pages</em> sólo puede usarlo con el domino <em>github.io</em><sup class="footnote-ref" id="fnref:Cloudflare"><a rel="footnote" href="#fn:Cloudflare">1</a></sup>.</p>
+<p>Una vez tenemos nuestro website alojado en un <em>Repository</em> y publicado en un <em>Endpoint</em> de <em>GitHub</em>, es el momento de que podamos asociarle un nombre de un dominio personalizado como, por ejemplo, <a href="http://www.alejandrolopezparra.es" target="_blank">www.alejandrolopezparra.es</a>. El único inconveniente de este paso es que perderemos la opción de usar <em>HTTPS</em> ya que <em>GitHub Pages</em> sólo puede usarlo con el domino <code>github.io</code><sup class="footnote-ref" id="fnref:Cloudflare"><a rel="footnote" href="#fn:Cloudflare">1</a></sup>.</p>
 
 <p>Para lograrlo es necesario lo siguiente:</p>
 
 <ol>
 <li><strong>Registrar el dominio</strong> en un registrador de dominios.</li>
-<li><strong>Crear un nombre en ese dominio</strong> a través de un servicio <em>DNS</em> que apunte al <em>Endpoint</em> definido anteriormente mediante lo que se conoce como alias o <a href="https://en.wikipedia.org/wiki/CNAME_record" target="_blank"><em>registro CNAME</em></a>.</li>
+<li><strong>Crear un nombre en ese dominio</strong> a través de un servicio <em>DNS</em> que apunte al <em>Endpoint</em> definido anteriormente mediante lo que se conoce como alias o <a href="https://en.wikipedia.org/wiki/CNAME_record" target="_blank">registro <em>CNAME</em></a>.</li>
 <li><strong>Configurar el nombre de dominio</strong> en <em>GitHub Pages</em> en las propiedades del <em>Repository</em> tal y como se indica <a href="https://help.github.com/articles/adding-or-removing-a-custom-domain-for-your-github-pages-site/" target="_blank">aquí</a>.</li>
 </ol>
 
@@ -282,13 +288,15 @@
 
 <p>Existen multitud de registradores de dominios y muchos de ellos también proporcionan servicios <em>DNS</em>. <em>Amazon</em> ofrece estos servicios a través de <a href="https://aws.amazon.com/es/route53/" target="_blank"><em>Amazon Route 53</em></a> y dispone de una <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html#root-domain-walkthrough-switch-to-route53-as-dnsprovider" target="_blank">guía</a> en la que explican cómo llevarlo a cabo. Otro prestador muy conocido de este tipo de servicios es <a href="http://dyn.com" target="_blank"><em>Dyn</em></a>. En mi caso, uso <a href="https://es.godaddy.com" target="_blank"><em>GoDaddy</em></a> para ambas cosas aunque tiene la pega de no permitir alias del dominio raíz.</p>
 
-<h2 id="4-conclusión">4. Conclusión</h2>
+<h2 id="conclusiones">Conclusiones</h2>
 
 <p><em>GitHubs Pages</em> permite el alojamiento de websites estáticos de forma fácil y gratuita. Para webs personales o con un tráfico moderado es idóneo ya que tiene unos límites de uso suficientemente elevados.</p>
 
 <p>Desde mi punto de vista, su mayor inconveniente es que no dispone de estadísticas avanzadas de uso ni permite registrar los logs de las visitas para obtenerlas sin la necesidad de un servicio de estadísticas externo.</p>
 
-<p>En cualquier caso, <em>Amazon S3</em> y <em>GitHub Pages</em> no son las únicas alternativas:</p>
+<p>En cualquier caso, he optado por migrar el alojamiento de mi website de <em>Amazon S3</em> a <em>GitHub Pages</em> por las ventajas que ofrece a coste cero.</p>
+
+<p>No obstante, <em>Amazon S3</em> y <em>GitHub Pages</em> no son las únicas alternativas. También tenemos otras posibilidades entre las que se encuentran:</p>
 
 <ul>
 <li><a href="https://cloud.google.com/storage/" target="_blank">Google Cloud Storage</a> con su <a href="https://cloud.google.com/storage/docs/hosting-static-website" target="_blank">guía</a>. De pago.</li>
@@ -362,6 +370,15 @@
     
 
     
+    
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
     
 
     

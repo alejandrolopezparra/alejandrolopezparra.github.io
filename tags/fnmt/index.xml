@@ -30,7 +30,7 @@
 
 &lt;h3 id=&#34;1-1-certificado-de-persona-física&#34;&gt;1.1. Certificado de Persona Física&lt;/h3&gt;
 
-&lt;p&gt;Los &lt;a href=&#34;https://www.sede.fnmt.gob.es/certificados/persona-fisica&#34; target=&#34;_blank&#34;&gt;certificados de Persona Física, Ciudadano o Usuario&lt;/a&gt; se emiten sin coste a cualquier ciudadano español o extranjero que esté en posesión de su DNI o NIE previa verificación de su identidad. Este certificado le permite identificarse de forma telemática, firmar y cifrar documentos electrónicos para realizar gestiones en &lt;a href=&#34;https://www.cert.fnmt.es/certificados/donde-usar-certificado&#34; target=&#34;_blank&#34;&gt;multitud de servicios online&lt;/a&gt;. Éstos son algunos ejemplos:&lt;/p&gt;
+&lt;p&gt;Los &lt;a href=&#34;https://www.sede.fnmt.gob.es/certificados/persona-fisica&#34; target=&#34;_blank&#34;&gt;certificados de Persona Física, Ciudadano o Usuario&lt;/a&gt; se emiten sin coste a cualquier ciudadano español o extranjero que esté en posesión de su &lt;em&gt;DNI&lt;/em&gt; o &lt;em&gt;NIE&lt;/em&gt; previa verificación de su identidad. Este certificado le permite identificarse de forma telemática, firmar y cifrar documentos electrónicos para realizar gestiones en &lt;a href=&#34;https://www.cert.fnmt.es/certificados/donde-usar-certificado&#34; target=&#34;_blank&#34;&gt;multitud de servicios online&lt;/a&gt;. Éstos son algunos ejemplos:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Presentación y liquidación de impuestos.&lt;/li&gt;
@@ -43,7 +43,7 @@
 &lt;p&gt;Sería equivalente al &lt;em&gt;DNIe&lt;/em&gt; pero se diferencian en algunos aspectos:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Es un &lt;strong&gt;único certificado&lt;/strong&gt; válido para la autenticación, cifrado y firma electrónica, al contrario de lo que ocurre en el &lt;em&gt;DNIe&lt;/em&gt; que contiene 2 certificados distintos (&lt;em&gt;AUTENTICACIÓN&lt;/em&gt; y &lt;em&gt;FIRMA&lt;/em&gt;).&lt;/li&gt;
+&lt;li&gt;Es un &lt;strong&gt;único certificado&lt;/strong&gt; válido para la autenticación, cifrado y firma electrónica, al contrario de lo que ocurre en el &lt;em&gt;DNIe&lt;/em&gt; que contiene 2 certificados distintos (&lt;code&gt;AUTENTICACIÓN&lt;/code&gt; y &lt;code&gt;FIRMA&lt;/code&gt;).&lt;/li&gt;
 &lt;li&gt;Tiene una &lt;strong&gt;vigencia de 48 meses&lt;/strong&gt; en lugar de los 30 meses que tienen los certificados digitales incluidos dentro del &lt;em&gt;DNIe&lt;/em&gt;.&lt;/li&gt;
 &lt;li&gt;Se puede realizar su &lt;strong&gt;obtención telemáticamente&lt;/strong&gt;, sin tener que acudir a ninguna oficina, si se usa el &lt;em&gt;DNIe&lt;/em&gt; o no han pasado más de 5 años desde la última vez que se acreditó la identidad.&lt;/li&gt;
 &lt;li&gt;Es un &lt;strong&gt;archivo descargable&lt;/strong&gt; y no tiene soporte físico.&lt;/li&gt;
@@ -141,7 +141,7 @@
 
 &lt;p&gt;En el caso de que no se haya usado el &lt;em&gt;DNIe&lt;/em&gt; en la solicitud del certificado digital, será necesario acudir a una de las &lt;a href=&#34;http://mapaoficinascert.appspot.com/&#34; target=&#34;_blank&#34;&gt;oficinas de registro&lt;/a&gt; para acreditar la identidad y continuar con la solicitud del certificado digital. Este paso tampoco será necesario si se está renovando el certificado y no han pasado más de 5 años desde la última vez que se acreditó la identidad.&lt;/p&gt;
 
-&lt;p&gt;Para ello, deberá presentar el DNI o pasaporte y, si es ciudadano extranjero, el NIE, junto con el código de solicitud que el usuario ha debido recibir en su correo electrónico.&lt;/p&gt;
+&lt;p&gt;Para ello, deberá presentar el &lt;em&gt;DNI&lt;/em&gt; o pasaporte y, si es ciudadano extranjero, el &lt;em&gt;NIE&lt;/em&gt;, junto con el código de solicitud que el usuario ha debido recibir en su correo electrónico.&lt;/p&gt;
 
 &lt;h3 id=&#34;2-3-descarga-del-certificado&#34;&gt;2.3. Descarga del certificado&lt;/h3&gt;
 
@@ -153,7 +153,7 @@
 
 &lt;p&gt;Para ello, se puede visitar la &lt;a href=&#34;https://www.sede.fnmt.gob.es/certificados/persona-fisica/verificar-estado&#34; target=&#34;_blank&#34;&gt;web de verificación&lt;/a&gt; desde un navegador donde tengamos instalados los certificados a comprobar.&lt;/p&gt;
 
-&lt;h2 id=&#34;4-conclusiones&#34;&gt;4. Conclusiones&lt;/h2&gt;
+&lt;h2 id=&#34;conclusiones&#34;&gt;Conclusiones&lt;/h2&gt;
 
 &lt;p&gt;Los certificados digitales de la &lt;em&gt;FNMT-RCM&lt;/em&gt; permiten realizar las mismas gestiones que los certificados que contiene el &lt;em&gt;DNIe&lt;/em&gt; pero con un mayor alcance, ya que, además de para ciudadanos, también se emplean para Representantes legales, la Administración Pública y componentes como los servidores web &lt;em&gt;SSL/TLS&lt;/em&gt;.&lt;/p&gt;
 

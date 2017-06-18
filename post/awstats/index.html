@@ -16,6 +16,11 @@
     
   
   
+    
+    
+    <link rel="stylesheet" href="/css/highlight.min.css">
+    
+  
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.0/css/academicons.min.css" integrity="sha512-GGGNUPDhnG8LEAEDsjqYIQns+Gu8RBs4j5XGlxl7UfRaZBhCCm5jenJkeJL8uPuOXGqgl8/H1gjlWQDRjd3cUQ==" crossorigin="anonymous">
@@ -220,17 +225,18 @@
 
 <h2 id="1-descargar-bases-de-datos-de-geolocalización">1. Descargar bases de datos de geolocalización</h2>
 
-<p>El primer paso a realizar es descargar la base de datos de geolocalización que se usará para poder obtener el país, sistema autónomo (ASN), organización, región y/o ciudad de cada una de las direcciones IP desde las que visiten nuestro website. <em>AWStats</em> soporta tres proveedores de bases de datos:</p>
+<p>El primer paso a realizar es descargar la base de datos de geolocalización que se usará para poder obtener el país, sistema autónomo (<em>ASN</em>), organización, región y/o ciudad de cada una de las direcciones IP desde las que visiten nuestro website. <em>AWStats</em> soporta tres proveedores de bases de datos:</p>
 
 <ul>
 <li><a href="http://software77.net/geo-ip/" target="_blank">GeoIPFree</a>: es gratuita y libre pero sólo proporciona base de datos para el <a href="http://software77.net/geo-ip/?DL=4" target="_blank">país</a>.</li>
-<li><a href="http://dev.maxmind.com/geoip/legacy/geolite/" target="_blank">MaxMind GeoLite</a>: es gratuita y proporciona bases de datos para el <a href="http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz" target="_blank">país</a>, <a href="http://download.maxmind.com/download/geoip/database/asnum/GeoIPASNum.dat.gz" target="_blank">ASN</a> y <a href="http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz" target="_blank">ciudad</a>. Se actualizan el primer martes de cada mes.</li>
-<li><a href="http://dev.maxmind.com/geoip/legacy/" target="_blank">MaxMind GeoIP</a>: es comercial y proporciona bases de datos para el país, ASN, organización, región y ciudad. Se actualizan todas las semanas.</li>
+<li><a href="http://dev.maxmind.com/geoip/legacy/geolite/" target="_blank">MaxMind GeoLite</a>: es gratuita y proporciona bases de datos para el <a href="http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz" target="_blank">país</a>, <a href="http://download.maxmind.com/download/geoip/database/asnum/GeoIPASNum.dat.gz" target="_blank"><em>ASN</em></a> y <a href="http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz" target="_blank">ciudad</a>. Se actualizan el primer martes de cada mes.</li>
+<li><a href="http://dev.maxmind.com/geoip/legacy/" target="_blank">MaxMind GeoIP</a>: es comercial y proporciona bases de datos para el país, <em>ASN</em>, organización, región y ciudad. Se actualizan todas las semanas.</li>
 </ul>
 
 <p>En este caso, optaremos por las 3 bases de datos de <em>MaxMind GeoLite</em> así que, una vez descargadas, será necesario descomprimirlas:</p>
 
-<p><code>gunzip -f GeoIP.dat.gz GeoIPASNum.dat.gz GeoLiteCity.dat.gz</code></p>
+<pre><code class="language-bash">$# gunzip -f GeoIP.dat.gz GeoIPASNum.dat.gz GeoLiteCity.dat.gz
+</code></pre>
 
 <h2 id="2-instalar-perl">2. Instalar Perl</h2>
 
@@ -238,7 +244,8 @@
 
 <p>Sin embargo, además del intérprete de <em>Perl</em>, es necesario disponer del módulo <a href="http://search.cpan.org/~maxmind/Geo-IP-1.50/lib/Geo/IP.pm" target="_blank">Geo::IP</a> de <em>MaxMind</em> para <em>Perl</em> de forma que <em>AWStats</em> pueda hacer uso de sus bases de datos de geolocalización. En <em>macOS</em> y otros sistemas operativos, es tan fácil como ejecutar el comando <a href="https://metacpan.org/pod/distribution/CPAN/scripts/cpan" target="_blank">cpan</a> que viene con <em>Perl</em>.</p>
 
-<p><code>cpan Geo::IP</code></p>
+<pre><code class="language-bash">$# cpan Geo::IP
+</code></pre>
 
 <p>Si no disponemos de permisos de root/administrador o <strong>por seguridad</strong>, podemos ejecutarlo con un usuario sin privilegios pero, antes, hay que instalar <a href="https://metacpan.org/pod/local::lib" target="_blank">local::lib</a> (un módulo de <em>Perl</em> que permite instalar módulos en directorios locales). Para llevarlo a cabo, lo más recomendable es usar la <a href="https://metacpan.org/pod/local::lib#The-bootstrapping-technique" target="_blank">técnica bootstrapping</a>.</p>
 
@@ -246,11 +253,11 @@
 
 <p>Ahora sí, una vez cubiertos todos los requisito previos, llega el momento de descargar <em>AWStats</em> desde su <a href="http://www.awstats.org/#DOWNLOAD" target="_blank">web oficial</a> y descomprimirlo para posteriormente configurarlo según las <a href="http://www.awstats.org/docs/awstats_setup.html" target="_blank">instrucciones oficiales</a>.</p>
 
-<p>Básicamente la configuración consiste en crear un fichero <em>awstats.$myserver.conf</em> con todas las opciones de configuración necesarias y donde <em>$myserver</em> es el nombre del servidor que aparecerán en los logs. Existen 2 posibilidades para llevarlo a cabo:</p>
+<p>Básicamente la configuración consiste en crear un fichero <code>awstats.$myserver.conf</code> con todas las opciones de configuración necesarias y donde <code>$myserver</code> es el nombre del servidor que aparecerán en los logs. Existen 2 posibilidades para llevarlo a cabo:</p>
 
 <ul>
-<li>El uso del script <em>awstats_configure.pl</em>, que crea el fichero de configuración a partir de las respuestas a las preguntas que interactivamente realiza al usuario. Esta primera alternativa <strong>no es recomendable</strong> a no ser que los logs que se pretendan analizar sean generados por un servidor web <em>Apache HTTP Server</em> que esté instalado en la misma máquina que <em>AWStats</em>, ya que intenta modificar directamente la configuración de dicho servidor y reiniciarlo después.</li>
-<li>A partir del fichero de configuración de ejemplo que viene <em>awstats.model.conf</em>, copiándolo como <em>awstats.$myserver.conf</em> y modificando las valores por defecto de las opciones.</li>
+<li>El uso del script <code>awstats_configure.pl</code>, que crea el fichero de configuración a partir de las respuestas a las preguntas que interactivamente realiza al usuario. Esta primera alternativa <strong>no es recomendable</strong> a no ser que los logs que se pretendan analizar sean generados por un servidor web <em>Apache HTTP Server</em> que esté instalado en la misma máquina que <em>AWStats</em>, ya que intenta modificar directamente la configuración de dicho servidor y reiniciarlo después.</li>
+<li>A partir del fichero de configuración de ejemplo que viene <code>awstats.model.conf</code>, copiándolo como <code>awstats.$myserver.conf</code> y modificando las valores por defecto de las opciones.</li>
 </ul>
 
 <p>Aunque las opciones están bien documentadas en el fichero de configuración de ejemplo y en la <a href="http://www.awstats.org/docs/awstats_config.html" target="_blank">web oficial</a>, las más importantes son las siguientes:</p>
@@ -280,47 +287,48 @@ LoadPlugin=&quot;timezone CET&quot;
 
 <p>El primer paso es construir la base de datos de estadísticas para comprobar si hay algún error, con el comando:</p>
 
-<p><code>awstats.pl -config=$myserver -update</code></p>
+<pre><code class="language-bash">$# awstats.pl -config=$myserver -update
+</code></pre>
 
 <p>Cuando esto se haya completado correctamente, ya se podrá solicitar a <em>AWStats</em> que genere todos los informes posibles con el comando:</p>
 
-<p><code>awstats_buildstaticpages.pl -config=$myserver -update -month=all -configdir=$configdir -awstatsprog=$awstatsprog</code></p>
+<pre><code class="language-bash">$# awstats_buildstaticpages.pl -config=$myserver -update -month=all -configdir=$configdir -awstatsprog=$awstatsprog
+</code></pre>
 
 <p>donde</p>
 
 <ul>
-<li><em>$myserver</em> es el nombre del servidor tal y como aparece en los logs.</li>
-<li><em>$configdir</em> es el directorio donde esté el fichero de configuración <em>awstats.$myserver.conf</em>.</li>
-<li><em>$awstatsprog</em> es la ruta al comando <em>awstats.pl</em>.</li>
+<li><code>$myserver</code> es el nombre del servidor tal y como aparece en los logs.</li>
+<li><code>$configdir</code> es el directorio donde esté el fichero de configuración <code>awstats.$myserver.conf</code>.</li>
+<li><code>$awstatsprog</code> es la ruta al comando <code>awstats.pl</code>.</li>
 </ul>
 
 <p>El resultado final son una serie de documentos HTML que contienen los informes general y detallados de cada una de las estadísticas que recopila <em>AWStats</em>:</p>
 
-<ul>
-<li>awstats.$myserver.html</li>
-<li>awstats.$myserver.alldomains.html</li>
-<li>awstats.$myserver.allhosts.html</li>
-<li>awstats.$myserver.lasthosts.html</li>
-<li>awstats.$myserver.unknownip.html</li>
-<li>awstats.$myserver.alllogins.html</li>
-<li>awstats.$myserver.lastlogins.html</li>
-<li>awstats.$myserver.allrobots.html</li>
-<li>awstats.$myserver.lastrobots.html</li>
-<li>awstats.$myserver.urldetail.html</li>
-<li>awstats.$myserver.urlentry.html</li>
-<li>awstats.$myserver.urlexit.html</li>
-<li>awstats.$myserver.browserdetail.html</li>
-<li>awstats.$myserver.osdetail.html</li>
-<li>awstats.$myserver.unknownbrowser.html</li>
-<li>awstats.$myserver.unknownos.html</li>
-<li>awstats.$myserver.refererse.html</li>
-<li>awstats.$myserver.refererpages.html</li>
-<li>awstats.$myserver.keyphrases.html</li>
-<li>awstats.$myserver.keywords.html</li>
-<li>awstats.$myserver.errors404.html</li>
-</ul>
+<pre><code>awstats.$myserver.html
+awstats.$myserver.alldomains.html
+awstats.$myserver.allhosts.html
+awstats.$myserver.lasthosts.html
+awstats.$myserver.unknownip.html
+awstats.$myserver.alllogins.html
+awstats.$myserver.lastlogins.html
+awstats.$myserver.allrobots.html
+awstats.$myserver.lastrobots.html
+awstats.$myserver.urldetail.html
+awstats.$myserver.urlentry.html
+awstats.$myserver.urlexit.html
+awstats.$myserver.browserdetail.html
+awstats.$myserver.osdetail.html
+awstats.$myserver.unknownbrowser.html
+awstats.$myserver.unknownos.html
+awstats.$myserver.refererse.html
+awstats.$myserver.refererpages.html
+awstats.$myserver.keyphrases.html
+awstats.$myserver.keywords.html
+awstats.$myserver.errors404.html
+</code></pre>
 
-<h2 id="conclusión">Conclusión</h2>
+<h2 id="conclusiones">Conclusiones</h2>
 
 <p>Aunque <em>AWStats</em> dispone de buena <a href="http://www.awstats.org/docs/index.html" target="_blank">documentación oficial</a>, no es nada sencillo ni intuitivo usar la herramienta por primera vez debido a la cantidad de opciones que ofrece.</p>
 
@@ -388,6 +396,15 @@ LoadPlugin=&quot;timezone CET&quot;
     
 
     
+    
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
     
 
     

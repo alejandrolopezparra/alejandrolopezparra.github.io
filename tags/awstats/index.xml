@@ -44,17 +44,18 @@
 
 &lt;h2 id=&#34;1-descargar-bases-de-datos-de-geolocalización&#34;&gt;1. Descargar bases de datos de geolocalización&lt;/h2&gt;
 
-&lt;p&gt;El primer paso a realizar es descargar la base de datos de geolocalización que se usará para poder obtener el país, sistema autónomo (ASN), organización, región y/o ciudad de cada una de las direcciones IP desde las que visiten nuestro website. &lt;em&gt;AWStats&lt;/em&gt; soporta tres proveedores de bases de datos:&lt;/p&gt;
+&lt;p&gt;El primer paso a realizar es descargar la base de datos de geolocalización que se usará para poder obtener el país, sistema autónomo (&lt;em&gt;ASN&lt;/em&gt;), organización, región y/o ciudad de cada una de las direcciones IP desde las que visiten nuestro website. &lt;em&gt;AWStats&lt;/em&gt; soporta tres proveedores de bases de datos:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://software77.net/geo-ip/&#34; target=&#34;_blank&#34;&gt;GeoIPFree&lt;/a&gt;: es gratuita y libre pero sólo proporciona base de datos para el &lt;a href=&#34;http://software77.net/geo-ip/?DL=4&#34; target=&#34;_blank&#34;&gt;país&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://dev.maxmind.com/geoip/legacy/geolite/&#34; target=&#34;_blank&#34;&gt;MaxMind GeoLite&lt;/a&gt;: es gratuita y proporciona bases de datos para el &lt;a href=&#34;http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz&#34; target=&#34;_blank&#34;&gt;país&lt;/a&gt;, &lt;a href=&#34;http://download.maxmind.com/download/geoip/database/asnum/GeoIPASNum.dat.gz&#34; target=&#34;_blank&#34;&gt;ASN&lt;/a&gt; y &lt;a href=&#34;http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz&#34; target=&#34;_blank&#34;&gt;ciudad&lt;/a&gt;. Se actualizan el primer martes de cada mes.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://dev.maxmind.com/geoip/legacy/&#34; target=&#34;_blank&#34;&gt;MaxMind GeoIP&lt;/a&gt;: es comercial y proporciona bases de datos para el país, ASN, organización, región y ciudad. Se actualizan todas las semanas.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dev.maxmind.com/geoip/legacy/geolite/&#34; target=&#34;_blank&#34;&gt;MaxMind GeoLite&lt;/a&gt;: es gratuita y proporciona bases de datos para el &lt;a href=&#34;http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz&#34; target=&#34;_blank&#34;&gt;país&lt;/a&gt;, &lt;a href=&#34;http://download.maxmind.com/download/geoip/database/asnum/GeoIPASNum.dat.gz&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;ASN&lt;/em&gt;&lt;/a&gt; y &lt;a href=&#34;http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz&#34; target=&#34;_blank&#34;&gt;ciudad&lt;/a&gt;. Se actualizan el primer martes de cada mes.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dev.maxmind.com/geoip/legacy/&#34; target=&#34;_blank&#34;&gt;MaxMind GeoIP&lt;/a&gt;: es comercial y proporciona bases de datos para el país, &lt;em&gt;ASN&lt;/em&gt;, organización, región y ciudad. Se actualizan todas las semanas.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;En este caso, optaremos por las 3 bases de datos de &lt;em&gt;MaxMind GeoLite&lt;/em&gt; así que, una vez descargadas, será necesario descomprimirlas:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;gunzip -f GeoIP.dat.gz GeoIPASNum.dat.gz GeoLiteCity.dat.gz&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$# gunzip -f GeoIP.dat.gz GeoIPASNum.dat.gz GeoLiteCity.dat.gz
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&#34;2-instalar-perl&#34;&gt;2. Instalar Perl&lt;/h2&gt;
 
@@ -62,7 +63,8 @@
 
 &lt;p&gt;Sin embargo, además del intérprete de &lt;em&gt;Perl&lt;/em&gt;, es necesario disponer del módulo &lt;a href=&#34;http://search.cpan.org/~maxmind/Geo-IP-1.50/lib/Geo/IP.pm&#34; target=&#34;_blank&#34;&gt;Geo::IP&lt;/a&gt; de &lt;em&gt;MaxMind&lt;/em&gt; para &lt;em&gt;Perl&lt;/em&gt; de forma que &lt;em&gt;AWStats&lt;/em&gt; pueda hacer uso de sus bases de datos de geolocalización. En &lt;em&gt;macOS&lt;/em&gt; y otros sistemas operativos, es tan fácil como ejecutar el comando &lt;a href=&#34;https://metacpan.org/pod/distribution/CPAN/scripts/cpan&#34; target=&#34;_blank&#34;&gt;cpan&lt;/a&gt; que viene con &lt;em&gt;Perl&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;cpan Geo::IP&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$# cpan Geo::IP
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Si no disponemos de permisos de root/administrador o &lt;strong&gt;por seguridad&lt;/strong&gt;, podemos ejecutarlo con un usuario sin privilegios pero, antes, hay que instalar &lt;a href=&#34;https://metacpan.org/pod/local::lib&#34; target=&#34;_blank&#34;&gt;local::lib&lt;/a&gt; (un módulo de &lt;em&gt;Perl&lt;/em&gt; que permite instalar módulos en directorios locales). Para llevarlo a cabo, lo más recomendable es usar la &lt;a href=&#34;https://metacpan.org/pod/local::lib#The-bootstrapping-technique&#34; target=&#34;_blank&#34;&gt;técnica bootstrapping&lt;/a&gt;.&lt;/p&gt;
 
@@ -70,11 +72,11 @@
 
 &lt;p&gt;Ahora sí, una vez cubiertos todos los requisito previos, llega el momento de descargar &lt;em&gt;AWStats&lt;/em&gt; desde su &lt;a href=&#34;http://www.awstats.org/#DOWNLOAD&#34; target=&#34;_blank&#34;&gt;web oficial&lt;/a&gt; y descomprimirlo para posteriormente configurarlo según las &lt;a href=&#34;http://www.awstats.org/docs/awstats_setup.html&#34; target=&#34;_blank&#34;&gt;instrucciones oficiales&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Básicamente la configuración consiste en crear un fichero &lt;em&gt;awstats.$myserver.conf&lt;/em&gt; con todas las opciones de configuración necesarias y donde &lt;em&gt;$myserver&lt;/em&gt; es el nombre del servidor que aparecerán en los logs. Existen 2 posibilidades para llevarlo a cabo:&lt;/p&gt;
+&lt;p&gt;Básicamente la configuración consiste en crear un fichero &lt;code&gt;awstats.$myserver.conf&lt;/code&gt; con todas las opciones de configuración necesarias y donde &lt;code&gt;$myserver&lt;/code&gt; es el nombre del servidor que aparecerán en los logs. Existen 2 posibilidades para llevarlo a cabo:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;El uso del script &lt;em&gt;awstats_configure.pl&lt;/em&gt;, que crea el fichero de configuración a partir de las respuestas a las preguntas que interactivamente realiza al usuario. Esta primera alternativa &lt;strong&gt;no es recomendable&lt;/strong&gt; a no ser que los logs que se pretendan analizar sean generados por un servidor web &lt;em&gt;Apache HTTP Server&lt;/em&gt; que esté instalado en la misma máquina que &lt;em&gt;AWStats&lt;/em&gt;, ya que intenta modificar directamente la configuración de dicho servidor y reiniciarlo después.&lt;/li&gt;
-&lt;li&gt;A partir del fichero de configuración de ejemplo que viene &lt;em&gt;awstats.model.conf&lt;/em&gt;, copiándolo como &lt;em&gt;awstats.$myserver.conf&lt;/em&gt; y modificando las valores por defecto de las opciones.&lt;/li&gt;
+&lt;li&gt;El uso del script &lt;code&gt;awstats_configure.pl&lt;/code&gt;, que crea el fichero de configuración a partir de las respuestas a las preguntas que interactivamente realiza al usuario. Esta primera alternativa &lt;strong&gt;no es recomendable&lt;/strong&gt; a no ser que los logs que se pretendan analizar sean generados por un servidor web &lt;em&gt;Apache HTTP Server&lt;/em&gt; que esté instalado en la misma máquina que &lt;em&gt;AWStats&lt;/em&gt;, ya que intenta modificar directamente la configuración de dicho servidor y reiniciarlo después.&lt;/li&gt;
+&lt;li&gt;A partir del fichero de configuración de ejemplo que viene &lt;code&gt;awstats.model.conf&lt;/code&gt;, copiándolo como &lt;code&gt;awstats.$myserver.conf&lt;/code&gt; y modificando las valores por defecto de las opciones.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Aunque las opciones están bien documentadas en el fichero de configuración de ejemplo y en la &lt;a href=&#34;http://www.awstats.org/docs/awstats_config.html&#34; target=&#34;_blank&#34;&gt;web oficial&lt;/a&gt;, las más importantes son las siguientes:&lt;/p&gt;
@@ -104,47 +106,48 @@ LoadPlugin=&amp;quot;timezone CET&amp;quot;
 
 &lt;p&gt;El primer paso es construir la base de datos de estadísticas para comprobar si hay algún error, con el comando:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;awstats.pl -config=$myserver -update&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$# awstats.pl -config=$myserver -update
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Cuando esto se haya completado correctamente, ya se podrá solicitar a &lt;em&gt;AWStats&lt;/em&gt; que genere todos los informes posibles con el comando:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;awstats_buildstaticpages.pl -config=$myserver -update -month=all -configdir=$configdir -awstatsprog=$awstatsprog&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$# awstats_buildstaticpages.pl -config=$myserver -update -month=all -configdir=$configdir -awstatsprog=$awstatsprog
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;donde&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;$myserver&lt;/em&gt; es el nombre del servidor tal y como aparece en los logs.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;$configdir&lt;/em&gt; es el directorio donde esté el fichero de configuración &lt;em&gt;awstats.$myserver.conf&lt;/em&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;$awstatsprog&lt;/em&gt; es la ruta al comando &lt;em&gt;awstats.pl&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$myserver&lt;/code&gt; es el nombre del servidor tal y como aparece en los logs.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$configdir&lt;/code&gt; es el directorio donde esté el fichero de configuración &lt;code&gt;awstats.$myserver.conf&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$awstatsprog&lt;/code&gt; es la ruta al comando &lt;code&gt;awstats.pl&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;El resultado final son una serie de documentos HTML que contienen los informes general y detallados de cada una de las estadísticas que recopila &lt;em&gt;AWStats&lt;/em&gt;:&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;awstats.$myserver.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.alldomains.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.allhosts.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.lasthosts.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.unknownip.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.alllogins.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.lastlogins.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.allrobots.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.lastrobots.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.urldetail.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.urlentry.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.urlexit.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.browserdetail.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.osdetail.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.unknownbrowser.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.unknownos.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.refererse.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.refererpages.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.keyphrases.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.keywords.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.errors404.html&lt;/li&gt;
-&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;awstats.$myserver.html
+awstats.$myserver.alldomains.html
+awstats.$myserver.allhosts.html
+awstats.$myserver.lasthosts.html
+awstats.$myserver.unknownip.html
+awstats.$myserver.alllogins.html
+awstats.$myserver.lastlogins.html
+awstats.$myserver.allrobots.html
+awstats.$myserver.lastrobots.html
+awstats.$myserver.urldetail.html
+awstats.$myserver.urlentry.html
+awstats.$myserver.urlexit.html
+awstats.$myserver.browserdetail.html
+awstats.$myserver.osdetail.html
+awstats.$myserver.unknownbrowser.html
+awstats.$myserver.unknownos.html
+awstats.$myserver.refererse.html
+awstats.$myserver.refererpages.html
+awstats.$myserver.keyphrases.html
+awstats.$myserver.keywords.html
+awstats.$myserver.errors404.html
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;conclusión&#34;&gt;Conclusión&lt;/h2&gt;
+&lt;h2 id=&#34;conclusiones&#34;&gt;Conclusiones&lt;/h2&gt;
 
 &lt;p&gt;Aunque &lt;em&gt;AWStats&lt;/em&gt; dispone de buena &lt;a href=&#34;http://www.awstats.org/docs/index.html&#34; target=&#34;_blank&#34;&gt;documentación oficial&lt;/a&gt;, no es nada sencillo ni intuitivo usar la herramienta por primera vez debido a la cantidad de opciones que ofrece.&lt;/p&gt;
 

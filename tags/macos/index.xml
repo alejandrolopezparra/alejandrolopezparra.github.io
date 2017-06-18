@@ -28,13 +28,13 @@
 
 &lt;p&gt;El &lt;em&gt;DNIe&lt;/em&gt; se basa en principios matemáticos de criptografía aplicados a los sistemas de información para que éstos se puedan usar de forma segura. &lt;a href=&#34;https://es.wikipedia.org/wiki/Infraestructura_de_clave_p%C3%BAblica&#34; target=&#34;_blank&#34;&gt;Infraestructura de clave pública (PKI)&lt;/a&gt;, &lt;a href=&#34;https://es.wikipedia.org/wiki/Certificado_digital&#34; target=&#34;_blank&#34;&gt;certificados digitales&lt;/a&gt; y &lt;a href=&#34;https://es.wikipedia.org/wiki/Criptograf%C3%ADa_asim%C3%A9trica&#34; target=&#34;_blank&#34;&gt;criptografía de clave pública o asimétrica&lt;/a&gt; son los principales. Éstos permiten garantizar características básicas de la seguridad de la información: &lt;a href=&#34;https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#Autenticaci.C3.B3n_o_autentificaci.C3.B3n&#34; target=&#34;_blank&#34;&gt;Autenticación&lt;/a&gt;, &lt;a href=&#34;https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#Confidencialidad&#34; target=&#34;_blank&#34;&gt;Confidencialidad&lt;/a&gt;, &lt;a href=&#34;https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#Disponibilidad&#34; target=&#34;_blank&#34;&gt;Disponibilidad&lt;/a&gt;, &lt;a href=&#34;https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#Integridad&#34; target=&#34;_blank&#34;&gt;Integridad&lt;/a&gt; y &lt;a href=&#34;https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#No_repudio_o_irrefutabilidad&#34; target=&#34;_blank&#34;&gt;No repudio&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;De forma resumida, podríamos &lt;a href=&#34;https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_103&#34; target=&#34;_blank&#34;&gt;describir el &lt;em&gt;DNIe&lt;/em&gt;&lt;/a&gt; como una &lt;a href=&#34;https://es.wikipedia.org/wiki/Tarjeta_inteligente&#34; target=&#34;_blank&#34;&gt;tarjeta inteligente o smart card&lt;/a&gt; que incorpora un chip criptográfico capaz de almacenar de forma segura la misma información que se encuentra impresa, las imágenes digitalizadas de la fotografía, firma manuscrita e impresiones dactilares. De la misma forma, contiene 2 certificados digitales denominados &lt;em&gt;AUTENTICACIÓN&lt;/em&gt; y &lt;em&gt;FIRMA&lt;/em&gt; con sus correspondientes claves privadas que están protegidas por una clave personal de acceso (&lt;em&gt;PIN&lt;/em&gt;) alfanumérica. Es importante notar que, aunque el &lt;em&gt;DNIe&lt;/em&gt; tiene una vigencia de 10 años desde el momento de su expedición, los certificados digitales almacenados internamente &lt;strong&gt;caducan a los 30 meses&lt;/strong&gt; y, por tanto, &lt;strong&gt;deben ser renovados en una comisaría de policía&lt;/strong&gt; para que sigan siendo válidos.&lt;/p&gt;
+&lt;p&gt;De forma resumida, podríamos &lt;a href=&#34;https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_103&#34; target=&#34;_blank&#34;&gt;describir el &lt;em&gt;DNIe&lt;/em&gt;&lt;/a&gt; como una &lt;a href=&#34;https://es.wikipedia.org/wiki/Tarjeta_inteligente&#34; target=&#34;_blank&#34;&gt;tarjeta inteligente o smart card&lt;/a&gt; que incorpora un chip criptográfico capaz de almacenar de forma segura la misma información que se encuentra impresa, las imágenes digitalizadas de la fotografía, firma manuscrita e impresiones dactilares. De la misma forma, contiene 2 certificados digitales denominados &lt;code&gt;AUTENTICACIÓN&lt;/code&gt; y &lt;code&gt;FIRMA&lt;/code&gt; con sus correspondientes claves privadas que están protegidas por una clave personal de acceso (&lt;em&gt;PIN&lt;/em&gt;) alfanumérica. Es importante notar que, aunque el &lt;em&gt;DNIe&lt;/em&gt; tiene una vigencia de 10 años desde el momento de su expedición, los certificados digitales almacenados internamente &lt;strong&gt;caducan a los 30 meses&lt;/strong&gt; y, por tanto, &lt;strong&gt;deben ser renovados en una comisaría de policía&lt;/strong&gt; para que sigan siendo válidos.&lt;/p&gt;
 
 &lt;p&gt;El chip criptográfico posibilita las siguientes funciones cuando sus certificados digitales están en vigor y se conoce el &lt;em&gt;PIN&lt;/em&gt;:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Acreditar electrónicamente y de forma inequívoca la identidad de la persona. Es una &lt;strong&gt;Autenticación&lt;/strong&gt; de doble factor, algo que se tiene (el certificado digital &lt;em&gt;AUTENTICACIÓN&lt;/em&gt; que va dentro del &lt;em&gt;DNIe&lt;/em&gt;) y algo que se conoce (el &lt;em&gt;PIN&lt;/em&gt;).&lt;/li&gt;
-&lt;li&gt;Firmar digitalmente documentos electrónicos, otorgándoles validez jurídica. Se usa el &lt;em&gt;PIN&lt;/em&gt; y el certificado digital &lt;em&gt;FIRMA&lt;/em&gt; para proporcionar &lt;strong&gt;Integridad&lt;/strong&gt; y &lt;strong&gt;No repudio&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Acreditar electrónicamente y de forma inequívoca la identidad de la persona. Es una &lt;strong&gt;Autenticación&lt;/strong&gt; de doble factor, algo que se tiene (el certificado digital &lt;code&gt;AUTENTICACIÓN&lt;/code&gt; que va dentro del &lt;em&gt;DNIe&lt;/em&gt;) y algo que se conoce (el &lt;em&gt;PIN&lt;/em&gt;).&lt;/li&gt;
+&lt;li&gt;Firmar digitalmente documentos electrónicos, otorgándoles validez jurídica. Se usa el &lt;em&gt;PIN&lt;/em&gt; y el certificado digital &lt;code&gt;FIRMA&lt;/code&gt; para proporcionar &lt;strong&gt;Integridad&lt;/strong&gt; y &lt;strong&gt;No repudio&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Se pueden encontrar más detalles técnicos revisando las características &lt;a href=&#34;https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_083&#34; target=&#34;_blank&#34;&gt;electrónicas&lt;/a&gt; y &lt;a href=&#34;https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_084&#34; target=&#34;_blank&#34;&gt;físicas&lt;/a&gt; del &lt;em&gt;DNIe&lt;/em&gt;.&lt;/p&gt;
@@ -159,22 +159,22 @@
 
 &lt;p&gt;Una vez instalado el driver, se debe configurar &lt;em&gt;Firefox&lt;/em&gt; para que pueda usar el &lt;em&gt;DNIe&lt;/em&gt; con un lector:&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Ir a &lt;em&gt;Firefox &amp;gt; Preferencias &amp;gt; Avanzado &amp;gt; Cifrado &amp;gt; Dispositivos de seguridad&lt;/em&gt;.&lt;/li&gt;
-&lt;li&gt;Seleccionar &lt;em&gt;Cargar&lt;/em&gt;.&lt;/li&gt;
+&lt;ol&gt;
+&lt;li&gt;Ir a &lt;code&gt;Firefox &amp;gt; Preferencias &amp;gt; Avanzado &amp;gt; Cifrado &amp;gt; Dispositivos de seguridad&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Seleccionar &lt;code&gt;Cargar&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;Asignar un nombre al módulo, por ejemplo, &lt;em&gt;DNIe&lt;/em&gt;.&lt;/li&gt;
 &lt;li&gt;Indicar la ruta hacia el driver, &lt;code&gt;/Library/Libpkcs11-dnie/lib/libpkcs11-dnie.so&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Hacer clic en &lt;em&gt;Aceptar&lt;/em&gt;.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;Hacer clic en &lt;code&gt;Aceptar&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;h3 id=&#34;3-3-instalar-los-certificados-de-la-policía&#34;&gt;3.3. Instalar los certificados de la policía&lt;/h3&gt;
 
 &lt;p&gt;Para que &lt;em&gt;Firefox&lt;/em&gt; no dé errores de verificación es necesario instalar los &lt;a href=&#34;https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_077&#34; target=&#34;_blank&#34;&gt;certificados de las Autoridades de Certificación raíz&lt;/a&gt; de la &lt;em&gt;DGP&lt;/em&gt; y aprobar cada uno de ellos para los siguientes usos:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Identificar páginas web.&lt;/li&gt;
-&lt;li&gt;Usuarios de correo electrónico.&lt;/li&gt;
-&lt;li&gt;Desarrolladores de aplicaciones.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Identificar páginas web&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Usuarios de correo electrónico&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Desarrolladores de aplicaciones&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Aunque no es estrictamente necesario, sí que es recomendable repetir el paso anterior con los &lt;a href=&#34;https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_078&#34; target=&#34;_blank&#34;&gt;certificados de las Autoridades de Certificación subordinadas&lt;/a&gt; de la &lt;em&gt;DGP&lt;/em&gt;.&lt;/p&gt;
@@ -191,12 +191,12 @@
 &lt;p&gt;Estos servicios nos permitirán, además, conocer el estado de los certificados que van dentro del &lt;em&gt;DNIe&lt;/em&gt;:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Válido&lt;/strong&gt;: el certificado digital no ha sido revocado ni ha expirado.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Revocado&lt;/strong&gt;: el certificado digital ha sido invalidado por la &lt;em&gt;DGP&lt;/em&gt;. Esto suele ocurrir al generar un nuevo &lt;em&gt;DNIe&lt;/em&gt; o renovar sus certificados digitales.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Expirado&lt;/strong&gt;: se ha superado la fecha en la que caduca el certificado digital y debería renovarse en una comisaría de policía.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Válido&lt;/code&gt;: el certificado digital no ha sido revocado ni ha expirado.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Revocado&lt;/code&gt;: el certificado digital ha sido invalidado por la &lt;em&gt;DGP&lt;/em&gt;. Esto suele ocurrir al generar un nuevo &lt;em&gt;DNIe&lt;/em&gt; o renovar sus certificados digitales.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Expirado&lt;/code&gt;: se ha superado la fecha en la que caduca el certificado digital y debería renovarse en una comisaría de policía.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;4-conclusiones&#34;&gt;4. Conclusiones&lt;/h2&gt;
+&lt;h2 id=&#34;conclusiones&#34;&gt;Conclusiones&lt;/h2&gt;
 
 &lt;p&gt;En los últimos años, a través de la &lt;a href=&#34;http://www.agendadigital.gob.es&#34; target=&#34;_blank&#34;&gt;Agenda Digital para España&lt;/a&gt;, el gobierno español está impulsando distintos planes en materia de Tecnologías de la Información y las Comunicaciones (TIC) y de Administración Electrónica para el cumplimiento de los objetivos de la Agenda Digital para Europa e incorpora objetivos específicos para el desarrollo de la economía y la sociedad digital en España.&lt;/p&gt;
 
@@ -240,17 +240,18 @@
 
 &lt;h2 id=&#34;1-descargar-bases-de-datos-de-geolocalización&#34;&gt;1. Descargar bases de datos de geolocalización&lt;/h2&gt;
 
-&lt;p&gt;El primer paso a realizar es descargar la base de datos de geolocalización que se usará para poder obtener el país, sistema autónomo (ASN), organización, región y/o ciudad de cada una de las direcciones IP desde las que visiten nuestro website. &lt;em&gt;AWStats&lt;/em&gt; soporta tres proveedores de bases de datos:&lt;/p&gt;
+&lt;p&gt;El primer paso a realizar es descargar la base de datos de geolocalización que se usará para poder obtener el país, sistema autónomo (&lt;em&gt;ASN&lt;/em&gt;), organización, región y/o ciudad de cada una de las direcciones IP desde las que visiten nuestro website. &lt;em&gt;AWStats&lt;/em&gt; soporta tres proveedores de bases de datos:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://software77.net/geo-ip/&#34; target=&#34;_blank&#34;&gt;GeoIPFree&lt;/a&gt;: es gratuita y libre pero sólo proporciona base de datos para el &lt;a href=&#34;http://software77.net/geo-ip/?DL=4&#34; target=&#34;_blank&#34;&gt;país&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://dev.maxmind.com/geoip/legacy/geolite/&#34; target=&#34;_blank&#34;&gt;MaxMind GeoLite&lt;/a&gt;: es gratuita y proporciona bases de datos para el &lt;a href=&#34;http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz&#34; target=&#34;_blank&#34;&gt;país&lt;/a&gt;, &lt;a href=&#34;http://download.maxmind.com/download/geoip/database/asnum/GeoIPASNum.dat.gz&#34; target=&#34;_blank&#34;&gt;ASN&lt;/a&gt; y &lt;a href=&#34;http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz&#34; target=&#34;_blank&#34;&gt;ciudad&lt;/a&gt;. Se actualizan el primer martes de cada mes.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://dev.maxmind.com/geoip/legacy/&#34; target=&#34;_blank&#34;&gt;MaxMind GeoIP&lt;/a&gt;: es comercial y proporciona bases de datos para el país, ASN, organización, región y ciudad. Se actualizan todas las semanas.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dev.maxmind.com/geoip/legacy/geolite/&#34; target=&#34;_blank&#34;&gt;MaxMind GeoLite&lt;/a&gt;: es gratuita y proporciona bases de datos para el &lt;a href=&#34;http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz&#34; target=&#34;_blank&#34;&gt;país&lt;/a&gt;, &lt;a href=&#34;http://download.maxmind.com/download/geoip/database/asnum/GeoIPASNum.dat.gz&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;ASN&lt;/em&gt;&lt;/a&gt; y &lt;a href=&#34;http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz&#34; target=&#34;_blank&#34;&gt;ciudad&lt;/a&gt;. Se actualizan el primer martes de cada mes.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dev.maxmind.com/geoip/legacy/&#34; target=&#34;_blank&#34;&gt;MaxMind GeoIP&lt;/a&gt;: es comercial y proporciona bases de datos para el país, &lt;em&gt;ASN&lt;/em&gt;, organización, región y ciudad. Se actualizan todas las semanas.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;En este caso, optaremos por las 3 bases de datos de &lt;em&gt;MaxMind GeoLite&lt;/em&gt; así que, una vez descargadas, será necesario descomprimirlas:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;gunzip -f GeoIP.dat.gz GeoIPASNum.dat.gz GeoLiteCity.dat.gz&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$# gunzip -f GeoIP.dat.gz GeoIPASNum.dat.gz GeoLiteCity.dat.gz
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&#34;2-instalar-perl&#34;&gt;2. Instalar Perl&lt;/h2&gt;
 
@@ -258,7 +259,8 @@
 
 &lt;p&gt;Sin embargo, además del intérprete de &lt;em&gt;Perl&lt;/em&gt;, es necesario disponer del módulo &lt;a href=&#34;http://search.cpan.org/~maxmind/Geo-IP-1.50/lib/Geo/IP.pm&#34; target=&#34;_blank&#34;&gt;Geo::IP&lt;/a&gt; de &lt;em&gt;MaxMind&lt;/em&gt; para &lt;em&gt;Perl&lt;/em&gt; de forma que &lt;em&gt;AWStats&lt;/em&gt; pueda hacer uso de sus bases de datos de geolocalización. En &lt;em&gt;macOS&lt;/em&gt; y otros sistemas operativos, es tan fácil como ejecutar el comando &lt;a href=&#34;https://metacpan.org/pod/distribution/CPAN/scripts/cpan&#34; target=&#34;_blank&#34;&gt;cpan&lt;/a&gt; que viene con &lt;em&gt;Perl&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;cpan Geo::IP&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$# cpan Geo::IP
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Si no disponemos de permisos de root/administrador o &lt;strong&gt;por seguridad&lt;/strong&gt;, podemos ejecutarlo con un usuario sin privilegios pero, antes, hay que instalar &lt;a href=&#34;https://metacpan.org/pod/local::lib&#34; target=&#34;_blank&#34;&gt;local::lib&lt;/a&gt; (un módulo de &lt;em&gt;Perl&lt;/em&gt; que permite instalar módulos en directorios locales). Para llevarlo a cabo, lo más recomendable es usar la &lt;a href=&#34;https://metacpan.org/pod/local::lib#The-bootstrapping-technique&#34; target=&#34;_blank&#34;&gt;técnica bootstrapping&lt;/a&gt;.&lt;/p&gt;
 
@@ -266,11 +268,11 @@
 
 &lt;p&gt;Ahora sí, una vez cubiertos todos los requisito previos, llega el momento de descargar &lt;em&gt;AWStats&lt;/em&gt; desde su &lt;a href=&#34;http://www.awstats.org/#DOWNLOAD&#34; target=&#34;_blank&#34;&gt;web oficial&lt;/a&gt; y descomprimirlo para posteriormente configurarlo según las &lt;a href=&#34;http://www.awstats.org/docs/awstats_setup.html&#34; target=&#34;_blank&#34;&gt;instrucciones oficiales&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Básicamente la configuración consiste en crear un fichero &lt;em&gt;awstats.$myserver.conf&lt;/em&gt; con todas las opciones de configuración necesarias y donde &lt;em&gt;$myserver&lt;/em&gt; es el nombre del servidor que aparecerán en los logs. Existen 2 posibilidades para llevarlo a cabo:&lt;/p&gt;
+&lt;p&gt;Básicamente la configuración consiste en crear un fichero &lt;code&gt;awstats.$myserver.conf&lt;/code&gt; con todas las opciones de configuración necesarias y donde &lt;code&gt;$myserver&lt;/code&gt; es el nombre del servidor que aparecerán en los logs. Existen 2 posibilidades para llevarlo a cabo:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;El uso del script &lt;em&gt;awstats_configure.pl&lt;/em&gt;, que crea el fichero de configuración a partir de las respuestas a las preguntas que interactivamente realiza al usuario. Esta primera alternativa &lt;strong&gt;no es recomendable&lt;/strong&gt; a no ser que los logs que se pretendan analizar sean generados por un servidor web &lt;em&gt;Apache HTTP Server&lt;/em&gt; que esté instalado en la misma máquina que &lt;em&gt;AWStats&lt;/em&gt;, ya que intenta modificar directamente la configuración de dicho servidor y reiniciarlo después.&lt;/li&gt;
-&lt;li&gt;A partir del fichero de configuración de ejemplo que viene &lt;em&gt;awstats.model.conf&lt;/em&gt;, copiándolo como &lt;em&gt;awstats.$myserver.conf&lt;/em&gt; y modificando las valores por defecto de las opciones.&lt;/li&gt;
+&lt;li&gt;El uso del script &lt;code&gt;awstats_configure.pl&lt;/code&gt;, que crea el fichero de configuración a partir de las respuestas a las preguntas que interactivamente realiza al usuario. Esta primera alternativa &lt;strong&gt;no es recomendable&lt;/strong&gt; a no ser que los logs que se pretendan analizar sean generados por un servidor web &lt;em&gt;Apache HTTP Server&lt;/em&gt; que esté instalado en la misma máquina que &lt;em&gt;AWStats&lt;/em&gt;, ya que intenta modificar directamente la configuración de dicho servidor y reiniciarlo después.&lt;/li&gt;
+&lt;li&gt;A partir del fichero de configuración de ejemplo que viene &lt;code&gt;awstats.model.conf&lt;/code&gt;, copiándolo como &lt;code&gt;awstats.$myserver.conf&lt;/code&gt; y modificando las valores por defecto de las opciones.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Aunque las opciones están bien documentadas en el fichero de configuración de ejemplo y en la &lt;a href=&#34;http://www.awstats.org/docs/awstats_config.html&#34; target=&#34;_blank&#34;&gt;web oficial&lt;/a&gt;, las más importantes son las siguientes:&lt;/p&gt;
@@ -300,47 +302,48 @@ LoadPlugin=&amp;quot;timezone CET&amp;quot;
 
 &lt;p&gt;El primer paso es construir la base de datos de estadísticas para comprobar si hay algún error, con el comando:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;awstats.pl -config=$myserver -update&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$# awstats.pl -config=$myserver -update
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Cuando esto se haya completado correctamente, ya se podrá solicitar a &lt;em&gt;AWStats&lt;/em&gt; que genere todos los informes posibles con el comando:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;awstats_buildstaticpages.pl -config=$myserver -update -month=all -configdir=$configdir -awstatsprog=$awstatsprog&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$# awstats_buildstaticpages.pl -config=$myserver -update -month=all -configdir=$configdir -awstatsprog=$awstatsprog
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;donde&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;$myserver&lt;/em&gt; es el nombre del servidor tal y como aparece en los logs.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;$configdir&lt;/em&gt; es el directorio donde esté el fichero de configuración &lt;em&gt;awstats.$myserver.conf&lt;/em&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;$awstatsprog&lt;/em&gt; es la ruta al comando &lt;em&gt;awstats.pl&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$myserver&lt;/code&gt; es el nombre del servidor tal y como aparece en los logs.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$configdir&lt;/code&gt; es el directorio donde esté el fichero de configuración &lt;code&gt;awstats.$myserver.conf&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$awstatsprog&lt;/code&gt; es la ruta al comando &lt;code&gt;awstats.pl&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;El resultado final son una serie de documentos HTML que contienen los informes general y detallados de cada una de las estadísticas que recopila &lt;em&gt;AWStats&lt;/em&gt;:&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;awstats.$myserver.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.alldomains.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.allhosts.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.lasthosts.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.unknownip.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.alllogins.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.lastlogins.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.allrobots.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.lastrobots.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.urldetail.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.urlentry.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.urlexit.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.browserdetail.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.osdetail.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.unknownbrowser.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.unknownos.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.refererse.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.refererpages.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.keyphrases.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.keywords.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.errors404.html&lt;/li&gt;
-&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;awstats.$myserver.html
+awstats.$myserver.alldomains.html
+awstats.$myserver.allhosts.html
+awstats.$myserver.lasthosts.html
+awstats.$myserver.unknownip.html
+awstats.$myserver.alllogins.html
+awstats.$myserver.lastlogins.html
+awstats.$myserver.allrobots.html
+awstats.$myserver.lastrobots.html
+awstats.$myserver.urldetail.html
+awstats.$myserver.urlentry.html
+awstats.$myserver.urlexit.html
+awstats.$myserver.browserdetail.html
+awstats.$myserver.osdetail.html
+awstats.$myserver.unknownbrowser.html
+awstats.$myserver.unknownos.html
+awstats.$myserver.refererse.html
+awstats.$myserver.refererpages.html
+awstats.$myserver.keyphrases.html
+awstats.$myserver.keywords.html
+awstats.$myserver.errors404.html
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;conclusión&#34;&gt;Conclusión&lt;/h2&gt;
+&lt;h2 id=&#34;conclusiones&#34;&gt;Conclusiones&lt;/h2&gt;
 
 &lt;p&gt;Aunque &lt;em&gt;AWStats&lt;/em&gt; dispone de buena &lt;a href=&#34;http://www.awstats.org/docs/index.html&#34; target=&#34;_blank&#34;&gt;documentación oficial&lt;/a&gt;, no es nada sencillo ni intuitivo usar la herramienta por primera vez debido a la cantidad de opciones que ofrece.&lt;/p&gt;
 
@@ -364,7 +367,7 @@ LoadPlugin=&amp;quot;timezone CET&amp;quot;
 
 &lt;h2 id=&#34;1-activar-el-registro-de-accesos&#34;&gt;1. Activar el registro de accesos&lt;/h2&gt;
 
-&lt;p&gt;El registro de accesos o access logging se habilita con unos &lt;a href=&#34;https://docs.aws.amazon.com/AmazonS3/latest/dev/enable-logging-console.html&#34; target=&#34;_blank&#34;&gt;sencillos pasos&lt;/a&gt;. De esta forma, con cada petición de acceso se genera un &lt;em&gt;nuevo&lt;/em&gt; fichero que se almacena en el &lt;a href=&#34;http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingBucket.html&#34; target=&#34;_blank&#34;&gt;Bucket&lt;/a&gt; que hayamos seleccionado para tal fin y que tendrá asociado un nombre único (por ejemplo, &lt;em&gt;mybucket&lt;/em&gt;). En dichos ficheros se registran los datos de los accesos (&lt;em&gt;requester, bucket name, request time, request action, response status, error code&lt;/em&gt;) siguiendo el formato de log que se explica &lt;a href=&#34;https://docs.aws.amazon.com/AmazonS3/latest/dev/LogFormat.html&#34; target=&#34;_blank&#34;&gt;aquí&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;El registro de accesos o access logging se habilita con unos &lt;a href=&#34;https://docs.aws.amazon.com/AmazonS3/latest/dev/enable-logging-console.html&#34; target=&#34;_blank&#34;&gt;sencillos pasos&lt;/a&gt;. De esta forma, con cada petición de acceso se genera un nuevo fichero que se almacena en el &lt;a href=&#34;http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingBucket.html&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Bucket&lt;/em&gt;&lt;/a&gt; que hayamos seleccionado para tal fin y que tendrá asociado un nombre único (por ejemplo, &lt;code&gt;mybucket&lt;/code&gt;). En dichos ficheros se registran los datos de los accesos (&lt;code&gt;requester&lt;/code&gt;, &lt;code&gt;bucket name&lt;/code&gt;, &lt;code&gt;request time&lt;/code&gt;, &lt;code&gt;request action&lt;/code&gt;, &lt;code&gt;response status&lt;/code&gt;, &lt;code&gt;error code&lt;/code&gt;) siguiendo el formato de log que se explica &lt;a href=&#34;https://docs.aws.amazon.com/AmazonS3/latest/dev/LogFormat.html&#34; target=&#34;_blank&#34;&gt;aquí&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;2-purgar-los-ficheros-de-logs&#34;&gt;2. Purgar los ficheros de logs&lt;/h2&gt;
 
@@ -379,43 +382,45 @@ LoadPlugin=&amp;quot;timezone CET&amp;quot;
 &lt;p&gt;Antes de poder usar la CLI de AWS contra la API de S3 es indispensable crear un usuario que tenga los permisos suficientes. Esta tarea se realiza a través del &lt;a href=&#34;http://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html?icmpid=docs_iam_console&#34; target=&#34;_blank&#34;&gt;servicio de gestión de acceso e identidad (IAM)&lt;/a&gt; de AWS:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Crear un grupo y asociarle la política de permisos de sólo lectura (&lt;strong&gt;AmazonS3ReadOnlyAccess&lt;/strong&gt;).&lt;/li&gt;
-&lt;li&gt;Crear un usuario con el tipo de acceso &lt;strong&gt;Programmatic access&lt;/strong&gt; y añadirlo al grupo anterior.&lt;/li&gt;
-&lt;li&gt;Anotar el identificador de usuario (&lt;strong&gt;Access key ID&lt;/strong&gt;) y la contraseña (&lt;strong&gt;Secret access key&lt;/strong&gt;) del usuario generado ya que serán necesarios a continuación.&lt;/li&gt;
+&lt;li&gt;Crear un grupo y asociarle la política de permisos de sólo lectura (&lt;code&gt;AmazonS3ReadOnlyAccess&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Crear un usuario con el tipo de acceso &lt;code&gt;Programmatic access&lt;/code&gt; y añadirlo al grupo anterior.&lt;/li&gt;
+&lt;li&gt;Anotar el identificador de usuario (&lt;code&gt;Access key ID&lt;/code&gt;) y la contraseña (&lt;code&gt;Secret access key&lt;/code&gt;) del usuario generado ya que serán necesarios a continuación.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;3-2-descargar-los-logs-desde-amazon-s3&#34;&gt;3.2. Descargar los logs desde Amazon S3&lt;/h3&gt;
 
-&lt;p&gt;Para poder descargar los logs en un directorio local (por ejemplo, &lt;em&gt;mylogs&lt;/em&gt;) usaremos la CLI de AWS que tiene &lt;a href=&#34;http://docs.aws.amazon.com/cli/latest/userguide/using-s3-commands.html&#34; target=&#34;_blank&#34;&gt;multitud de comandos&lt;/a&gt; que permiten automatizar muchas de las tareas. Para el caso de &lt;a href=&#34;https://es.wikipedia.org/wiki/MacOS&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;macOS&lt;/em&gt;&lt;/a&gt;, nos bastará con seguir unos sencillos pasos:&lt;/p&gt;
+&lt;p&gt;Para poder descargar los logs en un directorio local (por ejemplo, &lt;code&gt;mylogs&lt;/code&gt;) usaremos la CLI de AWS que tiene &lt;a href=&#34;http://docs.aws.amazon.com/cli/latest/userguide/using-s3-commands.html&#34; target=&#34;_blank&#34;&gt;multitud de comandos&lt;/a&gt; que permiten automatizar muchas de las tareas. Para el caso de &lt;a href=&#34;https://es.wikipedia.org/wiki/MacOS&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;macOS&lt;/em&gt;&lt;/a&gt;, nos bastará con seguir unos sencillos pasos:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Instalar la CLI de AWS siguiendo &lt;a href=&#34;http://docs.aws.amazon.com/cli/latest/userguide/installing.html&#34; target=&#34;_blank&#34;&gt;estas instrucciones&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Configurarla con el comando &lt;em&gt;configure&lt;/em&gt;:&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;li&gt;&lt;p&gt;Configurarla con el comando &lt;em&gt;configure&lt;/em&gt;:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;aws configure&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Responder a las siguientes preguntas:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$# aws configure
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;AWS Access Key ID&lt;/strong&gt;. El identificador de usuario.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;AWS Secret Access Key&lt;/strong&gt;. La contraseña del usuario.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Default region name&lt;/strong&gt;. En mi caso, &lt;em&gt;eu-west-1&lt;/em&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Default output format&lt;/strong&gt;. En mi caso, &lt;em&gt;None&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Responder a las siguientes preguntas:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;AWS Access Key ID&lt;/code&gt;. El identificador de usuario.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AWS Secret Access Key&lt;/code&gt;. La contraseña del usuario.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Default region name&lt;/code&gt;. En mi caso, &lt;code&gt;eu-west-1&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Default output format&lt;/code&gt;. En mi caso, &lt;code&gt;None&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Crear un directorio donde descargar los logs (por ejemplo, &lt;em&gt;mylogs&lt;/em&gt;).&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Ejecutar el comando &lt;em&gt;sync&lt;/em&gt; para descargar los logs, siendo &lt;em&gt;mybucket&lt;/em&gt; el nombre del bucket donde están los logs:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;aws s3 sync s3://mybucket/ mylogs/&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;Crear un directorio donde descargar los logs (por ejemplo, &lt;code&gt;mylogs&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Ejecutar el comando &lt;code&gt;sync&lt;/code&gt; para descargar los logs, siendo &lt;code&gt;mybucket&lt;/code&gt; el nombre del bucket donde están los logs:&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$# aws s3 sync s3://mybucket/ mylogs/
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Por último, será necesario juntar todos los ficheros descargados en uno sólo para facilitar el análisis de los datos. En &lt;em&gt;macOS&lt;/em&gt; se puede usar un comando como el siguiente:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;cat mylogs/* &amp;gt; access.log&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$# cat mylogs/* &amp;gt; access.log
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;conclusión&#34;&gt;Conclusión&lt;/h2&gt;
+&lt;h2 id=&#34;conclusiones&#34;&gt;Conclusiones&lt;/h2&gt;
 
 &lt;p&gt;La función &lt;em&gt;access logging&lt;/em&gt; de &lt;em&gt;Amazon S3&lt;/em&gt; nos permite registrar cada acceso que se produzca a nuestro website con datos valiosos sobre los mismos como son el solicitante, la respuesta del servidor y los tiempos.&lt;/p&gt;
 

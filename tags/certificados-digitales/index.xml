@@ -30,7 +30,7 @@
 
 &lt;h3 id=&#34;1-1-certificado-de-persona-física&#34;&gt;1.1. Certificado de Persona Física&lt;/h3&gt;
 
-&lt;p&gt;Los &lt;a href=&#34;https://www.sede.fnmt.gob.es/certificados/persona-fisica&#34; target=&#34;_blank&#34;&gt;certificados de Persona Física, Ciudadano o Usuario&lt;/a&gt; se emiten sin coste a cualquier ciudadano español o extranjero que esté en posesión de su DNI o NIE previa verificación de su identidad. Este certificado le permite identificarse de forma telemática, firmar y cifrar documentos electrónicos para realizar gestiones en &lt;a href=&#34;https://www.cert.fnmt.es/certificados/donde-usar-certificado&#34; target=&#34;_blank&#34;&gt;multitud de servicios online&lt;/a&gt;. Éstos son algunos ejemplos:&lt;/p&gt;
+&lt;p&gt;Los &lt;a href=&#34;https://www.sede.fnmt.gob.es/certificados/persona-fisica&#34; target=&#34;_blank&#34;&gt;certificados de Persona Física, Ciudadano o Usuario&lt;/a&gt; se emiten sin coste a cualquier ciudadano español o extranjero que esté en posesión de su &lt;em&gt;DNI&lt;/em&gt; o &lt;em&gt;NIE&lt;/em&gt; previa verificación de su identidad. Este certificado le permite identificarse de forma telemática, firmar y cifrar documentos electrónicos para realizar gestiones en &lt;a href=&#34;https://www.cert.fnmt.es/certificados/donde-usar-certificado&#34; target=&#34;_blank&#34;&gt;multitud de servicios online&lt;/a&gt;. Éstos son algunos ejemplos:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Presentación y liquidación de impuestos.&lt;/li&gt;
@@ -43,7 +43,7 @@
 &lt;p&gt;Sería equivalente al &lt;em&gt;DNIe&lt;/em&gt; pero se diferencian en algunos aspectos:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Es un &lt;strong&gt;único certificado&lt;/strong&gt; válido para la autenticación, cifrado y firma electrónica, al contrario de lo que ocurre en el &lt;em&gt;DNIe&lt;/em&gt; que contiene 2 certificados distintos (&lt;em&gt;AUTENTICACIÓN&lt;/em&gt; y &lt;em&gt;FIRMA&lt;/em&gt;).&lt;/li&gt;
+&lt;li&gt;Es un &lt;strong&gt;único certificado&lt;/strong&gt; válido para la autenticación, cifrado y firma electrónica, al contrario de lo que ocurre en el &lt;em&gt;DNIe&lt;/em&gt; que contiene 2 certificados distintos (&lt;code&gt;AUTENTICACIÓN&lt;/code&gt; y &lt;code&gt;FIRMA&lt;/code&gt;).&lt;/li&gt;
 &lt;li&gt;Tiene una &lt;strong&gt;vigencia de 48 meses&lt;/strong&gt; en lugar de los 30 meses que tienen los certificados digitales incluidos dentro del &lt;em&gt;DNIe&lt;/em&gt;.&lt;/li&gt;
 &lt;li&gt;Se puede realizar su &lt;strong&gt;obtención telemáticamente&lt;/strong&gt;, sin tener que acudir a ninguna oficina, si se usa el &lt;em&gt;DNIe&lt;/em&gt; o no han pasado más de 5 años desde la última vez que se acreditó la identidad.&lt;/li&gt;
 &lt;li&gt;Es un &lt;strong&gt;archivo descargable&lt;/strong&gt; y no tiene soporte físico.&lt;/li&gt;
@@ -141,7 +141,7 @@
 
 &lt;p&gt;En el caso de que no se haya usado el &lt;em&gt;DNIe&lt;/em&gt; en la solicitud del certificado digital, será necesario acudir a una de las &lt;a href=&#34;http://mapaoficinascert.appspot.com/&#34; target=&#34;_blank&#34;&gt;oficinas de registro&lt;/a&gt; para acreditar la identidad y continuar con la solicitud del certificado digital. Este paso tampoco será necesario si se está renovando el certificado y no han pasado más de 5 años desde la última vez que se acreditó la identidad.&lt;/p&gt;
 
-&lt;p&gt;Para ello, deberá presentar el DNI o pasaporte y, si es ciudadano extranjero, el NIE, junto con el código de solicitud que el usuario ha debido recibir en su correo electrónico.&lt;/p&gt;
+&lt;p&gt;Para ello, deberá presentar el &lt;em&gt;DNI&lt;/em&gt; o pasaporte y, si es ciudadano extranjero, el &lt;em&gt;NIE&lt;/em&gt;, junto con el código de solicitud que el usuario ha debido recibir en su correo electrónico.&lt;/p&gt;
 
 &lt;h3 id=&#34;2-3-descarga-del-certificado&#34;&gt;2.3. Descarga del certificado&lt;/h3&gt;
 
@@ -153,7 +153,7 @@
 
 &lt;p&gt;Para ello, se puede visitar la &lt;a href=&#34;https://www.sede.fnmt.gob.es/certificados/persona-fisica/verificar-estado&#34; target=&#34;_blank&#34;&gt;web de verificación&lt;/a&gt; desde un navegador donde tengamos instalados los certificados a comprobar.&lt;/p&gt;
 
-&lt;h2 id=&#34;4-conclusiones&#34;&gt;4. Conclusiones&lt;/h2&gt;
+&lt;h2 id=&#34;conclusiones&#34;&gt;Conclusiones&lt;/h2&gt;
 
 &lt;p&gt;Los certificados digitales de la &lt;em&gt;FNMT-RCM&lt;/em&gt; permiten realizar las mismas gestiones que los certificados que contiene el &lt;em&gt;DNIe&lt;/em&gt; pero con un mayor alcance, ya que, además de para ciudadanos, también se emplean para Representantes legales, la Administración Pública y componentes como los servidores web &lt;em&gt;SSL/TLS&lt;/em&gt;.&lt;/p&gt;
 
@@ -190,13 +190,13 @@
 
 &lt;p&gt;El &lt;em&gt;DNIe&lt;/em&gt; se basa en principios matemáticos de criptografía aplicados a los sistemas de información para que éstos se puedan usar de forma segura. &lt;a href=&#34;https://es.wikipedia.org/wiki/Infraestructura_de_clave_p%C3%BAblica&#34; target=&#34;_blank&#34;&gt;Infraestructura de clave pública (PKI)&lt;/a&gt;, &lt;a href=&#34;https://es.wikipedia.org/wiki/Certificado_digital&#34; target=&#34;_blank&#34;&gt;certificados digitales&lt;/a&gt; y &lt;a href=&#34;https://es.wikipedia.org/wiki/Criptograf%C3%ADa_asim%C3%A9trica&#34; target=&#34;_blank&#34;&gt;criptografía de clave pública o asimétrica&lt;/a&gt; son los principales. Éstos permiten garantizar características básicas de la seguridad de la información: &lt;a href=&#34;https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#Autenticaci.C3.B3n_o_autentificaci.C3.B3n&#34; target=&#34;_blank&#34;&gt;Autenticación&lt;/a&gt;, &lt;a href=&#34;https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#Confidencialidad&#34; target=&#34;_blank&#34;&gt;Confidencialidad&lt;/a&gt;, &lt;a href=&#34;https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#Disponibilidad&#34; target=&#34;_blank&#34;&gt;Disponibilidad&lt;/a&gt;, &lt;a href=&#34;https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#Integridad&#34; target=&#34;_blank&#34;&gt;Integridad&lt;/a&gt; y &lt;a href=&#34;https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#No_repudio_o_irrefutabilidad&#34; target=&#34;_blank&#34;&gt;No repudio&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;De forma resumida, podríamos &lt;a href=&#34;https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_103&#34; target=&#34;_blank&#34;&gt;describir el &lt;em&gt;DNIe&lt;/em&gt;&lt;/a&gt; como una &lt;a href=&#34;https://es.wikipedia.org/wiki/Tarjeta_inteligente&#34; target=&#34;_blank&#34;&gt;tarjeta inteligente o smart card&lt;/a&gt; que incorpora un chip criptográfico capaz de almacenar de forma segura la misma información que se encuentra impresa, las imágenes digitalizadas de la fotografía, firma manuscrita e impresiones dactilares. De la misma forma, contiene 2 certificados digitales denominados &lt;em&gt;AUTENTICACIÓN&lt;/em&gt; y &lt;em&gt;FIRMA&lt;/em&gt; con sus correspondientes claves privadas que están protegidas por una clave personal de acceso (&lt;em&gt;PIN&lt;/em&gt;) alfanumérica. Es importante notar que, aunque el &lt;em&gt;DNIe&lt;/em&gt; tiene una vigencia de 10 años desde el momento de su expedición, los certificados digitales almacenados internamente &lt;strong&gt;caducan a los 30 meses&lt;/strong&gt; y, por tanto, &lt;strong&gt;deben ser renovados en una comisaría de policía&lt;/strong&gt; para que sigan siendo válidos.&lt;/p&gt;
+&lt;p&gt;De forma resumida, podríamos &lt;a href=&#34;https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_103&#34; target=&#34;_blank&#34;&gt;describir el &lt;em&gt;DNIe&lt;/em&gt;&lt;/a&gt; como una &lt;a href=&#34;https://es.wikipedia.org/wiki/Tarjeta_inteligente&#34; target=&#34;_blank&#34;&gt;tarjeta inteligente o smart card&lt;/a&gt; que incorpora un chip criptográfico capaz de almacenar de forma segura la misma información que se encuentra impresa, las imágenes digitalizadas de la fotografía, firma manuscrita e impresiones dactilares. De la misma forma, contiene 2 certificados digitales denominados &lt;code&gt;AUTENTICACIÓN&lt;/code&gt; y &lt;code&gt;FIRMA&lt;/code&gt; con sus correspondientes claves privadas que están protegidas por una clave personal de acceso (&lt;em&gt;PIN&lt;/em&gt;) alfanumérica. Es importante notar que, aunque el &lt;em&gt;DNIe&lt;/em&gt; tiene una vigencia de 10 años desde el momento de su expedición, los certificados digitales almacenados internamente &lt;strong&gt;caducan a los 30 meses&lt;/strong&gt; y, por tanto, &lt;strong&gt;deben ser renovados en una comisaría de policía&lt;/strong&gt; para que sigan siendo válidos.&lt;/p&gt;
 
 &lt;p&gt;El chip criptográfico posibilita las siguientes funciones cuando sus certificados digitales están en vigor y se conoce el &lt;em&gt;PIN&lt;/em&gt;:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Acreditar electrónicamente y de forma inequívoca la identidad de la persona. Es una &lt;strong&gt;Autenticación&lt;/strong&gt; de doble factor, algo que se tiene (el certificado digital &lt;em&gt;AUTENTICACIÓN&lt;/em&gt; que va dentro del &lt;em&gt;DNIe&lt;/em&gt;) y algo que se conoce (el &lt;em&gt;PIN&lt;/em&gt;).&lt;/li&gt;
-&lt;li&gt;Firmar digitalmente documentos electrónicos, otorgándoles validez jurídica. Se usa el &lt;em&gt;PIN&lt;/em&gt; y el certificado digital &lt;em&gt;FIRMA&lt;/em&gt; para proporcionar &lt;strong&gt;Integridad&lt;/strong&gt; y &lt;strong&gt;No repudio&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Acreditar electrónicamente y de forma inequívoca la identidad de la persona. Es una &lt;strong&gt;Autenticación&lt;/strong&gt; de doble factor, algo que se tiene (el certificado digital &lt;code&gt;AUTENTICACIÓN&lt;/code&gt; que va dentro del &lt;em&gt;DNIe&lt;/em&gt;) y algo que se conoce (el &lt;em&gt;PIN&lt;/em&gt;).&lt;/li&gt;
+&lt;li&gt;Firmar digitalmente documentos electrónicos, otorgándoles validez jurídica. Se usa el &lt;em&gt;PIN&lt;/em&gt; y el certificado digital &lt;code&gt;FIRMA&lt;/code&gt; para proporcionar &lt;strong&gt;Integridad&lt;/strong&gt; y &lt;strong&gt;No repudio&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Se pueden encontrar más detalles técnicos revisando las características &lt;a href=&#34;https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_083&#34; target=&#34;_blank&#34;&gt;electrónicas&lt;/a&gt; y &lt;a href=&#34;https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_084&#34; target=&#34;_blank&#34;&gt;físicas&lt;/a&gt; del &lt;em&gt;DNIe&lt;/em&gt;.&lt;/p&gt;
@@ -321,22 +321,22 @@
 
 &lt;p&gt;Una vez instalado el driver, se debe configurar &lt;em&gt;Firefox&lt;/em&gt; para que pueda usar el &lt;em&gt;DNIe&lt;/em&gt; con un lector:&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Ir a &lt;em&gt;Firefox &amp;gt; Preferencias &amp;gt; Avanzado &amp;gt; Cifrado &amp;gt; Dispositivos de seguridad&lt;/em&gt;.&lt;/li&gt;
-&lt;li&gt;Seleccionar &lt;em&gt;Cargar&lt;/em&gt;.&lt;/li&gt;
+&lt;ol&gt;
+&lt;li&gt;Ir a &lt;code&gt;Firefox &amp;gt; Preferencias &amp;gt; Avanzado &amp;gt; Cifrado &amp;gt; Dispositivos de seguridad&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Seleccionar &lt;code&gt;Cargar&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;Asignar un nombre al módulo, por ejemplo, &lt;em&gt;DNIe&lt;/em&gt;.&lt;/li&gt;
 &lt;li&gt;Indicar la ruta hacia el driver, &lt;code&gt;/Library/Libpkcs11-dnie/lib/libpkcs11-dnie.so&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Hacer clic en &lt;em&gt;Aceptar&lt;/em&gt;.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;Hacer clic en &lt;code&gt;Aceptar&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;h3 id=&#34;3-3-instalar-los-certificados-de-la-policía&#34;&gt;3.3. Instalar los certificados de la policía&lt;/h3&gt;
 
 &lt;p&gt;Para que &lt;em&gt;Firefox&lt;/em&gt; no dé errores de verificación es necesario instalar los &lt;a href=&#34;https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_077&#34; target=&#34;_blank&#34;&gt;certificados de las Autoridades de Certificación raíz&lt;/a&gt; de la &lt;em&gt;DGP&lt;/em&gt; y aprobar cada uno de ellos para los siguientes usos:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Identificar páginas web.&lt;/li&gt;
-&lt;li&gt;Usuarios de correo electrónico.&lt;/li&gt;
-&lt;li&gt;Desarrolladores de aplicaciones.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Identificar páginas web&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Usuarios de correo electrónico&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Desarrolladores de aplicaciones&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Aunque no es estrictamente necesario, sí que es recomendable repetir el paso anterior con los &lt;a href=&#34;https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_078&#34; target=&#34;_blank&#34;&gt;certificados de las Autoridades de Certificación subordinadas&lt;/a&gt; de la &lt;em&gt;DGP&lt;/em&gt;.&lt;/p&gt;
@@ -353,12 +353,12 @@
 &lt;p&gt;Estos servicios nos permitirán, además, conocer el estado de los certificados que van dentro del &lt;em&gt;DNIe&lt;/em&gt;:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Válido&lt;/strong&gt;: el certificado digital no ha sido revocado ni ha expirado.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Revocado&lt;/strong&gt;: el certificado digital ha sido invalidado por la &lt;em&gt;DGP&lt;/em&gt;. Esto suele ocurrir al generar un nuevo &lt;em&gt;DNIe&lt;/em&gt; o renovar sus certificados digitales.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Expirado&lt;/strong&gt;: se ha superado la fecha en la que caduca el certificado digital y debería renovarse en una comisaría de policía.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Válido&lt;/code&gt;: el certificado digital no ha sido revocado ni ha expirado.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Revocado&lt;/code&gt;: el certificado digital ha sido invalidado por la &lt;em&gt;DGP&lt;/em&gt;. Esto suele ocurrir al generar un nuevo &lt;em&gt;DNIe&lt;/em&gt; o renovar sus certificados digitales.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Expirado&lt;/code&gt;: se ha superado la fecha en la que caduca el certificado digital y debería renovarse en una comisaría de policía.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;4-conclusiones&#34;&gt;4. Conclusiones&lt;/h2&gt;
+&lt;h2 id=&#34;conclusiones&#34;&gt;Conclusiones&lt;/h2&gt;
 
 &lt;p&gt;En los últimos años, a través de la &lt;a href=&#34;http://www.agendadigital.gob.es&#34; target=&#34;_blank&#34;&gt;Agenda Digital para España&lt;/a&gt;, el gobierno español está impulsando distintos planes en materia de Tecnologías de la Información y las Comunicaciones (TIC) y de Administración Electrónica para el cumplimiento de los objetivos de la Agenda Digital para Europa e incorpora objetivos específicos para el desarrollo de la economía y la sociedad digital en España.&lt;/p&gt;
 

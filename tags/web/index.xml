@@ -69,34 +69,35 @@
 
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Registrar o acceder&lt;/strong&gt; a una &lt;a href=&#34;https://github.com/login&#34; target=&#34;_blank&#34;&gt;cuenta de &lt;em&gt;GitHub&lt;/em&gt;&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Crear un contenedor de ficheros&lt;/strong&gt; denominado &lt;em&gt;Repository&lt;/em&gt;. Para que pueda usarse para alojar un website, tiene que tener un nombre especial &lt;em&gt;nombre.github.io&lt;/em&gt;, donde &lt;em&gt;nombre&lt;/em&gt; debe coincidir con el nombre de usuario de la cuenta de &lt;em&gt;GitHub&lt;/em&gt;, que servirá como &lt;em&gt;Endpoint&lt;/em&gt;. En mi caso es &lt;em&gt;alejandrolopezparra.github.io&lt;/em&gt;.&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Aunque &lt;em&gt;GitHub&lt;/em&gt; permite &lt;strong&gt;crear y editar contenido&lt;/strong&gt; directamente a través de la web de &lt;em&gt;GitHub&lt;/em&gt;, lo más conveniente es usar alguna herramienta que facilite esta tarea, como &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt; de la que &lt;a href=&#34;http://www.alejandrolopezparra.es/post/hugo/&#34;&gt;ya hablamos&lt;/a&gt;. Para ello, previamente sería necesario clonar el &lt;em&gt;Repository&lt;/em&gt; recién creado en local con un &lt;a href=&#34;https://git-scm.com/&#34; target=&#34;_blank&#34;&gt;cliente &lt;em&gt;Git&lt;/em&gt;&lt;/a&gt;. Si se usa el cliente de línea de comandos, habría que ejecutar:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;git clone https://github.com/nombre/nombre.github.io&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Una vez tengamos generados los ficheros HTML y demás recursos webs asociados, es el momento de &lt;strong&gt;alojar el contenido estático&lt;/strong&gt; en el &lt;em&gt;Repository&lt;/em&gt; creado con un cliente &lt;em&gt;Git&lt;/em&gt;. Si se usa el cliente de línea de comandos, habría que ejecutar los siguientes:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;git add --all&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;git commit -m &amp;quot;Initial commit&amp;quot;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;git push -u origin master&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Crear un contenedor de ficheros&lt;/strong&gt; denominado &lt;em&gt;Repository&lt;/em&gt;. Para que pueda usarse para alojar un website, tiene que tener un nombre especial &lt;code&gt;nombre.github.io&lt;/code&gt;, donde &lt;code&gt;nombre&lt;/code&gt; debe coincidir con el nombre de usuario de la cuenta de &lt;em&gt;GitHub&lt;/em&gt;, que servirá como &lt;em&gt;Endpoint&lt;/em&gt;. En mi caso es &lt;code&gt;alejandrolopezparra.github.io&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Aunque &lt;em&gt;GitHub&lt;/em&gt; permite &lt;strong&gt;crear y editar contenido&lt;/strong&gt; directamente a través de la web de &lt;em&gt;GitHub&lt;/em&gt;, lo más conveniente es usar alguna herramienta que facilite esta tarea, como &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt; de la que &lt;a href=&#34;http://www.alejandrolopezparra.es/post/hugo/&#34;&gt;ya hablamos&lt;/a&gt;. Para ello, previamente sería necesario clonar el &lt;em&gt;Repository&lt;/em&gt; recién creado en local con un &lt;a href=&#34;https://git-scm.com/&#34; target=&#34;_blank&#34;&gt;cliente &lt;em&gt;Git&lt;/em&gt;&lt;/a&gt;. Si se usa el cliente de línea de comandos, habría que ejecutar:&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Sólo con esos tres pasos, ya tendríamos nuestra página web personal accesible a través de un &lt;em&gt;Endpoint&lt;/em&gt; seguro &lt;em&gt;HTTPS&lt;/em&gt;://nombre.github.io donde &lt;em&gt;nombre&lt;/em&gt; se corresponde con el nombre de usuario de la cuenta de &lt;em&gt;GitHub&lt;/em&gt;. En mi caso, es &lt;a href=&#34;https://alejandrolopezparra.github.io&#34; target=&#34;_blank&#34;&gt;https://alejandrolopezparra.github.io&lt;/a&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt; $# git clone https://github.com/nombre/nombre.github.io
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Para el caso concreto de &lt;em&gt;Hugo&lt;/em&gt;, contamos con un &lt;a href=&#34;https://gohugo.io/tutorials/github-pages-blog/&#34; target=&#34;_blank&#34;&gt;tutorial&lt;/a&gt; que trata el despliegue en &lt;em&gt;GitHub Pages&lt;/em&gt; de páginas web basadas en &lt;em&gt;Hugo&lt;/em&gt; tanto personales como de organizaciones y también de proyectos.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Una vez tengamos generados los ficheros HTML y demás recursos webs asociados, es el momento de &lt;strong&gt;alojar el contenido estático&lt;/strong&gt; en el &lt;em&gt;Repository&lt;/em&gt; creado con un cliente &lt;em&gt;Git&lt;/em&gt;. Si se usa el cliente de línea de comandos, habría que ejecutar los siguientes:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$# git add --all
+$# git commit -m &amp;quot;Initial commit&amp;quot;
+$# git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Sólo con esos tres pasos, ya tendríamos nuestra página web personal accesible a través de un &lt;em&gt;Endpoint&lt;/em&gt; seguro &lt;code&gt;HTTPS://nombre.github.io&lt;/code&gt; donde &lt;code&gt;nombre&lt;/code&gt; se corresponde con el nombre de usuario de la cuenta de &lt;em&gt;GitHub&lt;/em&gt;. En mi caso, es &lt;a href=&#34;https://alejandrolopezparra.github.io&#34; target=&#34;_blank&#34;&gt;https://alejandrolopezparra.github.io&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Para el caso concreto de &lt;em&gt;Hugo&lt;/em&gt;, contamos con un &lt;a href=&#34;https://gohugo.io/tutorials/github-pages-blog/&#34; target=&#34;_blank&#34;&gt;tutorial&lt;/a&gt; que trata el despliegue en &lt;em&gt;GitHub Pages&lt;/em&gt; de páginas web basadas en &lt;em&gt;Hugo&lt;/em&gt; tanto personales como de organizaciones y también de proyectos. También disponemos de una &lt;a href=&#34;https://georgecushen.com/create-your-website-with-hugo/&#34; target=&#34;_blank&#34;&gt;guía detallada sobre &lt;em&gt;Hugo&lt;/em&gt; y &lt;em&gt;GitHub Pages&lt;/em&gt;&lt;/a&gt; del creador del &lt;a href=&#34;https://themes.gohugo.io/academic/&#34; target=&#34;_blank&#34;&gt;tema &lt;em&gt;Academic&lt;/em&gt; para &lt;em&gt;Hugo&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;3-asociar-un-dominio-propio&#34;&gt;3. Asociar un dominio propio&lt;/h2&gt;
 
-&lt;p&gt;Una vez tenemos nuestro website alojado en un &lt;em&gt;Repository&lt;/em&gt; y publicado en un &lt;em&gt;Endpoint&lt;/em&gt; de &lt;em&gt;GitHub&lt;/em&gt;, es el momento de que podamos asociarle un nombre de un dominio personalizado como, por ejemplo, &lt;a href=&#34;http://www.alejandrolopezparra.es&#34; target=&#34;_blank&#34;&gt;www.alejandrolopezparra.es&lt;/a&gt;. El único inconveniente de este paso es que perderemos la opción de usar &lt;em&gt;HTTPS&lt;/em&gt; ya que &lt;em&gt;GitHub Pages&lt;/em&gt; sólo puede usarlo con el domino &lt;em&gt;github.io&lt;/em&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:Cloudflare&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:Cloudflare&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;Una vez tenemos nuestro website alojado en un &lt;em&gt;Repository&lt;/em&gt; y publicado en un &lt;em&gt;Endpoint&lt;/em&gt; de &lt;em&gt;GitHub&lt;/em&gt;, es el momento de que podamos asociarle un nombre de un dominio personalizado como, por ejemplo, &lt;a href=&#34;http://www.alejandrolopezparra.es&#34; target=&#34;_blank&#34;&gt;www.alejandrolopezparra.es&lt;/a&gt;. El único inconveniente de este paso es que perderemos la opción de usar &lt;em&gt;HTTPS&lt;/em&gt; ya que &lt;em&gt;GitHub Pages&lt;/em&gt; sólo puede usarlo con el domino &lt;code&gt;github.io&lt;/code&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:Cloudflare&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:Cloudflare&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 
 &lt;p&gt;Para lograrlo es necesario lo siguiente:&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Registrar el dominio&lt;/strong&gt; en un registrador de dominios.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Crear un nombre en ese dominio&lt;/strong&gt; a través de un servicio &lt;em&gt;DNS&lt;/em&gt; que apunte al &lt;em&gt;Endpoint&lt;/em&gt; definido anteriormente mediante lo que se conoce como alias o &lt;a href=&#34;https://en.wikipedia.org/wiki/CNAME_record&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;registro CNAME&lt;/em&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Crear un nombre en ese dominio&lt;/strong&gt; a través de un servicio &lt;em&gt;DNS&lt;/em&gt; que apunte al &lt;em&gt;Endpoint&lt;/em&gt; definido anteriormente mediante lo que se conoce como alias o &lt;a href=&#34;https://en.wikipedia.org/wiki/CNAME_record&#34; target=&#34;_blank&#34;&gt;registro &lt;em&gt;CNAME&lt;/em&gt;&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Configurar el nombre de dominio&lt;/strong&gt; en &lt;em&gt;GitHub Pages&lt;/em&gt; en las propiedades del &lt;em&gt;Repository&lt;/em&gt; tal y como se indica &lt;a href=&#34;https://help.github.com/articles/adding-or-removing-a-custom-domain-for-your-github-pages-site/&#34; target=&#34;_blank&#34;&gt;aquí&lt;/a&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -106,13 +107,15 @@
 
 &lt;p&gt;Existen multitud de registradores de dominios y muchos de ellos también proporcionan servicios &lt;em&gt;DNS&lt;/em&gt;. &lt;em&gt;Amazon&lt;/em&gt; ofrece estos servicios a través de &lt;a href=&#34;https://aws.amazon.com/es/route53/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Amazon Route 53&lt;/em&gt;&lt;/a&gt; y dispone de una &lt;a href=&#34;https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html#root-domain-walkthrough-switch-to-route53-as-dnsprovider&#34; target=&#34;_blank&#34;&gt;guía&lt;/a&gt; en la que explican cómo llevarlo a cabo. Otro prestador muy conocido de este tipo de servicios es &lt;a href=&#34;http://dyn.com&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Dyn&lt;/em&gt;&lt;/a&gt;. En mi caso, uso &lt;a href=&#34;https://es.godaddy.com&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;GoDaddy&lt;/em&gt;&lt;/a&gt; para ambas cosas aunque tiene la pega de no permitir alias del dominio raíz.&lt;/p&gt;
 
-&lt;h2 id=&#34;4-conclusión&#34;&gt;4. Conclusión&lt;/h2&gt;
+&lt;h2 id=&#34;conclusiones&#34;&gt;Conclusiones&lt;/h2&gt;
 
 &lt;p&gt;&lt;em&gt;GitHubs Pages&lt;/em&gt; permite el alojamiento de websites estáticos de forma fácil y gratuita. Para webs personales o con un tráfico moderado es idóneo ya que tiene unos límites de uso suficientemente elevados.&lt;/p&gt;
 
 &lt;p&gt;Desde mi punto de vista, su mayor inconveniente es que no dispone de estadísticas avanzadas de uso ni permite registrar los logs de las visitas para obtenerlas sin la necesidad de un servicio de estadísticas externo.&lt;/p&gt;
 
-&lt;p&gt;En cualquier caso, &lt;em&gt;Amazon S3&lt;/em&gt; y &lt;em&gt;GitHub Pages&lt;/em&gt; no son las únicas alternativas:&lt;/p&gt;
+&lt;p&gt;En cualquier caso, he optado por migrar el alojamiento de mi website de &lt;em&gt;Amazon S3&lt;/em&gt; a &lt;em&gt;GitHub Pages&lt;/em&gt; por las ventajas que ofrece a coste cero.&lt;/p&gt;
+
+&lt;p&gt;No obstante, &lt;em&gt;Amazon S3&lt;/em&gt; y &lt;em&gt;GitHub Pages&lt;/em&gt; no son las únicas alternativas. También tenemos otras posibilidades entre las que se encuentran:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://cloud.google.com/storage/&#34; target=&#34;_blank&#34;&gt;Google Cloud Storage&lt;/a&gt; con su &lt;a href=&#34;https://cloud.google.com/storage/docs/hosting-static-website&#34; target=&#34;_blank&#34;&gt;guía&lt;/a&gt;. De pago.&lt;/li&gt;
@@ -165,17 +168,18 @@
 
 &lt;h2 id=&#34;1-descargar-bases-de-datos-de-geolocalización&#34;&gt;1. Descargar bases de datos de geolocalización&lt;/h2&gt;
 
-&lt;p&gt;El primer paso a realizar es descargar la base de datos de geolocalización que se usará para poder obtener el país, sistema autónomo (ASN), organización, región y/o ciudad de cada una de las direcciones IP desde las que visiten nuestro website. &lt;em&gt;AWStats&lt;/em&gt; soporta tres proveedores de bases de datos:&lt;/p&gt;
+&lt;p&gt;El primer paso a realizar es descargar la base de datos de geolocalización que se usará para poder obtener el país, sistema autónomo (&lt;em&gt;ASN&lt;/em&gt;), organización, región y/o ciudad de cada una de las direcciones IP desde las que visiten nuestro website. &lt;em&gt;AWStats&lt;/em&gt; soporta tres proveedores de bases de datos:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://software77.net/geo-ip/&#34; target=&#34;_blank&#34;&gt;GeoIPFree&lt;/a&gt;: es gratuita y libre pero sólo proporciona base de datos para el &lt;a href=&#34;http://software77.net/geo-ip/?DL=4&#34; target=&#34;_blank&#34;&gt;país&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://dev.maxmind.com/geoip/legacy/geolite/&#34; target=&#34;_blank&#34;&gt;MaxMind GeoLite&lt;/a&gt;: es gratuita y proporciona bases de datos para el &lt;a href=&#34;http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz&#34; target=&#34;_blank&#34;&gt;país&lt;/a&gt;, &lt;a href=&#34;http://download.maxmind.com/download/geoip/database/asnum/GeoIPASNum.dat.gz&#34; target=&#34;_blank&#34;&gt;ASN&lt;/a&gt; y &lt;a href=&#34;http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz&#34; target=&#34;_blank&#34;&gt;ciudad&lt;/a&gt;. Se actualizan el primer martes de cada mes.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://dev.maxmind.com/geoip/legacy/&#34; target=&#34;_blank&#34;&gt;MaxMind GeoIP&lt;/a&gt;: es comercial y proporciona bases de datos para el país, ASN, organización, región y ciudad. Se actualizan todas las semanas.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dev.maxmind.com/geoip/legacy/geolite/&#34; target=&#34;_blank&#34;&gt;MaxMind GeoLite&lt;/a&gt;: es gratuita y proporciona bases de datos para el &lt;a href=&#34;http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz&#34; target=&#34;_blank&#34;&gt;país&lt;/a&gt;, &lt;a href=&#34;http://download.maxmind.com/download/geoip/database/asnum/GeoIPASNum.dat.gz&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;ASN&lt;/em&gt;&lt;/a&gt; y &lt;a href=&#34;http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz&#34; target=&#34;_blank&#34;&gt;ciudad&lt;/a&gt;. Se actualizan el primer martes de cada mes.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dev.maxmind.com/geoip/legacy/&#34; target=&#34;_blank&#34;&gt;MaxMind GeoIP&lt;/a&gt;: es comercial y proporciona bases de datos para el país, &lt;em&gt;ASN&lt;/em&gt;, organización, región y ciudad. Se actualizan todas las semanas.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;En este caso, optaremos por las 3 bases de datos de &lt;em&gt;MaxMind GeoLite&lt;/em&gt; así que, una vez descargadas, será necesario descomprimirlas:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;gunzip -f GeoIP.dat.gz GeoIPASNum.dat.gz GeoLiteCity.dat.gz&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$# gunzip -f GeoIP.dat.gz GeoIPASNum.dat.gz GeoLiteCity.dat.gz
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&#34;2-instalar-perl&#34;&gt;2. Instalar Perl&lt;/h2&gt;
 
@@ -183,7 +187,8 @@
 
 &lt;p&gt;Sin embargo, además del intérprete de &lt;em&gt;Perl&lt;/em&gt;, es necesario disponer del módulo &lt;a href=&#34;http://search.cpan.org/~maxmind/Geo-IP-1.50/lib/Geo/IP.pm&#34; target=&#34;_blank&#34;&gt;Geo::IP&lt;/a&gt; de &lt;em&gt;MaxMind&lt;/em&gt; para &lt;em&gt;Perl&lt;/em&gt; de forma que &lt;em&gt;AWStats&lt;/em&gt; pueda hacer uso de sus bases de datos de geolocalización. En &lt;em&gt;macOS&lt;/em&gt; y otros sistemas operativos, es tan fácil como ejecutar el comando &lt;a href=&#34;https://metacpan.org/pod/distribution/CPAN/scripts/cpan&#34; target=&#34;_blank&#34;&gt;cpan&lt;/a&gt; que viene con &lt;em&gt;Perl&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;cpan Geo::IP&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$# cpan Geo::IP
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Si no disponemos de permisos de root/administrador o &lt;strong&gt;por seguridad&lt;/strong&gt;, podemos ejecutarlo con un usuario sin privilegios pero, antes, hay que instalar &lt;a href=&#34;https://metacpan.org/pod/local::lib&#34; target=&#34;_blank&#34;&gt;local::lib&lt;/a&gt; (un módulo de &lt;em&gt;Perl&lt;/em&gt; que permite instalar módulos en directorios locales). Para llevarlo a cabo, lo más recomendable es usar la &lt;a href=&#34;https://metacpan.org/pod/local::lib#The-bootstrapping-technique&#34; target=&#34;_blank&#34;&gt;técnica bootstrapping&lt;/a&gt;.&lt;/p&gt;
 
@@ -191,11 +196,11 @@
 
 &lt;p&gt;Ahora sí, una vez cubiertos todos los requisito previos, llega el momento de descargar &lt;em&gt;AWStats&lt;/em&gt; desde su &lt;a href=&#34;http://www.awstats.org/#DOWNLOAD&#34; target=&#34;_blank&#34;&gt;web oficial&lt;/a&gt; y descomprimirlo para posteriormente configurarlo según las &lt;a href=&#34;http://www.awstats.org/docs/awstats_setup.html&#34; target=&#34;_blank&#34;&gt;instrucciones oficiales&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Básicamente la configuración consiste en crear un fichero &lt;em&gt;awstats.$myserver.conf&lt;/em&gt; con todas las opciones de configuración necesarias y donde &lt;em&gt;$myserver&lt;/em&gt; es el nombre del servidor que aparecerán en los logs. Existen 2 posibilidades para llevarlo a cabo:&lt;/p&gt;
+&lt;p&gt;Básicamente la configuración consiste en crear un fichero &lt;code&gt;awstats.$myserver.conf&lt;/code&gt; con todas las opciones de configuración necesarias y donde &lt;code&gt;$myserver&lt;/code&gt; es el nombre del servidor que aparecerán en los logs. Existen 2 posibilidades para llevarlo a cabo:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;El uso del script &lt;em&gt;awstats_configure.pl&lt;/em&gt;, que crea el fichero de configuración a partir de las respuestas a las preguntas que interactivamente realiza al usuario. Esta primera alternativa &lt;strong&gt;no es recomendable&lt;/strong&gt; a no ser que los logs que se pretendan analizar sean generados por un servidor web &lt;em&gt;Apache HTTP Server&lt;/em&gt; que esté instalado en la misma máquina que &lt;em&gt;AWStats&lt;/em&gt;, ya que intenta modificar directamente la configuración de dicho servidor y reiniciarlo después.&lt;/li&gt;
-&lt;li&gt;A partir del fichero de configuración de ejemplo que viene &lt;em&gt;awstats.model.conf&lt;/em&gt;, copiándolo como &lt;em&gt;awstats.$myserver.conf&lt;/em&gt; y modificando las valores por defecto de las opciones.&lt;/li&gt;
+&lt;li&gt;El uso del script &lt;code&gt;awstats_configure.pl&lt;/code&gt;, que crea el fichero de configuración a partir de las respuestas a las preguntas que interactivamente realiza al usuario. Esta primera alternativa &lt;strong&gt;no es recomendable&lt;/strong&gt; a no ser que los logs que se pretendan analizar sean generados por un servidor web &lt;em&gt;Apache HTTP Server&lt;/em&gt; que esté instalado en la misma máquina que &lt;em&gt;AWStats&lt;/em&gt;, ya que intenta modificar directamente la configuración de dicho servidor y reiniciarlo después.&lt;/li&gt;
+&lt;li&gt;A partir del fichero de configuración de ejemplo que viene &lt;code&gt;awstats.model.conf&lt;/code&gt;, copiándolo como &lt;code&gt;awstats.$myserver.conf&lt;/code&gt; y modificando las valores por defecto de las opciones.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Aunque las opciones están bien documentadas en el fichero de configuración de ejemplo y en la &lt;a href=&#34;http://www.awstats.org/docs/awstats_config.html&#34; target=&#34;_blank&#34;&gt;web oficial&lt;/a&gt;, las más importantes son las siguientes:&lt;/p&gt;
@@ -225,47 +230,48 @@ LoadPlugin=&amp;quot;timezone CET&amp;quot;
 
 &lt;p&gt;El primer paso es construir la base de datos de estadísticas para comprobar si hay algún error, con el comando:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;awstats.pl -config=$myserver -update&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$# awstats.pl -config=$myserver -update
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Cuando esto se haya completado correctamente, ya se podrá solicitar a &lt;em&gt;AWStats&lt;/em&gt; que genere todos los informes posibles con el comando:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;awstats_buildstaticpages.pl -config=$myserver -update -month=all -configdir=$configdir -awstatsprog=$awstatsprog&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$# awstats_buildstaticpages.pl -config=$myserver -update -month=all -configdir=$configdir -awstatsprog=$awstatsprog
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;donde&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;$myserver&lt;/em&gt; es el nombre del servidor tal y como aparece en los logs.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;$configdir&lt;/em&gt; es el directorio donde esté el fichero de configuración &lt;em&gt;awstats.$myserver.conf&lt;/em&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;$awstatsprog&lt;/em&gt; es la ruta al comando &lt;em&gt;awstats.pl&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$myserver&lt;/code&gt; es el nombre del servidor tal y como aparece en los logs.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$configdir&lt;/code&gt; es el directorio donde esté el fichero de configuración &lt;code&gt;awstats.$myserver.conf&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$awstatsprog&lt;/code&gt; es la ruta al comando &lt;code&gt;awstats.pl&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;El resultado final son una serie de documentos HTML que contienen los informes general y detallados de cada una de las estadísticas que recopila &lt;em&gt;AWStats&lt;/em&gt;:&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;awstats.$myserver.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.alldomains.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.allhosts.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.lasthosts.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.unknownip.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.alllogins.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.lastlogins.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.allrobots.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.lastrobots.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.urldetail.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.urlentry.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.urlexit.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.browserdetail.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.osdetail.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.unknownbrowser.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.unknownos.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.refererse.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.refererpages.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.keyphrases.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.keywords.html&lt;/li&gt;
-&lt;li&gt;awstats.$myserver.errors404.html&lt;/li&gt;
-&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;awstats.$myserver.html
+awstats.$myserver.alldomains.html
+awstats.$myserver.allhosts.html
+awstats.$myserver.lasthosts.html
+awstats.$myserver.unknownip.html
+awstats.$myserver.alllogins.html
+awstats.$myserver.lastlogins.html
+awstats.$myserver.allrobots.html
+awstats.$myserver.lastrobots.html
+awstats.$myserver.urldetail.html
+awstats.$myserver.urlentry.html
+awstats.$myserver.urlexit.html
+awstats.$myserver.browserdetail.html
+awstats.$myserver.osdetail.html
+awstats.$myserver.unknownbrowser.html
+awstats.$myserver.unknownos.html
+awstats.$myserver.refererse.html
+awstats.$myserver.refererpages.html
+awstats.$myserver.keyphrases.html
+awstats.$myserver.keywords.html
+awstats.$myserver.errors404.html
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;conclusión&#34;&gt;Conclusión&lt;/h2&gt;
+&lt;h2 id=&#34;conclusiones&#34;&gt;Conclusiones&lt;/h2&gt;
 
 &lt;p&gt;Aunque &lt;em&gt;AWStats&lt;/em&gt; dispone de buena &lt;a href=&#34;http://www.awstats.org/docs/index.html&#34; target=&#34;_blank&#34;&gt;documentación oficial&lt;/a&gt;, no es nada sencillo ni intuitivo usar la herramienta por primera vez debido a la cantidad de opciones que ofrece.&lt;/p&gt;
 
@@ -289,7 +295,7 @@ LoadPlugin=&amp;quot;timezone CET&amp;quot;
 
 &lt;h2 id=&#34;1-activar-el-registro-de-accesos&#34;&gt;1. Activar el registro de accesos&lt;/h2&gt;
 
-&lt;p&gt;El registro de accesos o access logging se habilita con unos &lt;a href=&#34;https://docs.aws.amazon.com/AmazonS3/latest/dev/enable-logging-console.html&#34; target=&#34;_blank&#34;&gt;sencillos pasos&lt;/a&gt;. De esta forma, con cada petición de acceso se genera un &lt;em&gt;nuevo&lt;/em&gt; fichero que se almacena en el &lt;a href=&#34;http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingBucket.html&#34; target=&#34;_blank&#34;&gt;Bucket&lt;/a&gt; que hayamos seleccionado para tal fin y que tendrá asociado un nombre único (por ejemplo, &lt;em&gt;mybucket&lt;/em&gt;). En dichos ficheros se registran los datos de los accesos (&lt;em&gt;requester, bucket name, request time, request action, response status, error code&lt;/em&gt;) siguiendo el formato de log que se explica &lt;a href=&#34;https://docs.aws.amazon.com/AmazonS3/latest/dev/LogFormat.html&#34; target=&#34;_blank&#34;&gt;aquí&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;El registro de accesos o access logging se habilita con unos &lt;a href=&#34;https://docs.aws.amazon.com/AmazonS3/latest/dev/enable-logging-console.html&#34; target=&#34;_blank&#34;&gt;sencillos pasos&lt;/a&gt;. De esta forma, con cada petición de acceso se genera un nuevo fichero que se almacena en el &lt;a href=&#34;http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingBucket.html&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Bucket&lt;/em&gt;&lt;/a&gt; que hayamos seleccionado para tal fin y que tendrá asociado un nombre único (por ejemplo, &lt;code&gt;mybucket&lt;/code&gt;). En dichos ficheros se registran los datos de los accesos (&lt;code&gt;requester&lt;/code&gt;, &lt;code&gt;bucket name&lt;/code&gt;, &lt;code&gt;request time&lt;/code&gt;, &lt;code&gt;request action&lt;/code&gt;, &lt;code&gt;response status&lt;/code&gt;, &lt;code&gt;error code&lt;/code&gt;) siguiendo el formato de log que se explica &lt;a href=&#34;https://docs.aws.amazon.com/AmazonS3/latest/dev/LogFormat.html&#34; target=&#34;_blank&#34;&gt;aquí&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;2-purgar-los-ficheros-de-logs&#34;&gt;2. Purgar los ficheros de logs&lt;/h2&gt;
 
@@ -304,43 +310,45 @@ LoadPlugin=&amp;quot;timezone CET&amp;quot;
 &lt;p&gt;Antes de poder usar la CLI de AWS contra la API de S3 es indispensable crear un usuario que tenga los permisos suficientes. Esta tarea se realiza a través del &lt;a href=&#34;http://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html?icmpid=docs_iam_console&#34; target=&#34;_blank&#34;&gt;servicio de gestión de acceso e identidad (IAM)&lt;/a&gt; de AWS:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Crear un grupo y asociarle la política de permisos de sólo lectura (&lt;strong&gt;AmazonS3ReadOnlyAccess&lt;/strong&gt;).&lt;/li&gt;
-&lt;li&gt;Crear un usuario con el tipo de acceso &lt;strong&gt;Programmatic access&lt;/strong&gt; y añadirlo al grupo anterior.&lt;/li&gt;
-&lt;li&gt;Anotar el identificador de usuario (&lt;strong&gt;Access key ID&lt;/strong&gt;) y la contraseña (&lt;strong&gt;Secret access key&lt;/strong&gt;) del usuario generado ya que serán necesarios a continuación.&lt;/li&gt;
+&lt;li&gt;Crear un grupo y asociarle la política de permisos de sólo lectura (&lt;code&gt;AmazonS3ReadOnlyAccess&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Crear un usuario con el tipo de acceso &lt;code&gt;Programmatic access&lt;/code&gt; y añadirlo al grupo anterior.&lt;/li&gt;
+&lt;li&gt;Anotar el identificador de usuario (&lt;code&gt;Access key ID&lt;/code&gt;) y la contraseña (&lt;code&gt;Secret access key&lt;/code&gt;) del usuario generado ya que serán necesarios a continuación.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;3-2-descargar-los-logs-desde-amazon-s3&#34;&gt;3.2. Descargar los logs desde Amazon S3&lt;/h3&gt;
 
-&lt;p&gt;Para poder descargar los logs en un directorio local (por ejemplo, &lt;em&gt;mylogs&lt;/em&gt;) usaremos la CLI de AWS que tiene &lt;a href=&#34;http://docs.aws.amazon.com/cli/latest/userguide/using-s3-commands.html&#34; target=&#34;_blank&#34;&gt;multitud de comandos&lt;/a&gt; que permiten automatizar muchas de las tareas. Para el caso de &lt;a href=&#34;https://es.wikipedia.org/wiki/MacOS&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;macOS&lt;/em&gt;&lt;/a&gt;, nos bastará con seguir unos sencillos pasos:&lt;/p&gt;
+&lt;p&gt;Para poder descargar los logs en un directorio local (por ejemplo, &lt;code&gt;mylogs&lt;/code&gt;) usaremos la CLI de AWS que tiene &lt;a href=&#34;http://docs.aws.amazon.com/cli/latest/userguide/using-s3-commands.html&#34; target=&#34;_blank&#34;&gt;multitud de comandos&lt;/a&gt; que permiten automatizar muchas de las tareas. Para el caso de &lt;a href=&#34;https://es.wikipedia.org/wiki/MacOS&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;macOS&lt;/em&gt;&lt;/a&gt;, nos bastará con seguir unos sencillos pasos:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Instalar la CLI de AWS siguiendo &lt;a href=&#34;http://docs.aws.amazon.com/cli/latest/userguide/installing.html&#34; target=&#34;_blank&#34;&gt;estas instrucciones&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Configurarla con el comando &lt;em&gt;configure&lt;/em&gt;:&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;li&gt;&lt;p&gt;Configurarla con el comando &lt;em&gt;configure&lt;/em&gt;:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;aws configure&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Responder a las siguientes preguntas:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$# aws configure
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;AWS Access Key ID&lt;/strong&gt;. El identificador de usuario.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;AWS Secret Access Key&lt;/strong&gt;. La contraseña del usuario.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Default region name&lt;/strong&gt;. En mi caso, &lt;em&gt;eu-west-1&lt;/em&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Default output format&lt;/strong&gt;. En mi caso, &lt;em&gt;None&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Responder a las siguientes preguntas:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;AWS Access Key ID&lt;/code&gt;. El identificador de usuario.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AWS Secret Access Key&lt;/code&gt;. La contraseña del usuario.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Default region name&lt;/code&gt;. En mi caso, &lt;code&gt;eu-west-1&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Default output format&lt;/code&gt;. En mi caso, &lt;code&gt;None&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Crear un directorio donde descargar los logs (por ejemplo, &lt;em&gt;mylogs&lt;/em&gt;).&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Ejecutar el comando &lt;em&gt;sync&lt;/em&gt; para descargar los logs, siendo &lt;em&gt;mybucket&lt;/em&gt; el nombre del bucket donde están los logs:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;aws s3 sync s3://mybucket/ mylogs/&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;Crear un directorio donde descargar los logs (por ejemplo, &lt;code&gt;mylogs&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Ejecutar el comando &lt;code&gt;sync&lt;/code&gt; para descargar los logs, siendo &lt;code&gt;mybucket&lt;/code&gt; el nombre del bucket donde están los logs:&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$# aws s3 sync s3://mybucket/ mylogs/
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Por último, será necesario juntar todos los ficheros descargados en uno sólo para facilitar el análisis de los datos. En &lt;em&gt;macOS&lt;/em&gt; se puede usar un comando como el siguiente:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;cat mylogs/* &amp;gt; access.log&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$# cat mylogs/* &amp;gt; access.log
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;conclusión&#34;&gt;Conclusión&lt;/h2&gt;
+&lt;h2 id=&#34;conclusiones&#34;&gt;Conclusiones&lt;/h2&gt;
 
 &lt;p&gt;La función &lt;em&gt;access logging&lt;/em&gt; de &lt;em&gt;Amazon S3&lt;/em&gt; nos permite registrar cada acceso que se produzca a nuestro website con datos valiosos sobre los mismos como son el solicitante, la respuesta del servidor y los tiempos.&lt;/p&gt;
 
@@ -358,7 +366,7 @@ LoadPlugin=&amp;quot;timezone CET&amp;quot;
 
 &lt;p&gt;Como continuación al &lt;a href=&#34;http://www.alejandrolopezparra.es/post/hugo/&#34;&gt;primer post&lt;/a&gt; en el que hablaba de &lt;a href=&#34;https://gohugo.io&#34; target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt;, el framework usado para la creación de esta web, me gustaría seguir comentando otra de las tecnologías en las que se apoya. En esta ocasión es el turno del servicio &lt;a href=&#34;http://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html&#34; target=&#34;_blank&#34;&gt;Amazon Simple Storage Service (S3)&lt;/a&gt; que pertenece a la plataforma de servicios en la nube &lt;a href=&#34;https://aws.amazon.com/es/what-is-aws/&#34; target=&#34;_blank&#34;&gt;Amazon Web Services (AWS)&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;Amazon S3&lt;/em&gt; es un servicio de pago para almacenamiento en la nube al estilo de &lt;a href=&#34;https://www.dropbox.com&#34; target=&#34;_blank&#34;&gt;Dropbox&lt;/a&gt;, &lt;a href=&#34;https://drive.google.com&#34; target=&#34;_blank&#34;&gt;Google Drive&lt;/a&gt; o &lt;a href=&#34;https://onedrive.live.com/about/es-es/&#34; target=&#34;_blank&#34;&gt;Microsoft OneDrive&lt;/a&gt;. Además de almacenar ficheros y directorios, &lt;strong&gt;permite alojar websites de contenido estático&lt;/strong&gt;, es decir, webs que se basan en HyperText Markup Language (HTML), JavaScript (JS) y Cascading Style Sheets (CSS). El contenido no es generado dinámicamente en cada solicitud que se realiza al servidor y, por tanto, no son necesarios ni servidores de aplicaciones ni de bases de datos. Sólo se requiere un servidor web que sirva el contenido según se le vaya solicitando. Afortunadamente, gracias a tecnologías que se ejecutan en el lado del cliente como JS y CSS, se puede conseguir cierto dinamismo en cómo se muestra el contenido aunque éste sea servido de forma estática.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Amazon S3&lt;/em&gt; es un servicio de pago para almacenamiento en la nube al estilo de &lt;a href=&#34;https://www.dropbox.com&#34; target=&#34;_blank&#34;&gt;Dropbox&lt;/a&gt;, &lt;a href=&#34;https://drive.google.com&#34; target=&#34;_blank&#34;&gt;Google Drive&lt;/a&gt; o &lt;a href=&#34;https://onedrive.live.com/about/es-es/&#34; target=&#34;_blank&#34;&gt;Microsoft OneDrive&lt;/a&gt;. Además de almacenar ficheros y directorios, &lt;strong&gt;permite alojar websites de contenido estático&lt;/strong&gt;, es decir, webs que se basan en &lt;em&gt;HyperText Markup Language&lt;/em&gt; (&lt;em&gt;HTML&lt;/em&gt;), &lt;em&gt;JavaScript&lt;/em&gt; (&lt;em&gt;JS&lt;/em&gt;) y &lt;em&gt;Cascading Style Sheets&lt;/em&gt; (&lt;em&gt;CSS&lt;/em&gt;). El contenido no es generado dinámicamente en cada solicitud que se realiza al servidor y, por tanto, no son necesarios ni servidores de aplicaciones ni de bases de datos. Sólo se requiere un servidor web que sirva el contenido según se le vaya solicitando. Afortunadamente, gracias a tecnologías que se ejecutan en el lado del cliente como &lt;em&gt;JS&lt;/em&gt; y &lt;em&gt;CSS&lt;/em&gt;, se puede conseguir cierto dinamismo en cómo se muestra el contenido aunque éste sea servido de forma estática.&lt;/p&gt;
 
 &lt;p&gt;A continuación se describen los 2 pasos que hay que realizar para poder publicar una web estática: (1) alojar el website y (2) asociar un dominio.&lt;/p&gt;
 
@@ -366,25 +374,25 @@ LoadPlugin=&amp;quot;timezone CET&amp;quot;
 
 &lt;p&gt;La capacidad de alojamiento de webs estáticas de &lt;em&gt;Amazon S3&lt;/em&gt; está explicada en detalle &lt;a href=&#34;https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html&#34; target=&#34;_blank&#34;&gt;aquí&lt;/a&gt; pero, en resumen, nos permite lo siguiente:&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Crear un contenedor o depósito denominado &lt;a href=&#34;http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingBucket.html&#34; target=&#34;_blank&#34;&gt;Bucket&lt;/a&gt; que está físicamente en una &lt;a href=&#34;http://docs.aws.amazon.com/general/latest/gr/rande.html#s3_website_region_endpoints&#34; target=&#34;_blank&#34;&gt;región&lt;/a&gt; o CPD de Amazon. &lt;em&gt;Los Buckets tienen que tener un nombre único en una región y ese nombre debe coincidir con el dominio DNS que pretandamos registrar posteriormente&lt;/em&gt;.&lt;/li&gt;
-&lt;li&gt;Almacenar los ficheros HTML y demás recursos webs asociados en dicho Bucket.&lt;/li&gt;
-&lt;li&gt;Publicar el Bucket a través de un &lt;a href=&#34;http://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteEndpoints.html&#34; target=&#34;_blank&#34;&gt;Endpoint&lt;/a&gt;. Un Endpoint apunta a un Bucket concreto que se encuentra en una región en particular. En mi caso es &lt;a href=&#34;http://www.alejandrolopezparra.es.s3-website-eu-west-1.amazonaws.com&#34; target=&#34;_blank&#34;&gt;www.alejandrolopezparra.es.s3-website-eu-west-1.amazonaws.com&lt;/a&gt;&lt;/li&gt;
+&lt;ol&gt;
+&lt;li&gt;Crear un contenedor o depósito denominado &lt;a href=&#34;http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingBucket.html&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Bucket&lt;/em&gt;&lt;/a&gt; que está físicamente en una &lt;a href=&#34;http://docs.aws.amazon.com/general/latest/gr/rande.html#s3_website_region_endpoints&#34; target=&#34;_blank&#34;&gt;región&lt;/a&gt; o CPD de &lt;em&gt;Amazon&lt;/em&gt;. Los &lt;em&gt;Buckets&lt;/em&gt; tienen que tener un &lt;strong&gt;nombre único&lt;/strong&gt; en una región y ese nombre debe coincidir con el dominio &lt;em&gt;DNS&lt;/em&gt; que pretandamos registrar posteriormente.&lt;/li&gt;
+&lt;li&gt;Almacenar los ficheros &lt;em&gt;HTML&lt;/em&gt; y demás recursos webs asociados en dicho &lt;em&gt;Bucket&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Publicar el &lt;em&gt;Bucket&lt;/em&gt; a través de un &lt;a href=&#34;http://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteEndpoints.html&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Endpoint&lt;/em&gt;&lt;/a&gt;. Un &lt;em&gt;Endpoint&lt;/em&gt; apunta a un &lt;em&gt;Bucket&lt;/em&gt; concreto que se encuentra en una región en particular. En mi caso es &lt;a href=&#34;http://www.alejandrolopezparra.es.s3-website-eu-west-1.amazonaws.com&#34; target=&#34;_blank&#34;&gt;www.alejandrolopezparra.es.s3-website-eu-west-1.amazonaws.com&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Configurar cuál es la página &lt;a href=&#34;https://docs.aws.amazon.com/AmazonS3/latest/dev/IndexDocumentSupport.html&#34; target=&#34;_blank&#34;&gt;index&lt;/a&gt; (página que se cargará por defecto) y la que se muestra en caso de &lt;a href=&#34;https://docs.aws.amazon.com/AmazonS3/latest/dev/CustomErrorDocSupport.html&#34; target=&#34;_blank&#34;&gt;error&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Activar los &lt;a href=&#34;https://docs.aws.amazon.com/AmazonS3/latest/dev/ServerLogs.html&#34; target=&#34;_blank&#34;&gt;ficheros de logs&lt;/a&gt; para registrar los accesos que se produzcan al servidor. Más información sobre esto en el post dedicado a los &lt;a href=&#34;http://www.alejandrolopezparra.es/post/amazon_s3_logs/&#34;&gt;logs de Amazon S3&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/ol&gt;
 
 &lt;p&gt;También contamos con un &lt;a href=&#34;https://console.aws.amazon.com/quickstart-website/new&#34; target=&#34;_blank&#34;&gt;asistente o guía rápida&lt;/a&gt; que nos facilita el proceso de alojamiento de un nuevo website.&lt;/p&gt;
 
 &lt;h2 id=&#34;2-asociar-un-dominio-propio&#34;&gt;2. Asociar un dominio propio&lt;/h2&gt;
 
-&lt;p&gt;Una vez tenemos nuestro website alojado en un Bucket y lo hemos publicado en un Endpoint, es el momento de asociarle un nombre de un dominio propio, por ejemplo &lt;a href=&#34;http://www.alejandrolopezparra.es&#34; target=&#34;_blank&#34;&gt;www.alejandrolopezparra.es&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Una vez tenemos nuestro website alojado en un &lt;em&gt;Bucket&lt;/em&gt; y lo hemos publicado en un &lt;em&gt;Endpoint&lt;/em&gt;, es el momento de asociarle un nombre de un dominio propio, por ejemplo &lt;a href=&#34;http://www.alejandrolopezparra.es&#34; target=&#34;_blank&#34;&gt;www.alejandrolopezparra.es&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Para lograrlo es necesario &lt;strong&gt;registrar el dominio&lt;/strong&gt; en un registrador de dominios y &lt;strong&gt;crear un nombre en ese dominio&lt;/strong&gt; a través de un servicio DNS que apunte al Endpoint definido anteriormente mediante lo que se conoce como alias. De esta forma, cuando un navegador web intente resolver dicho nombre, recibirá como respuesta el endpoint donde tenemos alojado nuestro website. Lo habitual es crear un alias para el subdominio &lt;em&gt;www&lt;/em&gt; aunque en algunos proveedores DNS también es posible crear un alias para el dominio raíz. Es muy importante tener en cuenta que &lt;em&gt;cada alias tiene que apuntar a un Endpoint concreto y el nombre del alias debe coincidir con el nombre del Endpoint&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Para lograrlo es necesario &lt;strong&gt;registrar el dominio&lt;/strong&gt; en un registrador de dominios y &lt;strong&gt;crear un nombre en ese dominio&lt;/strong&gt; a través de un servicio DNS que apunte al Endpoint definido anteriormente mediante lo que se conoce como alias. De esta forma, cuando un navegador web intente resolver dicho nombre, recibirá como respuesta el endpoint donde tenemos alojado nuestro website. Lo habitual es crear un alias para el subdominio &lt;code&gt;www&lt;/code&gt; aunque en algunos proveedores &lt;em&gt;DNS&lt;/em&gt; también es posible crear un alias para el dominio raíz. Es muy importante tener en cuenta que &lt;strong&gt;cada alias tiene que apuntar a un &lt;em&gt;Endpoint&lt;/em&gt; concreto&lt;/strong&gt; y el &lt;strong&gt;nombre del alias debe coincidir con el nombre del &lt;em&gt;Endpoint&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;Existen multitud de registradores de dominios y muchos de ellos también proporcionan servicios DNS. Amazon ofrece estos servicios a través de &lt;a href=&#34;https://aws.amazon.com/es/route53/&#34; target=&#34;_blank&#34;&gt;Amazon Route 53&lt;/a&gt; y dispone de una &lt;a href=&#34;https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html#root-domain-walkthrough-switch-to-route53-as-dnsprovider&#34; target=&#34;_blank&#34;&gt;guía&lt;/a&gt; en la que explican cómo llevarlo a cabo. Otro prestador muy conocido de este tipo de servicios es &lt;a href=&#34;http://dyn.com&#34; target=&#34;_blank&#34;&gt;Dyn&lt;/a&gt;. En mi caso, uso &lt;a href=&#34;https://es.godaddy.com&#34; target=&#34;_blank&#34;&gt;GoDaddy&lt;/a&gt; para ambas cosas aunque tiene la pega de no permitir alias del dominio raíz por lo que sólo se pueden usar en los subdominios.&lt;/p&gt;
+&lt;p&gt;Existen multitud de registradores de dominios y muchos de ellos también proporcionan servicios &lt;em&gt;DNS&lt;/em&gt;. &lt;em&gt;Amazon&lt;/em&gt; ofrece estos servicios a través de &lt;a href=&#34;https://aws.amazon.com/es/route53/&#34; target=&#34;_blank&#34;&gt;Amazon Route 53&lt;/a&gt; y dispone de una &lt;a href=&#34;https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html#root-domain-walkthrough-switch-to-route53-as-dnsprovider&#34; target=&#34;_blank&#34;&gt;guía&lt;/a&gt; en la que explican cómo llevarlo a cabo. Otro prestador muy conocido de este tipo de servicios es &lt;a href=&#34;http://dyn.com&#34; target=&#34;_blank&#34;&gt;Dyn&lt;/a&gt;. En mi caso, uso &lt;a href=&#34;https://es.godaddy.com&#34; target=&#34;_blank&#34;&gt;GoDaddy&lt;/a&gt; para ambas cosas aunque tiene la pega de no permitir alias del dominio raíz por lo que sólo se pueden usar en los subdominios.&lt;/p&gt;
 
-&lt;h2 id=&#34;conclusión&#34;&gt;Conclusión&lt;/h2&gt;
+&lt;h2 id=&#34;conclusiones&#34;&gt;Conclusiones&lt;/h2&gt;
 
 &lt;p&gt;&lt;em&gt;Amazon S3&lt;/em&gt; permite el alojamiento de websites estáticos de forma fácil y con precios económicos, especialmente el primer año que es &lt;a href=&#34;https://aws.amazon.com/es/free/&#34; target=&#34;_blank&#34;&gt;gratuito&lt;/a&gt;. A partir de ahí, el modelo de negocio se basa en pago por uso de almacenamiento y trasferencia de datos (tanto de subida como de descarga). Para webs personales o con poco tráfico es idóneo porque la factura es muy baja si no hay muchas visitas. Incluso te permite definir alertas cuando el sistema prevee que se pueden superar ciertos umbrales.&lt;/p&gt;
 
@@ -409,7 +417,7 @@ LoadPlugin=&amp;quot;timezone CET&amp;quot;
 
 &lt;p&gt;Como no podía ser de otra manera, inauguro esta web con un primer post que va dedicado a la tecnología que he usado para crear este sitio.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://gohugo.io&#34; target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt; es un framework que permite crear websites a base de contenido estático (HTML, JavaScript, CSS, &amp;hellip;), es decir, no se sustenta en el uso de servidores de aplicaciones o bases de datos. Lo contrario de lo que ocurre con los sistemas de gestión de contenidos o CMS habituales los cuales suelen estar basados en contenido dinámico: WordPress, Drupal, Joomla!, Dokuwiki, etc. Por suspuesto, esto, tiene sus ventajas e inconvenientes.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://gohugo.io&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Hugo&lt;/em&gt;&lt;/a&gt; es un framework que permite crear websites a base de contenido estático (&lt;em&gt;HTML&lt;/em&gt;, &lt;em&gt;JavaScript&lt;/em&gt;, &lt;em&gt;CSS&lt;/em&gt;, &amp;hellip;), es decir, no se sustenta en el uso de servidores de aplicaciones o bases de datos. Lo contrario de lo que ocurre con los sistemas de gestión de contenidos o &lt;em&gt;CMS&lt;/em&gt; habituales los cuales suelen estar basados en contenido dinámico: &lt;em&gt;WordPress&lt;/em&gt;, &lt;em&gt;Drupal&lt;/em&gt;, &lt;em&gt;Joomla!&lt;/em&gt;, &lt;em&gt;Dokuwiki&lt;/em&gt;, etc. Por suspuesto, esto, tiene sus ventajas e inconvenientes.&lt;/p&gt;
 
 &lt;h2 id=&#34;1-ventajas&#34;&gt;1. Ventajas:&lt;/h2&gt;
 
@@ -418,23 +426,23 @@ LoadPlugin=&amp;quot;timezone CET&amp;quot;
 &lt;li&gt;&lt;strong&gt;Ahorro económico&lt;/strong&gt;: no se requiere un servidor muy potente ya que las peticiones que tiene que servir son más ligeras, no hay accesos a bases de datos ni procesamientos complejos en el lado del servidor.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Seguridad&lt;/strong&gt;: como no se tiene que realizar procesamiento de los datos de entrada ni consultas a otros servicios en backend, la posibilidad de explotar alguna vulnerabilidad en el lado del servidor se reduce drásticamente.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Multiplataforma&lt;/strong&gt;: es posible usar casi cualquier sistema operativo (&lt;a href=&#34;https://es.wikipedia.org/wiki/Windows&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Windows&lt;/em&gt;&lt;/a&gt;, &lt;a href=&#34;https://es.wikipedia.org/wiki/GNU/Linux&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;GNU/Linux&lt;/em&gt;&lt;/a&gt;, &lt;a href=&#34;https://es.wikipedia.org/wiki/MacOS&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;macOS&lt;/em&gt;&lt;/a&gt;, &lt;a href=&#34;https://es.wikipedia.org/wiki/FreeBSD&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;FreeBSD&lt;/em&gt;&lt;/a&gt;, etc.) y arquitectura (&lt;a href=&#34;https://es.wikipedia.org/wiki/X86-64&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;x64&lt;/em&gt;&lt;/a&gt;, &lt;a href=&#34;https://es.wikipedia.org/wiki/X86&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;x86&lt;/em&gt;&lt;/a&gt;, &lt;a href=&#34;https://es.wikipedia.org/wiki/Arquitectura_ARM&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;ARM&lt;/em&gt;&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Multihosting&lt;/strong&gt;: al estar basado en contenido estático, se puede usar cualquier hosting web o CDN (Amazon S3, GitHub Pages, Dropbox, Heroku, GoDaddy, DreamHost, Netlify, Surge, Aerobatic, Firebase Hosting, Google Cloud Storage, Amazon CloudFront, &amp;hellip;).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Personalización&lt;/strong&gt;: soporta el uso de &lt;a href=&#34;http://themes.gohugo.io/&#34; target=&#34;_blank&#34;&gt;themes&lt;/a&gt; o temas que permiten personalizar el aspecto del site de forma fácil manteniendo el contenido.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multihosting&lt;/strong&gt;: al estar basado en contenido estático, se puede usar cualquier hosting web o &lt;em&gt;CDN&lt;/em&gt; (&lt;em&gt;Amazon S3&lt;/em&gt;, &lt;em&gt;GitHub Pages&lt;/em&gt;, &lt;em&gt;Dropbox&lt;/em&gt;, &lt;em&gt;Heroku&lt;/em&gt;, &lt;em&gt;Google Cloud Storage&lt;/em&gt;, &lt;em&gt;Amazon CloudFront&lt;/em&gt;, &amp;hellip;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Personalización&lt;/strong&gt;: soporta el uso de &lt;a href=&#34;http://themes.gohugo.io/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;themes&lt;/em&gt;&lt;/a&gt; o temas que permiten personalizar el aspecto del site de forma fácil manteniendo el contenido.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;2-inconvenientes&#34;&gt;2. Inconvenientes:&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Funcionalidad limitada&lt;/strong&gt;: aunque con JS se puede implementar mucha funcionalidad en el lado del cliente, no es posible resolverlo todo. Hay cosas que sólo se pueden realizar en el lado del servidor: gestión de usuarios, comentarios, cestas de la compra, formularios de contacto, etc.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Funcionalidad limitada&lt;/strong&gt;: aunque con &lt;em&gt;JS&lt;/em&gt; se puede implementar mucha funcionalidad en el lado del cliente, no es posible resolverlo todo. Hay cosas que sólo se pueden realizar en el lado del servidor: gestión de usuarios, comentarios, cestas de la compra, formularios de contacto, etc.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Gestión de contenidos simple&lt;/strong&gt;: no está pensado para que haya varios autores ni permite una gestión de contenidos compleja.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Curva de aprendizaje&lt;/strong&gt;: está basado en el lenguaje de marcado &lt;a href=&#34;https://es.wikipedia.org/wiki/Markdown&#34; target=&#34;_blank&#34;&gt;Markdown&lt;/a&gt; para la creación de contenido. No obstante, existen interfaces de usuarios (UI) que facilitan la creación de contenido en este lenguaje.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Curva de aprendizaje&lt;/strong&gt;: está basado en el lenguaje de marcado &lt;a href=&#34;https://es.wikipedia.org/wiki/Markdown&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Markdown&lt;/em&gt;&lt;/a&gt; para la creación de contenido. No obstante, existen interfaces de usuarios (UI) que facilitan la creación de contenido en este lenguaje.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;conclusión&#34;&gt;Conclusión&lt;/h2&gt;
+&lt;h2 id=&#34;conclusiones&#34;&gt;Conclusiones&lt;/h2&gt;
 
 &lt;p&gt;Hugo es idóneo para crear páginas personales, blogs, portfolios y webs de documentación especialmente cuando sólo hay un autor pero no para sites más complejos. Hay mucha &lt;a href=&#34;https://gohugo.io/overview/introduction/&#34; target=&#34;_blank&#34;&gt;documentación&lt;/a&gt; en la web oficial incluyendo una &lt;a href=&#34;https://gohugo.io/overview/quickstart/&#34; target=&#34;_blank&#34;&gt;guía para principiantes&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;En mi caso, he optado por personalizar la apariencia de &lt;a href=&#34;https://gohugo.io&#34; target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt; con el tema &lt;a href=&#34;http://themes.gohugo.io/academic/&#34; target=&#34;_blank&#34;&gt;academic&lt;/a&gt; por su simplicidad y estilo minimalista. En el &lt;a href=&#34;http://www.alejandrolopezparra.es/post/amazon_s3/&#34;&gt;próximo post&lt;/a&gt; abordaré el alojamiento del website con &lt;a href=&#34;https://aws.amazon.com/es/s3/&#34; target=&#34;_blank&#34;&gt;Amazon S3&lt;/a&gt; por su facilidad de uso y precio reducido.&lt;/p&gt;
+&lt;p&gt;En mi caso, he optado por personalizar la apariencia de &lt;a href=&#34;https://gohugo.io&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Hugo&lt;/em&gt;&lt;/a&gt; con el tema &lt;a href=&#34;http://themes.gohugo.io/academic/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;academic&lt;/em&gt;&lt;/a&gt; por su simplicidad y estilo minimalista. En el &lt;a href=&#34;http://www.alejandrolopezparra.es/post/amazon_s3/&#34;&gt;próximo post&lt;/a&gt; abordaré el alojamiento del website con &lt;a href=&#34;https://aws.amazon.com/es/s3/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Amazon S3&lt;/em&gt;&lt;/a&gt; por su facilidad de uso y precio reducido.&lt;/p&gt;
 </description>
     </item>
     

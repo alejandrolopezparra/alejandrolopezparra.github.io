@@ -207,13 +207,13 @@
 
 <p>El <em>DNIe</em> se basa en principios matemáticos de criptografía aplicados a los sistemas de información para que éstos se puedan usar de forma segura. <a href="https://es.wikipedia.org/wiki/Infraestructura_de_clave_p%C3%BAblica" target="_blank">Infraestructura de clave pública (PKI)</a>, <a href="https://es.wikipedia.org/wiki/Certificado_digital" target="_blank">certificados digitales</a> y <a href="https://es.wikipedia.org/wiki/Criptograf%C3%ADa_asim%C3%A9trica" target="_blank">criptografía de clave pública o asimétrica</a> son los principales. Éstos permiten garantizar características básicas de la seguridad de la información: <a href="https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#Autenticaci.C3.B3n_o_autentificaci.C3.B3n" target="_blank">Autenticación</a>, <a href="https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#Confidencialidad" target="_blank">Confidencialidad</a>, <a href="https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#Disponibilidad" target="_blank">Disponibilidad</a>, <a href="https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#Integridad" target="_blank">Integridad</a> y <a href="https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#No_repudio_o_irrefutabilidad" target="_blank">No repudio</a>.</p>
 
-<p>De forma resumida, podríamos <a href="https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_103" target="_blank">describir el <em>DNIe</em></a> como una <a href="https://es.wikipedia.org/wiki/Tarjeta_inteligente" target="_blank">tarjeta inteligente o smart card</a> que incorpora un chip criptográfico capaz de almacenar de forma segura la misma información que se encuentra impresa, las imágenes digitalizadas de la fotografía, firma manuscrita e impresiones dactilares. De la misma forma, contiene 2 certificados digitales denominados <em>AUTENTICACIÓN</em> y <em>FIRMA</em> con sus correspondientes claves privadas que están protegidas por una clave personal de acceso (<em>PIN</em>) alfanumérica. Es importante notar que, aunque el <em>DNIe</em> tiene una vigencia de 10 años desde el momento de su expedición, los certificados digitales almacenados internamente <strong>caducan a los 30 meses</strong> y, por tanto, <strong>deben ser renovados en una comisaría de policía</strong> para que sigan siendo válidos.</p>
+<p>De forma resumida, podríamos <a href="https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_103" target="_blank">describir el <em>DNIe</em></a> como una <a href="https://es.wikipedia.org/wiki/Tarjeta_inteligente" target="_blank">tarjeta inteligente o smart card</a> que incorpora un chip criptográfico capaz de almacenar de forma segura la misma información que se encuentra impresa, las imágenes digitalizadas de la fotografía, firma manuscrita e impresiones dactilares. De la misma forma, contiene 2 certificados digitales denominados <code>AUTENTICACIÓN</code> y <code>FIRMA</code> con sus correspondientes claves privadas que están protegidas por una clave personal de acceso (<em>PIN</em>) alfanumérica. Es importante notar que, aunque el <em>DNIe</em> tiene una vigencia de 10 años desde el momento de su expedición, los certificados digitales almacenados internamente <strong>caducan a los 30 meses</strong> y, por tanto, <strong>deben ser renovados en una comisaría de policía</strong> para que sigan siendo válidos.</p>
 
 <p>El chip criptográfico posibilita las siguientes funciones cuando sus certificados digitales están en vigor y se conoce el <em>PIN</em>:</p>
 
 <ul>
-<li>Acreditar electrónicamente y de forma inequívoca la identidad de la persona. Es una <strong>Autenticación</strong> de doble factor, algo que se tiene (el certificado digital <em>AUTENTICACIÓN</em> que va dentro del <em>DNIe</em>) y algo que se conoce (el <em>PIN</em>).</li>
-<li>Firmar digitalmente documentos electrónicos, otorgándoles validez jurídica. Se usa el <em>PIN</em> y el certificado digital <em>FIRMA</em> para proporcionar <strong>Integridad</strong> y <strong>No repudio</strong>.</li>
+<li>Acreditar electrónicamente y de forma inequívoca la identidad de la persona. Es una <strong>Autenticación</strong> de doble factor, algo que se tiene (el certificado digital <code>AUTENTICACIÓN</code> que va dentro del <em>DNIe</em>) y algo que se conoce (el <em>PIN</em>).</li>
+<li>Firmar digitalmente documentos electrónicos, otorgándoles validez jurídica. Se usa el <em>PIN</em> y el certificado digital <code>FIRMA</code> para proporcionar <strong>Integridad</strong> y <strong>No repudio</strong>.</li>
 </ul>
 
 <p>Se pueden encontrar más detalles técnicos revisando las características <a href="https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_083" target="_blank">electrónicas</a> y <a href="https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_084" target="_blank">físicas</a> del <em>DNIe</em>.</p>
@@ -338,22 +338,22 @@
 
 <p>Una vez instalado el driver, se debe configurar <em>Firefox</em> para que pueda usar el <em>DNIe</em> con un lector:</p>
 
-<ul>
-<li>Ir a <em>Firefox &gt; Preferencias &gt; Avanzado &gt; Cifrado &gt; Dispositivos de seguridad</em>.</li>
-<li>Seleccionar <em>Cargar</em>.</li>
+<ol>
+<li>Ir a <code>Firefox &gt; Preferencias &gt; Avanzado &gt; Cifrado &gt; Dispositivos de seguridad</code>.</li>
+<li>Seleccionar <code>Cargar</code>.</li>
 <li>Asignar un nombre al módulo, por ejemplo, <em>DNIe</em>.</li>
 <li>Indicar la ruta hacia el driver, <code>/Library/Libpkcs11-dnie/lib/libpkcs11-dnie.so</code></li>
-<li>Hacer clic en <em>Aceptar</em>.</li>
-</ul>
+<li>Hacer clic en <code>Aceptar</code>.</li>
+</ol>
 
 <h3 id="3-3-instalar-los-certificados-de-la-policía">3.3. Instalar los certificados de la policía</h3>
 
 <p>Para que <em>Firefox</em> no dé errores de verificación es necesario instalar los <a href="https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_077" target="_blank">certificados de las Autoridades de Certificación raíz</a> de la <em>DGP</em> y aprobar cada uno de ellos para los siguientes usos:</p>
 
 <ul>
-<li>Identificar páginas web.</li>
-<li>Usuarios de correo electrónico.</li>
-<li>Desarrolladores de aplicaciones.</li>
+<li><code>Identificar páginas web</code>.</li>
+<li><code>Usuarios de correo electrónico</code>.</li>
+<li><code>Desarrolladores de aplicaciones</code>.</li>
 </ul>
 
 <p>Aunque no es estrictamente necesario, sí que es recomendable repetir el paso anterior con los <a href="https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_078" target="_blank">certificados de las Autoridades de Certificación subordinadas</a> de la <em>DGP</em>.</p>
@@ -370,12 +370,12 @@
 <p>Estos servicios nos permitirán, además, conocer el estado de los certificados que van dentro del <em>DNIe</em>:</p>
 
 <ul>
-<li><strong>Válido</strong>: el certificado digital no ha sido revocado ni ha expirado.</li>
-<li><strong>Revocado</strong>: el certificado digital ha sido invalidado por la <em>DGP</em>. Esto suele ocurrir al generar un nuevo <em>DNIe</em> o renovar sus certificados digitales.</li>
-<li><strong>Expirado</strong>: se ha superado la fecha en la que caduca el certificado digital y debería renovarse en una comisaría de policía.</li>
+<li><code>Válido</code>: el certificado digital no ha sido revocado ni ha expirado.</li>
+<li><code>Revocado</code>: el certificado digital ha sido invalidado por la <em>DGP</em>. Esto suele ocurrir al generar un nuevo <em>DNIe</em> o renovar sus certificados digitales.</li>
+<li><code>Expirado</code>: se ha superado la fecha en la que caduca el certificado digital y debería renovarse en una comisaría de policía.</li>
 </ul>
 
-<h2 id="4-conclusiones">4. Conclusiones</h2>
+<h2 id="conclusiones">Conclusiones</h2>
 
 <p>En los últimos años, a través de la <a href="http://www.agendadigital.gob.es" target="_blank">Agenda Digital para España</a>, el gobierno español está impulsando distintos planes en materia de Tecnologías de la Información y las Comunicaciones (TIC) y de Administración Electrónica para el cumplimiento de los objetivos de la Agenda Digital para Europa e incorpora objetivos específicos para el desarrollo de la economía y la sociedad digital en España.</p>
 
