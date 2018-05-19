@@ -34,14 +34,27 @@
   
 
   
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-103012229-1', 'auto');
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
 
-  <link rel="alternate" href="http://www.alejandrolopezparra.es/index.xml" type="application/rss+xml" title="Alejandro López Parra">
-  <link rel="feed" href="http://www.alejandrolopezparra.es/index.xml" type="application/rss+xml" title="Alejandro López Parra">
+  <link rel="alternate" href="https://www.alejandrolopezparra.es/index.xml" type="application/rss+xml" title="Alejandro López Parra">
+  <link rel="feed" href="https://www.alejandrolopezparra.es/index.xml" type="application/rss+xml" title="Alejandro López Parra">
 
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://www.alejandrolopezparra.es/post/amazon_s3_logs/">
+  <link rel="canonical" href="https://www.alejandrolopezparra.es/post/amazon_s3_logs/">
 
   
 
@@ -153,35 +166,35 @@
   <ul class="share">
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2famazon_s3_logs%2f"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2famazon_s3_logs%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Logs%20de%20acceso%20a%20websites%20en%20Amazon%20S3&amp;url=http%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2famazon_s3_logs%2f"
+         href="https://twitter.com/intent/tweet?text=Logs%20de%20acceso%20a%20websites%20en%20Amazon%20S3&amp;url=https%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2famazon_s3_logs%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2famazon_s3_logs%2f&amp;title=Logs%20de%20acceso%20a%20websites%20en%20Amazon%20S3"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2famazon_s3_logs%2f&amp;title=Logs%20de%20acceso%20a%20websites%20en%20Amazon%20S3"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2famazon_s3_logs%2f&amp;title=Logs%20de%20acceso%20a%20websites%20en%20Amazon%20S3"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2famazon_s3_logs%2f&amp;title=Logs%20de%20acceso%20a%20websites%20en%20Amazon%20S3"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Logs%20de%20acceso%20a%20websites%20en%20Amazon%20S3&amp;body=http%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2famazon_s3_logs%2f">
+         href="mailto:?subject=Logs%20de%20acceso%20a%20websites%20en%20Amazon%20S3&amp;body=https%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2famazon_s3_logs%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -200,19 +213,19 @@
 
 <p><em>Amazon S3</em> dispone de una característica denominada <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/ServerLogs.html" target="_blank">access logging</a> que permite registrar los accesos que se producen a nuestro website en ficheros de logs. A continuación se describen los pasos para (1) habilitar, (2) purgar y (3) descargar dichos logs a un directorio local.</p>
 
-<h2 id="1-activar-el-registro-de-accesos">1. Activar el registro de accesos</h2>
+<h2 id="activar-el-registro-de-accesos">Activar el registro de accesos</h2>
 
 <p>El registro de accesos o access logging se habilita con unos <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/enable-logging-console.html" target="_blank">sencillos pasos</a>. De esta forma, con cada petición de acceso se genera un nuevo fichero que se almacena en el <a href="http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingBucket.html" target="_blank"><em>Bucket</em></a> que hayamos seleccionado para tal fin y que tendrá asociado un nombre único (por ejemplo, <code>mybucket</code>). En dichos ficheros se registran los datos de los accesos (<code>requester</code>, <code>bucket name</code>, <code>request time</code>, <code>request action</code>, <code>response status</code>, <code>error code</code>) siguiendo el formato de log que se explica <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/LogFormat.html" target="_blank">aquí</a>.</p>
 
-<h2 id="2-purgar-los-ficheros-de-logs">2. Purgar los ficheros de logs</h2>
+<h2 id="purgar-los-ficheros-de-logs">Purgar los ficheros de logs</h2>
 
 <p>Es importante considerar que, con el paso del tiempo, el espacio ocupado por estos ficheros de logs irá creciendo. Esto puede llegar a ser un problema no sólo en lo que respecta al volumen sino también económicamente hablando, ya que también se paga por el espacio ocupado. Para evitar sorpresas, lo más recomendable es configurar el <a href="http://docs.aws.amazon.com/AmazonS3/latest/user-guide/setup-lifecycle.html" target="_blank">ciclo de vida de objetos</a> que posibilita, de forma automática, purgar ficheros o moverlos a <a href="http://docs.aws.amazon.com/AmazonS3/latest/dev/storage-class-intro.html" target="_blank">otro almacenamiento</a> más barato en base a su tiempo de vida.</p>
 
-<h2 id="3-descargar-los-ficheros-de-logs">3. Descargar los ficheros de logs</h2>
+<h2 id="descargar-los-ficheros-de-logs">Descargar los ficheros de logs</h2>
 
 <p>Para poder trabajar con los ficheros de logs generados, es necesario descargarlos previamente desde donde se encuentren. Esto se puede hacer de forma manual, que no es muy operativo, o automatizada. Para la segunda opción necesitaremos crear un usuario que nos permita usar la <a href="http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html" target="_blank">Interfaz de Línea de Comandos (CLI)</a> de <em>Amazon Web Services (AWS)</em> contra la <a href="http://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html" target="_blank">Interfaz de Programación de Aplicaciones (API)</a> de <em>Amazon S3</em>. Los pasos para poder llevarlo a cabo son los siguientes:</p>
 
-<h3 id="3-1-crear-un-usuario-con-permisos-de-lectura">3.1. Crear un usuario con permisos de lectura</h3>
+<h3 id="crear-un-usuario-con-permisos-de-lectura">Crear un usuario con permisos de lectura</h3>
 
 <p>Antes de poder usar la CLI de AWS contra la API de S3 es indispensable crear un usuario que tenga los permisos suficientes. Esta tarea se realiza a través del <a href="http://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html?icmpid=docs_iam_console" target="_blank">servicio de gestión de acceso e identidad (IAM)</a> de AWS:</p>
 
@@ -222,7 +235,7 @@
 <li>Anotar el identificador de usuario (<code>Access key ID</code>) y la contraseña (<code>Secret access key</code>) del usuario generado ya que serán necesarios a continuación.</li>
 </ul>
 
-<h3 id="3-2-descargar-los-logs-desde-amazon-s3">3.2. Descargar los logs desde Amazon S3</h3>
+<h3 id="descargar-los-logs-desde-amazon-s3">Descargar los logs desde Amazon S3</h3>
 
 <p>Para poder descargar los logs en un directorio local (por ejemplo, <code>mylogs</code>) usaremos la CLI de AWS que tiene <a href="http://docs.aws.amazon.com/cli/latest/userguide/using-s3-commands.html" target="_blank">multitud de comandos</a> que permiten automatizar muchas de las tareas. Para el caso de <a href="https://es.wikipedia.org/wiki/MacOS" target="_blank"><em>macOS</em></a>, nos bastará con seguir unos sencillos pasos:</p>
 
@@ -270,12 +283,12 @@
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="http://www.alejandrolopezparra.es/post/amazon_s3/"><span
+    <li class="previous"><a href="https://www.alejandrolopezparra.es/post/amazon_s3/"><span
       aria-hidden="true">&larr;</span> Alojar websites estáticos en Amazon Simple Storage Service (S3)</a></li>
     
 
     
-    <li class="next"><a href="http://www.alejandrolopezparra.es/post/awstats/">Generar estadísticas de websites con AWStats <span
+    <li class="next"><a href="https://www.alejandrolopezparra.es/post/awstats/">Generar estadísticas de websites con AWStats <span
       aria-hidden="true">&rarr;</span></a></li>
     
   </ul>

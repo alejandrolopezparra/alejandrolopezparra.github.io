@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Alejandro López Parra on Alejandro López Parra</title>
-    <link>http://www.alejandrolopezparra.es/</link>
+    <link>https://www.alejandrolopezparra.es/</link>
     <description>Recent content in Alejandro López Parra on Alejandro López Parra</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
@@ -12,19 +12,19 @@
     
     <item>
       <title>Alojar websites estáticos en GitHub Pages</title>
-      <link>http://www.alejandrolopezparra.es/post/github_pages/</link>
-      <pubDate>Sat, 27 May 2017 12:00:00 +0200</pubDate>
+      <link>https://www.alejandrolopezparra.es/post/github_pages/</link>
+      <pubDate>Sat, 20 May 2017 12:00:00 +0200</pubDate>
       
-      <guid>http://www.alejandrolopezparra.es/post/github_pages/</guid>
+      <guid>https://www.alejandrolopezparra.es/post/github_pages/</guid>
       <description>
 
-&lt;p&gt;Como alternativa a &lt;a href=&#34;http://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html&#34; target=&#34;_blank&#34;&gt;Amazon Simple Storage Service (S3)&lt;/a&gt; que &lt;a href=&#34;http://www.alejandrolopezparra.es/post/amazon_s3/&#34;&gt;ya traté&lt;/a&gt;, a continuación abordaré el servicio &lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34;&gt;GitHub Pages&lt;/a&gt; que pertenece a la plataforma &lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt; de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones &lt;a href=&#34;https://es.wikipedia.org/wiki/Git&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Git&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Como alternativa a &lt;a href=&#34;http://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html&#34; target=&#34;_blank&#34;&gt;Amazon Simple Storage Service (S3)&lt;/a&gt; que &lt;a href=&#34;https://www.alejandrolopezparra.es/post/amazon_s3/&#34;&gt;ya traté&lt;/a&gt;, a continuación abordaré el servicio &lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34;&gt;GitHub Pages&lt;/a&gt; que pertenece a la plataforma &lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt; de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones &lt;a href=&#34;https://es.wikipedia.org/wiki/Git&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Git&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;GitHub Pages&lt;/em&gt; es un servicio gratuito que &lt;strong&gt;permite alojar websites de contenido estático&lt;/strong&gt;, es decir, webs que se basan en &lt;em&gt;HyperText Markup Language&lt;/em&gt; (&lt;em&gt;HTML&lt;/em&gt;), &lt;em&gt;JavaScript&lt;/em&gt; (&lt;em&gt;JS&lt;/em&gt;) y &lt;em&gt;Cascading Style Sheets&lt;/em&gt; (&lt;em&gt;CSS&lt;/em&gt;). El contenido no es generado dinámicamente en cada solicitud que se realiza al servidor y, por tanto, no son necesarios ni servidores de aplicaciones ni de bases de datos. Sólo se requiere un servidor web que sirva el contenido según se le vaya solicitando. Afortunadamente, gracias a tecnologías que se ejecutan en el lado del cliente como JS y CSS, se puede conseguir cierto dinamismo en cómo se muestra el contenido aunque éste sea servido de forma estática.&lt;/p&gt;
 
 &lt;p&gt;A continuación se describen sus características y los pasos que hay que realizar para poder publicar una web estática en &lt;em&gt;GitHub Pages&lt;/em&gt; (alojar el website y asociar un dominio).&lt;/p&gt;
 
-&lt;h2 id=&#34;1-características-de-github-pages&#34;&gt;1. Características de &lt;em&gt;GitHub Pages&lt;/em&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;características-de-github-pages&#34;&gt;Características de &lt;em&gt;GitHub Pages&lt;/em&gt;&lt;/h2&gt;
 
 &lt;p&gt;&lt;em&gt;GitHub Pages&lt;/em&gt; dispone de varios &lt;a href=&#34;https://help.github.com/articles/github-s-billing-plans/&#34; target=&#34;_blank&#34;&gt;tipos de cuentas o planes&lt;/a&gt;:&lt;/p&gt;
 
@@ -61,7 +61,7 @@
 &lt;li&gt;Usar &lt;a href=&#34;https://help.github.com/articles/using-submodules-with-pages/&#34; target=&#34;_blank&#34;&gt;submódulos dentro de las páginas&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;2-alojar-un-website-estático-en-github-pages&#34;&gt;2. Alojar un website estático en &lt;em&gt;GitHub Pages&lt;/em&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;alojar-un-website-estático-en-github-pages&#34;&gt;Alojar un website estático en &lt;em&gt;GitHub Pages&lt;/em&gt;&lt;/h2&gt;
 
 &lt;p&gt;La capacidad de alojamiento de webs estáticas de &lt;em&gt;GitHub Pages&lt;/em&gt; está explicada de forma sencilla en &lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34;&gt;este tutorial oficial&lt;/a&gt;.&lt;/p&gt;
 
@@ -70,7 +70,7 @@
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Registrar o acceder&lt;/strong&gt; a una &lt;a href=&#34;https://github.com/login&#34; target=&#34;_blank&#34;&gt;cuenta de &lt;em&gt;GitHub&lt;/em&gt;&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Crear un contenedor de ficheros&lt;/strong&gt; denominado &lt;em&gt;Repository&lt;/em&gt;. Para que pueda usarse para alojar un website, tiene que tener un nombre especial &lt;code&gt;nombre.github.io&lt;/code&gt;, donde &lt;code&gt;nombre&lt;/code&gt; debe coincidir con el nombre de usuario de la cuenta de &lt;em&gt;GitHub&lt;/em&gt;, que servirá como &lt;em&gt;Endpoint&lt;/em&gt;. En mi caso es &lt;code&gt;alejandrolopezparra.github.io&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Aunque &lt;em&gt;GitHub&lt;/em&gt; permite &lt;strong&gt;crear y editar contenido&lt;/strong&gt; directamente a través de la web de &lt;em&gt;GitHub&lt;/em&gt;, lo más conveniente es usar alguna herramienta que facilite esta tarea, como &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt; de la que &lt;a href=&#34;http://www.alejandrolopezparra.es/post/hugo/&#34;&gt;ya hablamos&lt;/a&gt;. Para ello, previamente sería necesario clonar el &lt;em&gt;Repository&lt;/em&gt; recién creado en local con un &lt;a href=&#34;https://git-scm.com/&#34; target=&#34;_blank&#34;&gt;cliente &lt;em&gt;Git&lt;/em&gt;&lt;/a&gt;. Si se usa el cliente de línea de comandos, habría que ejecutar:&lt;/li&gt;
+&lt;li&gt;Aunque &lt;em&gt;GitHub&lt;/em&gt; permite &lt;strong&gt;crear y editar contenido&lt;/strong&gt; directamente a través de la web de &lt;em&gt;GitHub&lt;/em&gt;, lo más conveniente es usar alguna herramienta que facilite esta tarea, como &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt; de la que &lt;a href=&#34;https://www.alejandrolopezparra.es/post/hugo/&#34;&gt;ya hablamos&lt;/a&gt;. Para ello, previamente sería necesario clonar el &lt;em&gt;Repository&lt;/em&gt; recién creado en local con un &lt;a href=&#34;https://git-scm.com/&#34; target=&#34;_blank&#34;&gt;cliente &lt;em&gt;Git&lt;/em&gt;&lt;/a&gt;. Si se usa el cliente de línea de comandos, habría que ejecutar:&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt; $# git clone https://github.com/nombre/nombre.github.io
@@ -85,11 +85,11 @@ $# git commit -m &amp;quot;Initial commit&amp;quot;
 $# git push -u origin master
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Sólo con esos tres pasos, ya tendríamos nuestra página web personal accesible a través de un &lt;em&gt;Endpoint&lt;/em&gt; seguro &lt;code&gt;HTTPS://nombre.github.io&lt;/code&gt; donde &lt;code&gt;nombre&lt;/code&gt; se corresponde con el nombre de usuario de la cuenta de &lt;em&gt;GitHub&lt;/em&gt;. En mi caso, es &lt;a href=&#34;https://alejandrolopezparra.github.io&#34; target=&#34;_blank&#34;&gt;https://alejandrolopezparra.github.io&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Sólo con esos tres pasos, ya tendríamos nuestra página web personal accesible a través de un &lt;em&gt;Endpoint&lt;/em&gt; seguro &lt;code&gt;HTTPS://nombre.github.io&lt;/code&gt; donde &lt;code&gt;nombre&lt;/code&gt; se corresponde con el nombre de usuario de la cuenta de &lt;em&gt;GitHub&lt;/em&gt;. En mi caso, es &lt;code&gt;https://alejandrolopezparra.github.io&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Para el caso concreto de &lt;em&gt;Hugo&lt;/em&gt;, contamos con un &lt;a href=&#34;https://gohugo.io/tutorials/github-pages-blog/&#34; target=&#34;_blank&#34;&gt;tutorial&lt;/a&gt; que trata el despliegue en &lt;em&gt;GitHub Pages&lt;/em&gt; de páginas web basadas en &lt;em&gt;Hugo&lt;/em&gt; tanto personales como de organizaciones y también de proyectos. También disponemos de una &lt;a href=&#34;https://georgecushen.com/create-your-website-with-hugo/&#34; target=&#34;_blank&#34;&gt;guía detallada sobre &lt;em&gt;Hugo&lt;/em&gt; y &lt;em&gt;GitHub Pages&lt;/em&gt;&lt;/a&gt; del creador del &lt;a href=&#34;https://themes.gohugo.io/academic/&#34; target=&#34;_blank&#34;&gt;tema &lt;em&gt;Academic&lt;/em&gt; para &lt;em&gt;Hugo&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;3-asociar-un-dominio-propio&#34;&gt;3. Asociar un dominio propio&lt;/h2&gt;
+&lt;h2 id=&#34;asociar-un-dominio-propio&#34;&gt;Asociar un dominio propio&lt;/h2&gt;
 
 &lt;p&gt;Una vez tenemos nuestro website alojado en un &lt;em&gt;Repository&lt;/em&gt; y publicado en un &lt;em&gt;Endpoint&lt;/em&gt; de &lt;em&gt;GitHub&lt;/em&gt;, es el momento de que podamos asociarle un nombre de un dominio personalizado como, por ejemplo, &lt;a href=&#34;http://www.alejandrolopezparra.es&#34; target=&#34;_blank&#34;&gt;www.alejandrolopezparra.es&lt;/a&gt;. El único inconveniente de este paso es que perderemos la opción de usar &lt;em&gt;HTTPS&lt;/em&gt; ya que &lt;em&gt;GitHub Pages&lt;/em&gt; sólo puede usarlo con el domino &lt;code&gt;github.io&lt;/code&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:Cloudflare&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:Cloudflare&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 
@@ -97,13 +97,13 @@ $# git push -u origin master
 
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Registrar el dominio&lt;/strong&gt; en un registrador de dominios.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Crear un nombre en ese dominio&lt;/strong&gt; a través de un servicio &lt;em&gt;DNS&lt;/em&gt; que apunte al &lt;em&gt;Endpoint&lt;/em&gt; definido anteriormente mediante lo que se conoce como alias o &lt;a href=&#34;https://en.wikipedia.org/wiki/CNAME_record&#34; target=&#34;_blank&#34;&gt;registro &lt;em&gt;CNAME&lt;/em&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Crear un nombre en ese dominio&lt;/strong&gt; a través de un servicio &lt;em&gt;DNS&lt;/em&gt; y configurarlo para que apunte al &lt;em&gt;Endpoint&lt;/em&gt; definido anteriormente mediante lo que se conoce como alias o &lt;a href=&#34;https://en.wikipedia.org/wiki/CNAME_record&#34; target=&#34;_blank&#34;&gt;registro &lt;em&gt;CNAME&lt;/em&gt;&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Configurar el nombre de dominio&lt;/strong&gt; en &lt;em&gt;GitHub Pages&lt;/em&gt; en las propiedades del &lt;em&gt;Repository&lt;/em&gt; tal y como se indica &lt;a href=&#34;https://help.github.com/articles/adding-or-removing-a-custom-domain-for-your-github-pages-site/&#34; target=&#34;_blank&#34;&gt;aquí&lt;/a&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;De esta forma, cuando un navegador web intente resolver dicho nombre, recibirá como respuesta el &lt;em&gt;Endpoint&lt;/em&gt; donde tenemos alojado nuestro website. Lo habitual es &lt;a href=&#34;https://help.github.com/articles/setting-up-a-www-subdomain/&#34; target=&#34;_blank&#34;&gt;crear un alias para el subdominio &lt;em&gt;www&lt;/em&gt;&lt;/a&gt; aunque en algunos proveedores DNS también es posible &lt;a href=&#34;https://help.github.com/articles/setting-up-an-apex-domain/&#34; target=&#34;_blank&#34;&gt;crear un alias para el dominio raíz&lt;/a&gt;. Gracias a esto, se puede acceder tanto a &lt;a href=&#34;http://www.alejandrolopezparra.es&#34; target=&#34;_blank&#34;&gt;www.alejandrolopezparra.es&lt;/a&gt; como a &lt;a href=&#34;http://alejandrolopezparra.es&#34; target=&#34;_blank&#34;&gt;alejandrolopezparra.es&lt;/a&gt;, siendo habitualmente este último una redirección al primero.&lt;/p&gt;
+&lt;p&gt;De esta forma, cuando un navegador web intente resolver dicho nombre, recibirá como respuesta el &lt;em&gt;Endpoint&lt;/em&gt; donde tenemos alojado nuestro website. Lo habitual es &lt;a href=&#34;https://help.github.com/articles/setting-up-a-www-subdomain/&#34; target=&#34;_blank&#34;&gt;crear un alias para el subdominio &lt;em&gt;www&lt;/em&gt;&lt;/a&gt; aunque en algunos proveedores &lt;em&gt;DNS&lt;/em&gt; también es posible &lt;a href=&#34;https://help.github.com/articles/setting-up-an-apex-domain/&#34; target=&#34;_blank&#34;&gt;crear un alias para el dominio raíz&lt;/a&gt;. Gracias a esto, se puede acceder tanto a &lt;a href=&#34;http://www.alejandrolopezparra.es&#34; target=&#34;_blank&#34;&gt;www.alejandrolopezparra.es&lt;/a&gt; como a &lt;a href=&#34;http://alejandrolopezparra.es&#34; target=&#34;_blank&#34;&gt;alejandrolopezparra.es&lt;/a&gt;, siendo habitualmente este último una redirección al primero.&lt;/p&gt;
 
-&lt;p&gt;En el caso de &lt;em&gt;GitHub Pages&lt;/em&gt;, si nuestro proveedor &lt;em&gt;DNS&lt;/em&gt; no permite alias para el dominio raíz, tenemos la opción de conseguir el mismo efecto &lt;a href=&#34;https://help.github.com/articles/setting-up-an-apex-domain/#configuring-a-records-with-your-dns-provider&#34; target=&#34;_blank&#34;&gt;a través de registros de tipo A&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;En el caso de &lt;em&gt;GitHub Pages&lt;/em&gt;, usar un &lt;strong&gt;subdominio www&lt;/strong&gt; tiene sus &lt;a href=&#34;https://help.github.com/articles/about-supported-custom-domains/#www-subdomains&#34; target=&#34;_blank&#34;&gt;ventajas&lt;/a&gt; y, si nuestro proveedor &lt;em&gt;DNS&lt;/em&gt; no permite alias para el dominio raíz, tenemos la opción de conseguir el mismo efecto &lt;a href=&#34;https://help.github.com/articles/setting-up-an-apex-domain/#configuring-a-records-with-your-dns-provider&#34; target=&#34;_blank&#34;&gt;a través de registros de tipo A&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Existen multitud de registradores de dominios y muchos de ellos también proporcionan servicios &lt;em&gt;DNS&lt;/em&gt;. &lt;em&gt;Amazon&lt;/em&gt; ofrece estos servicios a través de &lt;a href=&#34;https://aws.amazon.com/es/route53/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Amazon Route 53&lt;/em&gt;&lt;/a&gt; y dispone de una &lt;a href=&#34;https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html#root-domain-walkthrough-switch-to-route53-as-dnsprovider&#34; target=&#34;_blank&#34;&gt;guía&lt;/a&gt; en la que explican cómo llevarlo a cabo. Otro prestador muy conocido de este tipo de servicios es &lt;a href=&#34;http://dyn.com&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Dyn&lt;/em&gt;&lt;/a&gt;. En mi caso, uso &lt;a href=&#34;https://es.godaddy.com&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;GoDaddy&lt;/em&gt;&lt;/a&gt; para ambas cosas aunque tiene la pega de no permitir alias del dominio raíz.&lt;/p&gt;
 
@@ -136,23 +136,23 @@ $# git push -u origin master
     
     <item>
       <title>Certificados digitales de la FNMT-RCM</title>
-      <link>http://www.alejandrolopezparra.es/post/fnmt/</link>
+      <link>https://www.alejandrolopezparra.es/post/fnmt/</link>
       <pubDate>Sat, 06 May 2017 12:00:00 +0200</pubDate>
       
-      <guid>http://www.alejandrolopezparra.es/post/fnmt/</guid>
+      <guid>https://www.alejandrolopezparra.es/post/fnmt/</guid>
       <description>
 
-&lt;p&gt;Como continuación al &lt;a href=&#34;http://www.alejandrolopezparra.es/post/dnie/&#34;&gt;artículo dedicado al &lt;em&gt;DNIe&lt;/em&gt;&lt;/a&gt; y los certificados digitales que contiene, se tratarán los certificados digitales emitidos por la Entidad Pública de Certificación &lt;a href=&#34;http://www.cert.fnmt.es/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;CERES&lt;/em&gt; (&lt;em&gt;CERtificación ESpañola&lt;/em&gt;)&lt;/a&gt; dependiente de la &lt;a href=&#34;http://www.fnmt.es/&#34; target=&#34;_blank&#34;&gt;Fábrica Nacional de Moneda y Timbre - Real Casa de la Moneda (&lt;em&gt;FNMT-RCM&lt;/em&gt;)&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Como continuación al &lt;a href=&#34;https://www.alejandrolopezparra.es/post/dnie/&#34;&gt;artículo dedicado al &lt;em&gt;DNIe&lt;/em&gt;&lt;/a&gt; y los certificados digitales que contiene, se tratarán los certificados digitales emitidos por la Entidad Pública de Certificación &lt;a href=&#34;http://www.cert.fnmt.es/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;CERES&lt;/em&gt; (&lt;em&gt;CERtificación ESpañola&lt;/em&gt;)&lt;/a&gt; dependiente de la &lt;a href=&#34;http://www.fnmt.es/&#34; target=&#34;_blank&#34;&gt;Fábrica Nacional de Moneda y Timbre - Real Casa de la Moneda (&lt;em&gt;FNMT-RCM&lt;/em&gt;)&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;De la misma forma que ocurría con el &lt;em&gt;DNIe&lt;/em&gt;, permiten acreditar la identidad de los intervinientes en las comunicaciones electrónicas y asegurar su procedencia e integridad. Por ende, también posibilitan la realización de &lt;strong&gt;gestiones de forma segura a través de Internet&lt;/strong&gt; tanto con la Administración Pública como con las entidades privadas que los admitan.&lt;/p&gt;
 
 &lt;p&gt;En este artículo se describirán sus principales características, los servicios online donde se pueden usar y cómo obtenerlo, especialmente usando el navegador &lt;a href=&#34;https://www.mozilla.org/es-ES/firefox/products/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Firefox&lt;/em&gt;&lt;/a&gt; de &lt;em&gt;Mozilla&lt;/em&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;1-certificados-digitales-de-la-fnmt-rcm&#34;&gt;1. Certificados digitales de la &lt;em&gt;FNMT-RCM&lt;/em&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;características-de-los-certificados-de-la-fnmt-rcm&#34;&gt;Características de los certificados de la &lt;em&gt;FNMT-RCM&lt;/em&gt;&lt;/h2&gt;
 
 &lt;p&gt;Según se explica en la &lt;a href=&#34;http://www.cert.fnmt.es/certificados&#34; target=&#34;_blank&#34;&gt;web de Prestador de Servicios de Certificación&lt;/a&gt; de la &lt;em&gt;FNMT-RCM&lt;/em&gt;, ésta emite diferentes tipos de certificados digitales o electrónicos en función del destinatario de los mismos: persona física, representante, Administración Pública y de componente.&lt;/p&gt;
 
-&lt;h3 id=&#34;1-1-certificado-de-persona-física&#34;&gt;1.1. Certificado de Persona Física&lt;/h3&gt;
+&lt;h3 id=&#34;certificado-de-persona-física&#34;&gt;Certificado de Persona Física&lt;/h3&gt;
 
 &lt;p&gt;Los &lt;a href=&#34;https://www.sede.fnmt.gob.es/certificados/persona-fisica&#34; target=&#34;_blank&#34;&gt;certificados de Persona Física, Ciudadano o Usuario&lt;/a&gt; se emiten sin coste a cualquier ciudadano español o extranjero que esté en posesión de su &lt;em&gt;DNI&lt;/em&gt; o &lt;em&gt;NIE&lt;/em&gt; previa verificación de su identidad. Este certificado le permite identificarse de forma telemática, firmar y cifrar documentos electrónicos para realizar gestiones en &lt;a href=&#34;https://www.cert.fnmt.es/certificados/donde-usar-certificado&#34; target=&#34;_blank&#34;&gt;multitud de servicios online&lt;/a&gt;. Éstos son algunos ejemplos:&lt;/p&gt;
 
@@ -181,11 +181,11 @@ $# git push -u origin master
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;1-2-certificado-de-representante&#34;&gt;1.2. Certificado de Representante&lt;/h3&gt;
+&lt;h3 id=&#34;certificado-de-representante&#34;&gt;Certificado de Representante&lt;/h3&gt;
 
 &lt;p&gt;Los &lt;a href=&#34;https://www.sede.fnmt.gob.es/certificados/certificado-de-representante&#34; target=&#34;_blank&#34;&gt;certificados de Representante&lt;/a&gt; se expiden &lt;a href=&#34;https://www.sede.fnmt.gob.es/certificados/certificado-de-representante/lista-de-precios&#34; target=&#34;_blank&#34;&gt;con coste&lt;/a&gt; a personas físicas en calidad de representantes legales de &lt;a href=&#34;https://www.sede.fnmt.gob.es/certificados/certificado-de-representante/persona-juridica&#34; target=&#34;_blank&#34;&gt;personas jurídicas&lt;/a&gt;, &lt;a href=&#34;https://www.sede.fnmt.gob.es/certificados/certificado-de-representante/administrador-unico-solidario&#34; target=&#34;_blank&#34;&gt;administradores únicos o solidarios&lt;/a&gt; y &lt;a href=&#34;https://www.sede.fnmt.gob.es/certificados/certificado-de-representante/entidad-sin-personalidad-juridica&#34; target=&#34;_blank&#34;&gt;entidades sin personalidad jurídica&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h3 id=&#34;1-3-administración-pública&#34;&gt;1.3. Administración Pública&lt;/h3&gt;
+&lt;h3 id=&#34;administración-pública&#34;&gt;Administración Pública&lt;/h3&gt;
 
 &lt;p&gt;Los tipos de &lt;a href=&#34;https://www.sede.fnmt.gob.es/certificados/administracion-publica&#34; target=&#34;_blank&#34;&gt;certificados de Administración Pública&lt;/a&gt; que se expiden a Administraciones Públicas son los siguientes:&lt;/p&gt;
 
@@ -195,7 +195,7 @@ $# git push -u origin master
 &lt;li&gt;Certificado de Sello electrónico en el ámbito de la Administración.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;1-4-certificados-de-componente&#34;&gt;1.4. Certificados de Componente&lt;/h3&gt;
+&lt;h3 id=&#34;certificados-de-componente&#34;&gt;Certificados de Componente&lt;/h3&gt;
 
 &lt;p&gt;Los &lt;a href=&#34;https://www.sede.fnmt.gob.es/certificados/certificado-componentes&#34; target=&#34;_blank&#34;&gt;certificados de Componente&lt;/a&gt; se expiden &lt;a href=&#34;https://www.cert.fnmt.es/documents/10446703/10511896/Precios_Certificados_Ac_Componentes.pdf&#34; target=&#34;_blank&#34;&gt;con coste&lt;/a&gt; para la identificación de servidores o aplicaciones informáticas:&lt;/p&gt;
 
@@ -206,11 +206,11 @@ $# git push -u origin master
 &lt;li&gt;Certificado de &lt;a href=&#34;https://www.sede.fnmt.gob.es/certificados/administracion-publica&#34; target=&#34;_blank&#34;&gt;sede y sello para la Administración Pública&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;2-obtener-un-certificado-de-persona-física&#34;&gt;2. Obtener un certificado de Persona Física&lt;/h2&gt;
+&lt;h2 id=&#34;obtener-un-certificado-de-persona-física&#34;&gt;Obtener un certificado de Persona Física&lt;/h2&gt;
 
 &lt;p&gt;Para poder disponer de un certificado gratuito de persona física de la &lt;em&gt;FNMT-RCM&lt;/em&gt;, también llamado de ciudadano o de usuario, es necesario realizar los siguientes  &lt;a href=&#34;https://www.sede.fnmt.gob.es/certificados/persona-fisica&#34; target=&#34;_blank&#34;&gt;pasos explicados&lt;/a&gt; en su web oficial: solicitud, acreditación de identidad y descarga.&lt;/p&gt;
 
-&lt;h3 id=&#34;2-1-solicitud-o-renovación-del-certificado&#34;&gt;2.1. Solicitud o renovación del certificado&lt;/h3&gt;
+&lt;h3 id=&#34;solicitud-o-renovación-del-certificado&#34;&gt;Solicitud o renovación del certificado&lt;/h3&gt;
 
 &lt;p&gt;Antes de realizar la petición propiamente dicha, es necesario tener en cuenta una serie de &lt;a href=&#34;https://www.sede.fnmt.gob.es/certificados/persona-fisica/obtener-certificado-software/consideraciones-previas&#34; target=&#34;_blank&#34;&gt;consideraciones previas&lt;/a&gt; que se encuentran detallados en la web de la sede electrónica de la &lt;em&gt;FNMT-RCM&lt;/em&gt;:&lt;/p&gt;
 
@@ -232,7 +232,7 @@ $# git push -u origin master
 
 &lt;p&gt;En el caso de la renovación de un certificado que aún no ha caducado, ésta se puede solicitar con hasta 60 días de antelación en la web de &lt;a href=&#34;https://www.sede.fnmt.gob.es/certificados/persona-fisica/renovar/solicitar-renovacion&#34; target=&#34;_blank&#34;&gt;renovación&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h4 id=&#34;2-1-1-procedimiento-con-firefox&#34;&gt;2.1.1. Procedimiento con &lt;em&gt;Firefox&lt;/em&gt;&lt;/h4&gt;
+&lt;h4 id=&#34;procedimiento-con-firefox&#34;&gt;Procedimiento con &lt;em&gt;Firefox&lt;/em&gt;&lt;/h4&gt;
 
 &lt;p&gt;En el caso de usar el navegador web &lt;em&gt;Firefox&lt;/em&gt;, el proceso se resume en los siguientes pasos:&lt;/p&gt;
 
@@ -261,17 +261,17 @@ $# git push -u origin master
 
 &lt;p&gt;De la misma forma, si se está realizando una renovación, será necesario firmarla con el certificado que se pretende renovar para autenticar la operación.&lt;/p&gt;
 
-&lt;h3 id=&#34;2-2-acreditación-de-identidad&#34;&gt;2.2. Acreditación de identidad&lt;/h3&gt;
+&lt;h3 id=&#34;acreditación-de-identidad&#34;&gt;Acreditación de identidad&lt;/h3&gt;
 
 &lt;p&gt;En el caso de que no se haya usado el &lt;em&gt;DNIe&lt;/em&gt; en la solicitud del certificado digital, será necesario acudir a una de las &lt;a href=&#34;http://mapaoficinascert.appspot.com/&#34; target=&#34;_blank&#34;&gt;oficinas de registro&lt;/a&gt; para acreditar la identidad y continuar con la solicitud del certificado digital. Este paso tampoco será necesario si se está renovando el certificado y no han pasado más de 5 años desde la última vez que se acreditó la identidad.&lt;/p&gt;
 
 &lt;p&gt;Para ello, deberá presentar el &lt;em&gt;DNI&lt;/em&gt; o pasaporte y, si es ciudadano extranjero, el &lt;em&gt;NIE&lt;/em&gt;, junto con el código de solicitud que el usuario ha debido recibir en su correo electrónico.&lt;/p&gt;
 
-&lt;h3 id=&#34;2-3-descarga-del-certificado&#34;&gt;2.3. Descarga del certificado&lt;/h3&gt;
+&lt;h3 id=&#34;descarga-del-certificado&#34;&gt;Descarga del certificado&lt;/h3&gt;
 
 &lt;p&gt;Una vez acreditada la identidad, ya sea por haber usado el &lt;em&gt;DNIe&lt;/em&gt; en la solicitud o por haber acudido a alguna oficina de registro, se puede usar el código recibido por correo electrónico, el primer apellido y el número de DNI para descargar el certificado digital de persona física desde la &lt;a href=&#34;https://www.sede.fnmt.gob.es/certificados/persona-fisica/obtener-certificado-software/descargar-certificado&#34; target=&#34;_blank&#34;&gt;web de descarga sin &lt;em&gt;DNIe&lt;/em&gt;&lt;/a&gt; o la &lt;a href=&#34;https://www.sede.fnmt.gob.es/certificados/persona-fisica/obtener-certificado-con-dnie/descargar-certificado&#34; target=&#34;_blank&#34;&gt;web de descarga con &lt;em&gt;DNIe&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;3-verificación-de-certificados&#34;&gt;3. Verificación de certificados&lt;/h2&gt;
+&lt;h2 id=&#34;verificar-los-certificados-digitales&#34;&gt;Verificar los certificados digitales&lt;/h2&gt;
 
 &lt;p&gt;La web de la &lt;em&gt;FNMT-RCM&lt;/em&gt; también dispone de un servicio de verificación del estado y la validez de los certificados digitales que poseamos.&lt;/p&gt;
 
@@ -298,19 +298,19 @@ $# git push -u origin master
     
     <item>
       <title>DNI electrónico y certificados digitales</title>
-      <link>http://www.alejandrolopezparra.es/post/dnie/</link>
+      <link>https://www.alejandrolopezparra.es/post/dnie/</link>
       <pubDate>Sat, 22 Apr 2017 13:33:10 +0200</pubDate>
       
-      <guid>http://www.alejandrolopezparra.es/post/dnie/</guid>
+      <guid>https://www.alejandrolopezparra.es/post/dnie/</guid>
       <description>
 
 &lt;p&gt;El &lt;a href=&#34;https://www.dnielectronico.es&#34; target=&#34;_blank&#34;&gt;Documento Nacional de Identidad electrónico español (&lt;em&gt;DNIe&lt;/em&gt;)&lt;/a&gt; es emitido por la Dirección General de la Policía (&lt;em&gt;DGP&lt;/em&gt;) y responde a la necesidad de otorgar identidad personal a los ciudadanos españoles para su uso en la &lt;a href=&#34;https://es.wikipedia.org/wiki/Sociedad_de_la_informaci%C3%B3n&#34; target=&#34;_blank&#34;&gt;Sociedad de la Información&lt;/a&gt;. Permite acreditar la identidad de los intervinientes en las comunicaciones electrónicas así como asegurar su procedencia e integridad. De este modo, es posible realizar &lt;strong&gt;gestiones de forma segura a través de Internet&lt;/strong&gt; tanto con la Administración Pública como con las entidades privadas que lo adopten.&lt;/p&gt;
 
 &lt;p&gt;En este artículo se describirán sus principales características y algunos servicios online donde se puede usar. También se indicarán los pasos para hacerlo funcionar correctamente en el sistema operativo &lt;a href=&#34;https://es.wikipedia.org/wiki/MacOS&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;macOS&lt;/em&gt;&lt;/a&gt; de Apple.&lt;/p&gt;
 
-&lt;h2 id=&#34;1-características-del-dnie&#34;&gt;1. Características del &lt;em&gt;DNIe&lt;/em&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;características-del-dnie&#34;&gt;Características del &lt;em&gt;DNIe&lt;/em&gt;&lt;/h2&gt;
 
-&lt;h3 id=&#34;1-1-fundamentos-básicos&#34;&gt;1.1. Fundamentos básicos&lt;/h3&gt;
+&lt;h3 id=&#34;fundamentos-básicos-del-dnie&#34;&gt;Fundamentos básicos del &lt;em&gt;DNIe&lt;/em&gt;&lt;/h3&gt;
 
 &lt;p&gt;El &lt;em&gt;DNIe&lt;/em&gt; se basa en principios matemáticos de criptografía aplicados a los sistemas de información para que éstos se puedan usar de forma segura. &lt;a href=&#34;https://es.wikipedia.org/wiki/Infraestructura_de_clave_p%C3%BAblica&#34; target=&#34;_blank&#34;&gt;Infraestructura de clave pública (PKI)&lt;/a&gt;, &lt;a href=&#34;https://es.wikipedia.org/wiki/Certificado_digital&#34; target=&#34;_blank&#34;&gt;certificados digitales&lt;/a&gt; y &lt;a href=&#34;https://es.wikipedia.org/wiki/Criptograf%C3%ADa_asim%C3%A9trica&#34; target=&#34;_blank&#34;&gt;criptografía de clave pública o asimétrica&lt;/a&gt; son los principales. Éstos permiten garantizar características básicas de la seguridad de la información: &lt;a href=&#34;https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#Autenticaci.C3.B3n_o_autentificaci.C3.B3n&#34; target=&#34;_blank&#34;&gt;Autenticación&lt;/a&gt;, &lt;a href=&#34;https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#Confidencialidad&#34; target=&#34;_blank&#34;&gt;Confidencialidad&lt;/a&gt;, &lt;a href=&#34;https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#Disponibilidad&#34; target=&#34;_blank&#34;&gt;Disponibilidad&lt;/a&gt;, &lt;a href=&#34;https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#Integridad&#34; target=&#34;_blank&#34;&gt;Integridad&lt;/a&gt; y &lt;a href=&#34;https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#No_repudio_o_irrefutabilidad&#34; target=&#34;_blank&#34;&gt;No repudio&lt;/a&gt;.&lt;/p&gt;
 
@@ -325,7 +325,7 @@ $# git push -u origin master
 
 &lt;p&gt;Se pueden encontrar más detalles técnicos revisando las características &lt;a href=&#34;https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_083&#34; target=&#34;_blank&#34;&gt;electrónicas&lt;/a&gt; y &lt;a href=&#34;https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_084&#34; target=&#34;_blank&#34;&gt;físicas&lt;/a&gt; del &lt;em&gt;DNIe&lt;/em&gt;.&lt;/p&gt;
 
-&lt;h3 id=&#34;1-3-versiones&#34;&gt;1.3. Versiones&lt;/h3&gt;
+&lt;h3 id=&#34;versiones-del-dnie&#34;&gt;Versiones del &lt;em&gt;DNIe&lt;/em&gt;&lt;/h3&gt;
 
 &lt;p&gt;Existen 2 variantes distintas del &lt;em&gt;DNIe&lt;/em&gt;.&lt;/p&gt;
 
@@ -369,7 +369,7 @@ $# git push -u origin master
 &lt;li&gt;Presenta una estructura de datos &lt;strong&gt;equivalente al pasaporte&lt;/strong&gt; que posibilita usarlo como Documento de Viaje en los países que disponen de Pasos Rápidos de Frontera (&lt;em&gt;ABC Systems&lt;/em&gt;).&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;1-2-requisitos&#34;&gt;1.2. Requisitos&lt;/h3&gt;
+&lt;h3 id=&#34;requisitos-del-dnie&#34;&gt;Requisitos del &lt;em&gt;DNIe&lt;/em&gt;&lt;/h3&gt;
 
 &lt;p&gt;Para poder hacer uso del &lt;em&gt;DNIe&lt;/em&gt; es necesario cumplir algunos requisitos físicos (&lt;em&gt;hardware&lt;/em&gt;) y lógicos (&lt;em&gt;software&lt;/em&gt;):&lt;/p&gt;
 
@@ -417,7 +417,7 @@ $# git push -u origin master
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;2-usos-del-dnie&#34;&gt;2. Usos del &lt;em&gt;DNIe&lt;/em&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;usos-del-dnie&#34;&gt;Usos del &lt;em&gt;DNIe&lt;/em&gt;&lt;/h2&gt;
 
 &lt;p&gt;Como se comentaba al principio del artículo, el &lt;em&gt;DNIe&lt;/em&gt; posibilita realizar &lt;strong&gt;gestiones de forma segura a través de Internet&lt;/strong&gt; tanto con la Administración Pública como con algunas entidades privadas que lo han adoptado.&lt;/p&gt;
 
@@ -431,15 +431,15 @@ $# git push -u origin master
 &lt;li&gt;Sede electrónica de la &lt;a href=&#34;https://www.agenciatributaria.gob.es/AEAT.sede/Inicio/Inicio.shtml&#34; target=&#34;_blank&#34;&gt;Agencia Tributaria&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;3-el-dnie-en-macos&#34;&gt;3. El &lt;em&gt;DNIe&lt;/em&gt; en &lt;em&gt;macOS&lt;/em&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;el-dnie-en-macos&#34;&gt;El &lt;em&gt;DNIe&lt;/em&gt; en &lt;em&gt;macOS&lt;/em&gt;&lt;/h2&gt;
 
 &lt;p&gt;Además de disponer de un lector compatible, se necesitan completar algunos pasos para que el &lt;em&gt;DNIe&lt;/em&gt; sea reconocido y funcione correctamente en &lt;em&gt;macOS&lt;/em&gt;. Lo más recomendable es seguir las instrucciones que se describen en el &lt;a href=&#34;https://www.dnielectronico.es/PDFs/manuales_instalacion_unix/Manual_de_Instalacion_de_MulticardPKCS11_DNIE_V1.pdf&#34; target=&#34;_blank&#34;&gt;manual de instalación&lt;/a&gt; publicado por la &lt;em&gt;DGP&lt;/em&gt;.&lt;/p&gt;
 
-&lt;h3 id=&#34;3-1-instalar-firefox&#34;&gt;3.1. Instalar &lt;em&gt;Firefox&lt;/em&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;instalar-firefox&#34;&gt;Instalar &lt;em&gt;Firefox&lt;/em&gt;&lt;/h3&gt;
 
 &lt;p&gt;A día de hoy, el único navegador soportado por el &lt;em&gt;DNIe&lt;/em&gt; en &lt;em&gt;macOS&lt;/em&gt; es &lt;em&gt;Mozilla Firefox&lt;/em&gt; por lo que tendremos que descargar la versión de Escritorio desde su &lt;a href=&#34;https://www.mozilla.org/es-ES/firefox/desktop/&#34; target=&#34;_blank&#34;&gt;web oficial&lt;/a&gt; e instalarlo.&lt;/p&gt;
 
-&lt;h3 id=&#34;3-2-driver-pcks-11&#34;&gt;3.2. Driver &lt;em&gt;PCKS#11&lt;/em&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;instalar-el-driver-pcks-11&#34;&gt;Instalar el driver &lt;em&gt;PCKS#11&lt;/em&gt;&lt;/h3&gt;
 
 &lt;p&gt;A continuación debemos instalar el driver &lt;em&gt;PKCS#11&lt;/em&gt; compatible con el &lt;em&gt;DNIe&lt;/em&gt; que se puede descargar desde el &lt;a href=&#34;https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_1113&#34; target=&#34;_blank&#34;&gt;área de descargas&lt;/a&gt; de la web del dnielectronico.&lt;/p&gt;
 
@@ -453,7 +453,7 @@ $# git push -u origin master
 &lt;li&gt;Hacer clic en &lt;code&gt;Aceptar&lt;/code&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&#34;3-3-instalar-los-certificados-de-la-policía&#34;&gt;3.3. Instalar los certificados de la policía&lt;/h3&gt;
+&lt;h3 id=&#34;instalar-los-certificados-de-la-policía&#34;&gt;Instalar los certificados de la policía&lt;/h3&gt;
 
 &lt;p&gt;Para que &lt;em&gt;Firefox&lt;/em&gt; no dé errores de verificación es necesario instalar los &lt;a href=&#34;https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_077&#34; target=&#34;_blank&#34;&gt;certificados de las Autoridades de Certificación raíz&lt;/a&gt; de la &lt;em&gt;DGP&lt;/em&gt; y aprobar cada uno de ellos para los siguientes usos:&lt;/p&gt;
 
@@ -465,7 +465,7 @@ $# git push -u origin master
 
 &lt;p&gt;Aunque no es estrictamente necesario, sí que es recomendable repetir el paso anterior con los &lt;a href=&#34;https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_078&#34; target=&#34;_blank&#34;&gt;certificados de las Autoridades de Certificación subordinadas&lt;/a&gt; de la &lt;em&gt;DGP&lt;/em&gt;.&lt;/p&gt;
 
-&lt;h3 id=&#34;3-4-verificar-que-funciona&#34;&gt;3.4. Verificar que funciona&lt;/h3&gt;
+&lt;h3 id=&#34;verificar-que-funciona&#34;&gt;Verificar que funciona&lt;/h3&gt;
 
 &lt;p&gt;Una vez completados todos los pasos de instalación y preparación del sistema para el uso del &lt;em&gt;DNIe&lt;/em&gt;, es el momento de comprobar que funciona correctamente. Para ello debemos utilizar un servicio denominado &lt;em&gt;Autoridad de Validación&lt;/em&gt; y, según se indica en la &lt;a href=&#34;https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_320&#34; target=&#34;_blank&#34;&gt;sección de validación&lt;/a&gt; de la web del dnielectronico, hay 2 prestadores de servicio de validación para el &lt;em&gt;DNIe&lt;/em&gt;:&lt;/p&gt;
 
@@ -494,13 +494,13 @@ $# git push -u origin master
     
     <item>
       <title>Generar estadísticas de websites con AWStats</title>
-      <link>http://www.alejandrolopezparra.es/post/awstats/</link>
+      <link>https://www.alejandrolopezparra.es/post/awstats/</link>
       <pubDate>Sat, 25 Mar 2017 16:39:03 +0100</pubDate>
       
-      <guid>http://www.alejandrolopezparra.es/post/awstats/</guid>
+      <guid>https://www.alejandrolopezparra.es/post/awstats/</guid>
       <description>
 
-&lt;p&gt;Después del &lt;a href=&#34;http://www.alejandrolopezparra.es/post/amazon_s3_logs/&#34;&gt;anterior post&lt;/a&gt;, dedicado al registro de accesos a un website alojado en &lt;a href=&#34;http://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html&#34; target=&#34;_blank&#34;&gt;Amazon S3&lt;/a&gt; gracias a la característica &lt;a href=&#34;https://docs.aws.amazon.com/AmazonS3/latest/dev/ServerLogs.html&#34; target=&#34;_blank&#34;&gt;access logging&lt;/a&gt;, continuamos con lo realmente importante: &lt;strong&gt;el análisis de logs&lt;/strong&gt;. Esto es fundamental para obtener estadísticas de nuestro website y conocer qué uso, tanto legítimo como inapropiado, se hace de él desde Internet. Para llevarlo a cabo, se tratará la instalación, configuración y uso de la herramienta de software libre &lt;a href=&#34;http://www.awstats.org&#34; target=&#34;_blank&#34;&gt;AWStats&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Después del &lt;a href=&#34;https://www.alejandrolopezparra.es/post/amazon_s3_logs/&#34;&gt;anterior post&lt;/a&gt;, dedicado al registro de accesos a un website alojado en &lt;a href=&#34;http://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html&#34; target=&#34;_blank&#34;&gt;Amazon S3&lt;/a&gt; gracias a la característica &lt;a href=&#34;https://docs.aws.amazon.com/AmazonS3/latest/dev/ServerLogs.html&#34; target=&#34;_blank&#34;&gt;access logging&lt;/a&gt;, continuamos con lo realmente importante: &lt;strong&gt;el análisis de logs&lt;/strong&gt;. Esto es fundamental para obtener estadísticas de nuestro website y conocer qué uso, tanto legítimo como inapropiado, se hace de él desde Internet. Para llevarlo a cabo, se tratará la instalación, configuración y uso de la herramienta de software libre &lt;a href=&#34;http://www.awstats.org&#34; target=&#34;_blank&#34;&gt;AWStats&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;AWStats&lt;/em&gt; es un analizador de logs que genera estadísticas y gráficas en &lt;em&gt;HTML&lt;/em&gt; sobre el uso de servidores web, ftp, streaming y de correo. Éstos son algunos ejemplos de las estadísticas que es capaz de obtener a partir de los logs:&lt;/p&gt;
 
@@ -524,7 +524,7 @@ $# git push -u origin master
 
 &lt;p&gt;En el caso que nos ocupa, se usará desde la &lt;em&gt;CLI&lt;/em&gt; y sólo para analizar logs de acceso al servidor web de &lt;em&gt;Amazon S3&lt;/em&gt;. A continuación se describen los pasos para hacerlo funcionar: (1) descargar bases de datos de geolocalización, (2) instalar &lt;em&gt;Perl&lt;/em&gt;, (3) instalar y configurar &lt;em&gt;AWStats&lt;/em&gt;, y (4) generar informes con &lt;em&gt;AWStats&lt;/em&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;1-descargar-bases-de-datos-de-geolocalización&#34;&gt;1. Descargar bases de datos de geolocalización&lt;/h2&gt;
+&lt;h2 id=&#34;descargar-bases-de-datos-de-geolocalización&#34;&gt;Descargar bases de datos de geolocalización&lt;/h2&gt;
 
 &lt;p&gt;El primer paso a realizar es descargar la base de datos de geolocalización que se usará para poder obtener el país, sistema autónomo (&lt;em&gt;ASN&lt;/em&gt;), organización, región y/o ciudad de cada una de las direcciones IP desde las que visiten nuestro website. &lt;em&gt;AWStats&lt;/em&gt; soporta tres proveedores de bases de datos:&lt;/p&gt;
 
@@ -539,7 +539,7 @@ $# git push -u origin master
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$# gunzip -f GeoIP.dat.gz GeoIPASNum.dat.gz GeoLiteCity.dat.gz
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;2-instalar-perl&#34;&gt;2. Instalar Perl&lt;/h2&gt;
+&lt;h2 id=&#34;instalar-perl&#34;&gt;Instalar Perl&lt;/h2&gt;
 
 &lt;p&gt;La mayoría de los sistemas operativos vienen con el intérprete de &lt;em&gt;Perl&lt;/em&gt; pre-instalado o disponen de un instalador que facilita la labor. Éste es el caso de &lt;em&gt;macOS&lt;/em&gt;, que ya cuenta con &lt;em&gt;Perl&lt;/em&gt; como parte de las utilidades que acompañan al sistema operativo así que no es necesario instalarlo.&lt;/p&gt;
 
@@ -550,7 +550,7 @@ $# git push -u origin master
 
 &lt;p&gt;Si no disponemos de permisos de root/administrador o &lt;strong&gt;por seguridad&lt;/strong&gt;, podemos ejecutarlo con un usuario sin privilegios pero, antes, hay que instalar &lt;a href=&#34;https://metacpan.org/pod/local::lib&#34; target=&#34;_blank&#34;&gt;local::lib&lt;/a&gt; (un módulo de &lt;em&gt;Perl&lt;/em&gt; que permite instalar módulos en directorios locales). Para llevarlo a cabo, lo más recomendable es usar la &lt;a href=&#34;https://metacpan.org/pod/local::lib#The-bootstrapping-technique&#34; target=&#34;_blank&#34;&gt;técnica bootstrapping&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;3-instalar-y-configurar-awstats&#34;&gt;3. Instalar y configurar AWStats&lt;/h2&gt;
+&lt;h2 id=&#34;instalar-y-configurar-awstats&#34;&gt;Instalar y configurar AWStats&lt;/h2&gt;
 
 &lt;p&gt;Ahora sí, una vez cubiertos todos los requisito previos, llega el momento de descargar &lt;em&gt;AWStats&lt;/em&gt; desde su &lt;a href=&#34;http://www.awstats.org/#DOWNLOAD&#34; target=&#34;_blank&#34;&gt;web oficial&lt;/a&gt; y descomprimirlo para posteriormente configurarlo según las &lt;a href=&#34;http://www.awstats.org/docs/awstats_setup.html&#34; target=&#34;_blank&#34;&gt;instrucciones oficiales&lt;/a&gt;.&lt;/p&gt;
 
@@ -582,7 +582,7 @@ LoadPlugin=&amp;quot;timezone CET&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;4-generar-informes-con-awstats&#34;&gt;4. Generar informes con AWStats&lt;/h2&gt;
+&lt;h2 id=&#34;generar-informes-con-awstats&#34;&gt;Generar informes con AWStats&lt;/h2&gt;
 
 &lt;p&gt;Una vez que hemos conseguido instalar y configurar todas las herramientas necesarias, es el momento de generar los informes con las estadísticas desde los logs de nuestro website.&lt;/p&gt;
 
@@ -641,29 +641,29 @@ awstats.$myserver.errors404.html
     
     <item>
       <title>Logs de acceso a websites en Amazon S3</title>
-      <link>http://www.alejandrolopezparra.es/post/amazon_s3_logs/</link>
+      <link>https://www.alejandrolopezparra.es/post/amazon_s3_logs/</link>
       <pubDate>Sat, 04 Mar 2017 15:39:03 +0100</pubDate>
       
-      <guid>http://www.alejandrolopezparra.es/post/amazon_s3_logs/</guid>
+      <guid>https://www.alejandrolopezparra.es/post/amazon_s3_logs/</guid>
       <description>
 
-&lt;p&gt;Después del &lt;a href=&#34;http://www.alejandrolopezparra.es/post/amazon_s3/&#34;&gt;anterior post&lt;/a&gt; dedicado al alojamiento de websites estáticos en &lt;a href=&#34;http://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html&#34; target=&#34;_blank&#34;&gt;Amazon S3&lt;/a&gt;, es el momento de tratar la gestión de los logs o registros de acceso a nuestro website. Posteriormente nos centremos en el &lt;a href=&#34;http://www.alejandrolopezparra.es/post/awstats/&#34;&gt;análisis de logs&lt;/a&gt; que es fundamental para obtener estadísticas de nuestro website y conocer qué uso, tanto legítimo como inapropiado, se hace de él desde Internet.&lt;/p&gt;
+&lt;p&gt;Después del &lt;a href=&#34;https://www.alejandrolopezparra.es/post/amazon_s3/&#34;&gt;anterior post&lt;/a&gt; dedicado al alojamiento de websites estáticos en &lt;a href=&#34;http://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html&#34; target=&#34;_blank&#34;&gt;Amazon S3&lt;/a&gt;, es el momento de tratar la gestión de los logs o registros de acceso a nuestro website. Posteriormente nos centremos en el &lt;a href=&#34;https://www.alejandrolopezparra.es/post/awstats/&#34;&gt;análisis de logs&lt;/a&gt; que es fundamental para obtener estadísticas de nuestro website y conocer qué uso, tanto legítimo como inapropiado, se hace de él desde Internet.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Amazon S3&lt;/em&gt; dispone de una característica denominada &lt;a href=&#34;https://docs.aws.amazon.com/AmazonS3/latest/dev/ServerLogs.html&#34; target=&#34;_blank&#34;&gt;access logging&lt;/a&gt; que permite registrar los accesos que se producen a nuestro website en ficheros de logs. A continuación se describen los pasos para (1) habilitar, (2) purgar y (3) descargar dichos logs a un directorio local.&lt;/p&gt;
 
-&lt;h2 id=&#34;1-activar-el-registro-de-accesos&#34;&gt;1. Activar el registro de accesos&lt;/h2&gt;
+&lt;h2 id=&#34;activar-el-registro-de-accesos&#34;&gt;Activar el registro de accesos&lt;/h2&gt;
 
 &lt;p&gt;El registro de accesos o access logging se habilita con unos &lt;a href=&#34;https://docs.aws.amazon.com/AmazonS3/latest/dev/enable-logging-console.html&#34; target=&#34;_blank&#34;&gt;sencillos pasos&lt;/a&gt;. De esta forma, con cada petición de acceso se genera un nuevo fichero que se almacena en el &lt;a href=&#34;http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingBucket.html&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Bucket&lt;/em&gt;&lt;/a&gt; que hayamos seleccionado para tal fin y que tendrá asociado un nombre único (por ejemplo, &lt;code&gt;mybucket&lt;/code&gt;). En dichos ficheros se registran los datos de los accesos (&lt;code&gt;requester&lt;/code&gt;, &lt;code&gt;bucket name&lt;/code&gt;, &lt;code&gt;request time&lt;/code&gt;, &lt;code&gt;request action&lt;/code&gt;, &lt;code&gt;response status&lt;/code&gt;, &lt;code&gt;error code&lt;/code&gt;) siguiendo el formato de log que se explica &lt;a href=&#34;https://docs.aws.amazon.com/AmazonS3/latest/dev/LogFormat.html&#34; target=&#34;_blank&#34;&gt;aquí&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;2-purgar-los-ficheros-de-logs&#34;&gt;2. Purgar los ficheros de logs&lt;/h2&gt;
+&lt;h2 id=&#34;purgar-los-ficheros-de-logs&#34;&gt;Purgar los ficheros de logs&lt;/h2&gt;
 
 &lt;p&gt;Es importante considerar que, con el paso del tiempo, el espacio ocupado por estos ficheros de logs irá creciendo. Esto puede llegar a ser un problema no sólo en lo que respecta al volumen sino también económicamente hablando, ya que también se paga por el espacio ocupado. Para evitar sorpresas, lo más recomendable es configurar el &lt;a href=&#34;http://docs.aws.amazon.com/AmazonS3/latest/user-guide/setup-lifecycle.html&#34; target=&#34;_blank&#34;&gt;ciclo de vida de objetos&lt;/a&gt; que posibilita, de forma automática, purgar ficheros o moverlos a &lt;a href=&#34;http://docs.aws.amazon.com/AmazonS3/latest/dev/storage-class-intro.html&#34; target=&#34;_blank&#34;&gt;otro almacenamiento&lt;/a&gt; más barato en base a su tiempo de vida.&lt;/p&gt;
 
-&lt;h2 id=&#34;3-descargar-los-ficheros-de-logs&#34;&gt;3. Descargar los ficheros de logs&lt;/h2&gt;
+&lt;h2 id=&#34;descargar-los-ficheros-de-logs&#34;&gt;Descargar los ficheros de logs&lt;/h2&gt;
 
 &lt;p&gt;Para poder trabajar con los ficheros de logs generados, es necesario descargarlos previamente desde donde se encuentren. Esto se puede hacer de forma manual, que no es muy operativo, o automatizada. Para la segunda opción necesitaremos crear un usuario que nos permita usar la &lt;a href=&#34;http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html&#34; target=&#34;_blank&#34;&gt;Interfaz de Línea de Comandos (CLI)&lt;/a&gt; de &lt;em&gt;Amazon Web Services (AWS)&lt;/em&gt; contra la &lt;a href=&#34;http://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html&#34; target=&#34;_blank&#34;&gt;Interfaz de Programación de Aplicaciones (API)&lt;/a&gt; de &lt;em&gt;Amazon S3&lt;/em&gt;. Los pasos para poder llevarlo a cabo son los siguientes:&lt;/p&gt;
 
-&lt;h3 id=&#34;3-1-crear-un-usuario-con-permisos-de-lectura&#34;&gt;3.1. Crear un usuario con permisos de lectura&lt;/h3&gt;
+&lt;h3 id=&#34;crear-un-usuario-con-permisos-de-lectura&#34;&gt;Crear un usuario con permisos de lectura&lt;/h3&gt;
 
 &lt;p&gt;Antes de poder usar la CLI de AWS contra la API de S3 es indispensable crear un usuario que tenga los permisos suficientes. Esta tarea se realiza a través del &lt;a href=&#34;http://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html?icmpid=docs_iam_console&#34; target=&#34;_blank&#34;&gt;servicio de gestión de acceso e identidad (IAM)&lt;/a&gt; de AWS:&lt;/p&gt;
 
@@ -673,7 +673,7 @@ awstats.$myserver.errors404.html
 &lt;li&gt;Anotar el identificador de usuario (&lt;code&gt;Access key ID&lt;/code&gt;) y la contraseña (&lt;code&gt;Secret access key&lt;/code&gt;) del usuario generado ya que serán necesarios a continuación.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;3-2-descargar-los-logs-desde-amazon-s3&#34;&gt;3.2. Descargar los logs desde Amazon S3&lt;/h3&gt;
+&lt;h3 id=&#34;descargar-los-logs-desde-amazon-s3&#34;&gt;Descargar los logs desde Amazon S3&lt;/h3&gt;
 
 &lt;p&gt;Para poder descargar los logs en un directorio local (por ejemplo, &lt;code&gt;mylogs&lt;/code&gt;) usaremos la CLI de AWS que tiene &lt;a href=&#34;http://docs.aws.amazon.com/cli/latest/userguide/using-s3-commands.html&#34; target=&#34;_blank&#34;&gt;multitud de comandos&lt;/a&gt; que permiten automatizar muchas de las tareas. Para el caso de &lt;a href=&#34;https://es.wikipedia.org/wiki/MacOS&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;macOS&lt;/em&gt;&lt;/a&gt;, nos bastará con seguir unos sencillos pasos:&lt;/p&gt;
 
@@ -710,25 +710,25 @@ awstats.$myserver.errors404.html
 
 &lt;p&gt;La función &lt;em&gt;access logging&lt;/em&gt; de &lt;em&gt;Amazon S3&lt;/em&gt; nos permite registrar cada acceso que se produzca a nuestro website con datos valiosos sobre los mismos como son el solicitante, la respuesta del servidor y los tiempos.&lt;/p&gt;
 
-&lt;p&gt;Gracias al análisis de este tipo de información podremos encontrar errores, usos inapropiados, problemas de seguridad e incluso estadísticas sobre nuestros visitantes. Estas cuestiones son las que se abordarán en el siguiente &lt;a href=&#34;http://www.alejandrolopezparra.es/post/awstats/&#34;&gt;post&lt;/a&gt; junto con el uso de la herramienta &lt;a href=&#34;http://www.awstats.org&#34; target=&#34;_blank&#34;&gt;AWStats&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Gracias al análisis de este tipo de información podremos encontrar errores, usos inapropiados, problemas de seguridad e incluso estadísticas sobre nuestros visitantes. Estas cuestiones son las que se abordarán en el siguiente &lt;a href=&#34;https://www.alejandrolopezparra.es/post/awstats/&#34;&gt;post&lt;/a&gt; junto con el uso de la herramienta &lt;a href=&#34;http://www.awstats.org&#34; target=&#34;_blank&#34;&gt;AWStats&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Alojar websites estáticos en Amazon Simple Storage Service (S3)</title>
-      <link>http://www.alejandrolopezparra.es/post/amazon_s3/</link>
+      <link>https://www.alejandrolopezparra.es/post/amazon_s3/</link>
       <pubDate>Sat, 11 Feb 2017 12:00:00 +0100</pubDate>
       
-      <guid>http://www.alejandrolopezparra.es/post/amazon_s3/</guid>
+      <guid>https://www.alejandrolopezparra.es/post/amazon_s3/</guid>
       <description>
 
-&lt;p&gt;Como continuación al &lt;a href=&#34;http://www.alejandrolopezparra.es/post/hugo/&#34;&gt;primer post&lt;/a&gt; en el que hablaba de &lt;a href=&#34;https://gohugo.io&#34; target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt;, el framework usado para la creación de esta web, me gustaría seguir comentando otra de las tecnologías en las que se apoya. En esta ocasión es el turno del servicio &lt;a href=&#34;http://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html&#34; target=&#34;_blank&#34;&gt;Amazon Simple Storage Service (S3)&lt;/a&gt; que pertenece a la plataforma de servicios en la nube &lt;a href=&#34;https://aws.amazon.com/es/what-is-aws/&#34; target=&#34;_blank&#34;&gt;Amazon Web Services (AWS)&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Como continuación al &lt;a href=&#34;https://www.alejandrolopezparra.es/post/hugo/&#34;&gt;primer post&lt;/a&gt; en el que hablaba de &lt;a href=&#34;https://gohugo.io&#34; target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt;, el framework usado para la creación de esta web, me gustaría seguir comentando otra de las tecnologías en las que se apoya. En esta ocasión es el turno del servicio &lt;a href=&#34;http://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html&#34; target=&#34;_blank&#34;&gt;Amazon Simple Storage Service (S3)&lt;/a&gt; que pertenece a la plataforma de servicios en la nube &lt;a href=&#34;https://aws.amazon.com/es/what-is-aws/&#34; target=&#34;_blank&#34;&gt;Amazon Web Services (AWS)&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Amazon S3&lt;/em&gt; es un servicio de pago para almacenamiento en la nube al estilo de &lt;a href=&#34;https://www.dropbox.com&#34; target=&#34;_blank&#34;&gt;Dropbox&lt;/a&gt;, &lt;a href=&#34;https://drive.google.com&#34; target=&#34;_blank&#34;&gt;Google Drive&lt;/a&gt; o &lt;a href=&#34;https://onedrive.live.com/about/es-es/&#34; target=&#34;_blank&#34;&gt;Microsoft OneDrive&lt;/a&gt;. Además de almacenar ficheros y directorios, &lt;strong&gt;permite alojar websites de contenido estático&lt;/strong&gt;, es decir, webs que se basan en &lt;em&gt;HyperText Markup Language&lt;/em&gt; (&lt;em&gt;HTML&lt;/em&gt;), &lt;em&gt;JavaScript&lt;/em&gt; (&lt;em&gt;JS&lt;/em&gt;) y &lt;em&gt;Cascading Style Sheets&lt;/em&gt; (&lt;em&gt;CSS&lt;/em&gt;). El contenido no es generado dinámicamente en cada solicitud que se realiza al servidor y, por tanto, no son necesarios ni servidores de aplicaciones ni de bases de datos. Sólo se requiere un servidor web que sirva el contenido según se le vaya solicitando. Afortunadamente, gracias a tecnologías que se ejecutan en el lado del cliente como &lt;em&gt;JS&lt;/em&gt; y &lt;em&gt;CSS&lt;/em&gt;, se puede conseguir cierto dinamismo en cómo se muestra el contenido aunque éste sea servido de forma estática.&lt;/p&gt;
 
 &lt;p&gt;A continuación se describen los 2 pasos que hay que realizar para poder publicar una web estática: (1) alojar el website y (2) asociar un dominio.&lt;/p&gt;
 
-&lt;h2 id=&#34;1-alojar-un-website-estático-en-amazon-s3&#34;&gt;1. Alojar un website estático en Amazon S3&lt;/h2&gt;
+&lt;h2 id=&#34;alojar-un-website-estático-en-amazon-s3&#34;&gt;Alojar un website estático en Amazon S3&lt;/h2&gt;
 
 &lt;p&gt;La capacidad de alojamiento de webs estáticas de &lt;em&gt;Amazon S3&lt;/em&gt; está explicada en detalle &lt;a href=&#34;https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html&#34; target=&#34;_blank&#34;&gt;aquí&lt;/a&gt; pero, en resumen, nos permite lo siguiente:&lt;/p&gt;
 
@@ -737,12 +737,12 @@ awstats.$myserver.errors404.html
 &lt;li&gt;Almacenar los ficheros &lt;em&gt;HTML&lt;/em&gt; y demás recursos webs asociados en dicho &lt;em&gt;Bucket&lt;/em&gt;.&lt;/li&gt;
 &lt;li&gt;Publicar el &lt;em&gt;Bucket&lt;/em&gt; a través de un &lt;a href=&#34;http://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteEndpoints.html&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Endpoint&lt;/em&gt;&lt;/a&gt;. Un &lt;em&gt;Endpoint&lt;/em&gt; apunta a un &lt;em&gt;Bucket&lt;/em&gt; concreto que se encuentra en una región en particular. En mi caso es &lt;a href=&#34;http://www.alejandrolopezparra.es.s3-website-eu-west-1.amazonaws.com&#34; target=&#34;_blank&#34;&gt;www.alejandrolopezparra.es.s3-website-eu-west-1.amazonaws.com&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Configurar cuál es la página &lt;a href=&#34;https://docs.aws.amazon.com/AmazonS3/latest/dev/IndexDocumentSupport.html&#34; target=&#34;_blank&#34;&gt;index&lt;/a&gt; (página que se cargará por defecto) y la que se muestra en caso de &lt;a href=&#34;https://docs.aws.amazon.com/AmazonS3/latest/dev/CustomErrorDocSupport.html&#34; target=&#34;_blank&#34;&gt;error&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Activar los &lt;a href=&#34;https://docs.aws.amazon.com/AmazonS3/latest/dev/ServerLogs.html&#34; target=&#34;_blank&#34;&gt;ficheros de logs&lt;/a&gt; para registrar los accesos que se produzcan al servidor. Más información sobre esto en el post dedicado a los &lt;a href=&#34;http://www.alejandrolopezparra.es/post/amazon_s3_logs/&#34;&gt;logs de Amazon S3&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Activar los &lt;a href=&#34;https://docs.aws.amazon.com/AmazonS3/latest/dev/ServerLogs.html&#34; target=&#34;_blank&#34;&gt;ficheros de logs&lt;/a&gt; para registrar los accesos que se produzcan al servidor. Más información sobre esto en el post dedicado a los &lt;a href=&#34;https://www.alejandrolopezparra.es/post/amazon_s3_logs/&#34;&gt;logs de Amazon S3&lt;/a&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;También contamos con un &lt;a href=&#34;https://console.aws.amazon.com/quickstart-website/new&#34; target=&#34;_blank&#34;&gt;asistente o guía rápida&lt;/a&gt; que nos facilita el proceso de alojamiento de un nuevo website.&lt;/p&gt;
 
-&lt;h2 id=&#34;2-asociar-un-dominio-propio&#34;&gt;2. Asociar un dominio propio&lt;/h2&gt;
+&lt;h2 id=&#34;asociar-un-dominio-propio&#34;&gt;Asociar un dominio propio&lt;/h2&gt;
 
 &lt;p&gt;Una vez tenemos nuestro website alojado en un &lt;em&gt;Bucket&lt;/em&gt; y lo hemos publicado en un &lt;em&gt;Endpoint&lt;/em&gt;, es el momento de asociarle un nombre de un dominio propio, por ejemplo &lt;a href=&#34;http://www.alejandrolopezparra.es&#34; target=&#34;_blank&#34;&gt;www.alejandrolopezparra.es&lt;/a&gt;.&lt;/p&gt;
 
@@ -767,17 +767,17 @@ awstats.$myserver.errors404.html
     
     <item>
       <title>Crear websites estáticos con Hugo</title>
-      <link>http://www.alejandrolopezparra.es/post/hugo/</link>
+      <link>https://www.alejandrolopezparra.es/post/hugo/</link>
       <pubDate>Sat, 28 Jan 2017 15:00:00 +0100</pubDate>
       
-      <guid>http://www.alejandrolopezparra.es/post/hugo/</guid>
+      <guid>https://www.alejandrolopezparra.es/post/hugo/</guid>
       <description>
 
 &lt;p&gt;Como no podía ser de otra manera, inauguro esta web con un primer post que va dedicado a la tecnología que he usado para crear este sitio.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://gohugo.io&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Hugo&lt;/em&gt;&lt;/a&gt; es un framework que permite crear websites a base de contenido estático (&lt;em&gt;HTML&lt;/em&gt;, &lt;em&gt;JavaScript&lt;/em&gt;, &lt;em&gt;CSS&lt;/em&gt;, &amp;hellip;), es decir, no se sustenta en el uso de servidores de aplicaciones o bases de datos. Lo contrario de lo que ocurre con los sistemas de gestión de contenidos o &lt;em&gt;CMS&lt;/em&gt; habituales los cuales suelen estar basados en contenido dinámico: &lt;em&gt;WordPress&lt;/em&gt;, &lt;em&gt;Drupal&lt;/em&gt;, &lt;em&gt;Joomla!&lt;/em&gt;, &lt;em&gt;Dokuwiki&lt;/em&gt;, etc. Por suspuesto, esto, tiene sus ventajas e inconvenientes.&lt;/p&gt;
 
-&lt;h2 id=&#34;1-ventajas&#34;&gt;1. Ventajas:&lt;/h2&gt;
+&lt;h2 id=&#34;ventajas&#34;&gt;Ventajas:&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Simplicidad&lt;/strong&gt;: sólo se necesita un servidor web que sirva las páginas webs y el resto de contenido estático, no hay servidores de bases de datos ni de aplicaciones.&lt;/li&gt;
@@ -788,7 +788,7 @@ awstats.$myserver.errors404.html
 &lt;li&gt;&lt;strong&gt;Personalización&lt;/strong&gt;: soporta el uso de &lt;a href=&#34;http://themes.gohugo.io/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;themes&lt;/em&gt;&lt;/a&gt; o temas que permiten personalizar el aspecto del site de forma fácil manteniendo el contenido.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;2-inconvenientes&#34;&gt;2. Inconvenientes:&lt;/h2&gt;
+&lt;h2 id=&#34;inconvenientes&#34;&gt;Inconvenientes:&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Funcionalidad limitada&lt;/strong&gt;: aunque con &lt;em&gt;JS&lt;/em&gt; se puede implementar mucha funcionalidad en el lado del cliente, no es posible resolverlo todo. Hay cosas que sólo se pueden realizar en el lado del servidor: gestión de usuarios, comentarios, cestas de la compra, formularios de contacto, etc.&lt;/li&gt;
@@ -800,7 +800,7 @@ awstats.$myserver.errors404.html
 
 &lt;p&gt;Hugo es idóneo para crear páginas personales, blogs, portfolios y webs de documentación especialmente cuando sólo hay un autor pero no para sites más complejos. Hay mucha &lt;a href=&#34;https://gohugo.io/overview/introduction/&#34; target=&#34;_blank&#34;&gt;documentación&lt;/a&gt; en la web oficial incluyendo una &lt;a href=&#34;https://gohugo.io/overview/quickstart/&#34; target=&#34;_blank&#34;&gt;guía para principiantes&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;En mi caso, he optado por personalizar la apariencia de &lt;a href=&#34;https://gohugo.io&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Hugo&lt;/em&gt;&lt;/a&gt; con el tema &lt;a href=&#34;http://themes.gohugo.io/academic/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;academic&lt;/em&gt;&lt;/a&gt; por su simplicidad y estilo minimalista. En el &lt;a href=&#34;http://www.alejandrolopezparra.es/post/amazon_s3/&#34;&gt;próximo post&lt;/a&gt; abordaré el alojamiento del website con &lt;a href=&#34;https://aws.amazon.com/es/s3/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Amazon S3&lt;/em&gt;&lt;/a&gt; por su facilidad de uso y precio reducido.&lt;/p&gt;
+&lt;p&gt;En mi caso, he optado por personalizar la apariencia de &lt;a href=&#34;https://gohugo.io&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Hugo&lt;/em&gt;&lt;/a&gt; con el tema &lt;a href=&#34;http://themes.gohugo.io/academic/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;academic&lt;/em&gt;&lt;/a&gt; por su simplicidad y estilo minimalista. En el &lt;a href=&#34;https://www.alejandrolopezparra.es/post/amazon_s3/&#34;&gt;próximo post&lt;/a&gt; abordaré el alojamiento del website con &lt;a href=&#34;https://aws.amazon.com/es/s3/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Amazon S3&lt;/em&gt;&lt;/a&gt; por su facilidad de uso y precio reducido.&lt;/p&gt;
 </description>
     </item>
     

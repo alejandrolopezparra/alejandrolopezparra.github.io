@@ -5,8 +5,8 @@
     
     <url>
     
-      <loc>http://www.alejandrolopezparra.es/post/github_pages/</loc>
-      <lastmod>2017-05-27T12:00:00+02:00</lastmod>
+      <loc>https://www.alejandrolopezparra.es/post/github_pages/</loc>
+      <lastmod>2017-05-20T12:00:00+02:00</lastmod>
     </url>
     
   
@@ -14,7 +14,7 @@
     
     <url>
     
-      <loc>http://www.alejandrolopezparra.es/post/fnmt/</loc>
+      <loc>https://www.alejandrolopezparra.es/post/fnmt/</loc>
       <lastmod>2017-05-06T12:00:00+02:00</lastmod>
     </url>
     
@@ -23,7 +23,7 @@
     
     <url>
     
-      <loc>http://www.alejandrolopezparra.es/post/dnie/</loc>
+      <loc>https://www.alejandrolopezparra.es/post/dnie/</loc>
       <lastmod>2017-04-22T13:33:10+02:00</lastmod>
     </url>
     
@@ -32,7 +32,7 @@
     
     <url>
     
-      <loc>http://www.alejandrolopezparra.es/post/awstats/</loc>
+      <loc>https://www.alejandrolopezparra.es/post/awstats/</loc>
       <lastmod>2017-03-25T16:39:03+01:00</lastmod>
     </url>
     
@@ -41,7 +41,7 @@
     
     <url>
     
-      <loc>http://www.alejandrolopezparra.es/post/amazon_s3_logs/</loc>
+      <loc>https://www.alejandrolopezparra.es/post/amazon_s3_logs/</loc>
       <lastmod>2017-03-04T15:39:03+01:00</lastmod>
     </url>
     
@@ -50,7 +50,7 @@
     
     <url>
     
-      <loc>http://www.alejandrolopezparra.es/post/amazon_s3/</loc>
+      <loc>https://www.alejandrolopezparra.es/post/amazon_s3/</loc>
       <lastmod>2017-02-11T12:00:00+01:00</lastmod>
     </url>
     
@@ -59,7 +59,7 @@
     
     <url>
     
-      <loc>http://www.alejandrolopezparra.es/post/</loc>
+      <loc>https://www.alejandrolopezparra.es/post/</loc>
       <lastmod>2017-01-28T21:00:00+00:00</lastmod>
     </url>
     
@@ -68,7 +68,7 @@
     
     <url>
     
-      <loc>http://www.alejandrolopezparra.es/post/hugo/</loc>
+      <loc>https://www.alejandrolopezparra.es/post/hugo/</loc>
       <lastmod>2017-01-28T15:00:00+01:00</lastmod>
     </url>
     
@@ -77,7 +77,7 @@
     
     <url>
     
-      <loc>http://www.alejandrolopezparra.es/</loc>
+      <loc>https://www.alejandrolopezparra.es/</loc>
       <lastmod>2016-04-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -87,8 +87,8 @@
     
     <url>
     
-      <loc>http://www.alejandrolopezparra.es/tags/amazon/</loc>
-      <lastmod>2017-05-27T12:00:00+02:00</lastmod>
+      <loc>https://www.alejandrolopezparra.es/tags/amazon/</loc>
+      <lastmod>2017-05-20T12:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -97,7 +97,7 @@
     
     <url>
     
-      <loc>http://www.alejandrolopezparra.es/tags/awstats/</loc>
+      <loc>https://www.alejandrolopezparra.es/tags/awstats/</loc>
       <lastmod>2017-03-25T16:39:03+01:00</lastmod>
       <priority>0</priority>
     </url>
@@ -107,7 +107,7 @@
     
     <url>
     
-      <loc>http://www.alejandrolopezparra.es/categories/</loc>
+      <loc>https://www.alejandrolopezparra.es/categories/</loc>
       <priority>0</priority>
     </url>
     
@@ -116,7 +116,7 @@
     
     <url>
     
-      <loc>http://www.alejandrolopezparra.es/tags/certificados-digitales/</loc>
+      <loc>https://www.alejandrolopezparra.es/tags/certificados-digitales/</loc>
       <lastmod>2017-05-06T12:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
@@ -126,7 +126,7 @@
     
     <url>
     
-      <loc>http://www.alejandrolopezparra.es/tags/dnie/</loc>
+      <loc>https://www.alejandrolopezparra.es/tags/dnie/</loc>
       <lastmod>2017-05-06T12:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
@@ -136,7 +136,7 @@
     
     <url>
     
-      <loc>http://www.alejandrolopezparra.es/tags/firefox/</loc>
+      <loc>https://www.alejandrolopezparra.es/tags/firefox/</loc>
       <lastmod>2017-05-06T12:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
@@ -146,7 +146,7 @@
     
     <url>
     
-      <loc>http://www.alejandrolopezparra.es/tags/fnmt/</loc>
+      <loc>https://www.alejandrolopezparra.es/tags/fnmt/</loc>
       <lastmod>2017-05-06T12:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
@@ -156,8 +156,8 @@
     
     <url>
     
-      <loc>http://www.alejandrolopezparra.es/tags/github/</loc>
-      <lastmod>2017-05-27T12:00:00+02:00</lastmod>
+      <loc>https://www.alejandrolopezparra.es/tags/github/</loc>
+      <lastmod>2017-05-20T12:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -166,8 +166,8 @@
     
     <url>
     
-      <loc>http://www.alejandrolopezparra.es/tags/hugo/</loc>
-      <lastmod>2017-05-27T12:00:00+02:00</lastmod>
+      <loc>https://www.alejandrolopezparra.es/tags/hugo/</loc>
+      <lastmod>2017-05-20T12:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -176,7 +176,7 @@
     
     <url>
     
-      <loc>http://www.alejandrolopezparra.es/tags/macos/</loc>
+      <loc>https://www.alejandrolopezparra.es/tags/macos/</loc>
       <lastmod>2017-04-22T13:33:10+02:00</lastmod>
       <priority>0</priority>
     </url>
@@ -186,7 +186,7 @@
     
     <url>
     
-      <loc>http://www.alejandrolopezparra.es/publication_types/</loc>
+      <loc>https://www.alejandrolopezparra.es/publication_types/</loc>
       <priority>0</priority>
     </url>
     
@@ -195,7 +195,7 @@
     
     <url>
     
-      <loc>http://www.alejandrolopezparra.es/tags/seguridad/</loc>
+      <loc>https://www.alejandrolopezparra.es/tags/seguridad/</loc>
       <lastmod>2017-05-06T12:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
@@ -205,8 +205,8 @@
     
     <url>
     
-      <loc>http://www.alejandrolopezparra.es/tags/</loc>
-      <lastmod>2017-05-27T12:00:00+02:00</lastmod>
+      <loc>https://www.alejandrolopezparra.es/tags/</loc>
+      <lastmod>2017-05-20T12:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -215,8 +215,8 @@
     
     <url>
     
-      <loc>http://www.alejandrolopezparra.es/tags/web/</loc>
-      <lastmod>2017-05-27T12:00:00+02:00</lastmod>
+      <loc>https://www.alejandrolopezparra.es/tags/web/</loc>
+      <lastmod>2017-05-20T12:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     

@@ -34,14 +34,27 @@
   
 
   
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-103012229-1', 'auto');
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
 
-  <link rel="alternate" href="http://www.alejandrolopezparra.es/index.xml" type="application/rss+xml" title="Alejandro López Parra">
-  <link rel="feed" href="http://www.alejandrolopezparra.es/index.xml" type="application/rss+xml" title="Alejandro López Parra">
+  <link rel="alternate" href="https://www.alejandrolopezparra.es/index.xml" type="application/rss+xml" title="Alejandro López Parra">
+  <link rel="feed" href="https://www.alejandrolopezparra.es/index.xml" type="application/rss+xml" title="Alejandro López Parra">
 
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://www.alejandrolopezparra.es/post/awstats/">
+  <link rel="canonical" href="https://www.alejandrolopezparra.es/post/awstats/">
 
   
 
@@ -156,35 +169,35 @@
   <ul class="share">
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2fawstats%2f"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2fawstats%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Generar%20estad%c3%adsticas%20de%20websites%20con%20AWStats&amp;url=http%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2fawstats%2f"
+         href="https://twitter.com/intent/tweet?text=Generar%20estad%c3%adsticas%20de%20websites%20con%20AWStats&amp;url=https%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2fawstats%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2fawstats%2f&amp;title=Generar%20estad%c3%adsticas%20de%20websites%20con%20AWStats"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2fawstats%2f&amp;title=Generar%20estad%c3%adsticas%20de%20websites%20con%20AWStats"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2fawstats%2f&amp;title=Generar%20estad%c3%adsticas%20de%20websites%20con%20AWStats"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2fawstats%2f&amp;title=Generar%20estad%c3%adsticas%20de%20websites%20con%20AWStats"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Generar%20estad%c3%adsticas%20de%20websites%20con%20AWStats&amp;body=http%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2fawstats%2f">
+         href="mailto:?subject=Generar%20estad%c3%adsticas%20de%20websites%20con%20AWStats&amp;body=https%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2fawstats%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -223,7 +236,7 @@
 
 <p>En el caso que nos ocupa, se usará desde la <em>CLI</em> y sólo para analizar logs de acceso al servidor web de <em>Amazon S3</em>. A continuación se describen los pasos para hacerlo funcionar: (1) descargar bases de datos de geolocalización, (2) instalar <em>Perl</em>, (3) instalar y configurar <em>AWStats</em>, y (4) generar informes con <em>AWStats</em>.</p>
 
-<h2 id="1-descargar-bases-de-datos-de-geolocalización">1. Descargar bases de datos de geolocalización</h2>
+<h2 id="descargar-bases-de-datos-de-geolocalización">Descargar bases de datos de geolocalización</h2>
 
 <p>El primer paso a realizar es descargar la base de datos de geolocalización que se usará para poder obtener el país, sistema autónomo (<em>ASN</em>), organización, región y/o ciudad de cada una de las direcciones IP desde las que visiten nuestro website. <em>AWStats</em> soporta tres proveedores de bases de datos:</p>
 
@@ -238,7 +251,7 @@
 <pre><code class="language-bash">$# gunzip -f GeoIP.dat.gz GeoIPASNum.dat.gz GeoLiteCity.dat.gz
 </code></pre>
 
-<h2 id="2-instalar-perl">2. Instalar Perl</h2>
+<h2 id="instalar-perl">Instalar Perl</h2>
 
 <p>La mayoría de los sistemas operativos vienen con el intérprete de <em>Perl</em> pre-instalado o disponen de un instalador que facilita la labor. Éste es el caso de <em>macOS</em>, que ya cuenta con <em>Perl</em> como parte de las utilidades que acompañan al sistema operativo así que no es necesario instalarlo.</p>
 
@@ -249,7 +262,7 @@
 
 <p>Si no disponemos de permisos de root/administrador o <strong>por seguridad</strong>, podemos ejecutarlo con un usuario sin privilegios pero, antes, hay que instalar <a href="https://metacpan.org/pod/local::lib" target="_blank">local::lib</a> (un módulo de <em>Perl</em> que permite instalar módulos en directorios locales). Para llevarlo a cabo, lo más recomendable es usar la <a href="https://metacpan.org/pod/local::lib#The-bootstrapping-technique" target="_blank">técnica bootstrapping</a>.</p>
 
-<h2 id="3-instalar-y-configurar-awstats">3. Instalar y configurar AWStats</h2>
+<h2 id="instalar-y-configurar-awstats">Instalar y configurar AWStats</h2>
 
 <p>Ahora sí, una vez cubiertos todos los requisito previos, llega el momento de descargar <em>AWStats</em> desde su <a href="http://www.awstats.org/#DOWNLOAD" target="_blank">web oficial</a> y descomprimirlo para posteriormente configurarlo según las <a href="http://www.awstats.org/docs/awstats_setup.html" target="_blank">instrucciones oficiales</a>.</p>
 
@@ -281,7 +294,7 @@ LoadPlugin=&quot;timezone CET&quot;
 </code></pre></li>
 </ul>
 
-<h2 id="4-generar-informes-con-awstats">4. Generar informes con AWStats</h2>
+<h2 id="generar-informes-con-awstats">Generar informes con AWStats</h2>
 
 <p>Una vez que hemos conseguido instalar y configurar todas las herramientas necesarias, es el momento de generar los informes con las estadísticas desde los logs de nuestro website.</p>
 
@@ -345,12 +358,12 @@ awstats.$myserver.errors404.html
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="http://www.alejandrolopezparra.es/post/amazon_s3_logs/"><span
+    <li class="previous"><a href="https://www.alejandrolopezparra.es/post/amazon_s3_logs/"><span
       aria-hidden="true">&larr;</span> Logs de acceso a websites en Amazon S3</a></li>
     
 
     
-    <li class="next"><a href="http://www.alejandrolopezparra.es/post/dnie/">DNI electrónico y certificados digitales <span
+    <li class="next"><a href="https://www.alejandrolopezparra.es/post/dnie/">DNI electrónico y certificados digitales <span
       aria-hidden="true">&rarr;</span></a></li>
     
   </ul>

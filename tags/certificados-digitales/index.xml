@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Certificados Digitales on Alejandro López Parra</title>
-    <link>http://www.alejandrolopezparra.es/tags/certificados-digitales/</link>
+    <link>https://www.alejandrolopezparra.es/tags/certificados-digitales/</link>
     <description>Recent content in Certificados Digitales on Alejandro López Parra</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
@@ -12,23 +12,23 @@
     
     <item>
       <title>Certificados digitales de la FNMT-RCM</title>
-      <link>http://www.alejandrolopezparra.es/post/fnmt/</link>
+      <link>https://www.alejandrolopezparra.es/post/fnmt/</link>
       <pubDate>Sat, 06 May 2017 12:00:00 +0200</pubDate>
       
-      <guid>http://www.alejandrolopezparra.es/post/fnmt/</guid>
+      <guid>https://www.alejandrolopezparra.es/post/fnmt/</guid>
       <description>
 
-&lt;p&gt;Como continuación al &lt;a href=&#34;http://www.alejandrolopezparra.es/post/dnie/&#34;&gt;artículo dedicado al &lt;em&gt;DNIe&lt;/em&gt;&lt;/a&gt; y los certificados digitales que contiene, se tratarán los certificados digitales emitidos por la Entidad Pública de Certificación &lt;a href=&#34;http://www.cert.fnmt.es/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;CERES&lt;/em&gt; (&lt;em&gt;CERtificación ESpañola&lt;/em&gt;)&lt;/a&gt; dependiente de la &lt;a href=&#34;http://www.fnmt.es/&#34; target=&#34;_blank&#34;&gt;Fábrica Nacional de Moneda y Timbre - Real Casa de la Moneda (&lt;em&gt;FNMT-RCM&lt;/em&gt;)&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Como continuación al &lt;a href=&#34;https://www.alejandrolopezparra.es/post/dnie/&#34;&gt;artículo dedicado al &lt;em&gt;DNIe&lt;/em&gt;&lt;/a&gt; y los certificados digitales que contiene, se tratarán los certificados digitales emitidos por la Entidad Pública de Certificación &lt;a href=&#34;http://www.cert.fnmt.es/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;CERES&lt;/em&gt; (&lt;em&gt;CERtificación ESpañola&lt;/em&gt;)&lt;/a&gt; dependiente de la &lt;a href=&#34;http://www.fnmt.es/&#34; target=&#34;_blank&#34;&gt;Fábrica Nacional de Moneda y Timbre - Real Casa de la Moneda (&lt;em&gt;FNMT-RCM&lt;/em&gt;)&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;De la misma forma que ocurría con el &lt;em&gt;DNIe&lt;/em&gt;, permiten acreditar la identidad de los intervinientes en las comunicaciones electrónicas y asegurar su procedencia e integridad. Por ende, también posibilitan la realización de &lt;strong&gt;gestiones de forma segura a través de Internet&lt;/strong&gt; tanto con la Administración Pública como con las entidades privadas que los admitan.&lt;/p&gt;
 
 &lt;p&gt;En este artículo se describirán sus principales características, los servicios online donde se pueden usar y cómo obtenerlo, especialmente usando el navegador &lt;a href=&#34;https://www.mozilla.org/es-ES/firefox/products/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Firefox&lt;/em&gt;&lt;/a&gt; de &lt;em&gt;Mozilla&lt;/em&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;1-certificados-digitales-de-la-fnmt-rcm&#34;&gt;1. Certificados digitales de la &lt;em&gt;FNMT-RCM&lt;/em&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;características-de-los-certificados-de-la-fnmt-rcm&#34;&gt;Características de los certificados de la &lt;em&gt;FNMT-RCM&lt;/em&gt;&lt;/h2&gt;
 
 &lt;p&gt;Según se explica en la &lt;a href=&#34;http://www.cert.fnmt.es/certificados&#34; target=&#34;_blank&#34;&gt;web de Prestador de Servicios de Certificación&lt;/a&gt; de la &lt;em&gt;FNMT-RCM&lt;/em&gt;, ésta emite diferentes tipos de certificados digitales o electrónicos en función del destinatario de los mismos: persona física, representante, Administración Pública y de componente.&lt;/p&gt;
 
-&lt;h3 id=&#34;1-1-certificado-de-persona-física&#34;&gt;1.1. Certificado de Persona Física&lt;/h3&gt;
+&lt;h3 id=&#34;certificado-de-persona-física&#34;&gt;Certificado de Persona Física&lt;/h3&gt;
 
 &lt;p&gt;Los &lt;a href=&#34;https://www.sede.fnmt.gob.es/certificados/persona-fisica&#34; target=&#34;_blank&#34;&gt;certificados de Persona Física, Ciudadano o Usuario&lt;/a&gt; se emiten sin coste a cualquier ciudadano español o extranjero que esté en posesión de su &lt;em&gt;DNI&lt;/em&gt; o &lt;em&gt;NIE&lt;/em&gt; previa verificación de su identidad. Este certificado le permite identificarse de forma telemática, firmar y cifrar documentos electrónicos para realizar gestiones en &lt;a href=&#34;https://www.cert.fnmt.es/certificados/donde-usar-certificado&#34; target=&#34;_blank&#34;&gt;multitud de servicios online&lt;/a&gt;. Éstos son algunos ejemplos:&lt;/p&gt;
 
@@ -57,11 +57,11 @@
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;1-2-certificado-de-representante&#34;&gt;1.2. Certificado de Representante&lt;/h3&gt;
+&lt;h3 id=&#34;certificado-de-representante&#34;&gt;Certificado de Representante&lt;/h3&gt;
 
 &lt;p&gt;Los &lt;a href=&#34;https://www.sede.fnmt.gob.es/certificados/certificado-de-representante&#34; target=&#34;_blank&#34;&gt;certificados de Representante&lt;/a&gt; se expiden &lt;a href=&#34;https://www.sede.fnmt.gob.es/certificados/certificado-de-representante/lista-de-precios&#34; target=&#34;_blank&#34;&gt;con coste&lt;/a&gt; a personas físicas en calidad de representantes legales de &lt;a href=&#34;https://www.sede.fnmt.gob.es/certificados/certificado-de-representante/persona-juridica&#34; target=&#34;_blank&#34;&gt;personas jurídicas&lt;/a&gt;, &lt;a href=&#34;https://www.sede.fnmt.gob.es/certificados/certificado-de-representante/administrador-unico-solidario&#34; target=&#34;_blank&#34;&gt;administradores únicos o solidarios&lt;/a&gt; y &lt;a href=&#34;https://www.sede.fnmt.gob.es/certificados/certificado-de-representante/entidad-sin-personalidad-juridica&#34; target=&#34;_blank&#34;&gt;entidades sin personalidad jurídica&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h3 id=&#34;1-3-administración-pública&#34;&gt;1.3. Administración Pública&lt;/h3&gt;
+&lt;h3 id=&#34;administración-pública&#34;&gt;Administración Pública&lt;/h3&gt;
 
 &lt;p&gt;Los tipos de &lt;a href=&#34;https://www.sede.fnmt.gob.es/certificados/administracion-publica&#34; target=&#34;_blank&#34;&gt;certificados de Administración Pública&lt;/a&gt; que se expiden a Administraciones Públicas son los siguientes:&lt;/p&gt;
 
@@ -71,7 +71,7 @@
 &lt;li&gt;Certificado de Sello electrónico en el ámbito de la Administración.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;1-4-certificados-de-componente&#34;&gt;1.4. Certificados de Componente&lt;/h3&gt;
+&lt;h3 id=&#34;certificados-de-componente&#34;&gt;Certificados de Componente&lt;/h3&gt;
 
 &lt;p&gt;Los &lt;a href=&#34;https://www.sede.fnmt.gob.es/certificados/certificado-componentes&#34; target=&#34;_blank&#34;&gt;certificados de Componente&lt;/a&gt; se expiden &lt;a href=&#34;https://www.cert.fnmt.es/documents/10446703/10511896/Precios_Certificados_Ac_Componentes.pdf&#34; target=&#34;_blank&#34;&gt;con coste&lt;/a&gt; para la identificación de servidores o aplicaciones informáticas:&lt;/p&gt;
 
@@ -82,11 +82,11 @@
 &lt;li&gt;Certificado de &lt;a href=&#34;https://www.sede.fnmt.gob.es/certificados/administracion-publica&#34; target=&#34;_blank&#34;&gt;sede y sello para la Administración Pública&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;2-obtener-un-certificado-de-persona-física&#34;&gt;2. Obtener un certificado de Persona Física&lt;/h2&gt;
+&lt;h2 id=&#34;obtener-un-certificado-de-persona-física&#34;&gt;Obtener un certificado de Persona Física&lt;/h2&gt;
 
 &lt;p&gt;Para poder disponer de un certificado gratuito de persona física de la &lt;em&gt;FNMT-RCM&lt;/em&gt;, también llamado de ciudadano o de usuario, es necesario realizar los siguientes  &lt;a href=&#34;https://www.sede.fnmt.gob.es/certificados/persona-fisica&#34; target=&#34;_blank&#34;&gt;pasos explicados&lt;/a&gt; en su web oficial: solicitud, acreditación de identidad y descarga.&lt;/p&gt;
 
-&lt;h3 id=&#34;2-1-solicitud-o-renovación-del-certificado&#34;&gt;2.1. Solicitud o renovación del certificado&lt;/h3&gt;
+&lt;h3 id=&#34;solicitud-o-renovación-del-certificado&#34;&gt;Solicitud o renovación del certificado&lt;/h3&gt;
 
 &lt;p&gt;Antes de realizar la petición propiamente dicha, es necesario tener en cuenta una serie de &lt;a href=&#34;https://www.sede.fnmt.gob.es/certificados/persona-fisica/obtener-certificado-software/consideraciones-previas&#34; target=&#34;_blank&#34;&gt;consideraciones previas&lt;/a&gt; que se encuentran detallados en la web de la sede electrónica de la &lt;em&gt;FNMT-RCM&lt;/em&gt;:&lt;/p&gt;
 
@@ -108,7 +108,7 @@
 
 &lt;p&gt;En el caso de la renovación de un certificado que aún no ha caducado, ésta se puede solicitar con hasta 60 días de antelación en la web de &lt;a href=&#34;https://www.sede.fnmt.gob.es/certificados/persona-fisica/renovar/solicitar-renovacion&#34; target=&#34;_blank&#34;&gt;renovación&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h4 id=&#34;2-1-1-procedimiento-con-firefox&#34;&gt;2.1.1. Procedimiento con &lt;em&gt;Firefox&lt;/em&gt;&lt;/h4&gt;
+&lt;h4 id=&#34;procedimiento-con-firefox&#34;&gt;Procedimiento con &lt;em&gt;Firefox&lt;/em&gt;&lt;/h4&gt;
 
 &lt;p&gt;En el caso de usar el navegador web &lt;em&gt;Firefox&lt;/em&gt;, el proceso se resume en los siguientes pasos:&lt;/p&gt;
 
@@ -137,17 +137,17 @@
 
 &lt;p&gt;De la misma forma, si se está realizando una renovación, será necesario firmarla con el certificado que se pretende renovar para autenticar la operación.&lt;/p&gt;
 
-&lt;h3 id=&#34;2-2-acreditación-de-identidad&#34;&gt;2.2. Acreditación de identidad&lt;/h3&gt;
+&lt;h3 id=&#34;acreditación-de-identidad&#34;&gt;Acreditación de identidad&lt;/h3&gt;
 
 &lt;p&gt;En el caso de que no se haya usado el &lt;em&gt;DNIe&lt;/em&gt; en la solicitud del certificado digital, será necesario acudir a una de las &lt;a href=&#34;http://mapaoficinascert.appspot.com/&#34; target=&#34;_blank&#34;&gt;oficinas de registro&lt;/a&gt; para acreditar la identidad y continuar con la solicitud del certificado digital. Este paso tampoco será necesario si se está renovando el certificado y no han pasado más de 5 años desde la última vez que se acreditó la identidad.&lt;/p&gt;
 
 &lt;p&gt;Para ello, deberá presentar el &lt;em&gt;DNI&lt;/em&gt; o pasaporte y, si es ciudadano extranjero, el &lt;em&gt;NIE&lt;/em&gt;, junto con el código de solicitud que el usuario ha debido recibir en su correo electrónico.&lt;/p&gt;
 
-&lt;h3 id=&#34;2-3-descarga-del-certificado&#34;&gt;2.3. Descarga del certificado&lt;/h3&gt;
+&lt;h3 id=&#34;descarga-del-certificado&#34;&gt;Descarga del certificado&lt;/h3&gt;
 
 &lt;p&gt;Una vez acreditada la identidad, ya sea por haber usado el &lt;em&gt;DNIe&lt;/em&gt; en la solicitud o por haber acudido a alguna oficina de registro, se puede usar el código recibido por correo electrónico, el primer apellido y el número de DNI para descargar el certificado digital de persona física desde la &lt;a href=&#34;https://www.sede.fnmt.gob.es/certificados/persona-fisica/obtener-certificado-software/descargar-certificado&#34; target=&#34;_blank&#34;&gt;web de descarga sin &lt;em&gt;DNIe&lt;/em&gt;&lt;/a&gt; o la &lt;a href=&#34;https://www.sede.fnmt.gob.es/certificados/persona-fisica/obtener-certificado-con-dnie/descargar-certificado&#34; target=&#34;_blank&#34;&gt;web de descarga con &lt;em&gt;DNIe&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;3-verificación-de-certificados&#34;&gt;3. Verificación de certificados&lt;/h2&gt;
+&lt;h2 id=&#34;verificar-los-certificados-digitales&#34;&gt;Verificar los certificados digitales&lt;/h2&gt;
 
 &lt;p&gt;La web de la &lt;em&gt;FNMT-RCM&lt;/em&gt; también dispone de un servicio de verificación del estado y la validez de los certificados digitales que poseamos.&lt;/p&gt;
 
@@ -174,19 +174,19 @@
     
     <item>
       <title>DNI electrónico y certificados digitales</title>
-      <link>http://www.alejandrolopezparra.es/post/dnie/</link>
+      <link>https://www.alejandrolopezparra.es/post/dnie/</link>
       <pubDate>Sat, 22 Apr 2017 13:33:10 +0200</pubDate>
       
-      <guid>http://www.alejandrolopezparra.es/post/dnie/</guid>
+      <guid>https://www.alejandrolopezparra.es/post/dnie/</guid>
       <description>
 
 &lt;p&gt;El &lt;a href=&#34;https://www.dnielectronico.es&#34; target=&#34;_blank&#34;&gt;Documento Nacional de Identidad electrónico español (&lt;em&gt;DNIe&lt;/em&gt;)&lt;/a&gt; es emitido por la Dirección General de la Policía (&lt;em&gt;DGP&lt;/em&gt;) y responde a la necesidad de otorgar identidad personal a los ciudadanos españoles para su uso en la &lt;a href=&#34;https://es.wikipedia.org/wiki/Sociedad_de_la_informaci%C3%B3n&#34; target=&#34;_blank&#34;&gt;Sociedad de la Información&lt;/a&gt;. Permite acreditar la identidad de los intervinientes en las comunicaciones electrónicas así como asegurar su procedencia e integridad. De este modo, es posible realizar &lt;strong&gt;gestiones de forma segura a través de Internet&lt;/strong&gt; tanto con la Administración Pública como con las entidades privadas que lo adopten.&lt;/p&gt;
 
 &lt;p&gt;En este artículo se describirán sus principales características y algunos servicios online donde se puede usar. También se indicarán los pasos para hacerlo funcionar correctamente en el sistema operativo &lt;a href=&#34;https://es.wikipedia.org/wiki/MacOS&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;macOS&lt;/em&gt;&lt;/a&gt; de Apple.&lt;/p&gt;
 
-&lt;h2 id=&#34;1-características-del-dnie&#34;&gt;1. Características del &lt;em&gt;DNIe&lt;/em&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;características-del-dnie&#34;&gt;Características del &lt;em&gt;DNIe&lt;/em&gt;&lt;/h2&gt;
 
-&lt;h3 id=&#34;1-1-fundamentos-básicos&#34;&gt;1.1. Fundamentos básicos&lt;/h3&gt;
+&lt;h3 id=&#34;fundamentos-básicos-del-dnie&#34;&gt;Fundamentos básicos del &lt;em&gt;DNIe&lt;/em&gt;&lt;/h3&gt;
 
 &lt;p&gt;El &lt;em&gt;DNIe&lt;/em&gt; se basa en principios matemáticos de criptografía aplicados a los sistemas de información para que éstos se puedan usar de forma segura. &lt;a href=&#34;https://es.wikipedia.org/wiki/Infraestructura_de_clave_p%C3%BAblica&#34; target=&#34;_blank&#34;&gt;Infraestructura de clave pública (PKI)&lt;/a&gt;, &lt;a href=&#34;https://es.wikipedia.org/wiki/Certificado_digital&#34; target=&#34;_blank&#34;&gt;certificados digitales&lt;/a&gt; y &lt;a href=&#34;https://es.wikipedia.org/wiki/Criptograf%C3%ADa_asim%C3%A9trica&#34; target=&#34;_blank&#34;&gt;criptografía de clave pública o asimétrica&lt;/a&gt; son los principales. Éstos permiten garantizar características básicas de la seguridad de la información: &lt;a href=&#34;https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#Autenticaci.C3.B3n_o_autentificaci.C3.B3n&#34; target=&#34;_blank&#34;&gt;Autenticación&lt;/a&gt;, &lt;a href=&#34;https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#Confidencialidad&#34; target=&#34;_blank&#34;&gt;Confidencialidad&lt;/a&gt;, &lt;a href=&#34;https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#Disponibilidad&#34; target=&#34;_blank&#34;&gt;Disponibilidad&lt;/a&gt;, &lt;a href=&#34;https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#Integridad&#34; target=&#34;_blank&#34;&gt;Integridad&lt;/a&gt; y &lt;a href=&#34;https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#No_repudio_o_irrefutabilidad&#34; target=&#34;_blank&#34;&gt;No repudio&lt;/a&gt;.&lt;/p&gt;
 
@@ -201,7 +201,7 @@
 
 &lt;p&gt;Se pueden encontrar más detalles técnicos revisando las características &lt;a href=&#34;https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_083&#34; target=&#34;_blank&#34;&gt;electrónicas&lt;/a&gt; y &lt;a href=&#34;https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_084&#34; target=&#34;_blank&#34;&gt;físicas&lt;/a&gt; del &lt;em&gt;DNIe&lt;/em&gt;.&lt;/p&gt;
 
-&lt;h3 id=&#34;1-3-versiones&#34;&gt;1.3. Versiones&lt;/h3&gt;
+&lt;h3 id=&#34;versiones-del-dnie&#34;&gt;Versiones del &lt;em&gt;DNIe&lt;/em&gt;&lt;/h3&gt;
 
 &lt;p&gt;Existen 2 variantes distintas del &lt;em&gt;DNIe&lt;/em&gt;.&lt;/p&gt;
 
@@ -245,7 +245,7 @@
 &lt;li&gt;Presenta una estructura de datos &lt;strong&gt;equivalente al pasaporte&lt;/strong&gt; que posibilita usarlo como Documento de Viaje en los países que disponen de Pasos Rápidos de Frontera (&lt;em&gt;ABC Systems&lt;/em&gt;).&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;1-2-requisitos&#34;&gt;1.2. Requisitos&lt;/h3&gt;
+&lt;h3 id=&#34;requisitos-del-dnie&#34;&gt;Requisitos del &lt;em&gt;DNIe&lt;/em&gt;&lt;/h3&gt;
 
 &lt;p&gt;Para poder hacer uso del &lt;em&gt;DNIe&lt;/em&gt; es necesario cumplir algunos requisitos físicos (&lt;em&gt;hardware&lt;/em&gt;) y lógicos (&lt;em&gt;software&lt;/em&gt;):&lt;/p&gt;
 
@@ -293,7 +293,7 @@
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;2-usos-del-dnie&#34;&gt;2. Usos del &lt;em&gt;DNIe&lt;/em&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;usos-del-dnie&#34;&gt;Usos del &lt;em&gt;DNIe&lt;/em&gt;&lt;/h2&gt;
 
 &lt;p&gt;Como se comentaba al principio del artículo, el &lt;em&gt;DNIe&lt;/em&gt; posibilita realizar &lt;strong&gt;gestiones de forma segura a través de Internet&lt;/strong&gt; tanto con la Administración Pública como con algunas entidades privadas que lo han adoptado.&lt;/p&gt;
 
@@ -307,15 +307,15 @@
 &lt;li&gt;Sede electrónica de la &lt;a href=&#34;https://www.agenciatributaria.gob.es/AEAT.sede/Inicio/Inicio.shtml&#34; target=&#34;_blank&#34;&gt;Agencia Tributaria&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;3-el-dnie-en-macos&#34;&gt;3. El &lt;em&gt;DNIe&lt;/em&gt; en &lt;em&gt;macOS&lt;/em&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;el-dnie-en-macos&#34;&gt;El &lt;em&gt;DNIe&lt;/em&gt; en &lt;em&gt;macOS&lt;/em&gt;&lt;/h2&gt;
 
 &lt;p&gt;Además de disponer de un lector compatible, se necesitan completar algunos pasos para que el &lt;em&gt;DNIe&lt;/em&gt; sea reconocido y funcione correctamente en &lt;em&gt;macOS&lt;/em&gt;. Lo más recomendable es seguir las instrucciones que se describen en el &lt;a href=&#34;https://www.dnielectronico.es/PDFs/manuales_instalacion_unix/Manual_de_Instalacion_de_MulticardPKCS11_DNIE_V1.pdf&#34; target=&#34;_blank&#34;&gt;manual de instalación&lt;/a&gt; publicado por la &lt;em&gt;DGP&lt;/em&gt;.&lt;/p&gt;
 
-&lt;h3 id=&#34;3-1-instalar-firefox&#34;&gt;3.1. Instalar &lt;em&gt;Firefox&lt;/em&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;instalar-firefox&#34;&gt;Instalar &lt;em&gt;Firefox&lt;/em&gt;&lt;/h3&gt;
 
 &lt;p&gt;A día de hoy, el único navegador soportado por el &lt;em&gt;DNIe&lt;/em&gt; en &lt;em&gt;macOS&lt;/em&gt; es &lt;em&gt;Mozilla Firefox&lt;/em&gt; por lo que tendremos que descargar la versión de Escritorio desde su &lt;a href=&#34;https://www.mozilla.org/es-ES/firefox/desktop/&#34; target=&#34;_blank&#34;&gt;web oficial&lt;/a&gt; e instalarlo.&lt;/p&gt;
 
-&lt;h3 id=&#34;3-2-driver-pcks-11&#34;&gt;3.2. Driver &lt;em&gt;PCKS#11&lt;/em&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;instalar-el-driver-pcks-11&#34;&gt;Instalar el driver &lt;em&gt;PCKS#11&lt;/em&gt;&lt;/h3&gt;
 
 &lt;p&gt;A continuación debemos instalar el driver &lt;em&gt;PKCS#11&lt;/em&gt; compatible con el &lt;em&gt;DNIe&lt;/em&gt; que se puede descargar desde el &lt;a href=&#34;https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_1113&#34; target=&#34;_blank&#34;&gt;área de descargas&lt;/a&gt; de la web del dnielectronico.&lt;/p&gt;
 
@@ -329,7 +329,7 @@
 &lt;li&gt;Hacer clic en &lt;code&gt;Aceptar&lt;/code&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&#34;3-3-instalar-los-certificados-de-la-policía&#34;&gt;3.3. Instalar los certificados de la policía&lt;/h3&gt;
+&lt;h3 id=&#34;instalar-los-certificados-de-la-policía&#34;&gt;Instalar los certificados de la policía&lt;/h3&gt;
 
 &lt;p&gt;Para que &lt;em&gt;Firefox&lt;/em&gt; no dé errores de verificación es necesario instalar los &lt;a href=&#34;https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_077&#34; target=&#34;_blank&#34;&gt;certificados de las Autoridades de Certificación raíz&lt;/a&gt; de la &lt;em&gt;DGP&lt;/em&gt; y aprobar cada uno de ellos para los siguientes usos:&lt;/p&gt;
 
@@ -341,7 +341,7 @@
 
 &lt;p&gt;Aunque no es estrictamente necesario, sí que es recomendable repetir el paso anterior con los &lt;a href=&#34;https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_078&#34; target=&#34;_blank&#34;&gt;certificados de las Autoridades de Certificación subordinadas&lt;/a&gt; de la &lt;em&gt;DGP&lt;/em&gt;.&lt;/p&gt;
 
-&lt;h3 id=&#34;3-4-verificar-que-funciona&#34;&gt;3.4. Verificar que funciona&lt;/h3&gt;
+&lt;h3 id=&#34;verificar-que-funciona&#34;&gt;Verificar que funciona&lt;/h3&gt;
 
 &lt;p&gt;Una vez completados todos los pasos de instalación y preparación del sistema para el uso del &lt;em&gt;DNIe&lt;/em&gt;, es el momento de comprobar que funciona correctamente. Para ello debemos utilizar un servicio denominado &lt;em&gt;Autoridad de Validación&lt;/em&gt; y, según se indica en la &lt;a href=&#34;https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_320&#34; target=&#34;_blank&#34;&gt;sección de validación&lt;/a&gt; de la web del dnielectronico, hay 2 prestadores de servicio de validación para el &lt;em&gt;DNIe&lt;/em&gt;:&lt;/p&gt;
 

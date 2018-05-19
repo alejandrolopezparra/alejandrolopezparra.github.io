@@ -29,14 +29,27 @@
   
 
   
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-103012229-1', 'auto');
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
 
-  <link rel="alternate" href="http://www.alejandrolopezparra.es/index.xml" type="application/rss+xml" title="Alejandro López Parra">
-  <link rel="feed" href="http://www.alejandrolopezparra.es/index.xml" type="application/rss+xml" title="Alejandro López Parra">
+  <link rel="alternate" href="https://www.alejandrolopezparra.es/index.xml" type="application/rss+xml" title="Alejandro López Parra">
+  <link rel="feed" href="https://www.alejandrolopezparra.es/index.xml" type="application/rss+xml" title="Alejandro López Parra">
 
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://www.alejandrolopezparra.es/post/amazon_s3/">
+  <link rel="canonical" href="https://www.alejandrolopezparra.es/post/amazon_s3/">
 
   
 
@@ -148,35 +161,35 @@
   <ul class="share">
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2famazon_s3%2f"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2famazon_s3%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Alojar%20websites%20est%c3%a1ticos%20en%20Amazon%20Simple%20Storage%20Service%20%28S3%29&amp;url=http%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2famazon_s3%2f"
+         href="https://twitter.com/intent/tweet?text=Alojar%20websites%20est%c3%a1ticos%20en%20Amazon%20Simple%20Storage%20Service%20%28S3%29&amp;url=https%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2famazon_s3%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2famazon_s3%2f&amp;title=Alojar%20websites%20est%c3%a1ticos%20en%20Amazon%20Simple%20Storage%20Service%20%28S3%29"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2famazon_s3%2f&amp;title=Alojar%20websites%20est%c3%a1ticos%20en%20Amazon%20Simple%20Storage%20Service%20%28S3%29"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2famazon_s3%2f&amp;title=Alojar%20websites%20est%c3%a1ticos%20en%20Amazon%20Simple%20Storage%20Service%20%28S3%29"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2famazon_s3%2f&amp;title=Alojar%20websites%20est%c3%a1ticos%20en%20Amazon%20Simple%20Storage%20Service%20%28S3%29"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Alojar%20websites%20est%c3%a1ticos%20en%20Amazon%20Simple%20Storage%20Service%20%28S3%29&amp;body=http%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2famazon_s3%2f">
+         href="mailto:?subject=Alojar%20websites%20est%c3%a1ticos%20en%20Amazon%20Simple%20Storage%20Service%20%28S3%29&amp;body=https%3a%2f%2fwww.alejandrolopezparra.es%2fpost%2famazon_s3%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -197,7 +210,7 @@
 
 <p>A continuación se describen los 2 pasos que hay que realizar para poder publicar una web estática: (1) alojar el website y (2) asociar un dominio.</p>
 
-<h2 id="1-alojar-un-website-estático-en-amazon-s3">1. Alojar un website estático en Amazon S3</h2>
+<h2 id="alojar-un-website-estático-en-amazon-s3">Alojar un website estático en Amazon S3</h2>
 
 <p>La capacidad de alojamiento de webs estáticas de <em>Amazon S3</em> está explicada en detalle <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html" target="_blank">aquí</a> pero, en resumen, nos permite lo siguiente:</p>
 
@@ -211,7 +224,7 @@
 
 <p>También contamos con un <a href="https://console.aws.amazon.com/quickstart-website/new" target="_blank">asistente o guía rápida</a> que nos facilita el proceso de alojamiento de un nuevo website.</p>
 
-<h2 id="2-asociar-un-dominio-propio">2. Asociar un dominio propio</h2>
+<h2 id="asociar-un-dominio-propio">Asociar un dominio propio</h2>
 
 <p>Una vez tenemos nuestro website alojado en un <em>Bucket</em> y lo hemos publicado en un <em>Endpoint</em>, es el momento de asociarle un nombre de un dominio propio, por ejemplo <a href="http://www.alejandrolopezparra.es" target="_blank">www.alejandrolopezparra.es</a>.</p>
 
@@ -241,12 +254,12 @@
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="http://www.alejandrolopezparra.es/post/hugo/"><span
+    <li class="previous"><a href="https://www.alejandrolopezparra.es/post/hugo/"><span
       aria-hidden="true">&larr;</span> Crear websites estáticos con Hugo</a></li>
     
 
     
-    <li class="next"><a href="http://www.alejandrolopezparra.es/post/amazon_s3_logs/">Logs de acceso a websites en Amazon S3 <span
+    <li class="next"><a href="https://www.alejandrolopezparra.es/post/amazon_s3_logs/">Logs de acceso a websites en Amazon S3 <span
       aria-hidden="true">&rarr;</span></a></li>
     
   </ul>

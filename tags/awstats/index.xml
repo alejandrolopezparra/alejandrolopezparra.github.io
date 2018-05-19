@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Awstats on Alejandro López Parra</title>
-    <link>http://www.alejandrolopezparra.es/tags/awstats/</link>
+    <link>https://www.alejandrolopezparra.es/tags/awstats/</link>
     <description>Recent content in Awstats on Alejandro López Parra</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
@@ -12,13 +12,13 @@
     
     <item>
       <title>Generar estadísticas de websites con AWStats</title>
-      <link>http://www.alejandrolopezparra.es/post/awstats/</link>
+      <link>https://www.alejandrolopezparra.es/post/awstats/</link>
       <pubDate>Sat, 25 Mar 2017 16:39:03 +0100</pubDate>
       
-      <guid>http://www.alejandrolopezparra.es/post/awstats/</guid>
+      <guid>https://www.alejandrolopezparra.es/post/awstats/</guid>
       <description>
 
-&lt;p&gt;Después del &lt;a href=&#34;http://www.alejandrolopezparra.es/post/amazon_s3_logs/&#34;&gt;anterior post&lt;/a&gt;, dedicado al registro de accesos a un website alojado en &lt;a href=&#34;http://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html&#34; target=&#34;_blank&#34;&gt;Amazon S3&lt;/a&gt; gracias a la característica &lt;a href=&#34;https://docs.aws.amazon.com/AmazonS3/latest/dev/ServerLogs.html&#34; target=&#34;_blank&#34;&gt;access logging&lt;/a&gt;, continuamos con lo realmente importante: &lt;strong&gt;el análisis de logs&lt;/strong&gt;. Esto es fundamental para obtener estadísticas de nuestro website y conocer qué uso, tanto legítimo como inapropiado, se hace de él desde Internet. Para llevarlo a cabo, se tratará la instalación, configuración y uso de la herramienta de software libre &lt;a href=&#34;http://www.awstats.org&#34; target=&#34;_blank&#34;&gt;AWStats&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Después del &lt;a href=&#34;https://www.alejandrolopezparra.es/post/amazon_s3_logs/&#34;&gt;anterior post&lt;/a&gt;, dedicado al registro de accesos a un website alojado en &lt;a href=&#34;http://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html&#34; target=&#34;_blank&#34;&gt;Amazon S3&lt;/a&gt; gracias a la característica &lt;a href=&#34;https://docs.aws.amazon.com/AmazonS3/latest/dev/ServerLogs.html&#34; target=&#34;_blank&#34;&gt;access logging&lt;/a&gt;, continuamos con lo realmente importante: &lt;strong&gt;el análisis de logs&lt;/strong&gt;. Esto es fundamental para obtener estadísticas de nuestro website y conocer qué uso, tanto legítimo como inapropiado, se hace de él desde Internet. Para llevarlo a cabo, se tratará la instalación, configuración y uso de la herramienta de software libre &lt;a href=&#34;http://www.awstats.org&#34; target=&#34;_blank&#34;&gt;AWStats&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;AWStats&lt;/em&gt; es un analizador de logs que genera estadísticas y gráficas en &lt;em&gt;HTML&lt;/em&gt; sobre el uso de servidores web, ftp, streaming y de correo. Éstos son algunos ejemplos de las estadísticas que es capaz de obtener a partir de los logs:&lt;/p&gt;
 
@@ -42,7 +42,7 @@
 
 &lt;p&gt;En el caso que nos ocupa, se usará desde la &lt;em&gt;CLI&lt;/em&gt; y sólo para analizar logs de acceso al servidor web de &lt;em&gt;Amazon S3&lt;/em&gt;. A continuación se describen los pasos para hacerlo funcionar: (1) descargar bases de datos de geolocalización, (2) instalar &lt;em&gt;Perl&lt;/em&gt;, (3) instalar y configurar &lt;em&gt;AWStats&lt;/em&gt;, y (4) generar informes con &lt;em&gt;AWStats&lt;/em&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;1-descargar-bases-de-datos-de-geolocalización&#34;&gt;1. Descargar bases de datos de geolocalización&lt;/h2&gt;
+&lt;h2 id=&#34;descargar-bases-de-datos-de-geolocalización&#34;&gt;Descargar bases de datos de geolocalización&lt;/h2&gt;
 
 &lt;p&gt;El primer paso a realizar es descargar la base de datos de geolocalización que se usará para poder obtener el país, sistema autónomo (&lt;em&gt;ASN&lt;/em&gt;), organización, región y/o ciudad de cada una de las direcciones IP desde las que visiten nuestro website. &lt;em&gt;AWStats&lt;/em&gt; soporta tres proveedores de bases de datos:&lt;/p&gt;
 
@@ -57,7 +57,7 @@
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$# gunzip -f GeoIP.dat.gz GeoIPASNum.dat.gz GeoLiteCity.dat.gz
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;2-instalar-perl&#34;&gt;2. Instalar Perl&lt;/h2&gt;
+&lt;h2 id=&#34;instalar-perl&#34;&gt;Instalar Perl&lt;/h2&gt;
 
 &lt;p&gt;La mayoría de los sistemas operativos vienen con el intérprete de &lt;em&gt;Perl&lt;/em&gt; pre-instalado o disponen de un instalador que facilita la labor. Éste es el caso de &lt;em&gt;macOS&lt;/em&gt;, que ya cuenta con &lt;em&gt;Perl&lt;/em&gt; como parte de las utilidades que acompañan al sistema operativo así que no es necesario instalarlo.&lt;/p&gt;
 
@@ -68,7 +68,7 @@
 
 &lt;p&gt;Si no disponemos de permisos de root/administrador o &lt;strong&gt;por seguridad&lt;/strong&gt;, podemos ejecutarlo con un usuario sin privilegios pero, antes, hay que instalar &lt;a href=&#34;https://metacpan.org/pod/local::lib&#34; target=&#34;_blank&#34;&gt;local::lib&lt;/a&gt; (un módulo de &lt;em&gt;Perl&lt;/em&gt; que permite instalar módulos en directorios locales). Para llevarlo a cabo, lo más recomendable es usar la &lt;a href=&#34;https://metacpan.org/pod/local::lib#The-bootstrapping-technique&#34; target=&#34;_blank&#34;&gt;técnica bootstrapping&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;3-instalar-y-configurar-awstats&#34;&gt;3. Instalar y configurar AWStats&lt;/h2&gt;
+&lt;h2 id=&#34;instalar-y-configurar-awstats&#34;&gt;Instalar y configurar AWStats&lt;/h2&gt;
 
 &lt;p&gt;Ahora sí, una vez cubiertos todos los requisito previos, llega el momento de descargar &lt;em&gt;AWStats&lt;/em&gt; desde su &lt;a href=&#34;http://www.awstats.org/#DOWNLOAD&#34; target=&#34;_blank&#34;&gt;web oficial&lt;/a&gt; y descomprimirlo para posteriormente configurarlo según las &lt;a href=&#34;http://www.awstats.org/docs/awstats_setup.html&#34; target=&#34;_blank&#34;&gt;instrucciones oficiales&lt;/a&gt;.&lt;/p&gt;
 
@@ -100,7 +100,7 @@ LoadPlugin=&amp;quot;timezone CET&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;4-generar-informes-con-awstats&#34;&gt;4. Generar informes con AWStats&lt;/h2&gt;
+&lt;h2 id=&#34;generar-informes-con-awstats&#34;&gt;Generar informes con AWStats&lt;/h2&gt;
 
 &lt;p&gt;Una vez que hemos conseguido instalar y configurar todas las herramientas necesarias, es el momento de generar los informes con las estadísticas desde los logs de nuestro website.&lt;/p&gt;
 

@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Github on Alejandro López Parra</title>
-    <link>http://www.alejandrolopezparra.es/tags/github/</link>
+    <link>https://www.alejandrolopezparra.es/tags/github/</link>
     <description>Recent content in Github on Alejandro López Parra</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
     <copyright>&amp;copy; 2017 Alejandro López Parra</copyright>
-    <lastBuildDate>Sat, 27 May 2017 12:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 20 May 2017 12:00:00 +0200</lastBuildDate>
     <atom:link href="/tags/github/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Alojar websites estáticos en GitHub Pages</title>
-      <link>http://www.alejandrolopezparra.es/post/github_pages/</link>
-      <pubDate>Sat, 27 May 2017 12:00:00 +0200</pubDate>
+      <link>https://www.alejandrolopezparra.es/post/github_pages/</link>
+      <pubDate>Sat, 20 May 2017 12:00:00 +0200</pubDate>
       
-      <guid>http://www.alejandrolopezparra.es/post/github_pages/</guid>
+      <guid>https://www.alejandrolopezparra.es/post/github_pages/</guid>
       <description>
 
-&lt;p&gt;Como alternativa a &lt;a href=&#34;http://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html&#34; target=&#34;_blank&#34;&gt;Amazon Simple Storage Service (S3)&lt;/a&gt; que &lt;a href=&#34;http://www.alejandrolopezparra.es/post/amazon_s3/&#34;&gt;ya traté&lt;/a&gt;, a continuación abordaré el servicio &lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34;&gt;GitHub Pages&lt;/a&gt; que pertenece a la plataforma &lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt; de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones &lt;a href=&#34;https://es.wikipedia.org/wiki/Git&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Git&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Como alternativa a &lt;a href=&#34;http://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html&#34; target=&#34;_blank&#34;&gt;Amazon Simple Storage Service (S3)&lt;/a&gt; que &lt;a href=&#34;https://www.alejandrolopezparra.es/post/amazon_s3/&#34;&gt;ya traté&lt;/a&gt;, a continuación abordaré el servicio &lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34;&gt;GitHub Pages&lt;/a&gt; que pertenece a la plataforma &lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt; de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones &lt;a href=&#34;https://es.wikipedia.org/wiki/Git&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Git&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;GitHub Pages&lt;/em&gt; es un servicio gratuito que &lt;strong&gt;permite alojar websites de contenido estático&lt;/strong&gt;, es decir, webs que se basan en &lt;em&gt;HyperText Markup Language&lt;/em&gt; (&lt;em&gt;HTML&lt;/em&gt;), &lt;em&gt;JavaScript&lt;/em&gt; (&lt;em&gt;JS&lt;/em&gt;) y &lt;em&gt;Cascading Style Sheets&lt;/em&gt; (&lt;em&gt;CSS&lt;/em&gt;). El contenido no es generado dinámicamente en cada solicitud que se realiza al servidor y, por tanto, no son necesarios ni servidores de aplicaciones ni de bases de datos. Sólo se requiere un servidor web que sirva el contenido según se le vaya solicitando. Afortunadamente, gracias a tecnologías que se ejecutan en el lado del cliente como JS y CSS, se puede conseguir cierto dinamismo en cómo se muestra el contenido aunque éste sea servido de forma estática.&lt;/p&gt;
 
 &lt;p&gt;A continuación se describen sus características y los pasos que hay que realizar para poder publicar una web estática en &lt;em&gt;GitHub Pages&lt;/em&gt; (alojar el website y asociar un dominio).&lt;/p&gt;
 
-&lt;h2 id=&#34;1-características-de-github-pages&#34;&gt;1. Características de &lt;em&gt;GitHub Pages&lt;/em&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;características-de-github-pages&#34;&gt;Características de &lt;em&gt;GitHub Pages&lt;/em&gt;&lt;/h2&gt;
 
 &lt;p&gt;&lt;em&gt;GitHub Pages&lt;/em&gt; dispone de varios &lt;a href=&#34;https://help.github.com/articles/github-s-billing-plans/&#34; target=&#34;_blank&#34;&gt;tipos de cuentas o planes&lt;/a&gt;:&lt;/p&gt;
 
@@ -61,7 +61,7 @@
 &lt;li&gt;Usar &lt;a href=&#34;https://help.github.com/articles/using-submodules-with-pages/&#34; target=&#34;_blank&#34;&gt;submódulos dentro de las páginas&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;2-alojar-un-website-estático-en-github-pages&#34;&gt;2. Alojar un website estático en &lt;em&gt;GitHub Pages&lt;/em&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;alojar-un-website-estático-en-github-pages&#34;&gt;Alojar un website estático en &lt;em&gt;GitHub Pages&lt;/em&gt;&lt;/h2&gt;
 
 &lt;p&gt;La capacidad de alojamiento de webs estáticas de &lt;em&gt;GitHub Pages&lt;/em&gt; está explicada de forma sencilla en &lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34;&gt;este tutorial oficial&lt;/a&gt;.&lt;/p&gt;
 
@@ -70,7 +70,7 @@
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Registrar o acceder&lt;/strong&gt; a una &lt;a href=&#34;https://github.com/login&#34; target=&#34;_blank&#34;&gt;cuenta de &lt;em&gt;GitHub&lt;/em&gt;&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Crear un contenedor de ficheros&lt;/strong&gt; denominado &lt;em&gt;Repository&lt;/em&gt;. Para que pueda usarse para alojar un website, tiene que tener un nombre especial &lt;code&gt;nombre.github.io&lt;/code&gt;, donde &lt;code&gt;nombre&lt;/code&gt; debe coincidir con el nombre de usuario de la cuenta de &lt;em&gt;GitHub&lt;/em&gt;, que servirá como &lt;em&gt;Endpoint&lt;/em&gt;. En mi caso es &lt;code&gt;alejandrolopezparra.github.io&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Aunque &lt;em&gt;GitHub&lt;/em&gt; permite &lt;strong&gt;crear y editar contenido&lt;/strong&gt; directamente a través de la web de &lt;em&gt;GitHub&lt;/em&gt;, lo más conveniente es usar alguna herramienta que facilite esta tarea, como &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt; de la que &lt;a href=&#34;http://www.alejandrolopezparra.es/post/hugo/&#34;&gt;ya hablamos&lt;/a&gt;. Para ello, previamente sería necesario clonar el &lt;em&gt;Repository&lt;/em&gt; recién creado en local con un &lt;a href=&#34;https://git-scm.com/&#34; target=&#34;_blank&#34;&gt;cliente &lt;em&gt;Git&lt;/em&gt;&lt;/a&gt;. Si se usa el cliente de línea de comandos, habría que ejecutar:&lt;/li&gt;
+&lt;li&gt;Aunque &lt;em&gt;GitHub&lt;/em&gt; permite &lt;strong&gt;crear y editar contenido&lt;/strong&gt; directamente a través de la web de &lt;em&gt;GitHub&lt;/em&gt;, lo más conveniente es usar alguna herramienta que facilite esta tarea, como &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt; de la que &lt;a href=&#34;https://www.alejandrolopezparra.es/post/hugo/&#34;&gt;ya hablamos&lt;/a&gt;. Para ello, previamente sería necesario clonar el &lt;em&gt;Repository&lt;/em&gt; recién creado en local con un &lt;a href=&#34;https://git-scm.com/&#34; target=&#34;_blank&#34;&gt;cliente &lt;em&gt;Git&lt;/em&gt;&lt;/a&gt;. Si se usa el cliente de línea de comandos, habría que ejecutar:&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt; $# git clone https://github.com/nombre/nombre.github.io
@@ -85,11 +85,11 @@ $# git commit -m &amp;quot;Initial commit&amp;quot;
 $# git push -u origin master
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Sólo con esos tres pasos, ya tendríamos nuestra página web personal accesible a través de un &lt;em&gt;Endpoint&lt;/em&gt; seguro &lt;code&gt;HTTPS://nombre.github.io&lt;/code&gt; donde &lt;code&gt;nombre&lt;/code&gt; se corresponde con el nombre de usuario de la cuenta de &lt;em&gt;GitHub&lt;/em&gt;. En mi caso, es &lt;a href=&#34;https://alejandrolopezparra.github.io&#34; target=&#34;_blank&#34;&gt;https://alejandrolopezparra.github.io&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Sólo con esos tres pasos, ya tendríamos nuestra página web personal accesible a través de un &lt;em&gt;Endpoint&lt;/em&gt; seguro &lt;code&gt;HTTPS://nombre.github.io&lt;/code&gt; donde &lt;code&gt;nombre&lt;/code&gt; se corresponde con el nombre de usuario de la cuenta de &lt;em&gt;GitHub&lt;/em&gt;. En mi caso, es &lt;code&gt;https://alejandrolopezparra.github.io&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Para el caso concreto de &lt;em&gt;Hugo&lt;/em&gt;, contamos con un &lt;a href=&#34;https://gohugo.io/tutorials/github-pages-blog/&#34; target=&#34;_blank&#34;&gt;tutorial&lt;/a&gt; que trata el despliegue en &lt;em&gt;GitHub Pages&lt;/em&gt; de páginas web basadas en &lt;em&gt;Hugo&lt;/em&gt; tanto personales como de organizaciones y también de proyectos. También disponemos de una &lt;a href=&#34;https://georgecushen.com/create-your-website-with-hugo/&#34; target=&#34;_blank&#34;&gt;guía detallada sobre &lt;em&gt;Hugo&lt;/em&gt; y &lt;em&gt;GitHub Pages&lt;/em&gt;&lt;/a&gt; del creador del &lt;a href=&#34;https://themes.gohugo.io/academic/&#34; target=&#34;_blank&#34;&gt;tema &lt;em&gt;Academic&lt;/em&gt; para &lt;em&gt;Hugo&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;3-asociar-un-dominio-propio&#34;&gt;3. Asociar un dominio propio&lt;/h2&gt;
+&lt;h2 id=&#34;asociar-un-dominio-propio&#34;&gt;Asociar un dominio propio&lt;/h2&gt;
 
 &lt;p&gt;Una vez tenemos nuestro website alojado en un &lt;em&gt;Repository&lt;/em&gt; y publicado en un &lt;em&gt;Endpoint&lt;/em&gt; de &lt;em&gt;GitHub&lt;/em&gt;, es el momento de que podamos asociarle un nombre de un dominio personalizado como, por ejemplo, &lt;a href=&#34;http://www.alejandrolopezparra.es&#34; target=&#34;_blank&#34;&gt;www.alejandrolopezparra.es&lt;/a&gt;. El único inconveniente de este paso es que perderemos la opción de usar &lt;em&gt;HTTPS&lt;/em&gt; ya que &lt;em&gt;GitHub Pages&lt;/em&gt; sólo puede usarlo con el domino &lt;code&gt;github.io&lt;/code&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:Cloudflare&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:Cloudflare&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 
@@ -97,13 +97,13 @@ $# git push -u origin master
 
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Registrar el dominio&lt;/strong&gt; en un registrador de dominios.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Crear un nombre en ese dominio&lt;/strong&gt; a través de un servicio &lt;em&gt;DNS&lt;/em&gt; que apunte al &lt;em&gt;Endpoint&lt;/em&gt; definido anteriormente mediante lo que se conoce como alias o &lt;a href=&#34;https://en.wikipedia.org/wiki/CNAME_record&#34; target=&#34;_blank&#34;&gt;registro &lt;em&gt;CNAME&lt;/em&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Crear un nombre en ese dominio&lt;/strong&gt; a través de un servicio &lt;em&gt;DNS&lt;/em&gt; y configurarlo para que apunte al &lt;em&gt;Endpoint&lt;/em&gt; definido anteriormente mediante lo que se conoce como alias o &lt;a href=&#34;https://en.wikipedia.org/wiki/CNAME_record&#34; target=&#34;_blank&#34;&gt;registro &lt;em&gt;CNAME&lt;/em&gt;&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Configurar el nombre de dominio&lt;/strong&gt; en &lt;em&gt;GitHub Pages&lt;/em&gt; en las propiedades del &lt;em&gt;Repository&lt;/em&gt; tal y como se indica &lt;a href=&#34;https://help.github.com/articles/adding-or-removing-a-custom-domain-for-your-github-pages-site/&#34; target=&#34;_blank&#34;&gt;aquí&lt;/a&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;De esta forma, cuando un navegador web intente resolver dicho nombre, recibirá como respuesta el &lt;em&gt;Endpoint&lt;/em&gt; donde tenemos alojado nuestro website. Lo habitual es &lt;a href=&#34;https://help.github.com/articles/setting-up-a-www-subdomain/&#34; target=&#34;_blank&#34;&gt;crear un alias para el subdominio &lt;em&gt;www&lt;/em&gt;&lt;/a&gt; aunque en algunos proveedores DNS también es posible &lt;a href=&#34;https://help.github.com/articles/setting-up-an-apex-domain/&#34; target=&#34;_blank&#34;&gt;crear un alias para el dominio raíz&lt;/a&gt;. Gracias a esto, se puede acceder tanto a &lt;a href=&#34;http://www.alejandrolopezparra.es&#34; target=&#34;_blank&#34;&gt;www.alejandrolopezparra.es&lt;/a&gt; como a &lt;a href=&#34;http://alejandrolopezparra.es&#34; target=&#34;_blank&#34;&gt;alejandrolopezparra.es&lt;/a&gt;, siendo habitualmente este último una redirección al primero.&lt;/p&gt;
+&lt;p&gt;De esta forma, cuando un navegador web intente resolver dicho nombre, recibirá como respuesta el &lt;em&gt;Endpoint&lt;/em&gt; donde tenemos alojado nuestro website. Lo habitual es &lt;a href=&#34;https://help.github.com/articles/setting-up-a-www-subdomain/&#34; target=&#34;_blank&#34;&gt;crear un alias para el subdominio &lt;em&gt;www&lt;/em&gt;&lt;/a&gt; aunque en algunos proveedores &lt;em&gt;DNS&lt;/em&gt; también es posible &lt;a href=&#34;https://help.github.com/articles/setting-up-an-apex-domain/&#34; target=&#34;_blank&#34;&gt;crear un alias para el dominio raíz&lt;/a&gt;. Gracias a esto, se puede acceder tanto a &lt;a href=&#34;http://www.alejandrolopezparra.es&#34; target=&#34;_blank&#34;&gt;www.alejandrolopezparra.es&lt;/a&gt; como a &lt;a href=&#34;http://alejandrolopezparra.es&#34; target=&#34;_blank&#34;&gt;alejandrolopezparra.es&lt;/a&gt;, siendo habitualmente este último una redirección al primero.&lt;/p&gt;
 
-&lt;p&gt;En el caso de &lt;em&gt;GitHub Pages&lt;/em&gt;, si nuestro proveedor &lt;em&gt;DNS&lt;/em&gt; no permite alias para el dominio raíz, tenemos la opción de conseguir el mismo efecto &lt;a href=&#34;https://help.github.com/articles/setting-up-an-apex-domain/#configuring-a-records-with-your-dns-provider&#34; target=&#34;_blank&#34;&gt;a través de registros de tipo A&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;En el caso de &lt;em&gt;GitHub Pages&lt;/em&gt;, usar un &lt;strong&gt;subdominio www&lt;/strong&gt; tiene sus &lt;a href=&#34;https://help.github.com/articles/about-supported-custom-domains/#www-subdomains&#34; target=&#34;_blank&#34;&gt;ventajas&lt;/a&gt; y, si nuestro proveedor &lt;em&gt;DNS&lt;/em&gt; no permite alias para el dominio raíz, tenemos la opción de conseguir el mismo efecto &lt;a href=&#34;https://help.github.com/articles/setting-up-an-apex-domain/#configuring-a-records-with-your-dns-provider&#34; target=&#34;_blank&#34;&gt;a través de registros de tipo A&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Existen multitud de registradores de dominios y muchos de ellos también proporcionan servicios &lt;em&gt;DNS&lt;/em&gt;. &lt;em&gt;Amazon&lt;/em&gt; ofrece estos servicios a través de &lt;a href=&#34;https://aws.amazon.com/es/route53/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Amazon Route 53&lt;/em&gt;&lt;/a&gt; y dispone de una &lt;a href=&#34;https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html#root-domain-walkthrough-switch-to-route53-as-dnsprovider&#34; target=&#34;_blank&#34;&gt;guía&lt;/a&gt; en la que explican cómo llevarlo a cabo. Otro prestador muy conocido de este tipo de servicios es &lt;a href=&#34;http://dyn.com&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Dyn&lt;/em&gt;&lt;/a&gt;. En mi caso, uso &lt;a href=&#34;https://es.godaddy.com&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;GoDaddy&lt;/em&gt;&lt;/a&gt; para ambas cosas aunque tiene la pega de no permitir alias del dominio raíz.&lt;/p&gt;
 
