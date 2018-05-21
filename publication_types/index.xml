@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
     <copyright>&amp;copy; 2018 Alejandro López Parra</copyright>
-    <atom:link href="/publication_types/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://www.alejandrolopezparra.es/publication_types/index.xml" rel="self" type="application/rss+xml" />
+    
     
   </channel>
 </rss>

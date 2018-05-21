@@ -8,7 +8,9 @@
     <language>es-es</language>
     <copyright>&amp;copy; 2018 Alejandro López Parra</copyright>
     <lastBuildDate>Sat, 20 May 2017 12:00:00 +0200</lastBuildDate>
-    <atom:link href="/tags/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://www.alejandrolopezparra.es/tags/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Amazon</title>
@@ -29,7 +31,7 @@
     </item>
     
     <item>
-      <title>Certificados Digitales</title>
+      <title>Certificados digitales</title>
       <link>https://www.alejandrolopezparra.es/tags/certificados-digitales/</link>
       <pubDate>Sat, 06 May 2017 12:00:00 +0200</pubDate>
       
@@ -38,11 +40,20 @@
     </item>
     
     <item>
-      <title>Dnie</title>
+      <title>DNIe</title>
       <link>https://www.alejandrolopezparra.es/tags/dnie/</link>
       <pubDate>Sat, 06 May 2017 12:00:00 +0200</pubDate>
       
       <guid>https://www.alejandrolopezparra.es/tags/dnie/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FNMT</title>
+      <link>https://www.alejandrolopezparra.es/tags/fnmt/</link>
+      <pubDate>Sat, 06 May 2017 12:00:00 +0200</pubDate>
+      
+      <guid>https://www.alejandrolopezparra.es/tags/fnmt/</guid>
       <description></description>
     </item>
     
@@ -52,15 +63,6 @@
       <pubDate>Sat, 06 May 2017 12:00:00 +0200</pubDate>
       
       <guid>https://www.alejandrolopezparra.es/tags/firefox/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Fnmt</title>
-      <link>https://www.alejandrolopezparra.es/tags/fnmt/</link>
-      <pubDate>Sat, 06 May 2017 12:00:00 +0200</pubDate>
-      
-      <guid>https://www.alejandrolopezparra.es/tags/fnmt/</guid>
       <description></description>
     </item>
     
@@ -83,7 +85,7 @@
     </item>
     
     <item>
-      <title>Macos</title>
+      <title>MacOS</title>
       <link>https://www.alejandrolopezparra.es/tags/macos/</link>
       <pubDate>Sat, 22 Apr 2017 13:33:10 +0200</pubDate>
       

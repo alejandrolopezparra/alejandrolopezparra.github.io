@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
     <copyright>&amp;copy; 2018 Alejandro López Parra</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 Sep 2017 00:00:00 +0200</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
@@ -91,7 +91,7 @@ $# git push -u origin master
 
 &lt;h2 id=&#34;asociar-un-dominio-propio&#34;&gt;Asociar un dominio propio&lt;/h2&gt;
 
-&lt;p&gt;Una vez tenemos nuestro website alojado en un &lt;em&gt;Repository&lt;/em&gt; y publicado en un &lt;em&gt;Endpoint&lt;/em&gt; de &lt;em&gt;GitHub&lt;/em&gt;, es el momento de que podamos asociarle un nombre de un dominio personalizado como, por ejemplo, &lt;a href=&#34;http://www.alejandrolopezparra.es&#34; target=&#34;_blank&#34;&gt;www.alejandrolopezparra.es&lt;/a&gt;. El único inconveniente de este paso es que perderemos la opción de usar &lt;em&gt;HTTPS&lt;/em&gt; ya que &lt;em&gt;GitHub Pages&lt;/em&gt; sólo puede usarlo con el domino &lt;code&gt;github.io&lt;/code&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:Cloudflare&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:Cloudflare&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;Una vez tenemos nuestro website alojado en un &lt;em&gt;Repository&lt;/em&gt; y publicado en un &lt;em&gt;Endpoint&lt;/em&gt; de &lt;em&gt;GitHub&lt;/em&gt;, es el momento de que podamos asociarle un nombre de un dominio personalizado como, por ejemplo, &lt;a href=&#34;http://www.alejandrolopezparra.es&#34; target=&#34;_blank&#34;&gt;www.alejandrolopezparra.es&lt;/a&gt;. El único inconveniente de este paso es que perderemos la opción de usar &lt;em&gt;HTTPS&lt;/em&gt; ya que &lt;em&gt;GitHub Pages&lt;/em&gt; sólo puede usarlo con el domino &lt;code&gt;github.io&lt;/code&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:Cloudflare&#34;&gt;&lt;a href=&#34;#fn:Cloudflare&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 
 &lt;p&gt;Para lograrlo es necesario lo siguiente:&lt;/p&gt;
 
@@ -239,7 +239,7 @@ $# git push -u origin master
 &lt;ol&gt;
 &lt;li&gt;Verificar que están activadas las &lt;a href=&#34;https://support.mozilla.org/es/kb/configuracion-privacidad-historial-navegacion-funcion-no-quiero-ser-rastreado&#34; target=&#34;_blank&#34;&gt;cookies de terceros&lt;/a&gt; en la configuración de &lt;em&gt;Firefox&lt;/em&gt;.&lt;/li&gt;
 &lt;li&gt;Instalar el plug-in &lt;a href=&#34;https://addons.mozilla.org/es/firefox/addon/signtextjs-plus/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;signTextJS Plus&lt;/em&gt;&lt;/a&gt; en &lt;em&gt;Firefox&lt;/em&gt;.&lt;/li&gt;
-&lt;li&gt;Importar&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:unnecessary&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:unnecessary&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; en &lt;em&gt;Firefox&lt;/em&gt; el &lt;a href=&#34;https://www.sede.fnmt.gob.es/documents/10445900/10526749/AC_Raiz_FNMT-RCM_SHA256.cer&#34; target=&#34;_blank&#34;&gt;certificado de la Autoridad de Certificación raíz&lt;/a&gt; de la &lt;em&gt;FNMT-RCM&lt;/em&gt;, marcando los siguientes usos:
+&lt;li&gt;Importar&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:unnecessary&#34;&gt;&lt;a href=&#34;#fn:unnecessary&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; en &lt;em&gt;Firefox&lt;/em&gt; el &lt;a href=&#34;https://www.sede.fnmt.gob.es/documents/10445900/10526749/AC_Raiz_FNMT-RCM_SHA256.cer&#34; target=&#34;_blank&#34;&gt;certificado de la Autoridad de Certificación raíz&lt;/a&gt; de la &lt;em&gt;FNMT-RCM&lt;/em&gt;, marcando los siguientes usos:
 
 &lt;ul&gt;
 &lt;li&gt;Identificar páginas web.&lt;/li&gt;
@@ -331,34 +331,32 @@ $# git push -u origin master
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;La &lt;a href=&#34;https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_106&#34; target=&#34;_blank&#34;&gt;primera&lt;/a&gt; apareció por primera vez en el año 2006 y dejó de expedirse en 2015.
+&lt;figure&gt;
 
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://www.dnielectronico.es/img/dnie_descrip.jpg&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;h4&gt;DNIe&lt;/h4&gt;
-        
-    &lt;/figcaption&gt;
-    
-&lt;/figure&gt;
-&lt;/p&gt;&lt;/li&gt;
+&lt;img src=&#34;https://www.dnielectronico.es/img/dnie_descrip.jpg&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figura &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;DNIe&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Desde 2016 se empezó a emitir el denominado &lt;a href=&#34;https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_103&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;DNI 3.0&lt;/em&gt;&lt;/a&gt;.
+&lt;figure&gt;
 
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://www.dnielectronico.es/img/DNI_PERSPECTIVA_3.jpg&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;h4&gt;DNI 3.0&lt;/h4&gt;
-        
-    &lt;/figcaption&gt;
-    
-&lt;/figure&gt;
-&lt;/p&gt;&lt;/li&gt;
+&lt;img src=&#34;https://www.dnielectronico.es/img/DNI_PERSPECTIVA_3.jpg&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figura &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;DNI 3.0&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Ambas versiones son válidas a día de hoy pero tienen &lt;a href=&#34;https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_038&#34; target=&#34;_blank&#34;&gt;algunas diferencias&lt;/a&gt;. La principales ventajas del &lt;em&gt;DNI 3.0&lt;/em&gt; son las siguientes:&lt;/p&gt;
@@ -382,19 +380,18 @@ $# git push -u origin master
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;figure&gt;
 
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://www.dnielectronico.es/img/LECTORES%20PARA%20DNI_FINAL.jpg&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;h4&gt;Lectores DNIe&lt;/h4&gt;
-        
-    &lt;/figcaption&gt;
-    
+&lt;img src=&#34;https://www.dnielectronico.es/img/LECTORES%20PARA%20DNI_FINAL.jpg&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figura &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Lectores DNIe&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
 &lt;/figure&gt;
-
 
 &lt;ul&gt;
 &lt;li&gt;Elementos software necesarios:

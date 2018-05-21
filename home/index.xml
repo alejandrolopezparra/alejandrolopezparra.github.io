@@ -7,8 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
     <copyright>&amp;copy; 2018 Alejandro López Parra</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/home/" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Sep 2017 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.alejandrolopezparra.es/home/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Temáticas</title>
+      <link>https://www.alejandrolopezparra.es/home/tags/</link>
+      <pubDate>Wed, 20 Sep 2017 00:00:00 +0200</pubDate>
+      
+      <guid>https://www.alejandrolopezparra.es/home/tags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Últimos posts</title>
+      <link>https://www.alejandrolopezparra.es/home/posts/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.alejandrolopezparra.es/home/posts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.alejandrolopezparra.es/home/about/</link>
+      <pubDate>Sat, 28 Jan 2017 12:00:00 +0000</pubDate>
+      
+      <guid>https://www.alejandrolopezparra.es/home/about/</guid>
+      <description>Biografía Natural de Córdoba y entusiasta de la seguridad de la información desde la universitaria. Prueba de ello son los 2 proyectos fin de carrera en los que participé: &amp;ldquo;Implementación de una Infraestructura de Clave Pública (PKI)&amp;rdquo; y &amp;ldquo;Gestión de auto matrículas con certificados digitales&amp;rdquo;. Hoy en día, después de una experiencia profesional de más de 12 años en empresas del sector de la seguridad informática, estoy particularmente especializado en detección, alerta temprada y respuesta ante incidentes, tecnologías e inteligencia en ciberseguridad y redes.</description>
+    </item>
     
   </channel>
 </rss>
