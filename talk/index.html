@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="es-es">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.40.3" />
+  
+
+  
+  
+  
+  
+  <meta name="description" content="Servicios Avanzados del CERT">
+
+  
+  <link rel="alternate" hreflang="es-es" href="https://www.alejandrolopezparra.es/talk/">
+
+  
+
+
+  
+
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+  
+  
+  
+    
+  
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+  
+  
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,400italic,700%7cRoboto&#43;Mono">
+  
+  <link rel="stylesheet" href="/styles.css">
+  
+  <link rel="stylesheet" href="/css/custom.css">
+  
+
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-103012229-1', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+
+  
+  <link rel="alternate" href="https://www.alejandrolopezparra.es/talk/index.xml" type="application/rss+xml" title="Alejandro López Parra">
+  <link rel="feed" href="https://www.alejandrolopezparra.es/talk/index.xml" type="application/rss+xml" title="Alejandro López Parra">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://www.alejandrolopezparra.es/talk/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@ALopezParra">
+  <meta property="twitter:creator" content="@ALopezParra">
+  
+  <meta property="og:site_name" content="Alejandro López Parra">
+  <meta property="og:url" content="https://www.alejandrolopezparra.es/talk/">
+  <meta property="og:title" content="Listado de ponencias y charlas | Alejandro López Parra">
+  <meta property="og:description" content="Servicios Avanzados del CERT">
+  <meta property="og:locale" content="es-es">
+  
+  <meta property="og:updated_time" content="2018-05-23T21:00:00&#43;02:00">
+  
+
+  
+  
+
+  <title>Listado de ponencias y charlas | Alejandro López Parra</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Barra de navegación</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="/">Alejandro López Parra</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#posts">
+            
+            <span>Posts</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#talks">
+            
+            <span>Charlas</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#about">
+            
+            <span>Bio</span>
+            
+          </a>
+        </li>
+
+        
+        
+      
+
+      
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Listado de ponencias y charlas</h1>
+
+      
+
+      
+      <div class="row" id="talk_list">
+        <div class="col-md-2">
+          <h3>2018</h3>
+        </div>
+        <div class="col-md-10">
+
+          
+            
+              <div class="card-simple" itemscope itemtype="http://schema.org/Event">
+
+  
+    
+  
+  
+  <div>
+    <a href="https://www.alejandrolopezparra.es/talk/revolution_banking_2018/">
+      
+      
+        <img src="/img/talks/Revolution_Banking_2018.jpg" class="article-banner" itemprop="image">
+      
+    </a>
+  </div>
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="https://www.alejandrolopezparra.es/talk/revolution_banking_2018/" itemprop="url">Innovación tecnológica para reconocer la identidad</a>
+  </h3>
+
+  <div class="talk-metadata" itemprop="startDate">
+    
+    2018-05-10, Thursday
+    
+      12:00 PM
+      
+        &mdash; 12:30 PM
+      
+    
+  </div>
+
+  <div class="talk-metadata">
+    
+    Revolution Banking 2018
+    
+  </div>
+
+  <div class="talk-abstract" itemprop="text">
+    
+    Debate sobre la innovación tecnológica para reconocer la identidad y los nuevos métodos de autenticación de operaciones en la era del openbanking
+    
+  </div>
+
+  <div class="talk-links">
+    
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="http://www.revolutionbanking.es/wp-content/uploads/Agenda_Revolution-Banking-2018.pdf">
+  PDF
+</a>
+
+
+
+
+
+
+
+  </div>
+
+</div>
+
+            
+          
+            
+              <div class="card-simple" itemscope itemtype="http://schema.org/Event">
+
+  
+    
+  
+  
+  <div>
+    <a href="https://www.alejandrolopezparra.es/talk/xx_international_information_security_conference/">
+      
+      
+        <img src="/img/talks/XX_International_Information_Security_Conference.png" class="article-banner" itemprop="image">
+      
+    </a>
+  </div>
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="https://www.alejandrolopezparra.es/talk/xx_international_information_security_conference/" itemprop="url">Cyber Crisis Management 2018</a>
+  </h3>
+
+  <div class="talk-metadata" itemprop="startDate">
+    
+    2018-05-10, Thursday
+    
+      10:00 AM
+      
+        &mdash; 10:25 AM
+      
+    
+  </div>
+
+  <div class="talk-metadata">
+    
+    XX International Information Security Conference
+    
+  </div>
+
+  <div class="talk-abstract" itemprop="text">
+    
+    Presentación de los resultados de Cyber Crisis Management 2018
+    
+  </div>
+
+  <div class="talk-links">
+    
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="http://www.ismsforum.es/ficheros/descargas/programaxxjornadainternacional1525453187.pdf">
+  PDF
+</a>
+
+
+
+
+
+
+
+  </div>
+
+</div>
+
+            
+          
+            
+              <div class="card-simple" itemscope itemtype="http://schema.org/Event">
+
+  
+    
+  
+  
+  <div>
+    <a href="https://www.alejandrolopezparra.es/talk/jornadas_tecnicas_rediris_2018/">
+      
+      
+        <img src="/img/talks/JT_RedIRIS_2018.jpg" class="article-banner" itemprop="image">
+      
+    </a>
+  </div>
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="https://www.alejandrolopezparra.es/talk/jornadas_tecnicas_rediris_2018/" itemprop="url">Servicio de intercambio de ciberamenazas del CERT de INCIBE</a>
+  </h3>
+
+  <div class="talk-metadata" itemprop="startDate">
+    
+    2018-05-09, Wednesday
+    
+      9:30 AM
+      
+        &mdash; 9:45 AM
+      
+    
+  </div>
+
+  <div class="talk-metadata">
+    
+    Jornadas Técnicas de RedIRIS 2018
+    
+  </div>
+
+  <div class="talk-abstract" itemprop="text">
+    
+    Servicio de intercambio de ciberamenazas del CERT de INCIBE
+    
+  </div>
+
+  <div class="talk-links">
+    
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://www.rediris.es/jt/jt2018/programa/jt/ponencias/?id=jt2018-jt--a23b1c1.pdf">
+  PDF
+</a>
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://tv.rediris.es/es/jjtt2018/video/5ad624532b81aa38008b45ae?track_id=5af2fbe98726dbb2188b4568">
+  Vídeo
+</a>
+
+
+
+
+
+  </div>
+
+</div>
+
+            
+          
+
+        </div>
+      </div>
+      
+      <div class="row" id="talk_list">
+        <div class="col-md-2">
+          <h3>2017</h3>
+        </div>
+        <div class="col-md-10">
+
+          
+            
+              <div class="card-simple" itemscope itemtype="http://schema.org/Event">
+
+  
+    
+  
+  
+  <div>
+    <a href="https://www.alejandrolopezparra.es/talk/11enise/">
+      
+      
+        <img src="/img/talks/11ENISE.jpg" class="article-banner" itemprop="image">
+      
+    </a>
+  </div>
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="https://www.alejandrolopezparra.es/talk/11enise/" itemprop="url">Retos y tendencias de ciberseguridad en el sector privado</a>
+  </h3>
+
+  <div class="talk-metadata" itemprop="startDate">
+    
+    2017-10-24, Tuesday
+    
+      12:35 PM
+      
+        &mdash; 1:20 PM
+      
+    
+  </div>
+
+  <div class="talk-metadata">
+    
+    11ENISE
+    
+  </div>
+
+  <div class="talk-abstract" itemprop="text">
+    
+    Debate sobre los retos y las tendencias de ciberseguridad en el sector privado
+    
+  </div>
+
+  <div class="talk-links">
+    
+
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://www.youtube.com/watch?v=_6tswZSrFV4">
+  Vídeo
+</a>
+
+
+
+
+
+  </div>
+
+</div>
+
+            
+          
+            
+              <div class="card-simple" itemscope itemtype="http://schema.org/Event">
+
+  
+    
+  
+  
+  <div>
+    <a href="https://www.alejandrolopezparra.es/talk/congreso_privacidad_proteccion_datos/">
+      
+      
+        <img src="/img/talks/Congreso_Privacidad_Proteccion_Datos.png" class="article-banner" itemprop="image">
+      
+    </a>
+  </div>
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="https://www.alejandrolopezparra.es/talk/congreso_privacidad_proteccion_datos/" itemprop="url">Seguridad y fraude de los datos personales</a>
+  </h3>
+
+  <div class="talk-metadata" itemprop="startDate">
+    
+    2017-10-17, Tuesday
+    
+      12:00 PM
+      
+        &mdash; 2:00 PM
+      
+    
+  </div>
+
+  <div class="talk-metadata">
+    
+    Congreso Europeo sobre Privacidad y Protección de Datos
+    
+  </div>
+
+  <div class="talk-abstract" itemprop="text">
+    
+    Debate sobre la seguridad y el fraude de los datos personales
+    
+  </div>
+
+  <div class="talk-links">
+    
+
+
+
+
+
+
+
+
+
+  </div>
+
+</div>
+
+            
+          
+            
+              <div class="card-simple" itemscope itemtype="http://schema.org/Event">
+
+  
+    
+  
+  
+  <div>
+    <a href="https://www.alejandrolopezparra.es/talk/foro_ransomware_alerta_maxima/">
+      
+      
+        <img src="/img/talks/Foro_Ransomware_Alerta_Maxima.jpg" class="article-banner" itemprop="image">
+      
+    </a>
+  </div>
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="https://www.alejandrolopezparra.es/talk/foro_ransomware_alerta_maxima/" itemprop="url">El estado de la Ciberseguridad en España</a>
+  </h3>
+
+  <div class="talk-metadata" itemprop="startDate">
+    
+    2017-09-19, Tuesday
+    
+      10:00 AM
+      
+        &mdash; 10:20 AM
+      
+    
+  </div>
+
+  <div class="talk-metadata">
+    
+    Foro Ransomware: Alerta Máxima
+    
+  </div>
+
+  <div class="talk-abstract" itemprop="text">
+    
+    Ponencia sobre el estado de la cibserguridad en España
+    
+  </div>
+
+  <div class="talk-links">
+    
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="http://www.redestelecom.es/siteresources/files/831/36.pdf">
+  PDF
+</a>
+
+
+
+
+
+
+
+  </div>
+
+</div>
+
+            
+          
+            
+              <div class="card-simple" itemscope itemtype="http://schema.org/Event">
+
+  
+    
+  
+  
+  <div>
+    <a href="https://www.alejandrolopezparra.es/talk/31_encuentro_economia_digital_telecomunicaciones/">
+      
+      
+        <img src="/img/talks/31_Encuentro_Economia_Digital_Telecomunicaciones.jpg" class="article-banner" itemprop="image">
+      
+    </a>
+  </div>
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="https://www.alejandrolopezparra.es/talk/31_encuentro_economia_digital_telecomunicaciones/" itemprop="url">Ciberseguridad. Una oportunidad para la industria española</a>
+  </h3>
+
+  <div class="talk-metadata" itemprop="startDate">
+    
+    2017-09-06, Wednesday
+    
+      10:15 AM
+      
+        &mdash; 11:05 AM
+      
+    
+  </div>
+
+  <div class="talk-metadata">
+    
+    31 Encuentro de la Economía Digital y las Telecomunicaciones. La Realidad Digital de España
+    
+  </div>
+
+  <div class="talk-abstract" itemprop="text">
+    
+    Debate sobre la ciberseguridad como oportunidad para la industria española
+    
+  </div>
+
+  <div class="talk-links">
+    
+
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://www.youtube.com/watch?v=cFHwnJtcjMI">
+  Vídeo
+</a>
+
+
+
+
+
+  </div>
+
+</div>
+
+            
+          
+            
+              <div class="card-simple" itemscope itemtype="http://schema.org/Event">
+
+  
+    
+  
+  
+  <div>
+    <a href="https://www.alejandrolopezparra.es/talk/iv_jornada_ciberseguridad_andalucia/">
+      
+      
+        <img src="/img/talks/IV_Jornada_Ciberseguridad_Andalucia.jpg" class="article-banner" itemprop="image">
+      
+    </a>
+  </div>
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="https://www.alejandrolopezparra.es/talk/iv_jornada_ciberseguridad_andalucia/" itemprop="url">Seguridad en industria, infraestucturas y smart cities</a>
+  </h3>
+
+  <div class="talk-metadata" itemprop="startDate">
+    
+    2017-06-01, Thursday
+    
+      10:00 AM
+      
+        &mdash; 11:00 AM
+      
+    
+  </div>
+
+  <div class="talk-metadata">
+    
+    IV Jornada de Ciberseguridad en Andalucía
+    
+  </div>
+
+  <div class="talk-abstract" itemprop="text">
+    
+    Debate sobre la seguridad en industria, infraestucturas y smart cities
+    
+  </div>
+
+  <div class="talk-links">
+    
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://www.slideshare.net/Ingenia_es/iv-jornadas-de-ciberseguridad-en-andaluca-seguridad-en-industria-infraestucturas-y-smart-cities-incibe">
+  Diapositivas
+</a>
+
+
+
+
+
+
+  </div>
+
+</div>
+
+            
+          
+
+        </div>
+      </div>
+      
+      <div class="row" id="talk_list">
+        <div class="col-md-2">
+          <h3>2016</h3>
+        </div>
+        <div class="col-md-10">
+
+          
+            
+              <div class="card-simple" itemscope itemtype="http://schema.org/Event">
+
+  
+    
+  
+  
+  <div>
+    <a href="https://www.alejandrolopezparra.es/talk/retos_oportunidades_big_data_abogacia/">
+      
+      
+        <img src="/img/talks/Retos_Oportunidades_Big_Data_Abogacia.jpg" class="article-banner" itemprop="image">
+      
+    </a>
+  </div>
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="https://www.alejandrolopezparra.es/talk/retos_oportunidades_big_data_abogacia/" itemprop="url">Las oportunidades que ofrece el Big Data para la abogacía</a>
+  </h3>
+
+  <div class="talk-metadata" itemprop="startDate">
+    
+    2016-06-22, Wednesday
+    
+      5:15 PM
+      
+        &mdash; 5:45 PM
+      
+    
+  </div>
+
+  <div class="talk-metadata">
+    
+    Jornada ENATIC-CGAE: Retos y oportunidades del Big Data para la abogacía
+    
+  </div>
+
+  <div class="talk-abstract" itemprop="text">
+    
+    Charla sobre las oportunidades que ofrece el Big Data mediante el análisis de grandes volúmenes de datos
+    
+  </div>
+
+  <div class="talk-links">
+    
+
+
+
+
+
+
+
+
+
+  </div>
+
+</div>
+
+            
+          
+            
+              <div class="card-simple" itemscope itemtype="http://schema.org/Event">
+
+  
+    
+  
+  
+  <div>
+    <a href="https://www.alejandrolopezparra.es/talk/vi_reunion_foro_interoperabilidad_salud/">
+      
+      
+        <img src="/img/talks/VI_Reunion_Foro_Interoperabilidad_Salud.jpg" class="article-banner" itemprop="image">
+      
+    </a>
+  </div>
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="https://www.alejandrolopezparra.es/talk/vi_reunion_foro_interoperabilidad_salud/" itemprop="url">Interoperabilidad, Big Data y Seguridad</a>
+  </h3>
+
+  <div class="talk-metadata" itemprop="startDate">
+    
+    2016-04-27, Wednesday
+    
+      6:00 PM
+      
+        &mdash; 7:45 PM
+      
+    
+  </div>
+
+  <div class="talk-metadata">
+    
+    VI Reunion del Foro de Interoperabilidad en Salud
+    
+  </div>
+
+  <div class="talk-abstract" itemprop="text">
+    
+    Mesa debate sobre Interoperabilidad, Big Data y Seguridad
+    
+  </div>
+
+  <div class="talk-links">
+    
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="http://www.seis.es/interoperabilidad2016/imagen/Programa.pdf">
+  PDF
+</a>
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://www.youtube.com/watch?v=crYbmyANUDg">
+  Vídeo
+</a>
+
+
+
+
+
+  </div>
+
+</div>
+
+            
+          
+
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+</div>
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2018 Alejandro López Parra &middot; 
+
+      Powered by the
+      <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+      <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close btn-large" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Citar</h4>
+      </div>
+      <div>
+        <pre><code class="modal-body tex"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
+          <i class="fa fa-copy"></i> Copiar
+        </a>
+        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
+          <i class="fa fa-download"></i> Descargar
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+    
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+
+    
+    
+
+  </body>
+</html>
+

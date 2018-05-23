@@ -7,10 +7,91 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
     <copyright>&amp;copy; 2018 Alejandro López Parra</copyright>
-    <lastBuildDate>Sat, 06 May 2017 12:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 10 May 2018 21:30:00 +0200</lastBuildDate>
     
 	<atom:link href="https://www.alejandrolopezparra.es/tags/seguridad/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cyber Crisis Management 2018</title>
+      <link>https://www.alejandrolopezparra.es/talk/xx_international_information_security_conference/</link>
+      <pubDate>Thu, 10 May 2018 21:30:00 +0200</pubDate>
+      
+      <guid>https://www.alejandrolopezparra.es/talk/xx_international_information_security_conference/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Innovación tecnológica para reconocer la identidad</title>
+      <link>https://www.alejandrolopezparra.es/talk/revolution_banking_2018/</link>
+      <pubDate>Thu, 10 May 2018 21:30:00 +0200</pubDate>
+      
+      <guid>https://www.alejandrolopezparra.es/talk/revolution_banking_2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Servicio de intercambio de ciberamenazas del CERT de INCIBE</title>
+      <link>https://www.alejandrolopezparra.es/talk/jornadas_tecnicas_rediris_2018/</link>
+      <pubDate>Wed, 09 May 2018 21:30:00 +0200</pubDate>
+      
+      <guid>https://www.alejandrolopezparra.es/talk/jornadas_tecnicas_rediris_2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Retos y tendencias de ciberseguridad en el sector privado</title>
+      <link>https://www.alejandrolopezparra.es/talk/11enise/</link>
+      <pubDate>Tue, 24 Oct 2017 21:30:00 +0200</pubDate>
+      
+      <guid>https://www.alejandrolopezparra.es/talk/11enise/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Seguridad y fraude de los datos personales</title>
+      <link>https://www.alejandrolopezparra.es/talk/congreso_privacidad_proteccion_datos/</link>
+      <pubDate>Tue, 17 Oct 2017 21:30:00 +0200</pubDate>
+      
+      <guid>https://www.alejandrolopezparra.es/talk/congreso_privacidad_proteccion_datos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>El estado de la Ciberseguridad en España</title>
+      <link>https://www.alejandrolopezparra.es/talk/foro_ransomware_alerta_maxima/</link>
+      <pubDate>Tue, 19 Sep 2017 21:30:00 +0200</pubDate>
+      
+      <guid>https://www.alejandrolopezparra.es/talk/foro_ransomware_alerta_maxima/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ciberseguridad. Una oportunidad para la industria española</title>
+      <link>https://www.alejandrolopezparra.es/talk/31_encuentro_economia_digital_telecomunicaciones/</link>
+      <pubDate>Wed, 06 Sep 2017 21:30:00 +0200</pubDate>
+      
+      <guid>https://www.alejandrolopezparra.es/talk/31_encuentro_economia_digital_telecomunicaciones/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WannaCry, el ransomworm más mediático</title>
+      <link>https://www.alejandrolopezparra.es/post/wannacry_analisis/</link>
+      <pubDate>Sat, 08 Jul 2017 12:00:00 +0200</pubDate>
+      
+      <guid>https://www.alejandrolopezparra.es/post/wannacry_analisis/</guid>
+      <description>El viernes 12 de mayo de 2017, a media mañana, los medios generalistas se hicieron eco de un ciberataque de tipo ransomware que estaba afectando a grandes compañias en España y otros países. Esta noticia fue cabecera de la mayoría de los informativos, telediarios y programas de variadades, durante todo el fin de semana y algunos días después, a nivel mundial. Me atrevería a decir que ha sido el ciberataque con más repercusión en los medios de toda la historia.</description>
+    </item>
+    
+    <item>
+      <title>Seguridad en industria, infraestucturas y smart cities</title>
+      <link>https://www.alejandrolopezparra.es/talk/iv_jornada_ciberseguridad_andalucia/</link>
+      <pubDate>Thu, 01 Jun 2017 21:30:00 +0200</pubDate>
+      
+      <guid>https://www.alejandrolopezparra.es/talk/iv_jornada_ciberseguridad_andalucia/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Certificados digitales de la FNMT-RCM</title>
@@ -29,6 +110,15 @@ De la misma forma que ocurría con el DNIe, permiten acreditar la identidad de l
       
       <guid>https://www.alejandrolopezparra.es/post/dnie/</guid>
       <description>El Documento Nacional de Identidad electrónico español (DNIe) es emitido por la Dirección General de la Policía (DGP) y responde a la necesidad de otorgar identidad personal a los ciudadanos españoles para su uso en la Sociedad de la Información. Permite acreditar la identidad de los intervinientes en las comunicaciones electrónicas así como asegurar su procedencia e integridad. De este modo, es posible realizar gestiones de forma segura a través de Internet tanto con la Administración Pública como con las entidades privadas que lo adopten.</description>
+    </item>
+    
+    <item>
+      <title>Interoperabilidad, Big Data y Seguridad</title>
+      <link>https://www.alejandrolopezparra.es/talk/vi_reunion_foro_interoperabilidad_salud/</link>
+      <pubDate>Wed, 27 Apr 2016 21:30:00 +0200</pubDate>
+      
+      <guid>https://www.alejandrolopezparra.es/talk/vi_reunion_foro_interoperabilidad_salud/</guid>
+      <description></description>
     </item>
     
   </channel>

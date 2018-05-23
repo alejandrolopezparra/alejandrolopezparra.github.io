@@ -11,6 +11,249 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Cyber Crisis Management 2018</title>
+      <link>https://www.alejandrolopezparra.es/talk/xx_international_information_security_conference/</link>
+      <pubDate>Thu, 10 May 2018 21:30:00 +0200</pubDate>
+      
+      <guid>https://www.alejandrolopezparra.es/talk/xx_international_information_security_conference/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Innovación tecnológica para reconocer la identidad</title>
+      <link>https://www.alejandrolopezparra.es/talk/revolution_banking_2018/</link>
+      <pubDate>Thu, 10 May 2018 21:30:00 +0200</pubDate>
+      
+      <guid>https://www.alejandrolopezparra.es/talk/revolution_banking_2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Servicio de intercambio de ciberamenazas del CERT de INCIBE</title>
+      <link>https://www.alejandrolopezparra.es/talk/jornadas_tecnicas_rediris_2018/</link>
+      <pubDate>Wed, 09 May 2018 21:30:00 +0200</pubDate>
+      
+      <guid>https://www.alejandrolopezparra.es/talk/jornadas_tecnicas_rediris_2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Retos y tendencias de ciberseguridad en el sector privado</title>
+      <link>https://www.alejandrolopezparra.es/talk/11enise/</link>
+      <pubDate>Tue, 24 Oct 2017 21:30:00 +0200</pubDate>
+      
+      <guid>https://www.alejandrolopezparra.es/talk/11enise/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Seguridad y fraude de los datos personales</title>
+      <link>https://www.alejandrolopezparra.es/talk/congreso_privacidad_proteccion_datos/</link>
+      <pubDate>Tue, 17 Oct 2017 21:30:00 +0200</pubDate>
+      
+      <guid>https://www.alejandrolopezparra.es/talk/congreso_privacidad_proteccion_datos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>El estado de la Ciberseguridad en España</title>
+      <link>https://www.alejandrolopezparra.es/talk/foro_ransomware_alerta_maxima/</link>
+      <pubDate>Tue, 19 Sep 2017 21:30:00 +0200</pubDate>
+      
+      <guid>https://www.alejandrolopezparra.es/talk/foro_ransomware_alerta_maxima/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ciberseguridad. Una oportunidad para la industria española</title>
+      <link>https://www.alejandrolopezparra.es/talk/31_encuentro_economia_digital_telecomunicaciones/</link>
+      <pubDate>Wed, 06 Sep 2017 21:30:00 +0200</pubDate>
+      
+      <guid>https://www.alejandrolopezparra.es/talk/31_encuentro_economia_digital_telecomunicaciones/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WannaCry, el ransomworm más mediático</title>
+      <link>https://www.alejandrolopezparra.es/post/wannacry_analisis/</link>
+      <pubDate>Sat, 08 Jul 2017 12:00:00 +0200</pubDate>
+      
+      <guid>https://www.alejandrolopezparra.es/post/wannacry_analisis/</guid>
+      <description>
+
+&lt;p&gt;El &lt;strong&gt;viernes 12 de mayo de 2017&lt;/strong&gt;, a media mañana, los medios generalistas se hicieron eco de un ciberataque de tipo &lt;a href=&#34;https://es.wikipedia.org/wiki/Ransomware&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;ransomware&lt;/em&gt;&lt;/a&gt; que estaba afectando a grandes compañias en España y otros países. Esta noticia fue cabecera de la mayoría de los informativos, telediarios y programas de variadades, durante todo el fin de semana y algunos días después, a nivel mundial. Me atrevería a decir que ha sido &lt;strong&gt;el ciberataque con más repercusión en los medios&lt;/strong&gt; de toda la historia.&lt;/p&gt;
+
+&lt;p&gt;Aunque ha recibido distintos nombres desde que salió a la luz (&lt;em&gt;WCry&lt;/em&gt;, &lt;em&gt;WanaCry&lt;/em&gt;, &lt;em&gt;Wana Decrypt0r&lt;/em&gt;, &lt;em&gt;WannaCrypt0r&lt;/em&gt;, &lt;em&gt;WannaCrypt&lt;/em&gt;) parece que el que finalmente ha conseguido mayor aceptación es el de &lt;strong&gt;&lt;em&gt;WannaCry&lt;/em&gt;&lt;/strong&gt;, que hace alusión a que los afectados &lt;strong&gt;quieren llorar&lt;/strong&gt; por haber perdido todos sus datos.&lt;/p&gt;
+
+&lt;p&gt;A continuación se tratarán el análisis de las características técnicas del &lt;em&gt;malware&lt;/em&gt;, las medidas de prevención y la recuperación.&lt;/p&gt;
+
+&lt;h2 id=&#34;análisis-de-wannacry&#34;&gt;Análisis de &lt;em&gt;WannaCry&lt;/em&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;WannaCry&lt;/em&gt; es un malware para diferentes versiones del sistema operativo &lt;em&gt;Microsoft Windows&lt;/em&gt; que combina varios comportamientos maliciosos:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://es.wikipedia.org/wiki/Ransomware&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;&lt;em&gt;Ransomware&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt;: secuestra los documentos digitales de los equipos y pide un rescate económico para recuperarlos.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://es.wikipedia.org/wiki/Worm&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;&lt;em&gt;Worm&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt;: se propaga automáticamente para infectar a la mayor cantidad de equipos posibles.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Éstas son algunas de las fuentes en las que se basa este post para el análisis del &lt;em&gt;malware&lt;/em&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.certsi.es/blog/ransomware-wannacry-responsable-ciberataque-mundial&#34; target=&#34;_blank&#34;&gt;CERT de Seguridad e Industria&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.malwarebytes.com/threat-analysis/2017/05/the-worm-that-spreads-wanacrypt0r/&#34; target=&#34;_blank&#34;&gt;MalwareBytes&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gist.github.com/rain-1/989428fa5504f378b993ee6efbc0b168&#34; target=&#34;_blank&#34;&gt;Wannacrypt0r-FACTSHEET&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.talosintelligence.com/2017/05/wannacry.html&#34; target=&#34;_blank&#34;&gt;Cisco Talos&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.kryptoslogic.com/malware/2017/05/29/two-weeks-later.html&#34; target=&#34;_blank&#34;&gt;Kryptos Logic&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.endgame.com/blog/technical-blog/wcrywanacry-ransomware-technical-analysis&#34; target=&#34;_blank&#34;&gt;EndGame&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blogs.forcepoint.com/security-labs/wannacry-post-outbreak-analysis&#34; target=&#34;_blank&#34;&gt;Forcepoint&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://baesystemsai.blogspot.com.es/2017/05/wanacrypt0r-ransomworm.html&#34; target=&#34;_blank&#34;&gt;BAE Systems&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blogs.technet.microsoft.com/mmpc/2017/05/12/wannacrypt-ransomware-worm-targets-out-of-date-systems/&#34; target=&#34;_blank&#34;&gt;Microsoft&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.gdatasoftware.com/blog/2017/05/29751-wannacry-ransomware-campaign&#34; target=&#34;_blank&#34;&gt;G Data&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://thehackernews.com/2017/05/how-to-wannacry-ransomware.html&#34; target=&#34;_blank&#34;&gt;The Hacker News&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.sonicwall.com/2017/06/did-wannacry-perpetrators-ever-get-their-ransom/&#34; target=&#34;_blank&#34;&gt;SonicWall&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;worm&#34;&gt;&lt;em&gt;Worm&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;Posee un módulo que se encarga de &lt;strong&gt;propagarse por la red sin intervención del usuario&lt;/strong&gt; para infectar otros equipos e inyectarse en ellos.&lt;/p&gt;
+
+&lt;p&gt;Para conseguirlo, usa un &lt;a href=&#34;https://es.wikipedia.org/wiki/Exploit&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;exploit&lt;/em&gt;&lt;/a&gt; conocido como &lt;a href=&#34;https://es.wikipedia.org/wiki/EternalBlue&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;EternalBlue&lt;/em&gt;&lt;/a&gt; que instala un &lt;a href=&#34;https://es.wikipedia.org/wiki/Puerta_trasera&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;backdoor&lt;/em&gt;&lt;/a&gt; denominado &lt;a href=&#34;https://en.wikipedia.org/wiki/DoublePulsar&#34; target=&#34;_blank&#34;&gt;DoublePulsar&lt;/a&gt; a través del cuál se instala el &lt;em&gt;malware&lt;/em&gt;. Tanto &lt;em&gt;EternalBlue&lt;/em&gt; como &lt;em&gt;DoublePulsar&lt;/em&gt; son herramientas desarrolladas, suspuestamente para la &lt;a href=&#34;https://es.wikipedia.org/wiki/Agencia_de_Seguridad_Nacional&#34; target=&#34;_blank&#34;&gt;Agencia de Seguridad de los Estados Unidos (NSA)&lt;/a&gt;, por el grupo de hackers &lt;a href=&#34;https://en.wikipedia.org/wiki/Equation_Group&#34; target=&#34;_blank&#34;&gt;Equation Group&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;EternalBlue&lt;/em&gt; es una herramienta que aprovecha la vulnerabilidad &lt;a href=&#34;https://www.certsi.es/alerta-temprana/vulnerabilidades/cve-2017-0144&#34; target=&#34;_blank&#34;&gt;cve-2017-0144&lt;/a&gt; del protocolo &lt;a href=&#34;https://es.wikipedia.org/wiki/Server_Message_Block&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Server Message Block 1.0&lt;/em&gt; (&lt;em&gt;SMBv1&lt;/em&gt;)&lt;/a&gt; de los sistemas operativos &lt;em&gt;Windows&lt;/em&gt;. Aunque esta vulnerabilidad afecta a todos los equipos con &lt;em&gt;Windows XP/Vista/7/8/10&lt;/em&gt; y &lt;em&gt;Windows Server 2003/2008/2012/2016&lt;/em&gt; que no estén convenientemente actualizados, los análisis realizados demuestran que &lt;strong&gt;&lt;em&gt;Windows XP&lt;/em&gt;, &lt;em&gt;Windows 10&lt;/em&gt; y &lt;em&gt;Windows Server 2016&lt;/em&gt; no se infectan&lt;/strong&gt;. Esto se debe a que el &lt;em&gt;exploit&lt;/em&gt; no está diseñado para estos sistemas operativos y falla al intentar aprovechar la vulnerabilidad.&lt;/p&gt;
+
+&lt;p&gt;Una vez infectado un equipo, el &lt;em&gt;malware&lt;/em&gt; comprueba si puede conectarse a esta página web&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;www[.]iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea[.]com&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;En caso de que pueda acceder, se desactiva y no realiza ninguna acción en el equipo.&lt;/li&gt;
+&lt;li&gt;En caso de que no pueda conectarse, intenta propagarse a otros equipos y ejecuta el componente &lt;em&gt;ransomware&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Debido a este comportamiento, se conoce a esa página como &lt;strong&gt;&lt;em&gt;kill switch&lt;/em&gt;&lt;/strong&gt; o interruptor de apagado de emergencia ya que permite detener la propagación de este &lt;em&gt;malware&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;ransomware&#34;&gt;&lt;em&gt;Ransomware&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;El proceso realizado por el componente &lt;em&gt;ransomware&lt;/em&gt;, una vez un equipo ha sido infectado, es (1) preparar el sistema, (2) cifrar los ficheros y (3) solicitar un rescate.&lt;/p&gt;
+
+&lt;h4 id=&#34;preparación&#34;&gt;Preparación&lt;/h4&gt;
+
+&lt;p&gt;Posee un módulo que &lt;strong&gt;busca&lt;/strong&gt; documentos ofimáticos, imágenes, archivos multimedia, bases de datos y otros tipos de ficheros comunes, tanto en el propio equipo como en todas las unidades que tenga conectadas por red. El listado de extensiones de ficheros que intenta localizar es grande, más de 150 (.doc, .pdf, .jpg, .png, .avi, &amp;hellip;), pero ignora deliberadamente los ficheros necesarios para el correcto funcionamiento del Sistema Operativo.&lt;/p&gt;
+
+&lt;h4 id=&#34;cifrado&#34;&gt;Cifrado&lt;/h4&gt;
+
+&lt;p&gt;Para secuestrar los ficheros, utiliza algoritmos de &lt;a href=&#34;https://es.wikipedia.org/wiki/Criptograf%C3%ADa_asim%C3%A9trica&#34; target=&#34;_blank&#34;&gt;criptografía asimétrica o de dos claves&lt;/a&gt; (privada y pública), que son más seguros, combinados con &lt;a href=&#34;https://es.wikipedia.org/wiki/Criptograf%C3%ADa_sim%C3%A9trica&#34; target=&#34;_blank&#34;&gt;criptografía simétrica o de clave secreta&lt;/a&gt;, que son más rápidos.&lt;/p&gt;
+
+&lt;p&gt;De forma resumida, podríamos decir que &lt;strong&gt;cada fichero es cifrado con una clave aleatoria distinta que solamente pueden averiguar los atacantes&lt;/strong&gt;. A continuación se dan detalles técnicos del proceso de cifrado que ayudan a entenderlo.&lt;/p&gt;
+
+&lt;h5 id=&#34;descripción-técnica-del-cifrado&#34;&gt;Descripción técnica del cifrado&lt;/h5&gt;
+
+&lt;p&gt;Lo primero que realiza es la &lt;strong&gt;generación de claves asimétricas&lt;/strong&gt; robustas &lt;code&gt;RSA-2048&lt;/code&gt; que usará posteriormente:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Extrae una clave pública (&lt;em&gt;PuK&lt;/em&gt;) que lleva en su código y que tiene asociada una clave privada (&lt;em&gt;PrK&lt;/em&gt;) que no se incluye.&lt;/li&gt;
+&lt;li&gt;Genera aleatoriamente un nuevo par de claves pública (&lt;em&gt;PuKN&lt;/em&gt;) y privada (&lt;em&gt;PrKN&lt;/em&gt;).&lt;/li&gt;
+&lt;li&gt;Guarda &lt;em&gt;PuKN&lt;/em&gt; en el fichero &lt;code&gt;00000000.pky&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Guarda &lt;em&gt;PrKN&lt;/em&gt; en el fichero &lt;code&gt;00000000.eky&lt;/code&gt;, cifrado con la clave pública &lt;em&gt;PuK&lt;/em&gt;, de manera que sólo es descifrable con &lt;em&gt;PrK&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Destruye las claves de la memoria para que no sean recuperables.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Después, para cada fichero localizado, lo &lt;strong&gt;cifra con una clave simétrica&lt;/strong&gt; &lt;code&gt;AES-128-CBC&lt;/code&gt; distinta en cada caso:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Genera aleatoriamente una clave secreta (&lt;em&gt;Sec&lt;/em&gt;).&lt;/li&gt;
+&lt;li&gt;Realiza una copia cifrada del fichero original con &lt;em&gt;Sec&lt;/em&gt; y le añade la extensión &lt;code&gt;.WNCRY&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Adjunta &lt;em&gt;Sec&lt;/em&gt;, cifrada con &lt;em&gt;PuKN&lt;/em&gt;, a la cabecera del fichero. De esta forma, sólo es descifrable si se conoce &lt;em&gt;PrKN&lt;/em&gt; que a su vez ha sido cifrada con &lt;em&gt;PuK&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Borra de forma segura el fichero original para que no se pueda restaurar.&lt;/li&gt;
+&lt;li&gt;Destruye la clave secreta de memoria para que no sea recuperable.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;De esta forma, cada fichero es cifrado con una clave simétrica distinta &lt;em&gt;Sec&lt;/em&gt; que está protegida por una clave asimétrica &lt;em&gt;PrKN&lt;/em&gt; que sólo se puede recuperar con la clave asimétrica &lt;em&gt;PrK&lt;/em&gt; que tienen los creadores de &lt;em&gt;WannaCry&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h4 id=&#34;rescate&#34;&gt;Rescate&lt;/h4&gt;
+
+&lt;p&gt;Una vez cifrados todos los ficheros, el &lt;em&gt;malware&lt;/em&gt; cambia el fondo de escritorio por un mensaje que avisa de que todos los ficheros han sido cifrados. De la misma forma, muestra una ventana con las intrucciones para pagar &lt;strong&gt;300 $&lt;/strong&gt; en &lt;a href=&#34;https://es.wikipedia.org/wiki/Bitcoin&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Bitcoins&lt;/em&gt; (&lt;em&gt;BTC&lt;/em&gt;)&lt;/a&gt; mediante una trasferencia a una de las siguientes carteras de &lt;em&gt;Bitcoins&lt;/em&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://blockchain.info/address/12t9YDPgwueZ9NyMgw519p7AA8isjr6SMw&#34; target=&#34;_blank&#34;&gt;12t9YDPgwueZ9NyMgw519p7AA8isjr6SMw&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blockchain.info/address/115p7UMMngoj1pMvkpHijcRdfJNXj6LrLn&#34; target=&#34;_blank&#34;&gt;115p7UMMngoj1pMvkpHijcRdfJNXj6LrLn&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blockchain.info/address/13AM4VW2dhxYgXeQepoHkHSQuy6NgaEb94&#34; target=&#34;_blank&#34;&gt;13AM4VW2dhxYgXeQepoHkHSQuy6NgaEb94&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;También se muestra un contador de tiempo que indica que esta cantidad se verá incrementada a &lt;strong&gt;600 $&lt;/strong&gt; si no se realiza el pago antes de &lt;strong&gt;3 días&lt;/strong&gt;. Por si fuera poco, amenaza con que &lt;strong&gt;los datos no serán recuperables&lt;/strong&gt; en caso de no realizar el pago antes de &lt;strong&gt;7 días&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;En paralelo, el &lt;em&gt;malware&lt;/em&gt; envía, a través de la red de anonimato &lt;a href=&#34;https://es.wikipedia.org/wiki/Tor_(red_de_anonimato)&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Tor&lt;/em&gt;&lt;/a&gt;, el archivo &lt;code&gt;00000000.eky&lt;/code&gt;, que contiene la clave privada cifrada necesaria para recuperar los ficheros, a unos de los seguientes &lt;a href=&#34;https://es.wikipedia.org/wiki/Tor_(red_de_anonimato)#Servicios_ocultos&#34; target=&#34;_blank&#34;&gt;servicios ocultos de &lt;em&gt;Tor&lt;/em&gt;&lt;/a&gt; que actuán de panel de control:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;gx7ekbenv2riucmf[.]onion&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;57g7spgrzlojinas[.]onion&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;xxlvbrloxvriy2c5[.]onion&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;76jdd2ir2embyv47[.]onion&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cwwnhwhlz52maqm7[.]onion&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Una vez pagado el rescate, supuestamente, los atacantes entregarían el archivo &lt;code&gt;00000000.dky&lt;/code&gt;, que contiene la clave privada en claro necesaria para descifrar los ficheros secuestrados. El problema aquí radica en que &lt;strong&gt;los pagos en &lt;em&gt;Bitcoins&lt;/em&gt; son anónimos&lt;/strong&gt; por lo que no es directo saber quién ha realizado el pago y quién no.&lt;/p&gt;
+
+&lt;p&gt;Ya que no hay garantía de que esto ocurra y para no fomentar este tipo de actos delictivos, &lt;strong&gt;la recomendación es nunca pagar un rescate&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;versiones-de-wannacry&#34;&gt;Versiones de &lt;em&gt;WannaCry&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;Hasta la fecha, se han identificado unas cuantas variantes del &lt;em&gt;malware&lt;/em&gt; que se diferencian en su comportamiento como &lt;em&gt;worm&lt;/em&gt; o como &lt;em&gt;ransomware&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Podemos clasificar las versiones en alguna de estos tipos:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;En base al &lt;strong&gt;&lt;em&gt;kill switch&lt;/em&gt;&lt;/strong&gt; o dominio que use como interruptor de emergencia. En algunas versiones incluso ha sido eliminado.&lt;/li&gt;
+&lt;li&gt;En base a la &lt;strong&gt;cartera de &lt;em&gt;Bitcoins&lt;/em&gt;&lt;/strong&gt; donde se reclame el pago.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Se cree que las versiones no han sido creadas por los autores originales sino que, más bien, se tratan de modificaciones realizadas por terceros.&lt;/p&gt;
+
+&lt;h2 id=&#34;prevención-y-mitigación&#34;&gt;Prevención y mitigación&lt;/h2&gt;
+
+&lt;p&gt;La vulnerabilidad utilizada por &lt;em&gt;WannaCry&lt;/em&gt; está presente en todos los equipos con &lt;em&gt;Windows XP&lt;/em&gt; a &lt;em&gt;Windows 10&lt;/em&gt; que no hayan aplicado el parche de seguridad:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://technet.microsoft.com/es-es/library/security/ms17-010.aspx&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;MS17-10&lt;/em&gt;&lt;/a&gt; que se publicó el &lt;strong&gt;14 de marzo de 2017&lt;/strong&gt; para los sistemas soportados oficialmente (&lt;em&gt;Windows Vista/2008/7/2012/8.1/10/2016&lt;/em&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.catalog.update.microsoft.com/search.aspx?q=kb4012598&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;KB4012598&lt;/em&gt;&lt;/a&gt; que se publicó, de forma excepcional, el &lt;strong&gt;13 de mayo de 2017&lt;/strong&gt; para los que ya no tienen soporte (&lt;em&gt;Windows XP/2003/8&lt;/em&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;En caso de no ser posible aplicar el parche de seguridad, se pueden adoptar medidas de mitigación como las que indica el &lt;a href=&#34;https://www.certsi.es/alerta-temprana/avisos-seguridad/oleada-ransomware-afecta-multitud-equipos&#34; target=&#34;_blank&#34;&gt;aviso de seguridad&lt;/a&gt; que realizó el &lt;a href=&#34;https://www.certsi.es&#34; target=&#34;_blank&#34;&gt;CERT de Seguridad e Industria&lt;/a&gt; de &lt;a href=&#34;https://www.incibe.es&#34; target=&#34;_blank&#34;&gt;INCIBE&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;desinfección-y-recuperación&#34;&gt;Desinfección y recuperación&lt;/h2&gt;
+
+&lt;p&gt;La &lt;strong&gt;desinfección&lt;/strong&gt; se puede realizar con un antivirus actualizado ya que la mayoría de ellos detectan y desinfectan este &lt;em&gt;malware&lt;/em&gt; desde poco después de su aparición. De todas formas, lo más recomendable es recuperar la última copia de seguridad que tengamos del equipo o realizar una instalación nueva en caso contrario.&lt;/p&gt;
+
+&lt;p&gt;La &lt;strong&gt;recuperación&lt;/strong&gt;, sin embargo, no es tan sencilla ya que la clave privada que se usa en el proceso de cifrado de los ficheros es eliminada de la memoria y guardada cifrada en el archivo &lt;code&gt;00000000.eky&lt;/code&gt;. La única posibilidad de obtenerla sería con la clave privada maestra que está en posesión de los creadores de &lt;em&gt;WannaCry&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;No obstante, existe una remota posibilidad de recuperar la clave privada de la memoria del sistema que es usar la herramienta &lt;a href=&#34;https://github.com/gentilkiwi/wanakiwi&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;&lt;em&gt;Wanakiwi&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt; pero sólo cuando se dan las siguientes circunstancias:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;El sistema operativo es &lt;em&gt;Windows XP&lt;/em&gt; o &lt;em&gt;Windows 7&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;No se ha reiniciado el equipo desde que se infectó.&lt;/li&gt;
+&lt;li&gt;No ha pasado mucho tiempo desde el equipo se infectó o ha sido puesto en &lt;a href=&#34;https://en.wikipedia.org/wiki/Sleep_mode&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;suspensión&lt;/em&gt;&lt;/a&gt; o &lt;a href=&#34;https://en.wikipedia.org/wiki/Hibernation_(computing)&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;hibernación&lt;/em&gt;&lt;/a&gt; al poco de ser infectado.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;conclusiones&#34;&gt;Conclusiones&lt;/h2&gt;
+
+&lt;p&gt;El análisis del malware pone de manifiesto que nos encontramos ante una &lt;strong&gt;amenaza no especialmente sofisticada&lt;/strong&gt; ya que explota una vulnerabilidad conocida, para la que existían parches de seguridad desde meses antes.&lt;/p&gt;
+
+&lt;p&gt;Lo que sí ha quedado claro es la &lt;strong&gt;falta de política de actualización&lt;/strong&gt; en muchas entidades o, como mínimo, que no se siguen. De la misma forma, también ha quedado evidenciado que tampoco se siguen las &lt;strong&gt;políticas y procedimientos de bastionado&lt;/strong&gt;, ya que ni lo más básico se ha seguido, como es evitar la exposición en Internet de servicios innesarios o el filtrado para el acceso a los mismos.&lt;/p&gt;
+
+&lt;p&gt;Esperemos que la trascendencia medíatica que ha tenido este suceso sirva para que &lt;strong&gt;las entidades empiecen a tomarse más en serio esto de la seguridad&lt;/strong&gt; y se pongan las pilas en procedimientos tan básicos como las actualizaciones periódicas y el bastionado de los sistemas.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Seguridad en industria, infraestucturas y smart cities</title>
+      <link>https://www.alejandrolopezparra.es/talk/iv_jornada_ciberseguridad_andalucia/</link>
+      <pubDate>Thu, 01 Jun 2017 21:30:00 +0200</pubDate>
+      
+      <guid>https://www.alejandrolopezparra.es/talk/iv_jornada_ciberseguridad_andalucia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Alojar websites estáticos en GitHub Pages</title>
       <link>https://www.alejandrolopezparra.es/post/github_pages/</link>
       <pubDate>Sat, 20 May 2017 12:00:00 +0200</pubDate>
@@ -759,45 +1002,6 @@ awstats.$myserver.errors404.html
 &lt;li&gt;&lt;a href=&#34;https://bitbucket.org/&#34; target=&#34;_blank&#34;&gt;BitBucket&lt;/a&gt; que también tiene un &lt;a href=&#34;https://gohugo.io/tutorials/hosting-on-bitbucket/&#34; target=&#34;_blank&#34;&gt;tutorial para Hugo&lt;/a&gt;. Gratuito.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://about.gitlab.com/&#34; target=&#34;_blank&#34;&gt;GitLab&lt;/a&gt; que también ofrece un &lt;a href=&#34;https://gohugo.io/tutorials/hosting-on-gitlab/&#34; target=&#34;_blank&#34;&gt;tutorial para Hugo&lt;/a&gt;. Gratuito.&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Crear websites estáticos con Hugo</title>
-      <link>https://www.alejandrolopezparra.es/post/hugo/</link>
-      <pubDate>Sat, 28 Jan 2017 15:00:00 +0100</pubDate>
-      
-      <guid>https://www.alejandrolopezparra.es/post/hugo/</guid>
-      <description>
-
-&lt;p&gt;Como no podía ser de otra manera, inauguro esta web con un primer post que va dedicado a la tecnología que he usado para crear este sitio.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://gohugo.io&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Hugo&lt;/em&gt;&lt;/a&gt; es un framework que permite crear websites a base de contenido estático (&lt;em&gt;HTML&lt;/em&gt;, &lt;em&gt;JavaScript&lt;/em&gt;, &lt;em&gt;CSS&lt;/em&gt;, &amp;hellip;), es decir, no se sustenta en el uso de servidores de aplicaciones o bases de datos. Lo contrario de lo que ocurre con los sistemas de gestión de contenidos o &lt;em&gt;CMS&lt;/em&gt; habituales los cuales suelen estar basados en contenido dinámico: &lt;em&gt;WordPress&lt;/em&gt;, &lt;em&gt;Drupal&lt;/em&gt;, &lt;em&gt;Joomla!&lt;/em&gt;, &lt;em&gt;Dokuwiki&lt;/em&gt;, etc. Por suspuesto, esto, tiene sus ventajas e inconvenientes.&lt;/p&gt;
-
-&lt;h2 id=&#34;ventajas&#34;&gt;Ventajas:&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Simplicidad&lt;/strong&gt;: sólo se necesita un servidor web que sirva las páginas webs y el resto de contenido estático, no hay servidores de bases de datos ni de aplicaciones.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Ahorro económico&lt;/strong&gt;: no se requiere un servidor muy potente ya que las peticiones que tiene que servir son más ligeras, no hay accesos a bases de datos ni procesamientos complejos en el lado del servidor.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Seguridad&lt;/strong&gt;: como no se tiene que realizar procesamiento de los datos de entrada ni consultas a otros servicios en backend, la posibilidad de explotar alguna vulnerabilidad en el lado del servidor se reduce drásticamente.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Multiplataforma&lt;/strong&gt;: es posible usar casi cualquier sistema operativo (&lt;a href=&#34;https://es.wikipedia.org/wiki/Windows&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Windows&lt;/em&gt;&lt;/a&gt;, &lt;a href=&#34;https://es.wikipedia.org/wiki/GNU/Linux&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;GNU/Linux&lt;/em&gt;&lt;/a&gt;, &lt;a href=&#34;https://es.wikipedia.org/wiki/MacOS&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;macOS&lt;/em&gt;&lt;/a&gt;, &lt;a href=&#34;https://es.wikipedia.org/wiki/FreeBSD&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;FreeBSD&lt;/em&gt;&lt;/a&gt;, etc.) y arquitectura (&lt;a href=&#34;https://es.wikipedia.org/wiki/X86-64&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;x64&lt;/em&gt;&lt;/a&gt;, &lt;a href=&#34;https://es.wikipedia.org/wiki/X86&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;x86&lt;/em&gt;&lt;/a&gt;, &lt;a href=&#34;https://es.wikipedia.org/wiki/Arquitectura_ARM&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;ARM&lt;/em&gt;&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Multihosting&lt;/strong&gt;: al estar basado en contenido estático, se puede usar cualquier hosting web o &lt;em&gt;CDN&lt;/em&gt; (&lt;em&gt;Amazon S3&lt;/em&gt;, &lt;em&gt;GitHub Pages&lt;/em&gt;, &lt;em&gt;Dropbox&lt;/em&gt;, &lt;em&gt;Heroku&lt;/em&gt;, &lt;em&gt;Google Cloud Storage&lt;/em&gt;, &lt;em&gt;Amazon CloudFront&lt;/em&gt;, &amp;hellip;).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Personalización&lt;/strong&gt;: soporta el uso de &lt;a href=&#34;http://themes.gohugo.io/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;themes&lt;/em&gt;&lt;/a&gt; o temas que permiten personalizar el aspecto del site de forma fácil manteniendo el contenido.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;inconvenientes&#34;&gt;Inconvenientes:&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Funcionalidad limitada&lt;/strong&gt;: aunque con &lt;em&gt;JS&lt;/em&gt; se puede implementar mucha funcionalidad en el lado del cliente, no es posible resolverlo todo. Hay cosas que sólo se pueden realizar en el lado del servidor: gestión de usuarios, comentarios, cestas de la compra, formularios de contacto, etc.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Gestión de contenidos simple&lt;/strong&gt;: no está pensado para que haya varios autores ni permite una gestión de contenidos compleja.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Curva de aprendizaje&lt;/strong&gt;: está basado en el lenguaje de marcado &lt;a href=&#34;https://es.wikipedia.org/wiki/Markdown&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Markdown&lt;/em&gt;&lt;/a&gt; para la creación de contenido. No obstante, existen interfaces de usuarios (UI) que facilitan la creación de contenido en este lenguaje.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;conclusiones&#34;&gt;Conclusiones&lt;/h2&gt;
-
-&lt;p&gt;Hugo es idóneo para crear páginas personales, blogs, portfolios y webs de documentación especialmente cuando sólo hay un autor pero no para sites más complejos. Hay mucha &lt;a href=&#34;https://gohugo.io/overview/introduction/&#34; target=&#34;_blank&#34;&gt;documentación&lt;/a&gt; en la web oficial incluyendo una &lt;a href=&#34;https://gohugo.io/overview/quickstart/&#34; target=&#34;_blank&#34;&gt;guía para principiantes&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;En mi caso, he optado por personalizar la apariencia de &lt;a href=&#34;https://gohugo.io&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Hugo&lt;/em&gt;&lt;/a&gt; con el tema &lt;a href=&#34;http://themes.gohugo.io/academic/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;academic&lt;/em&gt;&lt;/a&gt; por su simplicidad y estilo minimalista. En el &lt;a href=&#34;https://www.alejandrolopezparra.es/post/amazon_s3/&#34;&gt;próximo post&lt;/a&gt; abordaré el alojamiento del website con &lt;a href=&#34;https://aws.amazon.com/es/s3/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Amazon S3&lt;/em&gt;&lt;/a&gt; por su facilidad de uso y precio reducido.&lt;/p&gt;
 </description>
     </item>
     

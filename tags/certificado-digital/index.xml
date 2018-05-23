@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Certificado digital on Alejandro López Parra</title>
+    <link>https://www.alejandrolopezparra.es/tags/certificado-digital/</link>
+    <description>Recent content in Certificado digital on Alejandro López Parra</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <copyright>&amp;copy; 2018 Alejandro López Parra</copyright>
+    <lastBuildDate>Sat, 06 May 2017 12:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.alejandrolopezparra.es/tags/certificado-digital/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Certificados digitales de la FNMT-RCM</title>
+      <link>https://www.alejandrolopezparra.es/post/fnmt/</link>
+      <pubDate>Sat, 06 May 2017 12:00:00 +0200</pubDate>
+      
+      <guid>https://www.alejandrolopezparra.es/post/fnmt/</guid>
+      <description>Como continuación al artículo dedicado al DNIe y los certificados digitales que contiene, se tratarán los certificados digitales emitidos por la Entidad Pública de Certificación CERES (CERtificación ESpañola) dependiente de la Fábrica Nacional de Moneda y Timbre - Real Casa de la Moneda (FNMT-RCM).
+De la misma forma que ocurría con el DNIe, permiten acreditar la identidad de los intervinientes en las comunicaciones electrónicas y asegurar su procedencia e integridad.</description>
+    </item>
+    
+    <item>
+      <title>DNI electrónico y certificados digitales</title>
+      <link>https://www.alejandrolopezparra.es/post/dnie/</link>
+      <pubDate>Sat, 22 Apr 2017 13:33:10 +0200</pubDate>
+      
+      <guid>https://www.alejandrolopezparra.es/post/dnie/</guid>
+      <description>El Documento Nacional de Identidad electrónico español (DNIe) es emitido por la Dirección General de la Policía (DGP) y responde a la necesidad de otorgar identidad personal a los ciudadanos españoles para su uso en la Sociedad de la Información. Permite acreditar la identidad de los intervinientes en las comunicaciones electrónicas así como asegurar su procedencia e integridad. De este modo, es posible realizar gestiones de forma segura a través de Internet tanto con la Administración Pública como con las entidades privadas que lo adopten.</description>
+    </item>
+    
+  </channel>
+</rss>

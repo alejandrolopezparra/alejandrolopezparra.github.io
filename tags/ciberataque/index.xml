@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ciberataque on Alejandro López Parra</title>
+    <link>https://www.alejandrolopezparra.es/tags/ciberataque/</link>
+    <description>Recent content in Ciberataque on Alejandro López Parra</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <copyright>&amp;copy; 2018 Alejandro López Parra</copyright>
+    <lastBuildDate>Sat, 08 Jul 2017 12:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.alejandrolopezparra.es/tags/ciberataque/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>WannaCry, el ransomworm más mediático</title>
+      <link>https://www.alejandrolopezparra.es/post/wannacry_analisis/</link>
+      <pubDate>Sat, 08 Jul 2017 12:00:00 +0200</pubDate>
+      
+      <guid>https://www.alejandrolopezparra.es/post/wannacry_analisis/</guid>
+      <description>El viernes 12 de mayo de 2017, a media mañana, los medios generalistas se hicieron eco de un ciberataque de tipo ransomware que estaba afectando a grandes compañias en España y otros países. Esta noticia fue cabecera de la mayoría de los informativos, telediarios y programas de variadades, durante todo el fin de semana y algunos días después, a nivel mundial. Me atrevería a decir que ha sido el ciberataque con más repercusión en los medios de toda la historia.</description>
+    </item>
+    
+  </channel>
+</rss>

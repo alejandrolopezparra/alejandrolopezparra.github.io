@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Listado de ponencias y charlas on Alejandro López Parra</title>
+    <link>https://www.alejandrolopezparra.es/talk/</link>
+    <description>Recent content in Listado de ponencias y charlas on Alejandro López Parra</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <copyright>&amp;copy; 2018 Alejandro López Parra</copyright>
+    <lastBuildDate>Wed, 23 May 2018 21:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.alejandrolopezparra.es/talk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cyber Crisis Management 2018</title>
+      <link>https://www.alejandrolopezparra.es/talk/xx_international_information_security_conference/</link>
+      <pubDate>Thu, 10 May 2018 21:30:00 +0200</pubDate>
+      
+      <guid>https://www.alejandrolopezparra.es/talk/xx_international_information_security_conference/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Innovación tecnológica para reconocer la identidad</title>
+      <link>https://www.alejandrolopezparra.es/talk/revolution_banking_2018/</link>
+      <pubDate>Thu, 10 May 2018 21:30:00 +0200</pubDate>
+      
+      <guid>https://www.alejandrolopezparra.es/talk/revolution_banking_2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Servicio de intercambio de ciberamenazas del CERT de INCIBE</title>
+      <link>https://www.alejandrolopezparra.es/talk/jornadas_tecnicas_rediris_2018/</link>
+      <pubDate>Wed, 09 May 2018 21:30:00 +0200</pubDate>
+      
+      <guid>https://www.alejandrolopezparra.es/talk/jornadas_tecnicas_rediris_2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Retos y tendencias de ciberseguridad en el sector privado</title>
+      <link>https://www.alejandrolopezparra.es/talk/11enise/</link>
+      <pubDate>Tue, 24 Oct 2017 21:30:00 +0200</pubDate>
+      
+      <guid>https://www.alejandrolopezparra.es/talk/11enise/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Seguridad y fraude de los datos personales</title>
+      <link>https://www.alejandrolopezparra.es/talk/congreso_privacidad_proteccion_datos/</link>
+      <pubDate>Tue, 17 Oct 2017 21:30:00 +0200</pubDate>
+      
+      <guid>https://www.alejandrolopezparra.es/talk/congreso_privacidad_proteccion_datos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>El estado de la Ciberseguridad en España</title>
+      <link>https://www.alejandrolopezparra.es/talk/foro_ransomware_alerta_maxima/</link>
+      <pubDate>Tue, 19 Sep 2017 21:30:00 +0200</pubDate>
+      
+      <guid>https://www.alejandrolopezparra.es/talk/foro_ransomware_alerta_maxima/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ciberseguridad. Una oportunidad para la industria española</title>
+      <link>https://www.alejandrolopezparra.es/talk/31_encuentro_economia_digital_telecomunicaciones/</link>
+      <pubDate>Wed, 06 Sep 2017 21:30:00 +0200</pubDate>
+      
+      <guid>https://www.alejandrolopezparra.es/talk/31_encuentro_economia_digital_telecomunicaciones/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Seguridad en industria, infraestucturas y smart cities</title>
+      <link>https://www.alejandrolopezparra.es/talk/iv_jornada_ciberseguridad_andalucia/</link>
+      <pubDate>Thu, 01 Jun 2017 21:30:00 +0200</pubDate>
+      
+      <guid>https://www.alejandrolopezparra.es/talk/iv_jornada_ciberseguridad_andalucia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Las oportunidades que ofrece el Big Data para la abogacía</title>
+      <link>https://www.alejandrolopezparra.es/talk/retos_oportunidades_big_data_abogacia/</link>
+      <pubDate>Wed, 22 Jun 2016 21:30:00 +0200</pubDate>
+      
+      <guid>https://www.alejandrolopezparra.es/talk/retos_oportunidades_big_data_abogacia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Interoperabilidad, Big Data y Seguridad</title>
+      <link>https://www.alejandrolopezparra.es/talk/vi_reunion_foro_interoperabilidad_salud/</link>
+      <pubDate>Wed, 27 Apr 2016 21:30:00 +0200</pubDate>
+      
+      <guid>https://www.alejandrolopezparra.es/talk/vi_reunion_foro_interoperabilidad_salud/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
