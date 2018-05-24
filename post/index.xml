@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Listado de posts on Alejandro López Parra</title>
+    <title>Todos los posts on Alejandro López Parra</title>
     <link>https://www.alejandrolopezparra.es/post/</link>
-    <description>Recent content in Listado de posts on Alejandro López Parra</description>
+    <description>Recent content in Todos los posts on Alejandro López Parra</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
     <copyright>&amp;copy; 2018 Alejandro López Parra</copyright>
-    <lastBuildDate>Sat, 08 Jul 2017 12:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 24 May 2018 21:00:00 +0200</lastBuildDate>
     
 	<atom:link href="https://www.alejandrolopezparra.es/post/index.xml" rel="self" type="application/rss+xml" />
     

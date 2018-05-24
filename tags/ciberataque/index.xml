@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
     <copyright>&amp;copy; 2018 Alejandro López Parra</copyright>
-    <lastBuildDate>Sat, 08 Jul 2017 12:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 19 Sep 2017 21:30:00 +0200</lastBuildDate>
     
 	<atom:link href="https://www.alejandrolopezparra.es/tags/ciberataque/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>El estado de la Ciberseguridad en España</title>
+      <link>https://www.alejandrolopezparra.es/talk/foro_ransomware_alerta_maxima/</link>
+      <pubDate>Tue, 19 Sep 2017 21:30:00 +0200</pubDate>
+      
+      <guid>https://www.alejandrolopezparra.es/talk/foro_ransomware_alerta_maxima/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>WannaCry, el ransomworm más mediático</title>
@@ -19,6 +28,15 @@
       
       <guid>https://www.alejandrolopezparra.es/post/wannacry_analisis/</guid>
       <description>El viernes 12 de mayo de 2017, a media mañana, los medios generalistas se hicieron eco de un ciberataque de tipo ransomware que estaba afectando a grandes compañias en España y otros países. Esta noticia fue cabecera de la mayoría de los informativos, telediarios y programas de variadades, durante todo el fin de semana y algunos días después, a nivel mundial. Me atrevería a decir que ha sido el ciberataque con más repercusión en los medios de toda la historia.</description>
+    </item>
+    
+    <item>
+      <title>El ciberataque WannaCry</title>
+      <link>https://www.alejandrolopezparra.es/talk/rtvcyl_vamos_a_ver/</link>
+      <pubDate>Mon, 22 May 2017 21:30:00 +0200</pubDate>
+      
+      <guid>https://www.alejandrolopezparra.es/talk/rtvcyl_vamos_a_ver/</guid>
+      <description></description>
     </item>
     
   </channel>

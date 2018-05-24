@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CyberCamp on Alejandro López Parra</title>
+    <link>https://www.alejandrolopezparra.es/tags/cybercamp/</link>
+    <description>Recent content in CyberCamp on Alejandro López Parra</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <copyright>&amp;copy; 2018 Alejandro López Parra</copyright>
+    <lastBuildDate>Fri, 01 Dec 2017 21:30:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.alejandrolopezparra.es/tags/cybercamp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CyberCamp 2017</title>
+      <link>https://www.alejandrolopezparra.es/talk/rtve_telecantabria/</link>
+      <pubDate>Fri, 01 Dec 2017 21:30:00 +0200</pubDate>
+      
+      <guid>https://www.alejandrolopezparra.es/talk/rtve_telecantabria/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

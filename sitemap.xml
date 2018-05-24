@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>https://www.alejandrolopezparra.es/post/</loc>
+      <lastmod>2018-05-24T21:00:00+02:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://www.alejandrolopezparra.es/talk/</loc>
       <lastmod>2018-05-23T21:00:00+02:00</lastmod>
     </url>
@@ -34,6 +43,15 @@
     
       <loc>https://www.alejandrolopezparra.es/talk/jornadas_tecnicas_rediris_2018/</loc>
       <lastmod>2018-05-09T21:30:00+02:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://www.alejandrolopezparra.es/talk/rtve_telecantabria/</loc>
+      <lastmod>2017-12-01T21:30:00+02:00</lastmod>
     </url>
     
   
@@ -77,15 +95,6 @@
     
     <url>
     
-      <loc>https://www.alejandrolopezparra.es/post/</loc>
-      <lastmod>2017-07-08T12:00:00+02:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>https://www.alejandrolopezparra.es/post/wannacry_analisis/</loc>
       <lastmod>2017-07-08T12:00:00+02:00</lastmod>
     </url>
@@ -97,6 +106,15 @@
     
       <loc>https://www.alejandrolopezparra.es/talk/iv_jornada_ciberseguridad_andalucia/</loc>
       <lastmod>2017-06-01T21:30:00+02:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://www.alejandrolopezparra.es/talk/rtvcyl_vamos_a_ver/</loc>
+      <lastmod>2017-05-22T21:30:00+02:00</lastmod>
     </url>
     
   
@@ -225,6 +243,16 @@
     
     <url>
     
+      <loc>https://www.alejandrolopezparra.es/tags/ctf/</loc>
+      <lastmod>2017-12-01T21:30:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://www.alejandrolopezparra.es/categories/</loc>
       <priority>0</priority>
     </url>
@@ -245,7 +273,17 @@
     <url>
     
       <loc>https://www.alejandrolopezparra.es/tags/ciberataque/</loc>
-      <lastmod>2017-07-08T12:00:00+02:00</lastmod>
+      <lastmod>2017-09-19T21:30:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://www.alejandrolopezparra.es/tags/cybercamp/</loc>
+      <lastmod>2017-12-01T21:30:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     
