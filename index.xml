@@ -346,13 +346,13 @@ $# git commit -m &amp;quot;Initial commit&amp;quot;
 $# git push -u origin master
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Sólo con esos tres pasos, ya tendríamos nuestra página web personal accesible a través de un &lt;em&gt;Endpoint&lt;/em&gt; seguro &lt;code&gt;HTTPS://nombre.github.io&lt;/code&gt; donde &lt;code&gt;nombre&lt;/code&gt; se corresponde con el nombre de usuario de la cuenta de &lt;em&gt;GitHub&lt;/em&gt;. En mi caso, es &lt;code&gt;https://alejandrolopezparra.github.io&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Sólo con esos tres pasos, ya tendríamos nuestra página web personal accesible a través de un &lt;em&gt;Endpoint&lt;/em&gt; seguro &lt;code&gt;https://nombre.github.io&lt;/code&gt; donde &lt;code&gt;nombre&lt;/code&gt; se corresponde con el nombre de usuario de la cuenta de &lt;em&gt;GitHub&lt;/em&gt;. En mi caso, es &lt;code&gt;https://alejandrolopezparra.github.io&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Para el caso concreto de &lt;em&gt;Hugo&lt;/em&gt;, contamos con un &lt;a href=&#34;https://gohugo.io/tutorials/github-pages-blog/&#34; target=&#34;_blank&#34;&gt;tutorial&lt;/a&gt; que trata el despliegue en &lt;em&gt;GitHub Pages&lt;/em&gt; de páginas web basadas en &lt;em&gt;Hugo&lt;/em&gt; tanto personales como de organizaciones y también de proyectos. También disponemos de una &lt;a href=&#34;https://georgecushen.com/create-your-website-with-hugo/&#34; target=&#34;_blank&#34;&gt;guía detallada sobre &lt;em&gt;Hugo&lt;/em&gt; y &lt;em&gt;GitHub Pages&lt;/em&gt;&lt;/a&gt; del creador del &lt;a href=&#34;https://themes.gohugo.io/academic/&#34; target=&#34;_blank&#34;&gt;tema &lt;em&gt;Academic&lt;/em&gt; para &lt;em&gt;Hugo&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;asociar-un-dominio-propio&#34;&gt;Asociar un dominio propio&lt;/h2&gt;
 
-&lt;p&gt;Una vez tenemos nuestro website alojado en un &lt;em&gt;Repository&lt;/em&gt; y publicado en un &lt;em&gt;Endpoint&lt;/em&gt; de &lt;em&gt;GitHub&lt;/em&gt;, es el momento de que podamos asociarle un nombre de un dominio personalizado como, por ejemplo, &lt;a href=&#34;http://www.alejandrolopezparra.es&#34; target=&#34;_blank&#34;&gt;www.alejandrolopezparra.es&lt;/a&gt;. El único inconveniente de este paso es que perderemos la opción de usar &lt;em&gt;HTTPS&lt;/em&gt; ya que &lt;em&gt;GitHub Pages&lt;/em&gt; sólo puede usarlo con el domino &lt;code&gt;github.io&lt;/code&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:Cloudflare&#34;&gt;&lt;a href=&#34;#fn:Cloudflare&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;Una vez tenemos nuestro website alojado en un &lt;em&gt;Repository&lt;/em&gt; y publicado en un &lt;em&gt;Endpoint&lt;/em&gt; de &lt;em&gt;GitHub&lt;/em&gt;, es el momento de que podamos asociarle un nombre de un dominio personalizado como, por ejemplo, &lt;a href=&#34;http://www.alejandrolopezparra.es&#34; target=&#34;_blank&#34;&gt;www.alejandrolopezparra.es&lt;/a&gt;. &lt;del&gt;El único inconveniente de este paso es que perderemos la opción de usar &lt;em&gt;HTTPS&lt;/em&gt; ya que &lt;em&gt;GitHub Pages&lt;/em&gt; sólo puede usarlo con el domino &lt;code&gt;github.io&lt;/code&gt;&lt;/del&gt; &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:HTTPS-custom-domains&#34;&gt;&lt;a href=&#34;#fn:HTTPS-custom-domains&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;p&gt;Para lograrlo es necesario lo siguiente:&lt;/p&gt;
 
@@ -388,8 +388,8 @@ $# git push -u origin master
 &lt;hr /&gt;
 
 &lt;ol&gt;
-&lt;li id=&#34;fn:Cloudflare&#34;&gt;Habría una alternativa que es usar &lt;a href=&#34;https://www.goyllo.com/github/pages/free-cloudflare-ssl-for-custom-domain/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;GitHub Pages&lt;/em&gt; con &lt;em&gt;Cloudflare&lt;/em&gt;&lt;/a&gt;.
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:Cloudflare&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:HTTPS-custom-domains&#34;&gt;Desde mayo de 2018 &lt;a href=&#34;https://blog.github.com/2018-05-01-github-pages-custom-domains-https/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;GitHub Pages&lt;/em&gt; soporta HTTPS con dominios propios&lt;/a&gt;. También habría una alternativa que es usar &lt;a href=&#34;https://www.goyllo.com/github/pages/free-cloudflare-ssl-for-custom-domain/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;GitHub Pages&lt;/em&gt; con &lt;em&gt;Cloudflare&lt;/em&gt;&lt;/a&gt;.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:HTTPS-custom-domains&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 </description>

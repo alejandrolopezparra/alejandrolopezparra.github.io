@@ -364,13 +364,13 @@ $# git commit -m &quot;Initial commit&quot;
 $# git push -u origin master
 </code></pre>
 
-<p>Sólo con esos tres pasos, ya tendríamos nuestra página web personal accesible a través de un <em>Endpoint</em> seguro <code>HTTPS://nombre.github.io</code> donde <code>nombre</code> se corresponde con el nombre de usuario de la cuenta de <em>GitHub</em>. En mi caso, es <code>https://alejandrolopezparra.github.io</code>.</p>
+<p>Sólo con esos tres pasos, ya tendríamos nuestra página web personal accesible a través de un <em>Endpoint</em> seguro <code>https://nombre.github.io</code> donde <code>nombre</code> se corresponde con el nombre de usuario de la cuenta de <em>GitHub</em>. En mi caso, es <code>https://alejandrolopezparra.github.io</code>.</p>
 
 <p>Para el caso concreto de <em>Hugo</em>, contamos con un <a href="https://gohugo.io/tutorials/github-pages-blog/" target="_blank">tutorial</a> que trata el despliegue en <em>GitHub Pages</em> de páginas web basadas en <em>Hugo</em> tanto personales como de organizaciones y también de proyectos. También disponemos de una <a href="https://georgecushen.com/create-your-website-with-hugo/" target="_blank">guía detallada sobre <em>Hugo</em> y <em>GitHub Pages</em></a> del creador del <a href="https://themes.gohugo.io/academic/" target="_blank">tema <em>Academic</em> para <em>Hugo</em></a>.</p>
 
 <h2 id="asociar-un-dominio-propio">Asociar un dominio propio</h2>
 
-<p>Una vez tenemos nuestro website alojado en un <em>Repository</em> y publicado en un <em>Endpoint</em> de <em>GitHub</em>, es el momento de que podamos asociarle un nombre de un dominio personalizado como, por ejemplo, <a href="http://www.alejandrolopezparra.es" target="_blank">www.alejandrolopezparra.es</a>. El único inconveniente de este paso es que perderemos la opción de usar <em>HTTPS</em> ya que <em>GitHub Pages</em> sólo puede usarlo con el domino <code>github.io</code><sup class="footnote-ref" id="fnref:Cloudflare"><a href="#fn:Cloudflare">1</a></sup>.</p>
+<p>Una vez tenemos nuestro website alojado en un <em>Repository</em> y publicado en un <em>Endpoint</em> de <em>GitHub</em>, es el momento de que podamos asociarle un nombre de un dominio personalizado como, por ejemplo, <a href="http://www.alejandrolopezparra.es" target="_blank">www.alejandrolopezparra.es</a>. <del>El único inconveniente de este paso es que perderemos la opción de usar <em>HTTPS</em> ya que <em>GitHub Pages</em> sólo puede usarlo con el domino <code>github.io</code></del> <sup class="footnote-ref" id="fnref:HTTPS-custom-domains"><a href="#fn:HTTPS-custom-domains">1</a></sup></p>
 
 <p>Para lograrlo es necesario lo siguiente:</p>
 
@@ -406,8 +406,8 @@ $# git push -u origin master
 <hr />
 
 <ol>
-<li id="fn:Cloudflare">Habría una alternativa que es usar <a href="https://www.goyllo.com/github/pages/free-cloudflare-ssl-for-custom-domain/" target="_blank"><em>GitHub Pages</em> con <em>Cloudflare</em></a>.
- <a class="footnote-return" href="#fnref:Cloudflare"><sup>^</sup></a></li>
+<li id="fn:HTTPS-custom-domains">Desde mayo de 2018 <a href="https://blog.github.com/2018-05-01-github-pages-custom-domains-https/" target="_blank"><em>GitHub Pages</em> soporta HTTPS con dominios propios</a>. También habría una alternativa que es usar <a href="https://www.goyllo.com/github/pages/free-cloudflare-ssl-for-custom-domain/" target="_blank"><em>GitHub Pages</em> con <em>Cloudflare</em></a>.
+ <a class="footnote-return" href="#fnref:HTTPS-custom-domains"><sup>^</sup></a></li>
 </ol>
 </div>
 
@@ -446,7 +446,7 @@ $# git push -u origin master
         
         <li><a href="/post/amazon_s3_logs/">Logs de acceso a websites en Amazon S3</a></li>
         
-        <li><a href="/post/hugo/">Crear websites estáticos con Hugo</a></li>
+        <li><a href="/post/hugo/">Hugo, generador de websites estáticos</a></li>
         
       </ul>
     </div>
