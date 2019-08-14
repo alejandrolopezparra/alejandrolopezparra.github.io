@@ -376,7 +376,7 @@ $# git push -u origin master
 
 &lt;p&gt;En cualquier caso, he optado por migrar el alojamiento de mi website de &lt;em&gt;Amazon S3&lt;/em&gt; a &lt;em&gt;GitHub Pages&lt;/em&gt; por las ventajas que ofrece a coste cero.&lt;/p&gt;
 
-&lt;p&gt;No obstante, &lt;em&gt;Amazon S3&lt;/em&gt; y &lt;em&gt;GitHub Pages&lt;/em&gt; no son las únicas alternativas. También tenemos otras posibilidades entre las que se encuentran:&lt;/p&gt;
+&lt;p&gt;No obstante, &lt;em&gt;Amazon S3&lt;/em&gt; y &lt;em&gt;GitHub Pages&lt;/em&gt; no son las únicas alternativas. También tenemos otras posibilidades, entre las que se encuentran:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://cloud.google.com/storage/&#34; target=&#34;_blank&#34;&gt;Google Cloud Storage&lt;/a&gt; con su &lt;a href=&#34;https://cloud.google.com/storage/docs/hosting-static-website&#34; target=&#34;_blank&#34;&gt;guía&lt;/a&gt;. De pago.&lt;/li&gt;

@@ -7,20 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
     <copyright>&amp;copy; 2018 Alejandro López Parra</copyright>
-    <lastBuildDate>Sat, 20 May 2017 12:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 25 Mar 2017 16:39:03 +0100</lastBuildDate>
     
 	<atom:link href="https://www.alejandrolopezparra.es/tags/amazon/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Alojar websites estáticos en GitHub Pages</title>
-      <link>https://www.alejandrolopezparra.es/post/github_pages/</link>
-      <pubDate>Sat, 20 May 2017 12:00:00 +0200</pubDate>
-      
-      <guid>https://www.alejandrolopezparra.es/post/github_pages/</guid>
-      <description>Como alternativa a Amazon Simple Storage Service (S3) que ya traté, a continuación abordaré el servicio GitHub Pages que pertenece a la plataforma GitHub de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git.
-GitHub Pages es un servicio gratuito que permite alojar websites de contenido estático, es decir, webs que se basan en HyperText Markup Language (HTML), JavaScript (JS) y Cascading Style Sheets (CSS). El contenido no es generado dinámicamente en cada solicitud que se realiza al servidor y, por tanto, no son necesarios ni servidores de aplicaciones ni de bases de datos.</description>
-    </item>
     
     <item>
       <title>Generar estadísticas de websites con AWStats</title>
